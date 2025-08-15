@@ -1,0 +1,267 @@
+<size=16><b><color=#FF6B35>MoreBrutalLethalCompanyPlus</color> <color=#FFD23F>v72.1.0</color></b></size>
+
+<size=8><b><color=#FF4757>♦ FIXES</color></b></size>
+
+<color=#FFFFFF>• Fixed <i>Bunker spider</i> turning around randomly when stationary.
+• Fixed the <i>Spark Towers</i> having bright white parasite pixels on their texture.
+• Fixed <i>Bunker spider</i> webs getting triggered on dead enemies.
+• Fixed <i>Bunker spider</i> webs not stopping the audio.
+• Hopefully fixed <i>Hygrodeers</i> being too fast.
+• Hopefully fixed some enemies going through the ship.
+• Fixed ship window shutter voice line and switch sound for landing breaking.
+• Fixed discounts being removed on server relaunch.
+• Fixed <i>Hydrogers</i> still sometimes opening doors.
+• Fixed <i>Nutcracker</i> having a different shotgun blast sound than the buyable shotguns.
+• Fixed new v70 interior tiles lights not disabling if breaker is disabled.
+• Fixed entities pathing issues with some modded interiors.
+• Fixed errors when opening the microwave near the fridge.
+• Fixed desync between animation, audio, and items spinning.
+• Fixed items being grabbable through the body of the microwave.
+• Fixed items being placed under the plate in the microwave.
+• Fixed items being placed "through" the fridge instead of on the shelves.
+• Fixed some bugs with pop-up advertisements.
+• Fixed incorrect discount being displayed on items for clients.
+• Fixed suit ads failing to display.
+• Fixed incorrect or unknown player names.
+• Fixed players sometimes being stuck in the void if they time out.
+• Fixed <i>Giant sapsucker</i> continuing to snore after being killed.
+• Fixed fridge costing 150 credits instead of the displayed 225.</color>
+<color=#888888><i>And various other minor fixes.</i></color>
+
+<size=8><b><color=#00D2FF>⚙ PERFORMANCE</color></b></size>
+
+<color=#FFFFFF>• Performance was greatly improved by removing mods and tweaking configs.
+• Optimized <i>Snowfall</i> weather.</color>
+
+<size=8><b><color=#FFE66D>★ GAMEPLAY & MECHANICS</color></b></size>
+
+<color=#FFFFFF>• There is a 10% chance that fire exits will be barricaded, which will block players from entering or exiting.
+• Reduced credits given by every new joined client from 40 > 20.
+• Dropship is now scannable.
+• Increased hosts spectators voting power from 25% > 50%.
+• All items from Cruiser will be moved to the ship when going back to orbit.
+• <b>Flashlight:</b>
+  - Flashlight will flicker on low battery <color=#FFAA00>[ 30% ]</color>.
+  - Flashlight will flicker harder on very low battery <color=#FF4444>[ 5% ]</color>.
+  - Flashlight has a small chance to flicker on high insanity/fear.
+• Balanced <i>Solar flare</i> malfunction chances.
+• Balanced <i>Snowfall</i> frostbite damage.
+• Increased meltdown chance from 50% > 70%.
+• Increased maximum available players in lobby from 12 > 16.
+• Increased sprint climbing speed.
+• Increased chance of explosion when charging.
+• Regeneration outside the ship is much slower.
+• Lockpicker takes 7 seconds to lockpick the door.</color>
+<color=#888888><i>And various other minor changes.</i></color>
+
+<size=8><b><color=#FF9500>● LETHAL UPGRADES</color></b></size>
+
+<color=#FFFFFF>• Upgrades now can only be bought with <color=#FFD700><b>PC</b></color> currency.
+  - To purchase single unit of <color=#FFD700><b>PC</b></color> or convert <color=#FFD700><b>PC</b></color> to credits, type <u><color=#00FFFF>PC</color></u> in terminal.
+• Added new upgrades.
+• Increased the amount of upgrades that always appear in store from 10 > 12.
+• Balanced cost of upgrades.
+• Increased reward value when completing an contract.</color>
+
+<size=8><b><color=#4ECDC4">▼ ITEMS & FURNITURE</color></b></size>
+
+<color=#FFFFFF>• Added <color=#FFD700><b>Hauler</b></color>, 4-seater pickup truck to the store, which costs 530 credits.
+• Added <color=#4CAF50><b>Medkit</b></color>, can be used 3 time to heal 35 each time, costs 200 credits.
+• Increased <i>Lockpicker</i> price from 45 > 85.
+• <color=#FF5722><i>Grenade</i></color> was temporarily removed from the store.</color>
+
+<size=8><b><color=#FF6B9D>♪ VISUAL & AUDIO</color></b></size>
+
+<color=#FFFFFF>• Rebalanced volume for ambient music.
+• Added a subtly turning sound to turret.
+• <b>Improved sounds:</b>
+  - <i>Brackens</i> sounds.
+  - <i>Baboon</i> sounds.
+  - <i>Centipede</i> sounds.
+  - <i>Earth leviathan</i> sounds.
+  - <i>Masked</i> sounds.
+  - Ship sounds.
+  - Facility meltdown sounds.
+  - Terminal sounds.
+  - Scanner sounds.
+• Added the unused <i>Baby Face</i> song to the Cruiser radio.
+• Adjusted landmines and radar boosters so they should be more visible on the v70+ radar.
+• Ship's main panel buttons and knobs are interactable.
+• Replaced starship to default dropship.
+• Added interior fog back.
+  - Fog's density is randomized.
+• Improved performance report UI.
+• <b>Improved spectator UI:</b>
+  - When people talk, their avatars will bounce.
+• <i>Masked</i> enemy has a chance wearing <i>Tragedy</i> mask instead of <i>Comedy</i>.
+• Updated posters on the ship.
+• Added cause of death for the <i>Giant kiwi</i>.
+• Added new funny notes and causes of death.
+• Added an additional suit similar to the brown suits in the game's announcement teaser.
+• Added an additional skin variant for <i>Boombox</i>.
+• Added 2 additional skin variant for <i>Fancy lamp</i>.
+• Added 14 new emotes: <color=#FFD700><i>APT, Jake Bug Dance, The Spark, Touch, Brokenhearted, Clix Groove, Fast Slow Disco, Firework, Image, Mr Brightside, Royals, Squeak Step, Still Into You</i></color> and <color=#FFD700><i>It's Ok I'm Ok</i></color>.</color>
+
+<size=8><b><color=#8B5CF6>♠ ENEMIES</color></b></size>
+
+<color=#FFFFFF>• <i>Tourists</i> no longer explode when colliding with entities if they're not being looked at.
+• <i>Bunker spider</i> webs reduce enemy velocity when over target speed.
+• <b>Shy guy:</b>
+  - Added an ability to break into the ship with an animation.
+  - <i>Shy guy</i> now can use fire exits to escape.
+  - Added a new painting item with 2 variants which are not recommended to pick up.
+• Reduced <i>Kidnapper fox</i> chance to spawn.
+  - Removed <i>Kidnapper fox</i> spawning on some moons.</color>
+
+<size=8><b><color=#10B981>■ INTERIORS</color></b></size>
+
+<color=#FFFFFF>• Slightly reduced almost all interior sizes.
+• Balanced interior weights on all moons.
+• <i>Storehouse</i> elevators can drop before the apparatus has even been pulled.
+• Fixed the map radar on <i>Art gallery</i> and <i>Rubber rooms</i>.
+• <b>Art gallery:</b>
+  - Fixed a bunch of navmesh issues.
+  - The gallery now generates smaller.
+  - The gallery now has a 50% chance to have an alternate look.
+  - Some visual changes.
+  - Added a bit of tile variation.
+  - Added <color=#FF0000><i>53cr3t5</i></color>.
+  - Switched out the main entrance with the manor entrance.
+  - Reduced the amount of extra scrap spawned in glass displays
+  - Two openable safes will now spawn in the gallery.
+• <b>Rubber rooms:</b>
+  - Spawned items on morgue trays will now be parented to it.
+  - Items are now more likely to spawn on morgue trays.
+  - Vents can now rarely spawn in the large rubber rooms.
+  - Changed lighting temperature in most rooms.
+  - Changed the lighting entirely for the eclipsed variant.
+  - Added a few new tiles.
+  - Fixed some weird generation issues.
+  - Added a subtle tell to the spooky door.</color>
+
+<size=8><b><color=#F59E0B">▲ TIERS</color></b></size>
+
+<color=#FFFFFF>• Increased <color=#FF0000><b>Hell</b></color> tier scrap value multiplier from 0.3 > 0.4.
+• Increased <color=#FFD700><b>SSS</b></color> tier scrap value multiplier from 0.5 > 0.6.
+• Increased <color=#FF0000><b>Hell</b></color> tier enemy spawn speed from 0.4 > 0.6.
+• Increased <color=#FFD700><b>SSS</b></color> tier enemy spawn speed from 0.6 > 0.7.
+• Updated the list of scrap and their spawn weight for each tier.
+• Rebalanced each tier enemy list and their chances.
+• ++ tiers moons are now displayed as hidden.</color>
+
+<size=8><b><color=#6366F1">◐ MOONS</color></b></size>
+
+<color=#FFFFFF>• Balanced outside enemies chances on moons.
+• Added radar contour maps to all moons.
+• Improved Adamance visually.
+• <b>Gratar:</b>
+  - Added a new factory room accessible through a new fire exit.
+• <b>Demetrica:</b>
+  - Slightly reduced dense of fog on foggy weather.
+• <b>Calist:</b>
+  - Reduced difficulty of parkour.
+• <b>Gloom:</b>
+  - Increased fogs visibility.
+• <b>Kanie:</b>
+  - Added a new mechanic - automatic door gate.
+  - Added an alternative exit from the landing zone
+• <b>Bilge:</b>
+  - To improve visibility during the midday, extra lights have been added near the bottom platform.
+• Changed <i>Rend</i> and <i>Dine</i> tiers from SS++ > SS+.
+• Changed <i>Infernis</i> tier from A+ > A++.
+• Moved <i>Titan</i> and <i>Pinnacle</i> from <i>Thanatros</i> to <i>Cygnus</i> system.
+  - Titan - SS++.
+  - Pinnacle - SS.
+• Moved <i>Asteroid-13</i> from <i>Andromeda</i> to <i>Gemini</i> system.
+• Moved <i>Calist</i> from <i>Scorpius</i> to <i>Cygnus</i> system.</color>
+
+<size=12><b><color=#FF6B35">◆ OVERALL ADDITIONS</color></b></size>
+
+<size=8><b><color=#10B981">■ Added Interiors:</color></b></size>
+
+<color=#FFFFFF>• <b><color=#4ECDC4>Liminal House</color></b>
+  <color=#B0B0B0><i>This place looks like home soft lighting, warm decor, even a sky outside the windows. But the longer you stay, the more you realize... nothing here is real</i></color>.
+
+• <b><color=#8B5CF6>Fractured Complex</color></b>
+  <color=#B0B0B0><i>It's quiet there. But not empty</i></color>.</color>
+
+<size=8><b><color=#6366F1">◐ Added Moons:</color></b></size>
+
+<color=#FFFFFF>• Added new moon: <b><color=#4338CA>Noctis</color></b>.
+  <color=#B0B0B0><i>Where light dies and shadows hunt</i></color>.
+  Which system: <color=#FFD700>Andromeda</color>.
+  Risk Level: <color=#10B981>B+</color>.
+
+• Added new moon: <b><color=#059669>Faith</color></b>.
+  <color=#B0B0B0><i>Nature sings. You won't like the second verse</i></color>.
+  Which system: <color=#FFD700>Harmonia</color>.
+  Risk Level: <color=#10B981>B+</color>.
+
+• Added new moon: <b><color=#047857>Mazon</color></b>.
+  <color=#B0B0B0><i>Jungle swallowed fortress. The secrets were buried or stolen</i></color>.
+  Which system: <color=#FFD700>Aquarius</color>.
+  Risk Level: <color=#F59E0B>A+</color>.
+  
+• Added new moon: <b><color=#FBBF24>Hyve</color></b>.
+  <color=#B0B0B0><i>A thousand wings. A million stingers. One queen</i></color>.
+  Which system: <color=#FFD700>Pegasus</color>.
+  Risk Level: <color=#F59E0B>A++</color>.
+  
+• Added new moon: <b><color=#3B82F6>Etern</color></b>.
+  <color=#B0B0B0><i>The mind breaks before the body</i></color>.
+  Which system: <color=#FFD700>Gemini</color>.
+  Risk Level: <color=#EF4444>S+</color>.
+
+• Added new moon: <b><color=#8B5A2B>Terra</color></b>.
+  <color=#B0B0B0><i>A graveyard of petrified giants</i></color>.
+  Which system: <color=#FFD700>Taurus</color>.
+  Risk Level: <color=#EF4444>S+</color>.
+  
+• Added new moon: <b><color=#D97706>Makron</color></b>.
+  <color=#B0B0B0><i>Gold took the green. Now it wants blood</i></color>.
+  Which system: <color=#FFD700>Gemini</color>.
+  Risk Level: <color=#EF4444>S+</color>.
+
+• Added new moon: <b><color=#DC2626>Core</color></b>.
+  <color=#B0B0B0><i>Dig deep. Deeper. Too deep</i></color>.
+  Which system: <color=#FFD700>Taurus</color>.
+  Risk Level: <color=#B91C1C>S++</color>.
+
+• Added new moon: <b><color=#7C2D12>Praetor</color></b>.
+  <color=#B0B0B0><i>Cracked from the inside. Boiling pits and broken halls</i></color>.
+  Which system: <color=#FFD700>Gemini</color>.
+  Risk Level: <color=#7C2D12>SS</color>.
+
+• Added new moon: <b><color=#450A0A>Empra</color></b>.
+  <color=#B0B0B0><i>All hail Empra. All kneel. All vanish</i></color>.
+  Which system: <color=#FFD700>Thanatros</color>.
+  Risk Level: <color=#FF0000>Hell</color>.
+
+• Added new moon: <b><color=#450A0A>Repress</color></b>.
+  <color=#B0B0B0><i>Rusted metal still screams</i></color>.
+  Which system: <color=#FFD700>Thanatros</color>.
+  Risk Level: <color=#FF0000>Hell</color>.
+  
+• Added new moon: <b><color=#450A0A>Cosmocos</color></b>.
+  <color=#B0B0B0><i>3 landings, 0 takeoffs</i></color>.
+  Which system: <color=#FFD700>Thanatros</color>.
+  Risk Level: <color=#FF0000>Hell</color>.</color>
+  
+<size=8><b><color=#8B5CF6">♠ Added Enemies:</color></b></size>
+
+<color=#FFFFFF>• <b><color=#F97316>Cat</color></b>
+  <color=#B0B0B0><i>This creepy fella doesn't attack, it just stares and... sings?</i></color>.
+• <b><color=#7C2D12>The Cabinet</color></b>
+  <color=#B0B0B0><i>This strange looking piece of furniture hides something... unnatural inside</i></color>.
+• <b><color=#DC2626>The Doctor</color></b>
+  <color=#B0B0B0><i>A genius mind, fragmented across machines, hunting from the shadows</i></color>.</color>
+
+<size=8><b><color=#4ECDC4">⚙ Added Mods:</color></b></size>
+
+<color=#A0A0A0>AdditionalNetworking, Scopophobia, Universal Radar, TheDoctor (LegaFusionCore), RadioBabyFace, ClassicSuitRestoration, LoadstoneUnstableBeta, LobbyControl Experimental, Entrance Blocker, Company Hauler, OiiaCat, TheCabinet, TurretSounds, Liminal House, Advance Features, FlickeringFlashlight, LevelMusicLib, Asteroid-14 [Hyve], Faith, Core, Etern, Empra, Repress, Cosmocos, Mazon moon, Makron moon, Praetor moon, LoadingTips, InteriorNavMeshFixer, FixPlayerName, NetworkMetricsFix, BetterLaddersFixed, ScanRecolor, LEBWeatherFix, EnhancedLockpicker</color>
+
+<size=12><b><color=#EF4444">▬ OVERALL REMOVALS</color></b></size>
+
+<size=8><b><color=#EF4444">✖ Removed Mods:</color></b></size>
+
+<color=#888888><s>AdditionalNetworking Experimental, HygroDash, Scopophobia, SaveItemRotations, Loadstone, Polished Plushies and Silly Scrap, SavePlayerVolume, LobbyControl, Live Reaction, PSCP106, SirenHead, SpectatePreviousPlayer, Item Lights And Effects Fix, CruiserMap, LethalStats, Smoke Detector, VoidLeak, Do We Need To Go Deeper, Groan Tube Scrap, CountryRoadCreature, WhoVoted, StarlancerMusic, JetpackHMD, StarshipDeliveryMod, TheEverRed, FacelessStalker, Piggys Reanimation, Diversity (GraphicsAPI, DiversityNoFloppy), fiufkis Moons, 290 Summit, Castellum Carnis, Valunarion, Tauralis, Scallg, TestAccountVariety, Aquar, Quasara, 17 Frostfall, AutomaticSignals, WesleysInteriorsAddons, LightEater, Tyler1Bracken, SlimeTamingFix, SpectateDeathCause, DoorlessStorage, AlwaysHearActiveWalkies, LethalBeacon, AutoMessage, PathfindingLagFix Beta, BigMouth, RemoveInteriorFog</s></color>

@@ -1,0 +1,20 @@
+﻿After completing the first quota, you will need to purchase a new system.
+Want to suggest something for the modpack? Type 'discord' into the terminal to suggest it here!
+Can't find any scrap? Sounds like a skill issue.
+All systems have their own history and meaning.
+Found a bug? Type 'discord' in the terminal to report it here.
+Do you like playing this modpack? Type 'modpack' into the terminal and like. please :D
+Found a bug? Then kill it with the shovel.
+Found a bug? Report it to the modpacks discord server with the log, or it didn't happen.
+Having a soft-lock? Press CTRL+ALT+SHIFT+Q to get to the main menu.
+Always bring a flashlight. The dark is scarier than the monsters.
+Use your arrow keys to switch between player cameras in the terminal.
+Check the posters, they contain a good information for you.
+You are stuck? Press [ Backspace ] to die.
+Terminal home page contains a lot of useful information!
+Tulip snakes, Centipedes, Peepers and Hoarding bugs can be sold.
+After killing a Masked enemy, you can grab the mask off the dead body and sell.
+After pulling apparatus out, all lights inside and outside will be disabled.
+There is an chance of self destruction sequence not happening after pulling apparatus out.
+After pulling Apparatus out, all players inside the factory will take a decent amount of damage every hour.
+It is not recommended to die on the Company moon.

@@ -1,0 +1,12 @@
+{
+	"replacements": [
+		{
+			"matches": "Canvas:MenuManager:Menu1",
+			"sounds": [
+				{
+					"sound": "space.ogg"
+				}
+			]
+		}
+	]
+}
