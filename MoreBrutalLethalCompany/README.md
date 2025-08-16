@@ -12,7 +12,7 @@
 
 - **Tiers:** The higher the Tier of the moon, the more amount of enemies, scrap amount and hazards amount there will be.
 - **Explore New Worlds:** Explore _56+_ modded moons across 10 systems, each with distinct themes and difficulty levels.
-- **Longer Days:** Enjoy sligtly extended daylight hours, giving a player more time to explore and loot.
+- **Longer Days:** Enjoy slightly extended daylight hours, giving a player more time to explore and loot.
 - **More Items:** Find more item to buy and more types of scrap.
 - **New Monsters:** Brace yourself for _20_ new terrifying monsters.
 - **Enhanced Vanilla Monsters:** Several vanilla monsters have been upgraded with new behaviors and features.
@@ -29,11 +29,11 @@
 - **Hot-Reload:** Dynamically loads and unloads custom moon AssetBundles as needed, significantly reducing RAM usage.
 - **Beware of the Unknown:** Watch out for the masked enemy who has learned to mimic the voices of your friends.
 - **Missile Turrets:** New inside hazard - Missile Turrets. The missiles travel slower than standard projectiles, they accelerate over time. These turrets require a brief reload period after each shot.
-- **Toil-Heads:** CoilHeads, Manticoils, Maskeds, and other entities can now spawn with turrets mounted on their heads.
+- **Toil-Heads:** Coil-head, Manti-coil and Masked now with a small chance can spawn with turrets mounted on their heads.
 - **Enhanced Darkness:** The darkness is now even more intense, but players can illuminate their path with each scan, making navigation through the shadows easier.
 - **High-Amount Scrap:** Moons with active weather will contain higher amount scrap.
 - **Ship Features:** The ship has its own window, top-mounted floodlight will be rotating upon landing, auto reroute to The Company moon on the last day, customized posters, but the ship may sometimes malfunction.
-- **Enhanced Radar Booster:** Upgraded Radar Booster has doubled range on the map. Teleport your Radar Booster back to the ship or inverse Teleporter it into the facility.
+- **Enhanced Radar Booster:** Upgraded Radar Booster has doubled range on the map. Teleport your Radar Booster back to the ship or Inverse teleporter it into the facility.
 - **Orbit:** Experience a more beautiful and immersive orbit.
 - **Upgrades:** Upgrade your ship or character through the terminal.
 - **Terminal:** Terminal home screen is beautiful and has all commands with all information that player needs to know.
@@ -77,7 +77,7 @@
 
 1. Download [GaleModManager](https://thunderstore.io/c/lethal-company/p/Kesomannen/GaleModManager/) [Use manual download!]
 2. Choose **Lethal Company** as your game.
-3. Wait for _GaleModManager_ to fech all of mods from Thunderstore.
+3. Wait for _GaleModManager_ to fetch all of mods from Thunderstore.
 4. Search for **"MoreBrutalLethalCompanyPlus"** and press install.
 5. Wait when it finishes downloading and click **Launch game** to start the game with mods.
 
@@ -94,7 +94,7 @@
 
 ![Notes](https://i.imgur.com/YqG3gKf.png)
 
-- Modpacks size: 3.2 GB
+- Modpack size: 3.2 GB
 - Stutters: Try turning off V-Sync in game settings... If that doesn't work, join our [Discord Server](https://discord.gg/Z9rUwTtUpx).
 - High RAM Usage: Try removing some moons you don’t like.
 - Epilepsy Warning: Disable Rapid Lights in `ghostCodes.Setup - Effects/Sound` config.
@@ -108,7 +108,7 @@
 - **Terminal:**
   - Use the _[ LEFT ]_ | _[ RIGHT ]_ arrow keys to quickly switch cams.
 - **Walkie-Talkie:**
-  - Use walkie-talkie in the terminal **HOLD** _[ LeftAlt ]_ or _[ LMB ]_.
+  - Use Walkie-talkie in the terminal **HOLD** _[ LeftAlt ]_ or _[ LMB ]_.
 - **Flashlight:**
   - Toggle flashlight _[ F ]_.
 - **Mute:**
