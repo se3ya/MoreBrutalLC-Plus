@@ -1,0 +1,1 @@
+{"overrides":[{"action":"OpenEmoteMenuHotkey","origPath":"<Keyboard>/backquote","path":"<Keyboard>/y","groups":"KeyboardAndMouse"},{"action":"PerformRandomEmoteHotkey","origPath":"<Keyboard>/m","path":"<InputUtils-Kbm-Not-Bound>","groups":"KeyboardAndMouse"}]}

@@ -1,0 +1,168 @@
+{
+  "reservedSlotName": "utility",
+  "slotPriority": 300,
+  "purchasePrice": 900,
+  "itemsForSlot": [
+    {
+      "itemName": "Stun grenade",
+      "bone": 1,
+      "position": {
+        "x": -0.33,
+        "y": -0.2,
+        "z": 0.1
+      },
+      "rotation": {
+        "x": -110.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+	{
+      "itemName": "Lockpicker",
+      "bone": 3,
+      "position": {
+        "x": 0,
+        "y": -0.3,
+        "z": -0.3
+      },
+      "rotation": {
+        "x": -180,
+        "y": 0,
+        "z": 90
+      }
+    },
+	{
+      "itemName": "TZP-Inhalant",
+      "bone": 3,
+      "position": {
+        "x": -0.37,
+        "y": -0.4,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 90,
+        "y": 90,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "Extension ladder",
+      "bone": 3,
+      "position": {
+        "x": 0,
+        "y": 0.3,
+        "z": -0.4
+      },
+      "rotation": {
+        "x": 0,
+        "y": 90,
+        "z": 270
+      }
+    },
+	{
+      "itemName": "Zap gun",
+      "bone": 3,
+      "position": {
+        "x": -0.37,
+        "y": -0.2,
+        "z": 0.1
+      },
+      "rotation": {
+        "x": 180,
+        "y": 90,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "Weed killer",
+      "bone": 3,
+      "position": {
+        "x": -0.27,
+        "y": -0.3,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "Boombox",
+      "bone": 3,
+      "position": {
+        "x": 0,
+        "y": -0.4,
+        "z": -0.3
+      },
+      "rotation": {
+        "x": 180,
+        "y": 0,
+        "z": 270
+      }
+    },
+	{
+      "itemName": "Jetpack"
+    },
+	{
+      "itemName": "Homemade flashbang",
+      "bone": 3,
+      "position": {
+        "x": -0.31,
+        "y": -0.5,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 270,
+        "y": 0,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "Dynamite",
+      "bone": 3,
+      "position": {
+        "x": -0.3,
+        "y": -0.5,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "Big dynamite",
+      "bone": 3,
+      "position": {
+        "x": -0.3,
+        "y": -0.5,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "Motion tracker",
+      "bone": 3,
+      "position": {
+        "x": -0.33,
+        "y": -0.5,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    }
+  ],
+  "equipKeybind": {
+	"defaultBind": "n",
+    "toggle": true
+  }
+}

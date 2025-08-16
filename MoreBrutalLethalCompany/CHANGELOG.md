@@ -9,6 +9,7 @@
 
 - Fixed lag and audio issue when entering/exiting ships reverb trigger by disabling _LR_ outside ambience.
 - Fixed _the Cabinet_ not being scannable after angering it by trying to open it.
+- Fixed several issues for _Shy guy_.
 
 ## ✨ GAMEPLAY & MECHANICS
 
