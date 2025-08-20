@@ -10,6 +10,7 @@
 - Fixed lag and audio issue when entering/exiting ships reverb trigger by disabling _LR_ outside ambience.
 - Fixed _the Cabinet_ not being scannable after angering it by trying to open it.
 - Fixed several issues for _Shy guy_.
+- Fixed inventory weight resetting when dropping items with a tulip snake attached.
 
 ## ✨ GAMEPLAY & MECHANICS
 
@@ -23,6 +24,7 @@
 ## 🌘 MOONS
 
 - Removed bridge from March.
+- Small improvements to Generic moons.
 - Wither:
 
   - Terrain has been entirely remodeled and repainted.
@@ -57,7 +59,18 @@
 ## 🏠 INTERIORS
 
 - Removed SubSystems due to a big hole in the big room tile.
-- Removed Storehouse, Tower, and Liminal Facility.
+- Generic Interiors:
+  - Storehouse and Tower interiors now have _v70_ radar support.
+  - Liminal Facility:
+    - Added 6 new tiles.
+    - Added more room variants with different shapes.
+    - Lights have a small chance to flicker.
+    - Increased furniture spawn.
+  - Tower:
+    - Added a car to garage basement tile.
+    - Added 2 new tiles.
+    - Fixed straight stairs tile not having walls if it doesn't connect to lower floor.
+- Removed Storehouse, Tower, and Liminal Facility. \*\*\*
 
 ## 👾 ENEMIES
 
@@ -78,13 +91,20 @@
 ### 🌙 Added Moons:
 
 - Added new moon: Deadlock.
+
   - _Iron tracks circle a sleeping giant. The train hunts in silence_.
   - Which system: Orion.
   - Risk Level: C+.
 
+- Added new moon: Burrow.
+
+  - _f_.
+  - Which system: .
+  - Risk Level: .
+
 ### 🛠️ Added Mods:
 
--
+- Hold Scan Button
 
 ## 🗑️ OVERALL REMOVALS
 
@@ -94,23 +114,28 @@
 - TwitchChatAPI
 - Lethal Weight Fix
 - SubSystems Interior
-- Generic Interiors
+- Generic Interiors \*\*\*
+- InteriorNavMeshFix
 
 ## 📦 MOD UPDATES
 
 _(Old version → New version)_
 
-- SkelaahsWildMoons: 2.5.5 → 2.6.8
-- Universal Radar: 1.0.10 → 1.2.0
-- ScienceBirdTweaks: 4.3.3 → 4.4.0
+- SkelaahsWildMoons: 2.5.5 → 2.6.9
+- Universal Radar: 1.0.10 → 1.2.2
+- ScienceBirdTweaks: 4.3.3 → 4.4.4
 - TheCabinet: 1.7.0 → 1.8.1
+- TwoRadarMaps: 1.6.1 → 1.6.2
 - Wither: 1.4.3 → 2.0.0
 - OiiaCat: 1.3.1 → 1.3.2
 - Generic Scraps: 0.2.0 → 1.0.0
-- LethalHUD: 1.0.2 → 1.0.4
-- PathfindingLib: 1.0.1 → 2.1.2
+- Generic Moons: 7.5.1 → 8.0.0
+- LethalHUD: 1.0.2 → 1.0.9
+- PathfindingLib: 1.0.1 → 2.1.3
+- PathfindingLagFix: 2.2.1 → 2.2.3
+- Generic Scraps: 1.0.0 → 1.0.1
 - Advance Features: 1.0.9 → 1.0.10
-- MrovLib: 0.3.1 → 0.3.2
+- MrovLib: 0.3.1 → 0.3.5
 - WeatherRegistry: 0.6.1 → 0.7.0
 - SpiderPositionFix: 1.5.2 → 1.5.3
 - LethalPerformance: 0.0.130 → 1.2.0
