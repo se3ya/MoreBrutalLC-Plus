@@ -101,7 +101,7 @@
 
 ---
 
-![Keybinds](https://i.imgur.com/UDBOLXE.png)
+![Keybind's](https://i.imgur.com/UDBOLXE.png)
 
 - **Push to Talk:**
   - Hold _[ V ]_ to talk in-game.
