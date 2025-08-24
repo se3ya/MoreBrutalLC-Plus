@@ -5,6 +5,7 @@
 - Shy guy
 - Lethal Hud
 - WeatherRegistry
+- Decide to ether use 512 or 1024 shadowsMaxResolution in LS.
 
 ## 🐞 FIXES
 
@@ -15,7 +16,7 @@
 
 ## ✨ GAMEPLAY & MECHANICS
 
--
+- Reduced sprinting speed on ladders.
 
 ### WEATHERS
 
@@ -26,6 +27,8 @@
 
 - Any item/scrap scanned will be covered in a holographic highlight.
 - Radar will switch to old radar if interior doesn't have radar sprites.
+- Disabled motion blur.
+- Reduced scan light range and intensity.
 
 ## 🌘 MOONS
 
@@ -114,6 +117,7 @@
 - Black Fog Weather
   - itolib
 - LethalError
+- True Darkness client
 
 ## 🗑️ OVERALL REMOVALS
 
@@ -126,6 +130,7 @@
 - Generic Interiors \*\*\*
 - InteriorNavMeshFix
 - LethalHUD
+- Full Darkness
 
 ## 📦 MOD UPDATES
 
