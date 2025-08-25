@@ -6,13 +6,18 @@
 - Lethal Hud
 - WeatherRegistry
 - Decide to ether use 512 or 1024 shadowsMaxResolution in LS.
+- Rework tips.
+- Reduce turrets amount.
+- Disabled enemy shuffler. (fixes not being able to land?)
+- Tweak Enhanced Monsters cfg.
 
 ## 🐞 FIXES
 
-- Fixed lag and audio issue when entering/exiting ships reverb trigger by disabling _LR_ outside ambience.
+- Fixed lag and audio issue when entering/exiting ships reverb trigger.
 - Fixed _the Cabinet_ not being scannable after angering it by trying to open it.
 - Fixed several issues for _Shy guy_.
 - Fixed inventory weight resetting when dropping items with a tulip snake attached.
+- Fixed a quite rare bug where player was not able to pull the lever to land the ship.
 
 ## ✨ GAMEPLAY & MECHANICS
 
@@ -21,7 +26,7 @@
 ### WEATHERS
 
 - Added new rare weather - _Black fog_.
-  -
+  - A dense, dark fog that greatly reduces visibility and persists indoors.
 
 ## 🎨 VISUAL & AUDIO
 
@@ -34,8 +39,14 @@
 
 - Removed bridge from March.
 - Small improvements to Generic moons.
+- Removed moons
+  - Attenuation
+  - Retinue
+  - Volition
+  - Detritus
+  - Kanie
+  - Acheron
 - Wither:
-
   - Terrain has been entirely remodeled and repainted.
   - Combined the spikes into a few large, abstract structures. Added more mountainous terrain and completely overhauled the desert rock formations.
   - Added new decorative props.
@@ -52,7 +63,6 @@
   - Fixed fragile catwalk sometimes being able to be triggered two times at once.
   <details>
     <summary>Wither event rework spoilers</summary>
-
   - A new endemic creature will be awakened after triggering the event on Wither.
   - Improved apparatus insertion: new sound effects, textures, models, animations, and lights.
   - Overhauled alarm sequence:
@@ -100,14 +110,12 @@
 ### 🌙 Added Moons:
 
 - Added new moon: Deadlock.
-
   - _Iron tracks circle a sleeping giant. The train hunts in silence_.
   - Which system: Orion.
   - Risk Level: C+.
 
 - Added new moon: Burrow.
-
-  - _f_.
+  - _The desert waits. The vultures don’t_.
   - Which system: .
   - Risk Level: .
 
@@ -131,6 +139,11 @@
 - InteriorNavMeshFix
 - LethalHUD
 - Full Darkness
+- DistinctMoonVariety
+- SkelaahsWildMoons
+- DistinctEnemyVariety
+- Soul Devourer Enemy
+  - SolidLib
 
 ## 📦 MOD UPDATES
 
@@ -452,10 +465,12 @@ _(Old version → New version)_
   - _Jungle swallowed fortress. The secrets were buried or stolen_.
   - Which system: Aquarius.
   - Risk Level: A+.
+
 - Added new moon: Hyve.
   - _A thousand wings. A million stingers. One queen_.
   - Which system: Pegasus.
   - Risk Level: A++.
+
 - Added new moon: Etern.
 
   - _The mind breaks before the body_.
@@ -463,9 +478,11 @@ _(Old version → New version)_
   - Risk Level: S+.
 
 - Added new moon: Terra.
+
   - _A graveyard of petrified giants_.
   - Which system: Taurus.
   - Risk Level: S+.
+
 - Added new moon: Makron.
 
   - _Gold took the green. Now it wants blood_.
@@ -491,10 +508,13 @@ _(Old version → New version)_
   - Risk Level: Hell.
 
 - Added new moon: Repress.
+
   - _Rusted metal still screams_.
   - Which system: Thanatros.
   - Risk Level: Hell.
+
 - Added new moon: Cosmocos.
+
   - _3 landings, 0 takeoffs_.
   - Which system: Thanatros.
   - Risk Level: Hell.
@@ -2519,408 +2539,3 @@ _(Old version → New version)_
 - TestAccountVariety: 1.39.0 → 1.40.1
 - Lategame Upgrades: 3.12.1 → 3.12.2
 - Cruiser Additions: 1.4.5 → 1.4.6
-
-# MoreBrutalLethalCompanyPlus _v5.1.0_, _"Fixes, Balance, Improvements"_
-
-## 🔧 FIXES
-
-- Fixed various lobby reload issues.
-- Fixed fog being inconsistent from vanilla moons.
-- Fixed fog cutting out abruptly at lower points in the map on Titan.
-- Fixed Blizzard ambience on Dine not covering the whole map.
-- Fixed trees on Dine magically growing leaves at certain distances (incorrect tree lods).
-- Fixed light placements on Dine's main entrance.
-- Fixed Titan not having blizzard audio.
-- Fixed a bug that caused distance pathfinding to get incorrect results when the jobs take a long time. This fixes a bug that could cause bracken to path in strange ways on Titan.
-- Fixed the terminal map rendering unnecessarily when TerminalStuff enables the terminal UI while not interacting with it.
-- Fixed flashlight bulb material always using the "dark" version even when it was turned on.
-- Fixed Masked enemies being tagged incorrectly.
-  - Prevents error spam when walking in water.
-- Hopefully fixed the Elite Flashlight off model sometimes reverting to blue.
-- Earth Leviathans no longer trigger collision with each other (fixed potential lag?).
-- Fixed potential error spam from baboon hawks.
-- Fixed badges not appearing on corpses that aren't wearing the bee/bunny suits.
-- Fixed vents continuing to make noise after a monster spawns out of them.
-- Fixed nutcrackers using normal vent sounds (or vice versa - normal enemies using nutcracker vent sounds)
-- Fixed a bug with increasing foot trackers on repeated lobby reload. _[ Snowfall ]_
-- Fixed overly bright visuals in some cases. _[ Snowfall ]_
-- Fixed progressive weathers not working correctly.
-- Fixed _NRE_ if the moon has a null spawn denial point.
-- Fixed item icons failing to render sometimes on slow GPUs.
-- Fixed furniture moving sounds when loading a save or re-spawning after being ejected.
-- Fixed bug when picking up the _OxyBoost_ will increase the player's weight from 0 lbs to 21 lbs.
-- Fixed shrub LOD textures.
-- Fixed Offense compatibility issue with _MapImprovements_.
-- Fixed an issue where turret lights would be disabled during _Blackout_.
-- Fixed a bug where player couldn't leave the lobby.
-- Fixed quota rollover.
-- Fixed ship landing error.
-- Fixed weather effects re-enabling themselves in an infinite loop.
-- Fixed an issue with progressing weather effects not correctly enabling.
-- Fixed the slime _spreading_ behavior.
-- Synced sound state for noise making animated objects. _[ ToyRobot & Dentures ]_
-- Fixed moon price being incorrect for some systems.
-- Fixed custom penalty settings being default instead of my custom balanced settings.
-- Fixed ladder being disappeared on vanilla moon.
-- Fixed buyable shotgun's Vector3 rotation.
-- Fixed a NRE when quitting a lobby as host when clients are still connected.
-- Added syncing to the rocket.
-- Fixed clients targets in the terminal being invalid initially after joining a game.
-
-## ✨ NOTABLE CHANGES
-
-- The purchased shotgun and ammo have a different name and texture than the vanilla one.
-- The purchased shotgun can fire twice as fast as the nutcracker's shotgun.
-- The purchased shotgun cannot misfire.
-- The purchased shotgun has a more understandable safety tooltip.
-- Added some new skins to the enemies.
-- Added ability to die early If you can't get out from under the water for a long time.
-- Replaced the axe model.
-- Added a bloody variant of the axe.
-- Major buffs to the grenade.
-- Removed Clipboard and Sticky note.
-- Balanced the weight for several scrap items.
-- Added even more _tips_.
-- Barbers will play the drumroll audio before they _jump_.
-- Reduced the intensity of the "sleepiness" filter when in proximity with a Barber.
-- Disabled _Distance Culling_.
-- Added _'view monitor'_ keyword that will open _Map_.
-- Returned funny cat videos to the terminal. _lol_
-- After leaving the ship, terminal screen will turn off after some time.
-- Reduced _Football_ enemy spawn chance.
-- Balanced _ghostCodes_.
-- Increased spectator spooky sounds interval.
-- Added bullet tracers to the shotgun.
-- 25% chance that player will revive as a masked enemy, on player death.
-- Allowed any player to launch the ship, bypassing the host-only restriction.
-- Restored the elevator's jingles from v65-v68.
-- Removed the delay between picking up scrap or other items.
-- Added dynamic HDRI skyboxes to moons based on theme.
-- Slightly tweaked interior weights.
-- Added alternate steering wheel item skin.
-- Changed ships terminal colors.
-- Added enemy shuffler.
-  - Enemies that could have but did spawn on a given day will be more likely to spawn the next day.
-  - Selection chance boost increases every day the specific enemy was in the spawn pool but was not spawned.
-- Increased shotgun slip from the hands chance.
-- Added/replaced some monitors on the ship.
-- Added _Weed Killer_ to the Spray Paint reserved utility slot.
-- Ship catwalk has consistent collision outside its railing, so players can always jump and stand on the edge of the catwalk.
-- Added a space to the _DustClouds_ weather whenever it's displayed, making it _Dust Clouds_.
-- Ships windows changes:
-  - Added a window on the ships roof.
-  - Windows on the ship are more BeAutIFuL.
-  - Changed space skybox to HDRI.
-- Added another _Cupboard_ to the upgrades store page which costs 100 credits.
-- Slightly reduced darkness intensity.
-- Apparatus chances:
-  - Deals damage to the player while held.
-  - When dropped, the apparatus has a 5% chance of exploding and killing the player. Players are safe on the ship though.
-  - If the player is at full health, they can hold the apparatus for up to _3 minutes_ before dying.
-- Increased a chance that dead bodies become mimics.
-- Increased Masked spawn chance.
-- Added a Twitch support to the _NightOfTheLivingMimic_ mod for twitch streamers.
-  - Chat integration, subscribe to events like _Messages_, _Cheers_, _Subs_, and _Raids_. _[ check NightOfTheLivingMimic config. ]_
-- Enabled/disabled some custom sounds.
-
-### ⚖️ MOON BALANCE OVERHAUL:
-
-- Each moon now has its own difficulty level, scrap range, enemy power (indoor, outdoor, night), and other attributes.
-  - _e.g., Orion: scrap and enemy power range_
-  - Experimentation: 6 to 8 scrap.
-    - Enemy power: 12.
-  - Vow: 5 to 9 scrap.
-    - Enemy power: 14.
-  - Adamance: 5 to 7 scrap.
-    - Enemy power: 13.
-  - Integrity: 6 to 9 scrap.
-    - Enemy power: 15.
-  - Brutality: 5 to 9 scrap.
-    - Enemy power: 14.
-- Moons within the same system now vary in scrap amounts and enemy power.
-- Higher-tier systems now feature significantly increased challenges and rewards.
-  - _e.g., System Orion has dungeon size 1.1 on all moons and this value increases by 0.1 every next system._
-- Higher-tier systems now include scrap value multipliers _[ e.g., 1.1x, 1.2x and 1.3x ]_ to balance progression.
-  - _e.g., 5 last systems have gradually increased scrap value multiplier._
-- Balanced price of the each moon inside the system.
-- 2 last systems have decreased spawn speed to 0.9.
-- At the starting system, hazards amount was reduced and will increase on each new system slowly.
-
-### ⛅ WEATHER CHANGES:
-
-- **New Weather**: _Blizzard_: The ultimate test of endurance-survive the unforgiving fury of a full-blown blizzard.
-  - Blizzard intensifies the challenges of snow accumulation, trails, freezing, and frozen water.
-  - Howling winds constantly change direction, pushing players off course and chilling them to the bone.
-  - Exposure to the wind slowly drains your health with frostbite damage-find cover to recover!
-  - Periodically, the blizzard unleashes a devastating wave of cold, inflicting instant frostbite and sweeping away anyone caught in its path.
-- **New Weather**: _Heatwave_: Brace yourself for scorching temperatures that will push your endurance to the limit.
-  - Extended exposure decreases your stamina and slows its regeneration.
-  - Experience realistic heat haze effects that blur your vision.
-  - The strength of the heatwave changes over time depending on sunlight intensity.
-- Completely changed the way depth buffer is captured on snowfall weather which led to better compatibility with other mods and reduction of visual snow leaking artifacts _[ snow appearing in places where it shouldn't ]_.
-- Fixed a snowfall bug on some moons like Titan where snow was colliding with non existing objects.
-- Significantly improved performance of all VFX effects.
-- Snowfall can now freeze water again.
-
-### 🐾 REVAMPED ENEMIES:
-
-- Bracken:
-  - Will flicker and turn off all lights around at a default radius of 30 meters of him.
-  - There's is 2 ways to anger the Bracken which are by turning back on lights with the _breaker box_ or by taking the _Apparatus_.
-  - Has a chance to turn off the _breaker box_.
-  - When players are in the 30 meters radius of the Bracken, all their flashlights will dim. Radar boosters will turn off as well.
-- Crawler:
-  - On hit, crawlers will be slowed then ramp back up to it's original speed.
-- Spider:
-  - On hit, spiders will be slowed then ramp back up to it's original speed.
-- Dress Girl:
-  - Will haunt walkie talkies every 45 to 180 seconds
-  - Has the ability to isolate players and give them hallucinations.
-  - Will talk to the player during haunting.
-- Puffer:
-  - Are now more aggressive and territorial.
-- Baboon hawks:
-  - Can get scared of loud sounds _[ screaming ]_ and will run away.
-- Butler:
-  - When bumping into the Butler, it will go into the _Berserk_ mode.
-  - Will attack faster.
-- Jester:
-  - Reduced the average time before a Jester winds.
-
-### 🛍️ STORE ITEMS TWEAKS:
-
-- Increased _Shotgun Shell_ price from 20 > 45.
-- Reduced _Shovel_ price from 30 > 25.
-- Increased _Pro Flashlight_ price from 25 > 30.
-- Increased _Stun Grenade_ price from 30 > 35.
-- Increased _Zap Gun_ price from 400 > 500.
-- Increased _Radar-booster_ price from 60 > 80.
-- Reduced _Spray Paint_ price from 50 > 35.
-- Increased _Belt bags_ capacity to 10.
-- In _Belt bag_ players can only put inside tools, not scrap.
-- Increased TZP inhalant capacity from 22s > 34s.
-
-### 🌕 VANILLA MOONS IMPROVEMENTS:
-
-- Optimized nav-meshes across all Vanilla moons.
-- Increased fog volume in Vow to extend down into the valley.
-- Collision on the pipe on Offense are easier to traverse over the support beams.
-- Terrain near the main entrance on Offense are a little less annoying to traverse when going back.
-- Filled some areas where you could get under the Titan's mega-structure with snow
-- Updated Artifice terrain to match the original in-dev appearance.
-  - Decreased default fog distance.'
-- Adamance:
-  - Added an unique mineshaft environmental details to differentiate it from other forest moons.
-    - Appearance is random.
-  - Added an easier pathing to and from the Fire Exit, also adjusted it slightly.
-    - Appearance is random.
-- Expanded Vow's Facility building, adding in a new area with Fire Exit through the alleyway.
-  - Appearance is random.
-
-### 🛒 BUY RATE BALANCE:
-
-- Increased buy rate _Jackpot_ chance from 0.001 _[ 1% ]_ > 0.005 _[ 5% ]_
-- Increased chance for the last day rate to be randomized within the _'Last Day Min/Max'_ range from 0.3 > 0.5
-- Reduced the minimum rate to occur on the last day of the deadline from 1 > 0.9.
-- Reduced the minimum rate the Company will buy your scrap for from 0.2 > 0.1. _[ 10% ]_
-
-### 🩸 CASTELLUM CARNIS INTERIOR CHANGES:
-
-- Fixed the minimap hiders for the _void_ room.
-- Tweaked one of the sounds in the _void_ room.
-- Added +1 light spawn as preparation for an upcoming room.
-- Adjusted some lighting and animation speed in the _two handed_ room to better match their respective weather.
-- Moved the scrap spawn in the _horn_ rooms a little closer to its entrance.
-- Added content tags _'Bloody, Flesh, Living, Organic'_.
-- Reduced the _spiral_ hallway's weight for the start of the dungeon (0.75 → 0.55).
-- Adjusted the bone archetype's branch lengths (2:4 → 2:3).
-- Added minimap arrows for the _spiral_ hallways to designate its vertical nature from similar tiles.
-- Added minimap hiders for the _spiral_ hallway.
-- Darkened the bone texture for better scrap visibility on the ship minimap.
-  - Does not affect rooms that use the bone texture for detailing.
-- Updated the _flesh to bone_ tile with more detailing to better match its concept.
-- Slightly increased the chance of the _nasal cavity_ room to extend.
-- Added minimap hiders for the "nasal cavity" room.
-- Fixed the mouth vents color on the minimap.
-- Fixed the _lung forest_ room requiring you to jump to exit if you have too much weight.
-- Added a scrap spawn to the pit version of the flesh _crossroads_ room and the entrance room.
-- Adjusted the various light fade distances to further improve optimization.
-
-### 💰 QUOTA TWEAKS:
-
-- Reduced _Starting credits_ from 120 > 100.
-- Increased _Starting quota_ from 300 > 380.
-- Adjusted rollover.
-
-## 🌌 ADDITIONS
-
-### 🏠 New Interiors:
-
-- SubSystems
-- Storage Complex
-
-### 🌙 Added Moons:
-
-- Added new moon: Wither.
-  - Which system: Harmonia.
-  - Risk Level: C+.
-- Added new moon: CaltPrime.
-  - Which system: Aquarius.
-  - Risk Level: A++.
-
-### 👾 Added Enemies:
-
-- Walker
-  - An entity acting opposite to the Ghost Girl. The Walker is not a physical entity and lives to make their victims crazy.
-- Kidnapper Fox
-
-### 🛠️ Overall Added Mods:
-
-- YesFox
-- WeedKillerFixes
-- CustomPosters
-- LLLHotreloadPatch
-- loaforcsSoundAPI LethalCompany
-- Quasara
-- Tauralis
-- Scallg
-- Valunarion
-- Atomics Cosmetics
-- AdditionalNetworking Experimental
-- darmuhsTerminalVideos
-- Storage Complex
-- Atlas
-- NoGrabDelay
-- CaltPrime
-- YippeeTwo
-- LightsOut
-- SnowyWeeds
-- High Quota Fix
-- Wither
-- DiversityNoFloppy
-- Diversity
-- LCCutscene
-- GraphicsAPI
-- HexiShotgunTweaks
-- HalloweenElevator
-- SubSystems Interior
-- ScaredBaboon
-- ScienceBird Tweaks
-- TwitchChatAPI
-- Radiation Leak
-- MoreCupboards
-- ShipWindowsBeta
-
-## 🗑️ REMOVALS
-
-### 🚪 Removed Interiors:
-
-- CabIn
-- Dantors Mental Hospital
-
-### 🌑 Removed Moons:
-
-- PoweredMoons:
-  - Farungdalion.
-
-### 🚫 Overall Removed Mods:
-
-- CabIn
-- MaskedFixes
-- LethalPosters
-- PoweredMoons
-- AbsasCosmetics
-- Moon Day Speed Multiplier Patcher
-- SmallfryEnemy
-- AdditionalNetworking
-- YippeeMod
-- FairGiants
-- ScannableTools
-- BetterLadders
-- ButlerSettings
-- Dantors Mental Hospital
-- TestAccountFixes
-- LethalPhones
-- StoreRotationConfig
-
-## 📦 MOD UPDATES
-
-_(Old version → New version)_
-
-- MaskFixes: 1.1.1 → 1.1.2
-- darmuhsTerminalStuff: 3.8.4 → 3.8.5
-- EliteFlashlight: 1.0.1 → 1.0.2
-- ButteRyBalance: 0.0.1 → 0.2.0
-- ButterFixes: 1.11.0 → 1.12.0
-- ReservedItemSlotCore: 2.0.42 → 2.0.43
-- LethalConfig: 1.4.5 → 1.4.6
-- Mirage: 1.18.0 → 1.18.2
-- LethalPhones: 1.2.3 → 1.3.8
-- Lategame Upgrades: 3.11.4 → 3.12.1
-- LethalElementsBeta: 1.2.71 → 1.2.80
-- Lategame Company Cruiser Upgrades: 1.1.3 → 1.1.4
-- HotbarPlus: 1.8.1 → 1.8.2
-- WeatherRegistry: 0.3.16 → 0.4.3
-- WeatherTweaks: 1.0.3 → 1.1.0
-- LethalFixes: 1.2.5 → 1.2.6
-- MrovWeathers: 0.0.3 → 0.0.4
-- ExtraEnemyVariety: 1.9.0 → 1.10.0
-- RuntimeIcons: 0.3.0 → 0.3.1
-- LCUltrawide Community: 1.1.3 → 1.2.2
-- FurnitureLock: 1.3.6 → 1.3.7
-- Oxygen: 1.6.3 → 1.6.4
-- FacilityMeltdown: 2.6.20 → 2.7.1
-- GeneralImprovements: 1.4.4 → 1.4.8
-- BuyableShotgunPlus: 1.2.1 → 1.3.2
-- MeleeFixes: 1.3.1 → 1.3.2
-- TwoRadarMaps: 1.4.2 → 1.4.3
-- PathfindingLagFix: 2.1.0 → 2.1.1
-- Beanies Moons: 1.0.4 → 1.0.7
-- TerraMesh: 1.1.3 → 1.1.6
-- DungeonGenerationPlus: 1.3.4 → 1.4.1
-- Castellum Carnis: 1.0.4 → 1.0.5
-- EchoReach: 1.0.3 → 1.0.4
-- RebalancedMoonBeta: 1.5.10 → 1.6.10
-- 13Kast: 1.0.9 → 1.1.0
-- Castellum Carnis: 1.0.3 → 1.0.4
-- EnemySoundFixes: 1.6.5 → 1.6.5
-- LethalLevelLoader: 1.4.8 → 1.4.11
-- MapImprovements: 0.9.4 → 0.9.5
-- Sanguine: 0.9.9 → 1.0.0
-- Cruiser Additions: 1.4.4 → 1.4.5
-- WiseWeapons: 1.2.6 → 1.3.1
-- ZortMenuTheme: 1.0.0 → 1.0.1
-- LobbyImprovements: 1.0.8 → 1.0.9
-- TestAccountCore: 1.14.0 → 1.14.2
-- WiseWilderness: 1.1.2 → 1.1.4
-- FurnitureLock: 1.3.8 → 1.3.9
-- LethalResonance: 4.7.5 → 4.7.8
-- loaforcsSoundApi: 1.1.7 → 2.0.4
-- PremiumScraps: 2.3.0 → 2.3.1
-- OpenLib: 0.2.14 → 0.3.2
-- LethalConstellations: 0.3.0 → 0.3.2
-- MaskFixes: 1.1.2 → 1.2.1
-- BetterEXP: 2.6.0 → 2.6.2
-- Chameleon: 2.1.1 → 2.1.2
-- Orbits: 1.0.5 → 1.0.6
-- UpturnedVariety: 1.3.1 → 1.3.2
-- TestAccountVariety: 1.38.0 → 1.39.0
-- LethalCompany InputUtils: 0.7.7 → 0.7.10
-- TwoRadarMaps: 1.4.3 → 1.5.0
-
-# MoreBrutalLethalCompanyPlus _v5.0.1_, _"Fixes"_
-
-## 🔧 FIXES
-
-- Forgot to update some mods in manifest.
-- Forgot to remove CoilHeadMod from manifest.
-- Forgot to change LC FastStartup from Lan > Online mode.
-- sowwy D:
-
-## 📦 MOD UPDATES
-
-_(Old version → New version)_
-
-- FacilityMeltdown: 2.7.1 → 2.6.20
-- PathfindingLagFix: 1.6.0 → 2.1.0
-- Aquatis: 1.6.0 → 2.1.0
