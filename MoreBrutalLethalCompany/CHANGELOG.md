@@ -1,15 +1,17 @@
 # MoreBrutalLethalCompanyPlus _v72.2.0_
 
-## DEV NOTES
+## To-do
 
-- Shy guy
-- Lethal Hud
-- WeatherRegistry
-- Decide to ether use 512 or 1024 shadowsMaxResolution in LS.
-- Rework tips.
-- Reduce turrets amount.
-- Disabled enemy shuffler. (fixes not being able to land?)
-- Tweak Enhanced Monsters cfg.
+- Improve readme.
+- Add E tier that goes after F?
+- Remove + and ++ to tiers?
+- Instead of removing 'plus' tiers, also add 'minus' tiers
+- Remove all tiers beyond S.
+- Weathers moons.
+- Interior sizes.
+- Interiors.
+- Moon prices doesn't increase by the + but the unique moons.
+  - Unique moons will get more scrap value multiplier.
 
 ## 🐞 FIXES
 
@@ -22,11 +24,21 @@
 ## ✨ GAMEPLAY & MECHANICS
 
 - Reduced sprinting speed on ladders.
+- Pulling Apparatus out will disable all traps and hazards.
+- Switching breaker power off will disable all traps and hazards.
+- Reduced radiation damage which happens once apparatus is pulled out from 25 to 20.
+  - Reduced radiation increasing value every hour from 8 to 5. 
 
-### WEATHERS
+### 🌦️ WEATHERS
 
 - Added new rare weather - _Black fog_.
-  - A dense, dark fog that greatly reduces visibility and persists indoors.
+  - A dense, dark fog that greatly reduces visibility outside and indoors.
+- Removed weathers:
+  - Heatwave.
+  - Solar flare.
+  - Snowfall.
+  - Toxic smog.
+- Weather occurring chances and scrap amount multipliers were rebalanced.
 
 ## 🎨 VISUAL & AUDIO
 
@@ -34,11 +46,20 @@
 - Radar will switch to old radar if interior doesn't have radar sprites.
 - Disabled motion blur.
 - Reduced scan light range and intensity.
+- Replaced modified posterization shader with vanilla.
+- Moon videos are no longer shown in terminal when choosing moon. Still visible on main monitor.
+- Increased amount of tips
+- Updated enemy ranks to better reflect their difficulty levels.
 
 ## 🌘 MOONS
 
 - Removed bridge from March.
 - Small improvements to Generic moons.
+- Reduced turrets amount on all tier moons.
+- Increased price of *+* moons. ***
+- Added Gift and Easter eggs to *Experimentation*.
+- Reduced *Adamance* outdoor enemy power.
+- Added *Earth Leviathan* to *Rend*.
 - Removed moons
   - Attenuation
   - Retinue
@@ -46,6 +67,12 @@
   - Detritus
   - Kanie
   - Acheron
+- Moved *Collateral* moon from *Orion* to *Harmonia* system.
+  - From tier *D+* to *C++*.
+- Moved *Infernis* moon from *Aquarius* to *Pegasus* system.
+  - From tier *A++* to *S*.
+- Moved *Praetor* moon from *Gemini* to *Taurus* system.
+- Cosmocos price changed from *666* to *0*
 - Wither:
   - Terrain has been entirely remodeled and repainted.
   - Combined the spikes into a few large, abstract structures. Added more mountainous terrain and completely overhauled the desert rock formations.
@@ -93,14 +120,9 @@
 
 ## 👾 ENEMIES
 
-- Soul Devourer:
-  - Can't no more enter the facility.
-  - Reduced health from 6 > 3.
-  - Slightly reduced enemies speed.
-  - Increased enemies volume.
-  - Is now always in regular size.
 - Removed Coil-crab.
 - Removed Boom bird.
+- Removed Soul Devourer.
 - Ogopogo:
   - Added Ogopogo on more moons to spawn.
   - Slightly reduced chance to spawn on March, Oldred and Artifice.
@@ -116,8 +138,8 @@
 
 - Added new moon: Burrow.
   - _The desert waits. The vultures don’t_.
-  - Which system: .
-  - Risk Level: .
+  - Which system: Pegasus.
+  - Risk Level: B.
 
 ### 🛠️ Added Mods:
 
@@ -126,6 +148,14 @@
   - itolib
 - LethalError
 - True Darkness client
+- CullFactory Beta
+- 47Chronos
+- 28Terra
+- 3Bilge
+- 615Noctis
+- 81Deadlock
+- Natural selection
+  - NaturalSelectionLib
 
 ## 🗑️ OVERALL REMOVALS
 
@@ -135,8 +165,9 @@
 - TwitchChatAPI
 - Lethal Weight Fix
 - SubSystems Interior
-- Generic Interiors \*\*\*
+- Generic Interiors
 - InteriorNavMeshFix
+- CullFactory
 - LethalHUD
 - Full Darkness
 - DistinctMoonVariety
@@ -144,6 +175,9 @@
 - DistinctEnemyVariety
 - Soul Devourer Enemy
   - SolidLib
+- LethalElementsBeta
+- LEBWeatherFix
+- ExperimentalEnemyInteractions
 
 ## 📦 MOD UPDATES
 
@@ -161,8 +195,11 @@ _(Old version → New version)_
 - Generic Scraps: 0.2.0 → 1.0.1
 - Generic Moons: 7.5.1 → 8.0.0
 - BetterLaddersFixed: 1.0.7 → 2.0.0
-- PathfindingLib: 1.0.1 → 2.2.2
-- PathfindingLagFix: 2.2.1 → 2.2.3
+- PathfindingLib: 1.0.1 → 2.3.0
+- PathfindingLagFix: 2.2.1 → 2.2.4
+- MaskFixes: 1.4.1 → 1.5.0
+- JetpackFixes: 1.5.3 → 1.5.4
+- Mirage: 1.25.2 → 1.26.0
 - Advance Features: 1.0.9 → 1.0.10
 - MrovLib: 0.3.1 → 0.3.6
 - WeatherRegistry: 0.6.1 → 0.7.2

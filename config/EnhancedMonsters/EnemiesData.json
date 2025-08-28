@@ -41,7 +41,7 @@
       "MinValue": 5,
       "MaxValue": 13,
       "Mass": 7.0,
-      "Rank": "F",
+      "Rank": "D",
       "Metadata": {
         "MeshOffset": {
           "X": -0.15,
@@ -111,7 +111,7 @@
       "MinValue": 50,
       "MaxValue": 95,
       "Mass": 69.0,
-      "Rank": "E",
+      "Rank": "C",
       "Metadata": {
         "MeshOffset": {
           "X": 0.0,
@@ -181,7 +181,7 @@
       "MinValue": 75,
       "MaxValue": 100,
       "Mass": 105.0,
-      "Rank": "D",
+      "Rank": "C",
       "Metadata": {
         "MeshOffset": {
           "X": -0.3,
@@ -216,7 +216,7 @@
       "MinValue": 70,
       "MaxValue": 110,
       "Mass": 75.0,
-      "Rank": "C",
+      "Rank": "B",
       "Metadata": {
         "MeshOffset": {
           "X": 0.0,
@@ -251,7 +251,7 @@
       "MinValue": 175,
       "MaxValue": 250,
       "Mass": 250.0,
-      "Rank": "C",
+      "Rank": "A",
       "Metadata": {
         "MeshOffset": {
           "X": -1.25,
@@ -531,7 +531,7 @@
       "MinValue": 0,
       "MaxValue": 0,
       "Mass": 0.0,
-      "Rank": "D",
+      "Rank": "E",
       "Metadata": {
         "MeshOffset": {
           "X": 0.0,
@@ -636,7 +636,7 @@
       "MinValue": 0,
       "MaxValue": 0,
       "Mass": 0.0,
-      "Rank": "B",
+      "Rank": "A",
       "Metadata": {
         "MeshOffset": {
           "X": 0.0,
@@ -706,7 +706,7 @@
       "MinValue": 0,
       "MaxValue": 0,
       "Mass": 0.0,
-      "Rank": "B",
+      "Rank": "A",
       "Metadata": {
         "MeshOffset": {
           "X": 0.0,
@@ -776,7 +776,7 @@
       "MinValue": 0,
       "MaxValue": 0,
       "Mass": 0.0,
-      "Rank": "S+",
+      "Rank": "S",
       "Metadata": {
         "MeshOffset": {
           "X": 0.0,
@@ -811,7 +811,7 @@
       "MinValue": 0,
       "MaxValue": 0,
       "Mass": 0.0,
-      "Rank": "S+",
+      "Rank": "S",
       "Metadata": {
         "MeshOffset": {
           "X": 0.0,
@@ -986,7 +986,7 @@
       "MinValue": 0,
       "MaxValue": 0,
       "Mass": 0.0,
-      "Rank": "B",
+      "Rank": "?",
       "Metadata": {
         "MeshOffset": {
           "X": 0.0,
@@ -1086,147 +1086,7 @@
         "LootTable": {}
       }
     },
-    "PjonkGoose": {
-      "Pickupable": false,
-      "MinValue": 279,
-      "MaxValue": 340,
-      "Mass": 64.0,
-      "Rank": "A",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": true,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Siren Head": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
     "TestEnemy": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "The Beat": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "The Boxer": {
       "Pickupable": false,
       "MinValue": 80,
       "MaxValue": 110,
@@ -1266,7 +1126,7 @@
       "MinValue": 80,
       "MaxValue": 110,
       "Mass": 50.0,
-      "Rank": "C",
+      "Rank": "S",
       "Metadata": {
         "MeshOffset": {
           "X": 0.0,
@@ -1301,357 +1161,7 @@
       "MinValue": 3,
       "MaxValue": 10,
       "Mass": 30.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "SlendermanEnemy": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "BigMouth": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "CountryRoadCreature": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Thing": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Sightless alpha": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Matriarch": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "SmallDog": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "TreeMasked": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Aquatic Leviathan": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Nasked": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
+      "Rank": "E",
       "Metadata": {
         "MeshOffset": {
           "X": 0.0,
@@ -1721,7 +1231,7 @@
       "MinValue": 80,
       "MaxValue": 110,
       "Mass": 50.0,
-      "Rank": "C",
+      "Rank": "A",
       "Metadata": {
         "MeshOffset": {
           "X": 0.0,
@@ -1787,321 +1297,6 @@
       }
     },
     "Prototax": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "PickleSwarm": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Pickler": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Light Eater": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Walker": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 250,
-      "Mass": 50.0,
-      "Rank": "E",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": true,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "MysteryButton": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Men-stalker": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "BigEyes": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Shadow": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Soul Devourer": {
       "Pickupable": false,
       "MinValue": 80,
       "MaxValue": 110,
@@ -2241,187 +1436,12 @@
         "LootTable": {}
       }
     },
-    "SCP-323-1": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "SCP-427-1": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "SCP-178-1": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Chirpling": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "SCP682": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
     "Tourist": {
       "Pickupable": false,
       "MinValue": 80,
       "MaxValue": 110,
       "Mass": 50.0,
-      "Rank": "C",
+      "Rank": "S",
       "Metadata": {
         "MeshOffset": {
           "X": 0.0,
@@ -2486,502 +1506,12 @@
         "LootTable": {}
       }
     },
-    "Soul_Devourer": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "SCP 106": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
     "GiantKiwi": {
       "Pickupable": false,
       "MinValue": 80,
       "MaxValue": 110,
       "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "SCP 939": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Tornado": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "FireStorm": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Hurricane": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Redwood Titan": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Carnivorous Plant": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Duck": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Lord Of The Manor": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Janitor": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Transporter": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Harbinger": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "HarbingerFracture": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
+      "Rank": "B",
       "Metadata": {
         "MeshOffset": {
           "X": 0.0,
@@ -3016,7 +1546,7 @@
       "MinValue": 80,
       "MaxValue": 110,
       "Mass": 50.0,
-      "Rank": "C",
+      "Rank": "A",
       "Metadata": {
         "MeshOffset": {
           "X": 0.0,
@@ -3086,7 +1616,7 @@
       "MinValue": 80,
       "MaxValue": 110,
       "Mass": 50.0,
-      "Rank": "C",
+      "Rank": "F",
       "Metadata": {
         "MeshOffset": {
           "X": 0.0,
@@ -3121,7 +1651,7 @@
       "MinValue": 80,
       "MaxValue": 110,
       "Mass": 50.0,
-      "Rank": "C",
+      "Rank": "A",
       "Metadata": {
         "MeshOffset": {
           "X": 0.0,
@@ -3221,12 +1751,12 @@
         "LootTable": {}
       }
     },
-    "Real Enemy SnailCat": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
+    "PjonkGoose": {
+      "Pickupable": true,
+      "MinValue": 279,
+      "MaxValue": 340,
+      "Mass": 64.0,
+      "Rank": "A",
       "Metadata": {
         "MeshOffset": {
           "X": 0.0,
@@ -3248,7 +1778,7 @@
           "Y": 1.5,
           "Z": 1.5
         },
-        "AnimateOnDeath": false,
+        "AnimateOnDeath": true,
         "TwoHanded": true,
         "DropSFX": "default",
         "GrabSFX": "none",
@@ -3256,322 +1786,7 @@
         "LootTable": {}
       }
     },
-    "Guardsman": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Cactus Budling": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Rabbit Magician": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Peace Keeper": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Driftwood Menace": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Nancy": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Monarch": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "CutieFly": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Mistress": {
-      "Pickupable": false,
-      "MinValue": 80,
-      "MaxValue": 110,
-      "Mass": 50.0,
-      "Rank": "C",
-      "Metadata": {
-        "MeshOffset": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "HandRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "FloorRotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "CollisionExtents": {
-          "X": 1.5,
-          "Y": 1.5,
-          "Z": 1.5
-        },
-        "AnimateOnDeath": false,
-        "TwoHanded": true,
-        "DropSFX": "default",
-        "GrabSFX": "none",
-        "PocketSFX": "none",
-        "LootTable": {}
-      }
-    },
-    "Buttlet": {
+    "Nasked": {
       "Pickupable": true,
       "MinValue": 80,
       "MaxValue": 110,

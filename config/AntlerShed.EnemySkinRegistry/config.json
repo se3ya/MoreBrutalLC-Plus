@@ -148,19 +148,6 @@
     "Kiwi.Blue",
     "Kiwi.Orange",
     "Kiwi.Red",
-    "Coil.Marble",
-    "Girl.Patches",
-    "Blob.Slime",
-    "Bird.Rusty",
-    "Flea.Rocked",
-    "Tulip.ShroomBrown",
-    "Tulip.ShroomRed",
-    "Tulip.ShroomBlue",
-    "Dog.Corrupted",
-    "Dog.Shepard",
-    "Bug.Crystalized",
-    "Nutcracker.Prototype",
-    "Bird.RelicD",
     "Barber.Empra",
     "Bracken.Cosmos",
     "Bracken.Lecaro",
@@ -638,7 +625,6 @@
           "Coil.Yellow",
           "Coil.White",
           "Coil.Green",
-          "Coil.Marble",
           "Coil.Demetrica"
         ],
         "defaultConfiguration": {
@@ -660,11 +646,6 @@
               "skinId": "Coil.Green",
               "indoorFrequency": 0.5,
               "outdoorFrequency": 0.5
-            },
-            {
-              "skinId": "Coil.Marble",
-              "indoorFrequency": 0.0,
-              "outdoorFrequency": 0.0
             },
             {
               "skinId": "Coil.Pink",
@@ -775,8 +756,6 @@
           "Dog.Yellow",
           "Dog.Black",
           "Dog.Brown",
-          "Dog.Corrupted",
-          "Dog.Shepard",
           "Dog.Desolation"
         ],
         "defaultConfiguration": {
@@ -795,11 +774,6 @@
               "outdoorFrequency": 0.5
             },
             {
-              "skinId": "Dog.Corrupted",
-              "indoorFrequency": 0.0,
-              "outdoorFrequency": 0.0
-            },
-            {
               "skinId": "Dog.Desolation",
               "indoorFrequency": 0.0,
               "outdoorFrequency": 0.0
@@ -813,11 +787,6 @@
               "skinId": "Dog.Red",
               "indoorFrequency": 0.5,
               "outdoorFrequency": 0.5
-            },
-            {
-              "skinId": "Dog.Shepard",
-              "indoorFrequency": 0.0,
-              "outdoorFrequency": 0.0
             },
             {
               "skinId": "Dog.White",
@@ -938,8 +907,7 @@
           "Girl.Purple",
           "Girl.Pink",
           "Girl.Blue",
-          "Girl.Yellow",
-          "Girl.Patches"
+          "Girl.Yellow"
         ],
         "defaultConfiguration": {
           "mapId": "",
@@ -955,11 +923,6 @@
               "skinId": "Girl.Green",
               "indoorFrequency": 0.5,
               "outdoorFrequency": 0.5
-            },
-            {
-              "skinId": "Girl.Patches",
-              "indoorFrequency": 0.0,
-              "outdoorFrequency": 0.0
             },
             {
               "skinId": "Girl.Pink",
@@ -1032,7 +995,6 @@
           "Bug.Orange",
           "Bug.Brown",
           "Bug.Blue",
-          "Bug.Crystalized",
           "Bug.Hyve",
           "Bug.Jeremy"
         ],
@@ -1050,11 +1012,6 @@
               "skinId": "Bug.Brown",
               "indoorFrequency": 0.5,
               "outdoorFrequency": 0.5
-            },
-            {
-              "skinId": "Bug.Crystalized",
-              "indoorFrequency": 0.0,
-              "outdoorFrequency": 0.0
             },
             {
               "skinId": "Bug.Green",
@@ -1125,7 +1082,6 @@
           "Blob.White",
           "Blob.Purple",
           "Blob.Black",
-          "Blob.Slime",
           "Blob.Thalasso",
           "Blob.Blood"
         ],
@@ -1168,11 +1124,6 @@
               "skinId": "Blob.Purple",
               "indoorFrequency": 0.5,
               "outdoorFrequency": 0.5
-            },
-            {
-              "skinId": "Blob.Slime",
-              "indoorFrequency": 0.0,
-              "outdoorFrequency": 0.0
             },
             {
               "skinId": "Blob.Thalasso",
@@ -1424,7 +1375,6 @@
           "Nutcracker.Yellow",
           "Nutcracker.Black",
           "Nutcracker.White",
-          "Nutcracker.Prototype",
           "Nutcracker.Oldred",
           "MagicWesley.Creaker"
         ],
@@ -1455,11 +1405,6 @@
             },
             {
               "skinId": "Nutcracker.Oldred",
-              "indoorFrequency": 0.0,
-              "outdoorFrequency": 0.0
-            },
-            {
-              "skinId": "Nutcracker.Prototype",
               "indoorFrequency": 0.0,
               "outdoorFrequency": 0.0
             },
@@ -1505,8 +1450,6 @@
           "Bird.Black",
           "Bird.White",
           "Bird.Red",
-          "Bird.Rusty",
-          "Bird.RelicD",
           "Bird.Redacted",
           "Bird.Calist"
         ],
@@ -1547,16 +1490,6 @@
             },
             {
               "skinId": "Bird.Redacted",
-              "indoorFrequency": 0.0,
-              "outdoorFrequency": 0.0
-            },
-            {
-              "skinId": "Bird.RelicD",
-              "indoorFrequency": 0.0,
-              "outdoorFrequency": 0.0
-            },
-            {
-              "skinId": "Bird.Rusty",
               "indoorFrequency": 0.0,
               "outdoorFrequency": 0.0
             },
@@ -1638,7 +1571,6 @@
           "Flea.Red",
           "Flea.Green",
           "Flea.Amber",
-          "Flea.Rocked",
           "Flea.Yellow"
         ],
         "defaultConfiguration": {
@@ -1670,11 +1602,6 @@
               "skinId": "Flea.Red",
               "indoorFrequency": 0.5,
               "outdoorFrequency": 0.5
-            },
-            {
-              "skinId": "Flea.Rocked",
-              "indoorFrequency": 0.0,
-              "outdoorFrequency": 0.0
             },
             {
               "skinId": "Flea.Yellow",
@@ -1798,9 +1725,6 @@
           "Tulip.White",
           "Tulip.Orange",
           "Tulip.Brown",
-          "Tulip.ShroomBrown",
-          "Tulip.ShroomRed",
-          "Tulip.ShroomBlue",
           "Tulip.Seichi",
           "Tulip.Junic"
         ],
@@ -1841,21 +1765,6 @@
             },
             {
               "skinId": "Tulip.Seichi",
-              "indoorFrequency": 0.0,
-              "outdoorFrequency": 0.0
-            },
-            {
-              "skinId": "Tulip.ShroomBlue",
-              "indoorFrequency": 0.0,
-              "outdoorFrequency": 0.0
-            },
-            {
-              "skinId": "Tulip.ShroomBrown",
-              "indoorFrequency": 0.0,
-              "outdoorFrequency": 0.0
-            },
-            {
-              "skinId": "Tulip.ShroomRed",
               "indoorFrequency": 0.0,
               "outdoorFrequency": 0.0
             },

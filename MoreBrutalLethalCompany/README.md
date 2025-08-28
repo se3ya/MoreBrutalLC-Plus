@@ -64,11 +64,7 @@
 ![Weather Mechanics](https://i.imgur.com/HyjCXQR.png)
 
 - **New Weather**: Blackout: Disables all lights planet-wide.
-- **New Weather**: Snowfall: A quiet but persistent snowfall of snow that reshapes the environment.
-- **New Weather**: Toxic Smog: Drastically reduces visibility, breathing the fumes causes severe poisoning.
-- **New Weather**: Heatwave: Brace yourself for scorching temperatures that will push your endurance to the limit.
-- **New Weather**: Solar Flare: Beware the unpredictable and disruptive effects of solar radiation.
-
+- **New Weather**: Black fog: A dense, dark fog that greatly reduces visibility outside and indoors.
 ---
 
 ![Installation](https://i.imgur.com/2PPxzC9.png)

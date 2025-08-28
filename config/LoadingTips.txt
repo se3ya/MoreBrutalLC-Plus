@@ -1,20 +1,31 @@
-﻿After completing the first quota, you will need to purchase a new system.
-Want to suggest something for the modpack? Type 'discord' into the terminal to suggest it here!
-Can't find any scrap? Sounds like a skill issue.
-All systems have their own history and meaning.
-Found a bug? Type 'discord' in the terminal to report it here.
-Do you like playing this modpack? Type 'modpack' into the terminal and like. please :D
+﻿After completing the first quota, purchase a new system.
+Experimentation moon has very small amount of enemies and scrap, but scrap value is multiplied.
+Experimentation moon has a large metal shutter at the main entrance that may close halfway if player pass underneath, forcing player to use the fire exit.
+Approaching large water areas is very dangerous.
+To suggest something for the modpack, type 'discord' in the terminal.
+Found a bug? Type 'discord' in the terminal to report it in discord server.
+Enjoying the modpack? Type 'modpack' in the terminal and smash that like button!
+Fire exit may be blocked by 3 planks, preventing entry or exit. They can be broken with any weapon, such as a shovel.
 Found a bug? Then kill it with the shovel.
-Found a bug? Report it to the modpacks discord server with the log, or it didn't happen.
-Having a soft-lock? Press CTRL+ALT+SHIFT+Q to get to the main menu.
-Always bring a flashlight. The dark is scarier than the monsters.
-Use your arrow keys to switch between player cameras in the terminal.
-Check the posters, they contain a good information for you.
-You are stuck? Press [ Backspace ] to die.
-Terminal home page contains a lot of useful information!
-Tulip snakes, Centipedes, Peepers and Hoarding bugs can be sold.
-After killing a Masked enemy, you can grab the mask off the dead body and sell.
-After pulling apparatus out, all lights inside and outside will be disabled.
+Experiencing soft-lock? Press CTRL+ALT+SHIFT+Q to return to the main menu.
+Use the arrow keys to switch between player cameras in the terminal.
+Enabled boombox makes Hygroderes move faster and not dealing damage.
+Stand on railings to avoid Hygroderes.
+Players can sprint jump over a Hygrodere if there is enough space.
+Hygroderes can be killed with Zap-gun.
+Damaging a Hygrodere will slightly increase its speed for a short time.
+Terminal home page contains a lot of useful commands.
+Tulip snakes, Centipedes, Peepers, and Hoarding bugs can be sold.
+After killing a Masked enemy, you can grab the mask off the dead body and sell it.
+Pulling out the apparatus will turn off all lights inside and outside.
 There is an chance of self destruction sequence not happening after pulling apparatus out.
-After pulling Apparatus out, all players inside the factory will take a decent amount of damage every hour.
-It is not recommended to die on the Company moon.
+Once the apparatus is pulled out, all players in the facility will take damage every hour.
+Locked doors can be destroyed using shotgun, any melee weapon, turret fire, or landmines.
+Security doors can be opened using terminal, Zap-gun, or during a power outage.
+Pressing [ M ] to mute yourself.
+Use Zap-gun to temporarily disable landmines.
+Type 'refund' in the terminal to cancel a dropship order and receive your money back before it lands.
+Circuit bees will attack any enemy that gets too close.
+Circuit bees have a chance to set Forest Keepers on fire.
+Earth Leviathans hunt nearby enemies, but they ignore smaller prey.
+When an enemy enters Bunker Spider's web, the spider gets alerted, and the web slows down enemies.
