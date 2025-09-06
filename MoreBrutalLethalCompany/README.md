@@ -11,7 +11,7 @@
 ![Key Features](https://i.imgur.com/Go0CPtK.png)
 
 - **Tiers:** The higher the Tier of the moon, the more amount of enemies, scrap amount and hazards amount there will be.
-- **Explore New Worlds:** Explore _56+_ modded moons across 10 systems, each with distinct themes and difficulty levels.
+- **Explore New Worlds:** Explore _62_ moons across 10 systems, each with distinct themes and difficulty levels.
 - **Longer Days:** Enjoy slightly extended daylight hours, giving a player more time to explore and loot.
 - **More Items:** Find more item to buy and more types of scrap.
 - **New Monsters:** Brace yourself for _20_ new terrifying monsters.

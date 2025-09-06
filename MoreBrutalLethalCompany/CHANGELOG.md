@@ -1,18 +1,5 @@
 # MoreBrutalLethalCompanyPlus _v72.2.0_
 
-## To-do
-
-- Improve readme.
-- Add E tier that goes after F?
-- Remove + and ++ to tiers?
-- Instead of removing 'plus' tiers, also add 'minus' tiers
-- Remove all tiers beyond S.
-- Weathers moons.
-- Interior sizes.
-- Interiors.
-- Moon prices doesn't increase by the + but the unique moons.
-  - Unique moons will get more scrap value multiplier.
-
 ## 🐞 FIXES
 
 - Fixed lag and audio issue when entering/exiting ships reverb trigger.
@@ -31,6 +18,7 @@
 
 ### 🌦️ WEATHERS
 
+- Weather selection on moons is now more random, similar to vanilla.
 - Added new rare weather - _Black fog_.
   - A dense, dark fog that greatly reduces visibility outside and indoors.
 - Removed weathers:
@@ -56,7 +44,6 @@
 - Removed bridge from March.
 - Small improvements to Generic moons.
 - Reduced turrets amount on all tier moons.
-- Increased price of *+* moons. ***
 - Added Gift and Easter eggs to *Experimentation*.
 - Reduced *Adamance* outdoor enemy power.
 - Added *Earth Leviathan* to *Rend*.
@@ -67,6 +54,8 @@
   - Detritus
   - Kanie
   - Acheron
+  - Derelict
+  - Arcadia
 - Moved *Collateral* moon from *Orion* to *Harmonia* system.
   - From tier *D+* to *C++*.
 - Moved *Infernis* moon from *Aquarius* to *Pegasus* system.
@@ -116,13 +105,14 @@
     - Added a car to garage basement tile.
     - Added 2 new tiles.
     - Fixed straight stairs tile not having walls if it doesn't connect to lower floor.
-- Removed Storehouse, Tower, and Liminal Facility. \*\*\*
+- Removed Storehouse, Tower, and Liminal Facility. ***
 
 ## 👾 ENEMIES
 
 - Removed Coil-crab.
 - Removed Boom bird.
 - Removed Soul Devourer.
+- Removed OiiaCat.
 - Ogopogo:
   - Added Ogopogo on more moons to spawn.
   - Slightly reduced chance to spawn on March, Oldred and Artifice.
@@ -156,6 +146,7 @@
 - 81Deadlock
 - Natural selection
   - NaturalSelectionLib
+- ModlistHashChecker
 
 ## 🗑️ OVERALL REMOVALS
 
@@ -178,6 +169,8 @@
 - LethalElementsBeta
 - LEBWeatherFix
 - ExperimentalEnemyInteractions
+- VoxxMoons
+- OiiaCat
 
 ## 📦 MOD UPDATES
 
@@ -189,20 +182,20 @@ _(Old version → New version)_
 - TheCabinet: 1.7.0 → 1.8.1
 - TwoRadarMaps: 1.6.1 → 1.6.2
 - Wither: 1.4.3 → 2.0.0
-- OiiaCat: 1.3.1 → 1.3.2
 - CompanyHauler: 1.0.4 → 1.0.5
 - TerminalFormatter: 0.2.29 → 0.2.30
 - Generic Scraps: 0.2.0 → 1.0.1
 - Generic Moons: 7.5.1 → 8.0.0
 - BetterLaddersFixed: 1.0.7 → 2.0.0
-- PathfindingLib: 1.0.1 → 2.3.0
+- PathfindingLib: 1.0.1 → 2.3.1
 - PathfindingLagFix: 2.2.1 → 2.2.4
-- MaskFixes: 1.4.1 → 1.5.0
+- MaskFixes: 1.4.1 → 1.5.1
 - JetpackFixes: 1.5.3 → 1.5.4
+- CustomStoryLogs: 1.5.2 → 1.5.3
 - Mirage: 1.25.2 → 1.26.0
 - Advance Features: 1.0.9 → 1.0.10
 - MrovLib: 0.3.1 → 0.3.6
-- WeatherRegistry: 0.6.1 → 0.7.2
+- WeatherRegistry: 0.6.1 → 0.7.3
 - SpiderPositionFix: 1.5.2 → 1.5.3
 - LethalPerformance: 0.0.130 → 1.2.0
 
