@@ -7,6 +7,8 @@
 - Fixed several issues for _Shy guy_.
 - Fixed inventory weight resetting when dropping items with a tulip snake attached.
 - Fixed a quite rare bug where player was not able to pull the lever to land the ship.
+- Fixed possible soft-locks/crashes on modded moons.
+- Fixed *Divide* moon having no nav-mesh.
 
 ## ✨ GAMEPLAY & MECHANICS
 
@@ -177,17 +179,19 @@
 _(Old version → New version)_
 
 - SkelaahsWildMoons: 2.5.5 → 2.6.9
-- Universal Radar: 1.0.10 → 1.2.2
-- ScienceBirdTweaks: 4.3.3 → 4.4.4
+- FacilityMeltdown: 2.7.1 → 2.7.2
+- Universal Radar: 1.0.10 → 1.2.3
+- ScienceBirdTweaks: 4.3.3 → 4.4.6
 - TheCabinet: 1.7.0 → 1.8.1
 - TwoRadarMaps: 1.6.1 → 1.6.2
 - Wither: 1.4.3 → 2.0.0
 - CompanyHauler: 1.0.4 → 1.0.5
 - TerminalFormatter: 0.2.29 → 0.2.30
 - Generic Scraps: 0.2.0 → 1.0.1
-- Generic Moons: 7.5.1 → 8.0.0
+- Generic Moons: 7.5.1 → 8.0.1
 - BetterLaddersFixed: 1.0.7 → 2.0.0
-- PathfindingLib: 1.0.1 → 2.3.1
+- NetworkMetricsFix: 1.0.3 → 1.0.4
+- PathfindingLib: 1.0.1 → 2.3.2
 - PathfindingLagFix: 2.2.1 → 2.2.4
 - MaskFixes: 1.4.1 → 1.5.1
 - JetpackFixes: 1.5.3 → 1.5.4
@@ -195,9 +199,12 @@ _(Old version → New version)_
 - Mirage: 1.25.2 → 1.26.0
 - Advance Features: 1.0.9 → 1.0.10
 - MrovLib: 0.3.1 → 0.3.6
-- WeatherRegistry: 0.6.1 → 0.7.3
+- WeatherRegistry: 0.6.1 → 0.7.4
 - SpiderPositionFix: 1.5.2 → 1.5.3
 - LethalPerformance: 0.0.130 → 1.2.0
+- MonoDetour BepInEx 5: 0.6.14 → 0.6.14
+- MonoDetour 5: 0.6.14 → 0.6.15
+- TooManyEmotes: 2.3.10 → 2.3.11
 
 # MoreBrutalLethalCompanyPlus _v72.1.2_
 
