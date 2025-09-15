@@ -1,5 +1,12 @@
 # MoreBrutalLethalCompanyPlus _v72.2.0_
 
+### DEV notes
+
+- Decide if Dreck and Faith skins are going to be allowed.
+  - Added a Faith skin for the Sapsucker.
+  - Added a Dreck skin for the Spider.
+  - [REDACTED] & Calist Wrecked changes for Old Bird
+
 ## 🐞 FIXES
 
 - Fixed lag and audio issue when entering/exiting ships reverb trigger.
@@ -103,6 +110,10 @@
     - Added more room variants with different shapes.
     - Lights have a small chance to flicker.
     - Increased furniture spawn.
+    - Updated all textures to have more grunge. 
+    - Replaced floor texture to more vanilla one.
+    - Darkened brightness.
+    - Fixed several clipping.
   - Tower:
     - Added a car to garage basement tile.
     - Added 2 new tiles.
@@ -140,7 +151,6 @@
   - itolib
 - LethalError
 - True Darkness client
-- CullFactory Beta
 - 47Chronos
 - 28Terra
 - 3Bilge
@@ -160,7 +170,6 @@
 - SubSystems Interior
 - Generic Interiors
 - InteriorNavMeshFix
-- CullFactory
 - LethalHUD
 - Full Darkness
 - DistinctMoonVariety
@@ -179,7 +188,8 @@
 _(Old version → New version)_
 
 - SkelaahsWildMoons: 2.5.5 → 2.6.9
-- FacilityMeltdown: 2.7.1 → 2.7.2
+- FacilityMeltdown: 2.7.1 → 2.7.3
+- MoonEnemyVariety: 1.1.1 → 1.2.0
 - Universal Radar: 1.0.10 → 1.2.3
 - ScienceBirdTweaks: 4.3.3 → 4.4.6
 - TheCabinet: 1.7.0 → 1.8.1
@@ -189,7 +199,7 @@ _(Old version → New version)_
 - TerminalFormatter: 0.2.29 → 0.2.30
 - Generic Scraps: 0.2.0 → 1.0.1
 - Generic Moons: 7.5.1 → 8.0.1
-- BetterLaddersFixed: 1.0.7 → 2.0.0
+- BetterLaddersFixed: 1.0.7 → 2.0.1
 - NetworkMetricsFix: 1.0.3 → 1.0.4
 - PathfindingLib: 1.0.1 → 2.3.2
 - PathfindingLagFix: 2.2.1 → 2.2.4
@@ -201,9 +211,11 @@ _(Old version → New version)_
 - MrovLib: 0.3.1 → 0.3.6
 - WeatherRegistry: 0.6.1 → 0.7.4
 - SpiderPositionFix: 1.5.2 → 1.5.3
+- CullFactory: 1.7.0 → 2.0.0
+- Liminal House: 1.0.7 → 1.0.8
 - LethalPerformance: 0.0.130 → 1.2.0
-- MonoDetour BepInEx 5: 0.6.14 → 0.6.14
-- MonoDetour 5: 0.6.14 → 0.6.15
+- MonoDetour BepInEx 5: 0.6.14 → 0.6.16
+- MonoDetour 5: 0.6.14 → 0.6.16
 - TooManyEmotes: 2.3.10 → 2.3.11
 
 # MoreBrutalLethalCompanyPlus _v72.1.2_

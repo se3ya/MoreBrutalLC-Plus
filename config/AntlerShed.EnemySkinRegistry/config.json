@@ -171,6 +171,8 @@
     "Blob.Thalasso",
     "Bug.Jeremy",
     "Butler.Acidir",
+    "Spider.Dreck",
+    "Kiwi.Blossom",
     "MagicWesley.Creaker"
   ],
   "knownMoons": [
@@ -457,7 +459,8 @@
           "Spider.Brown",
           "Spider.Red",
           "Spider.Yellow",
-          "Spider.Gloom"
+          "Spider.Gloom",
+          "Spider.Dreck"
         ],
         "defaultConfiguration": {
           "mapId": "",
@@ -468,6 +471,11 @@
               "skinId": "Spider.Brown",
               "indoorFrequency": 0.5,
               "outdoorFrequency": 0.5
+            },
+            {
+              "skinId": "Spider.Dreck",
+              "indoorFrequency": 0.0,
+              "outdoorFrequency": 0.0
             },
             {
               "skinId": "Spider.Gloom",
@@ -948,13 +956,19 @@
           "Kiwi.White",
           "Kiwi.Blue",
           "Kiwi.Orange",
-          "Kiwi.Red"
+          "Kiwi.Red",
+          "Kiwi.Blossom"
         ],
         "defaultConfiguration": {
           "mapId": "",
           "outdoorVanillaFrequency": 0.0,
           "indoorVanillaFrequency": 0.0,
           "skinDistribution": [
+            {
+              "skinId": "Kiwi.Blossom",
+              "indoorFrequency": 1.0,
+              "outdoorFrequency": 1.0
+            },
             {
               "skinId": "Kiwi.Blue",
               "indoorFrequency": 0.5,
