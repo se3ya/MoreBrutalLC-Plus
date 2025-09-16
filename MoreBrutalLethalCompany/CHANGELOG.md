@@ -1,11 +1,13 @@
 # MoreBrutalLethalCompanyPlus _v72.2.0_
 
-### DEV notes
+# DEV notes
 
 - Decide if Dreck and Faith skins are going to be allowed.
   - Added a Faith skin for the Sapsucker.
   - Added a Dreck skin for the Spider.
   - [REDACTED] & Calist Wrecked changes for Old Bird
+- Tiers explained in poster.
+- Make spark tower spawn when landing the ship if possible.
 
 ## 🐞 FIXES
 
@@ -16,6 +18,7 @@
 - Fixed a quite rare bug where player was not able to pull the lever to land the ship.
 - Fixed possible soft-locks/crashes on modded moons.
 - Fixed *Divide* moon having no nav-mesh.
+- Fixed apparatus price being visible.
 
 ## ✨ GAMEPLAY & MECHANICS
 
@@ -24,6 +27,49 @@
 - Switching breaker power off will disable all traps and hazards.
 - Reduced radiation damage which happens once apparatus is pulled out from 25 to 20.
   - Reduced radiation increasing value every hour from 8 to 5. 
+
+### 📊 TIERS & CONSTELLATIONS
+
+- Renamed all constellations.
+- Added 1 additional constellation.
+- All constellations have different tags. *[ moon types that are inside constellation ]*
+- Constellation changes:
+  - AST-17 *[ starting constellation ]*
+    - *Wasteland, Rocky.*
+    - Contains - 5 moons.
+  - ARC-913
+    - *Valley, Wasteland.*
+    - Contains - 5 moons.
+  - OME-717
+    - *Tundra.*
+    - Contains - 5 moons.
+  -	WRH-118
+    - *Ocean, Valley, Rocky.*
+    - Contains - 6 moons.
+  - ZYN-300
+    - *Canyon, Valley.*
+    - Contains - 6 moons.
+  - ZRC-81
+    - *Company, Valley, Canyon.*
+    - Contains - 6 moons.
+  - HYDR-57
+    - *Wasteland, Valley, Tundra.*
+    - Contains - 5 moons.
+  - STRM-501
+    - *Canyon, Rocky, Argon, Tundra.*
+    - Contains - 6 moons.
+  - VLK-300
+    - *Volcanic, Rocky, Valley.*
+    - Contains - 6 moons.
+  - CPHR-77
+    - *Company, Valley, Tundra, Rocky.*
+    - Contains - 8 moons.
+  - NAV-42
+    - Tags - *Tundra, Argon.*
+    - Contains - 6 moons.
+- Removed tiers: *D+, C+, C++, B+, B++, A+, A++, S+, S++, SS, SS+, SS++, SSS* and *Hell*.
+- Added new tier - *E*, goes after *F* tier.
+- Dungeon size is no more based on tiers.
 
 ### 🌦️ WEATHERS
 
@@ -129,6 +175,7 @@
 - Ogopogo:
   - Added Ogopogo on more moons to spawn.
   - Slightly reduced chance to spawn on March, Oldred and Artifice.
+- Increased Spark towers detect range from 20 > 30.
 
 ## 🌌 OVERALL ADDITIONS
 
