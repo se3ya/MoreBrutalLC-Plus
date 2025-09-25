@@ -19,6 +19,7 @@
 - Fixed possible soft-locks/crashes on modded moons.
 - Fixed *Divide* moon having no nav-mesh.
 - Fixed apparatus price being visible.
+- Fixed the blood spillage effect getting stuck in spectator mode.
 
 ## ✨ GAMEPLAY & MECHANICS
 
@@ -237,7 +238,9 @@ _(Old version → New version)_
 - SkelaahsWildMoons: 2.5.5 → 2.6.9
 - FacilityMeltdown: 2.7.1 → 2.7.3
 - MoonEnemyVariety: 1.1.1 → 1.2.0
+- ColorfulEnemyVariety: 2.2.1 → 2.3.1
 - Universal Radar: 1.0.10 → 1.2.3
+- ButterFixes: 1.14.7 → 1.15.1
 - ScienceBirdTweaks: 4.3.3 → 4.4.6
 - TheCabinet: 1.7.0 → 1.8.1
 - TwoRadarMaps: 1.6.1 → 1.6.2
@@ -246,11 +249,11 @@ _(Old version → New version)_
 - TerminalFormatter: 0.2.29 → 0.2.30
 - Generic Scraps: 0.2.0 → 1.0.1
 - Generic Moons: 7.5.1 → 8.0.1
-- BetterLaddersFixed: 1.0.7 → 2.0.1
+- BetterLaddersFixed: 1.0.7 → 2.0.2
 - NetworkMetricsFix: 1.0.3 → 1.0.4
 - PathfindingLib: 1.0.1 → 2.3.2
 - PathfindingLagFix: 2.2.1 → 2.2.4
-- MaskFixes: 1.4.1 → 1.5.1
+- MaskFixes: 1.4.1 → 1.5.2
 - JetpackFixes: 1.5.3 → 1.5.4
 - CustomStoryLogs: 1.5.2 → 1.5.3
 - Mirage: 1.25.2 → 1.26.0
@@ -263,6 +266,7 @@ _(Old version → New version)_
 - LethalPerformance: 0.0.130 → 1.2.0
 - MonoDetour BepInEx 5: 0.6.14 → 0.6.16
 - MonoDetour 5: 0.6.14 → 0.6.16
+- LobbyControl Experimental: 5.10.0 → 5.11.0
 - TooManyEmotes: 2.3.10 → 2.3.11
 
 # MoreBrutalLethalCompanyPlus _v72.1.2_

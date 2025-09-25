@@ -83,11 +83,6 @@
     "Spore.Pink",
     "Spore.White",
     "Spore.Yellow",
-    "Hawk.Orange",
-    "Hawk.Fern",
-    "Hawk.Green",
-    "Hawk.Olive",
-    "Hawk.Teal",
     "Bracken.Blue",
     "Bracken.Gray",
     "Bracken.Green",
@@ -126,12 +121,6 @@
     "Bee.Green",
     "Bee.Yellow",
     "Bee.Orange",
-    "Tulip.Purple",
-    "Tulip.Pink",
-    "Tulip.Green",
-    "Tulip.White",
-    "Tulip.Orange",
-    "Tulip.Brown",
     "Roam.Orange",
     "Roam.White",
     "Roam.Blue",
@@ -148,6 +137,23 @@
     "Kiwi.Blue",
     "Kiwi.Orange",
     "Kiwi.Red",
+    "Tulip.CCyan",
+    "Tulip.CMagenta",
+    "Tulip.CYellow",
+    "Tulip.FPink",
+    "Tulip.FPurple",
+    "Tulip.FYellow",
+    "Tulip.SBlue",
+    "Tulip.SRed",
+    "Tulip.SGreen",
+    "Tulip.WYellow",
+    "Tulip.WRed",
+    "Tulip.WGreen",
+    "Hawk.Orange",
+    "Hawk.White",
+    "Hawk.Purple",
+    "Hawk.Green",
+    "Hawk.Brown",
     "Barber.Empra",
     "Bracken.Cosmos",
     "Bracken.Lecaro",
@@ -246,10 +252,10 @@
         "enemyId": "LethalCompany.BaboonHawk",
         "activeSkins": [
           "Hawk.Orange",
-          "Hawk.Fern",
           "Hawk.Green",
-          "Hawk.Olive",
-          "Hawk.Teal"
+          "Hawk.White",
+          "Hawk.Purple",
+          "Hawk.Brown"
         ],
         "defaultConfiguration": {
           "mapId": "",
@@ -257,7 +263,7 @@
           "indoorVanillaFrequency": 0.604043961,
           "skinDistribution": [
             {
-              "skinId": "Hawk.Fern",
+              "skinId": "Hawk.Brown",
               "indoorFrequency": 0.5,
               "outdoorFrequency": 0.5
             },
@@ -267,17 +273,17 @@
               "outdoorFrequency": 0.5
             },
             {
-              "skinId": "Hawk.Olive",
-              "indoorFrequency": 0.5,
-              "outdoorFrequency": 0.5
-            },
-            {
               "skinId": "Hawk.Orange",
               "indoorFrequency": 0.5,
               "outdoorFrequency": 0.5
             },
             {
-              "skinId": "Hawk.Teal",
+              "skinId": "Hawk.Purple",
+              "indoorFrequency": 0.5,
+              "outdoorFrequency": 0.5
+            },
+            {
+              "skinId": "Hawk.White",
               "indoorFrequency": 0.5,
               "outdoorFrequency": 0.5
             }
@@ -1731,14 +1737,20 @@
       {
         "enemyId": "LethalCompany.TulipSnake",
         "activeSkins": [
-          "Tulip.Purple",
-          "Tulip.Pink",
-          "Tulip.Green",
-          "Tulip.White",
-          "Tulip.Orange",
-          "Tulip.Brown",
           "Tulip.Seichi",
-          "Tulip.Junic"
+          "Tulip.Junic",
+          "Tulip.CCyan",
+          "Tulip.CMagenta",
+          "Tulip.CYellow",
+          "Tulip.FPink",
+          "Tulip.FPurple",
+          "Tulip.FYellow",
+          "Tulip.SBlue",
+          "Tulip.SRed",
+          "Tulip.SGreen",
+          "Tulip.WYellow",
+          "Tulip.WRed",
+          "Tulip.WGreen"
         ],
         "defaultConfiguration": {
           "mapId": "",
@@ -1746,12 +1758,32 @@
           "indoorVanillaFrequency": 0.3356321,
           "skinDistribution": [
             {
-              "skinId": "Tulip.Brown",
+              "skinId": "Tulip.CCyan",
               "indoorFrequency": 0.5,
               "outdoorFrequency": 0.5
             },
             {
-              "skinId": "Tulip.Green",
+              "skinId": "Tulip.CMagenta",
+              "indoorFrequency": 0.5,
+              "outdoorFrequency": 0.5
+            },
+            {
+              "skinId": "Tulip.CYellow",
+              "indoorFrequency": 0.5,
+              "outdoorFrequency": 0.5
+            },
+            {
+              "skinId": "Tulip.FPink",
+              "indoorFrequency": 0.5,
+              "outdoorFrequency": 0.5
+            },
+            {
+              "skinId": "Tulip.FPurple",
+              "indoorFrequency": 0.5,
+              "outdoorFrequency": 0.5
+            },
+            {
+              "skinId": "Tulip.FYellow",
               "indoorFrequency": 0.5,
               "outdoorFrequency": 0.5
             },
@@ -1761,17 +1793,7 @@
               "outdoorFrequency": 0.0
             },
             {
-              "skinId": "Tulip.Orange",
-              "indoorFrequency": 0.5,
-              "outdoorFrequency": 0.5
-            },
-            {
-              "skinId": "Tulip.Pink",
-              "indoorFrequency": 0.5,
-              "outdoorFrequency": 0.5
-            },
-            {
-              "skinId": "Tulip.Purple",
+              "skinId": "Tulip.SBlue",
               "indoorFrequency": 0.5,
               "outdoorFrequency": 0.5
             },
@@ -1781,7 +1803,27 @@
               "outdoorFrequency": 0.0
             },
             {
-              "skinId": "Tulip.White",
+              "skinId": "Tulip.SGreen",
+              "indoorFrequency": 0.5,
+              "outdoorFrequency": 0.5
+            },
+            {
+              "skinId": "Tulip.SRed",
+              "indoorFrequency": 0.5,
+              "outdoorFrequency": 0.5
+            },
+            {
+              "skinId": "Tulip.WGreen",
+              "indoorFrequency": 0.5,
+              "outdoorFrequency": 0.5
+            },
+            {
+              "skinId": "Tulip.WRed",
+              "indoorFrequency": 0.5,
+              "outdoorFrequency": 0.5
+            },
+            {
+              "skinId": "Tulip.WYellow",
               "indoorFrequency": 0.5,
               "outdoorFrequency": 0.5
             }
