@@ -54,7 +54,7 @@
 ![Systems Overhaul](https://i.imgur.com/MuyA39G.png)
 
 - 10 unique systems: Each system features:
-  - **Progressive Difficulty**: Systems increase in challenge and reward as you progress through tiers _[ F to Hell ]_.
+  - **Progressive Difficulty**: Systems increase in challenge and reward as you progress through tiers _[ F to S++ ]_.
   - **Balanced Moons**: Moons are carefully assigned to match their system's theme.
   - **Themed Scrap Assignments**: Scrap items now match their interior themes.
   - **Dynamic Progression**: Use the '_info <system>_' command to discover details about each system.

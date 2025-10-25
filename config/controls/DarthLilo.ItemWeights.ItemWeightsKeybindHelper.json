@@ -1,1 +1,0 @@
-{"overrides":[{"action":"RegisterItem","origPath":"<Keyboard>/i","path":"<InputUtils-Kbm-Not-Bound>","groups":"KeyboardAndMouse"},{"action":"RegisterTerminalStore","origPath":"<InputUtils-Kbm-Not-Bound>","path":"<Keyboard>/numpad9","groups":"KeyboardAndMouse"}]}

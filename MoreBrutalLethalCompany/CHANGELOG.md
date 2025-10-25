@@ -1,4 +1,4 @@
-# MoreBrutalLethalCompanyPlus _v72.2.0_
+# MoreBrutalLethalCompanyPlus _v73.0.0_
 
 # DEV notes
 
@@ -8,6 +8,10 @@
   - [REDACTED] & Calist Wrecked changes for Old Bird
 - Tiers explained in poster.
 - Make spark tower spawn when landing the ship if possible.
+- Test the new enabled setting from ButteryFixes - EndOrbitEarly.
+- More tips.
+- Decide removing or leaving BetterStamina. Vanilla stamina already feels nice and my changes feel very not significant.
+- Tour bus?
 
 ## 🐞 FIXES
 
@@ -20,6 +24,11 @@
 - Fixed *Divide* moon having no nav-mesh.
 - Fixed apparatus price being visible.
 - Fixed the blood spillage effect getting stuck in spectator mode.
+- Fixed Spider webs slowing down enemies that haven't finished vent animation, resulting in deformities.
+- Fixed Bees and Spiders not being able to damage enemies.
+- Fixed missing twist SFX when first inserting car key to ignition.
+- Fixed gift boxes having increased spawn chances ever since.
+- Scan command no more shows the exact total value.
 
 ## ✨ GAMEPLAY & MECHANICS
 
@@ -27,7 +36,12 @@
 - Pulling Apparatus out will disable all traps and hazards.
 - Switching breaker power off will disable all traps and hazards.
 - Reduced radiation damage which happens once apparatus is pulled out from 25 to 20.
-  - Reduced radiation increasing value every hour from 8 to 5. 
+  - Reduced radiation increasing value every hour from 8 to 5.
+- Fire exits spawn more far away from main entrance.
+- Cruiser no more automatically gearbox switch between drive & reverse and doesn't automatically center wheel.
+- Masked enemy can't hold any item.
+- Reduced Belt bag capacity from 10 to 7.
+- Reduced Shotgun price from 900 to 650.
 
 ### 📊 TIERS & CONSTELLATIONS
 
@@ -68,7 +82,7 @@
   - NAV-42
     - Tags - *Tundra, Argon.*
     - Contains - 6 moons.
-- Removed tiers: *D+, C+, C++, B+, B++, A+, A++, S+, S++, SS, SS+, SS++, SSS* and *Hell*.
+- Removed tiers: *D+, C+, C++, B+, B++, A+, A++, SS, SS+, SS++, SSS* and *Hell*.
 - Added new tier - *E*, goes after *F* tier.
 - Dungeon size is no more based on tiers.
 
@@ -92,8 +106,16 @@
 - Reduced scan light range and intensity.
 - Replaced modified posterization shader with vanilla.
 - Moon videos are no longer shown in terminal when choosing moon. Still visible on main monitor.
-- Increased amount of tips
+- Increased amount of tips.
 - Updated enemy ranks to better reflect their difficulty levels.
+- After getting killed by *Locker, The Cabinet, SCP-096* and *Ogopogo* you get the correct cause of death.
+- Improved rotations for vanilla and some modded scraps.
+- Climbing ladder with scrap will hide the scrap from hands.
+- Added missing dashboard button SFX when using wipers, cabin window, etc.
+- Fixed posters not being affected by lights and shadows.
+- Always-on display and terminal node syncing were temporarily disabled.
+- Reduced Compass transparency.
+- Health bar is permanently on the screen.
 
 ## 🌘 MOONS
 
@@ -177,6 +199,14 @@
   - Added Ogopogo on more moons to spawn.
   - Slightly reduced chance to spawn on March, Oldred and Artifice.
 - Increased Spark towers detect range from 20 > 30.
+- Bunker Spider:
+  - Chase speed was slightly reduced.
+  - Dealing damage to play was reduced.
+  - Health was increased.
+- Old bird visibility through fog was reduced.
+- Tourists:
+  - Can no longer go under the ship.
+  - No more explodes behind the players back.
 
 ## 🌌 OVERALL ADDITIONS
 
@@ -194,7 +224,8 @@
 
 ### 🛠️ Added Mods:
 
-- Hold Scan Button
+- LethalLevelLoaderUpdated
+- TypeLoadExceptionFixer
 - Black Fog Weather
   - itolib
 - LethalError
@@ -207,18 +238,36 @@
 - Natural selection
   - NaturalSelectionLib
 - ModlistHashChecker
+- LunarConfig
+  - CodeRebirthLib
+- DawnLib
+- CoronerIntegrations
+- FairerFireExits
+- AsyncLoggers Experimental
+- FontUpdate /// Needs testing
+- SmartEnemyPathfinding
+- LCLocalFixes
+- FurnitureGrid /// Needs testing
+- RuntimeIcons BetterRotations
+- LoadingInfo
+- Wesleys Ememy Variants /// Needs testing
+- WaterAssetRestorer
+- ReviveDesyncPatch /// Needs testing
+- Company Globes
+- Wesleys Weathers /// Needs testing
+- CoronerMimicsFixEnUS
 
 ## 🗑️ OVERALL REMOVALS
 
 ### 🚫 Removed Mods:
 
+- CentralConfig
 - SectorBeta Interior
 - TwitchChatAPI
 - Lethal Weight Fix
 - SubSystems Interior
 - Generic Interiors
 - InteriorNavMeshFix
-- LethalHUD
 - Full Darkness
 - DistinctMoonVariety
 - SkelaahsWildMoons
@@ -230,44 +279,141 @@
 - ExperimentalEnemyInteractions
 - VoxxMoons
 - OiiaCat
+- Vacuity Moon
+- RebalancedMoonsBeta
+- SpikeTrapFixes
+- MQLCTP
+- BetterSprayPaint
+- Sleight Of Hand Piggy Variety Patch
+- LCBetterSaves /// Not sure
+- LCBetterSavesFix /// Not sure
+- NestFix /// Not sure
+- LandFromOrbit /// Not sure
+- BreakableSnowmen /// Not sure
+- BetterVehicleControls /// Not sure
+- EnhancedMonsters
+- BetterStamina /// Not sure
+- Supercharger
+- Biodiversity
+- GamblingMachineAtTheCompany
+- FacilityMeltdown
+- Meltdown Chance
+- LLLHotreloadPatch
+- AsyncLoggers
+- ItemWeights
+- Piggy Variety Mod
+- Longer Day
+- CruiserTunes
+- Sleight Of Hand Piggy Variety Patch
+- BetterSprayPaint
+- MissileTurrets
+- RadioBabyFace
+- MQLCTP
+- BetterLightning
+- LightsOut
+- BabyManeater
+- Useful Zap Gun
+- CoilHeadCantOpenDoors
+- Pinnacle
+- 13Kast
+- LooseJesterSpring
+- EnhancedRadarBooster ///
+- EnhancedLockpicker ///
+- ClassicSuitRestoration
 
 ## 📦 MOD UPDATES
 
 _(Old version → New version)_
 
+- CustomPosters: 2.0.0 → 4.0.0
 - SkelaahsWildMoons: 2.5.5 → 2.6.9
 - FacilityMeltdown: 2.7.1 → 2.7.3
+- MelaniesVoice: 1.1.0 → 1.3.0
 - MoonEnemyVariety: 1.1.1 → 1.2.0
-- ColorfulEnemyVariety: 2.2.1 → 2.3.1
+- ColorfulEnemyVariety: 2.2.1 → 2.3.2
 - Universal Radar: 1.0.10 → 1.2.3
-- ButterFixes: 1.14.7 → 1.15.1
-- ScienceBirdTweaks: 4.3.3 → 4.4.6
-- TheCabinet: 1.7.0 → 1.8.1
-- TwoRadarMaps: 1.6.1 → 1.6.2
-- Wither: 1.4.3 → 2.0.0
+- ScienceBirdTweaks: 4.3.3 → 4.4.8
+- TheCabinet: 1.7.0 → 1.9.2
+- Sanguine: 1.0.2 → 1.0.3
+- TwoRadarMaps: 1.6.1 → 1.6.4
+- Wither: 1.4.3 → 2.0.1
 - CompanyHauler: 1.0.4 → 1.0.5
-- TerminalFormatter: 0.2.29 → 0.2.30
+- FurnitureLock: 1.4.2 → 1.4.4
+- YesFox: 1.1.5 → 1.1.6
+- LobbyImprovements: 1.1.1 → 1.1.2
+- LethalFixes: 1.2.7 → 1.2.8
+- JLL: 1.9.8 → 1.9.9
+- LegaFusionCore: 1.0.0 → 1.0.1
+- TheDoctor: 1.0.2 → 1.0.4
+- ToilHead: 1.7.2 → 1.8.0
+- Mirage: 1.27.0 → 1.28.0
+- Mimics: 2.7.0 → 2.7.2
+- Peepers: 1.0.3 → 1.0.4
+- LethalAnomalies: 0.2.1 → 0.3.0
+- Locker: 1.6.1 → 1.6.2
+- Scopophobia: 1.2.8 → 1.3.0
+- TerminalFormatter: 0.2.29 → 0.2.32
+- GeneralImprovements: 1.4.13 → 1.4.15
+- darmuhsTerminalStuff: 3.8.5 → 3.9.0
+- OpenLib: 0.3.2 → 0.4.0
 - Generic Scraps: 0.2.0 → 1.0.1
 - Generic Moons: 7.5.1 → 8.0.1
-- BetterLaddersFixed: 1.0.7 → 2.0.2
-- NetworkMetricsFix: 1.0.3 → 1.0.4
-- PathfindingLib: 1.0.1 → 2.3.2
-- PathfindingLagFix: 2.2.1 → 2.2.4
+- BetterLaddersFixed: 1.0.7 → 2.1.0
+- NetworkMetricsFix: 1.0.3 → 1.0.6
+- FixPlayerName: 1.0.9 → 1.1.1
+- Extended Deadline: 1.0.2 → 1.0.3
+- Whiteboard: 1.1.4 → 1.2.0
+- Scrap Insurance: 1.0.2 → 1.0.3
+- PathfindingLib: 1.0.1 → 2.4.1
+- PathfindingLagFix: 2.2.1 → 2.2.5
+- TooManySuits: 2.0.1 → 2.0.2
 - MaskFixes: 1.4.1 → 1.5.2
 - JetpackFixes: 1.5.3 → 1.5.4
+- ButterFixes: 1.14.7  → 1.15.2
 - CustomStoryLogs: 1.5.2 → 1.5.3
+- EntranceBlocker: 1.0.5 → 1.0.6
+- Malfunctions: 1.10.1 → 1.10.2
+- MalfunctioningDoors: 1.13.1 → 1.14.0
+- Mirage: 1.26.0 → 1.27.0
+- DoorBreach: 1.4.4 → 1.5.0
 - Mirage: 1.25.2 → 1.26.0
-- Advance Features: 1.0.9 → 1.0.10
+- Advance Features: 1.0.9 → 1.1.0
+- Lategame Upgrades: 3.12.5 → 3.12.8
 - MrovLib: 0.3.1 → 0.3.6
+- RuntimeIcons: 0.3.2 → 0.3.3
 - WeatherRegistry: 0.6.1 → 0.7.4
+- BetterStamina: 1.5.6 → 1.5.7
+- LooseJesterSpring: 1.0.4 → 1.0.5
+- HotbarPlus: 1.8.5 → 1.8.6
 - SpiderPositionFix: 1.5.2 → 1.5.3
 - CullFactory: 1.7.0 → 2.0.0
 - Liminal House: 1.0.7 → 1.0.8
-- LethalPerformance: 0.0.130 → 1.2.0
-- MonoDetour BepInEx 5: 0.6.14 → 0.6.16
-- MonoDetour 5: 0.6.14 → 0.6.16
+- Alcatras: 2.0.0 → 2.0.1
+- Oldred: 4.0.0 → 4.0.1
+- Hyx: 2.0.2 → 2.0.3
+- Gratar: 4.2.1 → 4.2.2
+- Gloom: 4.0.2 → 4.0.3
+- Calist: 2.0.2 → 2.0.3
+- WesleyInteriors: 3.0.8 → 4.0.11
+- Storage Complex: 1.1.5 → 1.1.6
+- TestAccountCore: 1.14.3 → 1.14.4
+- ShipWindows: 2.5.1 → 2.6.0
+- EnemySoundFixes: 1.8.1 → 1.8.3
+- SelfSortingStorage: 1.2.1 → 1.4.0
+- MoreCompany: 1.11.2 → 1.12.0
+- ReservedItemSlotCore: 2.0.52 → 2.0.53
+- LethalSponge: 1.1.10 → 1.1.11
+- LethalPhones: 1.3.17 → 1.3.18
+- LethalPerformance: 0.0.130 → 1.2.1
+- MonoDetour BepInEx 5: 0.6.14 → 0.7.4
+- MonoDetour 5: 0.6.14 → 0.7.4
+- DetourContext Dispose Fix: 1.0.5 → 1.0.6
+- AutoHookGenPatcher: 1.0.7 → 1.0.8
+- ButteRyBalance: 0.2.4 → 0.3.1
+- ButteryFixes: 0.15.2 → 0.15.3
+- FixPluginTypesSerialization: 1.1.2 → 1.1.4
 - LobbyControl Experimental: 5.10.0 → 5.11.0
-- TooManyEmotes: 2.3.10 → 2.3.11
+- TooManyEmotes: 2.3.10 → 2.3.13
 
 # MoreBrutalLethalCompanyPlus _v72.1.2_
 
