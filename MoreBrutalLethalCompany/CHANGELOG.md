@@ -2,16 +2,13 @@
 
 # DEV notes
 
-- Decide if Dreck and Faith skins are going to be allowed.
-  - Added a Faith skin for the Sapsucker.
-  - Added a Dreck skin for the Spider.
-  - [REDACTED] & Calist Wrecked changes for Old Bird
 - Tiers explained in poster.
-- Make spark tower spawn when landing the ship if possible.
 - Test the new enabled setting from ButteryFixes - EndOrbitEarly.
 - More tips.
 - Decide removing or leaving BetterStamina. Vanilla stamina already feels nice and my changes feel very not significant.
-- Tour bus?
+- Balance store prices.
+- GhostCodes change.
+- Disable Interior Analiyses when updating modpack.
 
 ## 🐞 FIXES
 
@@ -21,7 +18,7 @@
 - Fixed inventory weight resetting when dropping items with a tulip snake attached.
 - Fixed a quite rare bug where player was not able to pull the lever to land the ship.
 - Fixed possible soft-locks/crashes on modded moons.
-- Fixed *Divide* moon having no nav-mesh.
+- Fixed _Divide_ moon having no nav-mesh.
 - Fixed apparatus price being visible.
 - Fixed the blood spillage effect getting stuck in spectator mode.
 - Fixed Spider webs slowing down enemies that haven't finished vent animation, resulting in deformities.
@@ -39,92 +36,60 @@
   - Reduced radiation increasing value every hour from 8 to 5.
 - Fire exits spawn more far away from main entrance.
 - Cruiser no more automatically gearbox switch between drive & reverse and doesn't automatically center wheel.
-- Masked enemy can't hold any item.
+- Masked enemy can't hold any item anymore.
 - Reduced Belt bag capacity from 10 to 7.
 - Reduced Shotgun price from 900 to 650.
 
 ### 📊 TIERS & CONSTELLATIONS
 
 - Renamed all constellations.
-- Added 1 additional constellation.
-- All constellations have different tags. *[ moon types that are inside constellation ]*
+- Added 2 new constellation.
+- Moons placement on constellations were rebalanced based on moons tier and constellation tag.
 - Constellation changes:
-  - AST-17 *[ starting constellation ]*
-    - *Wasteland, Rocky.*
+  - AST-17 _[ starting constellation ]_
+    - _Wasteland, Ocean, Canyon, Rocky._
     - Contains - 5 moons.
   - ARC-913
-    - *Valley, Wasteland.*
+    - _Valley, Canyon, Rocky._
     - Contains - 5 moons.
   - OME-717
-    - *Tundra.*
+    - _Tundra, Wasteland, Valley._
     - Contains - 5 moons.
-  -	WRH-118
-    - *Ocean, Valley, Rocky.*
-    - Contains - 6 moons.
+  - WRH-118
+    - _Ocean, Valley, Canyon._
+    - Contains - 5 moons.
   - ZYN-300
-    - *Canyon, Valley.*
+    - _Canyon, Valley, Ocean._
     - Contains - 6 moons.
   - ZRC-81
-    - *Company, Valley, Canyon.*
+    - _Company, Valley, Ocean, Tundra._
     - Contains - 6 moons.
   - HYDR-57
-    - *Wasteland, Valley, Tundra.*
-    - Contains - 5 moons.
+    - _Wasteland, Valley, Canyon._
+    - Contains - 6 moons.
   - STRM-501
-    - *Canyon, Rocky, Argon, Tundra.*
+    - _Argon, Canyon, Company, Wasteland, Valley._
     - Contains - 6 moons.
   - VLK-300
-    - *Volcanic, Rocky, Valley.*
+    - _Volcanic, Rocky, Canyon._
     - Contains - 6 moons.
   - CPHR-77
-    - *Company, Valley, Tundra, Rocky.*
-    - Contains - 8 moons.
-  - NAV-42
-    - Tags - *Tundra, Argon.*
+    - _Military, Canyon, Tundra, Rocky._
     - Contains - 6 moons.
-- Removed tiers: *D+, C+, C++, B+, B++, A+, A++, SS, SS+, SS++, SSS* and *Hell*.
-- Added new tier - *E*, goes after *F* tier.
-- Dungeon size is no more based on tiers.
+  - NAV-42
+    - Tags - _Tundra, Canyon, Valley, Rocky._
+    - Contains - 7 moons.
+  - SRB-1806
+    - Tags - _Tundra, Argon._
+    - Contains - 6 moons.
+- Removed tiers: _D+, C+, C++, B+, B++, A+, A++, SS, SS+, SS++, SSS_ and _Hell_.
+- Added new tier - _E_, goes after _F_ tier.
 
-### 🌦️ WEATHERS
-
-- Weather selection on moons is now more random, similar to vanilla.
-- Added new rare weather - _Black fog_.
-  - A dense, dark fog that greatly reduces visibility outside and indoors.
-- Removed weathers:
-  - Heatwave.
-  - Solar flare.
-  - Snowfall.
-  - Toxic smog.
-- Weather occurring chances and scrap amount multipliers were rebalanced.
-
-## 🎨 VISUAL & AUDIO
-
-- Any item/scrap scanned will be covered in a holographic highlight.
-- Radar will switch to old radar if interior doesn't have radar sprites.
-- Disabled motion blur.
-- Reduced scan light range and intensity.
-- Replaced modified posterization shader with vanilla.
-- Moon videos are no longer shown in terminal when choosing moon. Still visible on main monitor.
-- Increased amount of tips.
-- Updated enemy ranks to better reflect their difficulty levels.
-- After getting killed by *Locker, The Cabinet, SCP-096* and *Ogopogo* you get the correct cause of death.
-- Improved rotations for vanilla and some modded scraps.
-- Climbing ladder with scrap will hide the scrap from hands.
-- Added missing dashboard button SFX when using wipers, cabin window, etc.
-- Fixed posters not being affected by lights and shadows.
-- Always-on display and terminal node syncing were temporarily disabled.
-- Reduced Compass transparency.
-- Health bar is permanently on the screen.
-
-## 🌘 MOONS
+### 🌘 MOONS
 
 - Removed bridge from March.
 - Small improvements to Generic moons.
-- Reduced turrets amount on all tier moons.
-- Added Gift and Easter eggs to *Experimentation*.
-- Reduced *Adamance* outdoor enemy power.
-- Added *Earth Leviathan* to *Rend*.
+- Reduced Turrets and Traps amount on all tier moons.
 - Removed moons
   - Attenuation
   - Retinue
@@ -134,12 +99,7 @@
   - Acheron
   - Derelict
   - Arcadia
-- Moved *Collateral* moon from *Orion* to *Harmonia* system.
-  - From tier *D+* to *C++*.
-- Moved *Infernis* moon from *Aquarius* to *Pegasus* system.
-  - From tier *A++* to *S*.
-- Moved *Praetor* moon from *Gemini* to *Taurus* system.
-- Cosmocos price changed from *666* to *0*
+- Rebalanced enemies and their spawn chance on moons.
 - Wither:
   - Terrain has been entirely remodeled and repainted.
   - Combined the spikes into a few large, abstract structures. Added more mountainous terrain and completely overhauled the desert rock formations.
@@ -169,25 +129,21 @@
 
 </details>
 
-## 🏠 INTERIORS
+### 🏠 INTERIORS
 
-- Removed SubSystems due to a big hole in the big room tile.
-- Generic Interiors:
-  - Storehouse and Tower interiors now have _v70_ radar support.
-  - Liminal Facility:
-    - Added 6 new tiles.
-    - Added more room variants with different shapes.
-    - Lights have a small chance to flicker.
-    - Increased furniture spawn.
-    - Updated all textures to have more grunge. 
-    - Replaced floor texture to more vanilla one.
-    - Darkened brightness.
-    - Fixed several clipping.
-  - Tower:
-    - Added a car to garage basement tile.
-    - Added 2 new tiles.
-    - Fixed straight stairs tile not having walls if it doesn't connect to lower floor.
-- Removed Storehouse, Tower, and Liminal Facility. ***
+- Removed SubSystems due to a big hole in the big room.
+- Removed Storehouse, Sector, Tower, and Liminal Facility.
+
+### 🌦️ WEATHERS
+
+- Weather selection on moons is now more random, similar to vanilla.
+- Added 3 new weathers.
+- Removed weathers:
+  - Heatwave.
+  - Solar flare.
+  - Snowfall.
+  - Toxic smog.
+- Weather occurring chances and scrap amount multipliers were rebalanced.
 
 ## 👾 ENEMIES
 
@@ -195,6 +151,7 @@
 - Removed Boom bird.
 - Removed Soul Devourer.
 - Removed OiiaCat.
+- Tweaked some enemies Probability, Max count and Power level.
 - Ogopogo:
   - Added Ogopogo on more moons to spawn.
   - Slightly reduced chance to spawn on March, Oldred and Artifice.
@@ -208,19 +165,142 @@
   - Can no longer go under the ship.
   - No more explodes behind the players back.
 
+## 🎨 VISUAL & AUDIO
+
+- Any item/scrap scanned will be covered in a holographic highlight.
+- Reduced scan light range and intensity.
+- Replaced modified posterization shader with vanilla.
+- Moon videos are no longer shown in terminal when choosing moon. Still visible on main monitor.
+- Increased amount of tips.
+- After getting killed by _Locker, The Cabinet, SCP-096_ and _Ogopogo_ you get the correct cause of death.
+- Improved dropped state rotation for vanilla and some modded scraps.
+- Added missing dashboard button SFX when using wipers, cabin window, etc.
+- Fixed posters not being affected by shaders.
+- Replaced 2 quad poster in the ship with vanilla meshes.
+- Re-enabled ships speaker playing intro.
+- Added unique sounds to some vanilla items.
+- Re-enabled boot animation on game launch startup.
+- Changed scrap Paintings to be more lore releated.
+
+### 🖥️ HUD
+
+- Slightly reduced Compass transparency.
+- Health bar is permanently on the screen.
+- Disabled motion blur.
+- Re-colored Hotbar and Compass to red.
+- Player names in chat are colored.
+- Hud can be toggled with key **[** .
+- Scan nodes smoothly fadeout after 3 seconds
+
 ## 🌌 OVERALL ADDITIONS
 
 ### 🌙 Added Moons:
 
 - Added new moon: Deadlock.
+
   - _Iron tracks circle a sleeping giant. The train hunts in silence_.
-  - Which system: Orion.
-  - Risk Level: C+.
+  - Which system: ZRC-81.
+  - Risk Level: C.
 
 - Added new moon: Burrow.
+
   - _The desert waits. The vultures don’t_.
-  - Which system: Pegasus.
+  - Which system: NAV-42.
+  - Risk Level: S.
+
+- Added new moon: Kiri.
+
+  - _Thick fog hides everything. Stay close or vanish forever_.
+  - Which system: ZYN-300.
+  - Risk Level: A.
+
+- Added new moon: Extort.
+
+  - _Lush veins bled dry. Now tourists pay to breathe the ruins_.
+  - Which system: CPHR-77.
+  - Risk Level: A.
+
+- Added new moon: Vigilance.
+
+  - _The night grows restless, and the Bushes seem to be moving_.
+  - Which system: HYDR-57.
+  - Risk Level: S.
+
+- Added new moon: Lua.
+
+  - _Corporate moon. Secrets sealed_.
+  - Which system: VLK-300.
+  - Risk Level: S+.
+
+- Added new moon: Crowd.
+
+  - _Empty houses. War left the lights on_.
+  - Which system: ZRC-81.
+  - Risk Level: A.
+
+- Added new moon: Release.
+
+  - _Empty houses. War left the lights on_.
+  - Which system: NAV-42.
+  - Risk Level: S.
+
+- Added new moon: Celest.
+
+  - _Yellowish forest valley with hidden dangers and an abandoned factory_.
+  - Which system: ZYN-300.
   - Risk Level: B.
+
+- Added new moon: Aquatis.
+
+  - _Watery island world with wildlife and a mysterious bunker_.
+  - Which system: AST-17.
+  - Risk Level: E.
+
+### 🏠 Added Interiors:
+
+- Habitat:
+
+  - _Looks lost, don't let him take you_.
+
+- Deepcore:
+
+  - _Dynamite veins pulse red_.
+
+- Midnight Sanctuary:
+
+  - _Paths loop back to your footprints_.
+
+- Raven Manor:
+
+  - _People on paintings blink, eyes follow you_.
+
+### 🌪️ Added Weathers:
+
+- Black fog.
+
+  - _A dense, dark fog that sometimes appears and greatly reduces visibility outside and indoors. That's it_?
+
+- Earthquakes.
+
+  - _Ground suddenly trembles and shakes_.
+
+- Hurricane.
+
+  - _Intense winds and rain batter, making movement dangerous and visibility poor_.
+
+### 👾 Added Enemies:
+
+- Emma
+
+  - _A sad ghost, suspended from the ceiling, reaching down to claim a wandering soul_.
+
+- Elder
+
+  - _The biggest giant found on any planet... yet_.
+
+- Tour Bus
+
+  - _Motionless mass of merged tourists, it's scary stillness masking a devastating, hive-minded threat_.
 
 ### 🛠️ Added Mods:
 
@@ -230,32 +310,37 @@
   - itolib
 - LethalError
 - True Darkness client
-- 47Chronos
-- 28Terra
-- 3Bilge
-- 615Noctis
-- 81Deadlock
+- 47Chronos _[ already in the pack, just added as standalone ]_
+- 28Terra _[ * ]_
+- 3Bilge _[ * ]_
+- 615Noctis _[ * ]_
+- 81Deadlock _[ * ]_
 - Natural selection
   - NaturalSelectionLib
 - ModlistHashChecker
 - LunarConfig
   - CodeRebirthLib
-- DawnLib
 - CoronerIntegrations
+- CoronerMimicsFixEnUS
 - FairerFireExits
 - AsyncLoggers Experimental
-- FontUpdate /// Needs testing
+- FontUpdate
 - SmartEnemyPathfinding
 - LCLocalFixes
-- FurnitureGrid /// Needs testing
 - RuntimeIcons BetterRotations
 - LoadingInfo
-- Wesleys Ememy Variants /// Needs testing
+- Wesleys Ememy Variants
 - WaterAssetRestorer
-- ReviveDesyncPatch /// Needs testing
 - Company Globes
-- Wesleys Weathers /// Needs testing
-- CoronerMimicsFixEnUS
+  - DawnLib
+- Wesleys Weathers
+- NicheTweaks
+- LCZoom
+- HalloweenCostumes
+- HalloweenAction
+- Pigeons HighVis Suits
+- V73dcfix
+- FlashlightToolLoader
 
 ## 🗑️ OVERALL REMOVALS
 
@@ -287,14 +372,13 @@
 - Sleight Of Hand Piggy Variety Patch
 - LCBetterSaves /// Not sure
 - LCBetterSavesFix /// Not sure
-- NestFix /// Not sure
-- LandFromOrbit /// Not sure
-- BreakableSnowmen /// Not sure
-- BetterVehicleControls /// Not sure
+- NestFix
+- LandFromOrbit
+- BreakableSnowmen
+- BetterVehicleControls
 - EnhancedMonsters
-- BetterStamina /// Not sure
+- BetterStamina
 - Supercharger
-- Biodiversity
 - GamblingMachineAtTheCompany
 - FacilityMeltdown
 - Meltdown Chance
@@ -317,28 +401,36 @@
 - Pinnacle
 - 13Kast
 - LooseJesterSpring
-- EnhancedRadarBooster ///
-- EnhancedLockpicker ///
-- ClassicSuitRestoration
+- SCP Foundation Suit
+- HEV Suit:
+  - Green,
+  - Blue,
+  - Yellow.
+- ImprovedClock
+- SnatchinBracken
+- NetworkMetricsFix
+- FixPlayerName
 
 ## 📦 MOD UPDATES
 
 _(Old version → New version)_
 
-- CustomPosters: 2.0.0 → 4.0.0
+- CustomPosters: 2.0.0 → 4.0.1
 - SkelaahsWildMoons: 2.5.5 → 2.6.9
 - FacilityMeltdown: 2.7.1 → 2.7.3
 - MelaniesVoice: 1.1.0 → 1.3.0
 - MoonEnemyVariety: 1.1.1 → 1.2.0
+- LethalCompany InputUtils: 0.7.10 → 0.7.12
+- DetourConext Dispose Fix: 1.0.6 → 1.0.7
 - ColorfulEnemyVariety: 2.2.1 → 2.3.2
 - Universal Radar: 1.0.10 → 1.2.3
-- ScienceBirdTweaks: 4.3.3 → 4.4.8
+- ScienceBirdTweaks: 4.3.3 → 4.4.9
 - TheCabinet: 1.7.0 → 1.9.2
 - Sanguine: 1.0.2 → 1.0.3
 - TwoRadarMaps: 1.6.1 → 1.6.4
 - Wither: 1.4.3 → 2.0.1
 - CompanyHauler: 1.0.4 → 1.0.5
-- FurnitureLock: 1.4.2 → 1.4.4
+- FurnitureLock: 1.4.2 → 1.4.5
 - YesFox: 1.1.5 → 1.1.6
 - LobbyImprovements: 1.1.1 → 1.1.2
 - LethalFixes: 1.2.7 → 1.2.8
@@ -351,7 +443,7 @@ _(Old version → New version)_
 - Peepers: 1.0.3 → 1.0.4
 - LethalAnomalies: 0.2.1 → 0.3.0
 - Locker: 1.6.1 → 1.6.2
-- Scopophobia: 1.2.8 → 1.3.0
+- Scopophobia: 1.2.8 → 1.3.1
 - TerminalFormatter: 0.2.29 → 0.2.32
 - GeneralImprovements: 1.4.13 → 1.4.15
 - darmuhsTerminalStuff: 3.8.5 → 3.9.0
@@ -359,8 +451,6 @@ _(Old version → New version)_
 - Generic Scraps: 0.2.0 → 1.0.1
 - Generic Moons: 7.5.1 → 8.0.1
 - BetterLaddersFixed: 1.0.7 → 2.1.0
-- NetworkMetricsFix: 1.0.3 → 1.0.6
-- FixPlayerName: 1.0.9 → 1.1.1
 - Extended Deadline: 1.0.2 → 1.0.3
 - Whiteboard: 1.1.4 → 1.2.0
 - Scrap Insurance: 1.0.2 → 1.0.3
@@ -369,7 +459,8 @@ _(Old version → New version)_
 - TooManySuits: 2.0.1 → 2.0.2
 - MaskFixes: 1.4.1 → 1.5.2
 - JetpackFixes: 1.5.3 → 1.5.4
-- ButterFixes: 1.14.7  → 1.15.2
+- DiffoZTweaks: 1.5.0 → 1.5.1
+- ButterFixes: 1.14.7 → 1.15.2
 - CustomStoryLogs: 1.5.2 → 1.5.3
 - EntranceBlocker: 1.0.5 → 1.0.6
 - Malfunctions: 1.10.1 → 1.10.2
@@ -387,19 +478,22 @@ _(Old version → New version)_
 - HotbarPlus: 1.8.5 → 1.8.6
 - SpiderPositionFix: 1.5.2 → 1.5.3
 - CullFactory: 1.7.0 → 2.0.0
-- Liminal House: 1.0.7 → 1.0.8
+- Liminal House: 1.0.7 → 1.0.9
 - Alcatras: 2.0.0 → 2.0.1
 - Oldred: 4.0.0 → 4.0.1
 - Hyx: 2.0.2 → 2.0.3
+- Repress: 1.0.4 → 1.0.5
 - Gratar: 4.2.1 → 4.2.2
 - Gloom: 4.0.2 → 4.0.3
 - Calist: 2.0.2 → 2.0.3
-- WesleyInteriors: 3.0.8 → 4.0.11
+- WesleyInteriors: 3.0.8 → 4.0.14
 - Storage Complex: 1.1.5 → 1.1.6
 - TestAccountCore: 1.14.3 → 1.14.4
 - ShipWindows: 2.5.1 → 2.6.0
+- EnhancedLockpicker: 1.1.7 → 1.1.8
+- EnhancedRadarBooster: 1.8.0 → 1.8.1
 - EnemySoundFixes: 1.8.1 → 1.8.3
-- SelfSortingStorage: 1.2.1 → 1.4.0
+- SelfSortingStorage: 1.2.1 → 1.4.2
 - MoreCompany: 1.11.2 → 1.12.0
 - ReservedItemSlotCore: 2.0.52 → 2.0.53
 - LethalSponge: 1.1.10 → 1.1.11
@@ -408,7 +502,7 @@ _(Old version → New version)_
 - MonoDetour BepInEx 5: 0.6.14 → 0.7.4
 - MonoDetour 5: 0.6.14 → 0.7.4
 - DetourContext Dispose Fix: 1.0.5 → 1.0.6
-- AutoHookGenPatcher: 1.0.7 → 1.0.8
+- AutoHookGenPatcher: 1.0.7 → 1.0.9
 - ButteRyBalance: 0.2.4 → 0.3.1
 - ButteryFixes: 0.15.2 → 0.15.3
 - FixPluginTypesSerialization: 1.1.2 → 1.1.4
@@ -708,11 +802,13 @@ _(Old version → New version)_
   - Risk Level: B+.
 
 - Added new moon: Mazon.
+
   - _Jungle swallowed fortress. The secrets were buried or stolen_.
   - Which system: Aquarius.
   - Risk Level: A+.
 
 - Added new moon: Hyve.
+
   - _A thousand wings. A million stingers. One queen_.
   - Which system: Pegasus.
   - Risk Level: A++.

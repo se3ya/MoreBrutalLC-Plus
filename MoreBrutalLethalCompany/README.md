@@ -65,6 +65,7 @@
 
 - **New Weather**: Blackout: Disables all lights planet-wide.
 - **New Weather**: Black fog: A dense, dark fog that greatly reduces visibility outside and indoors.
+
 ---
 
 ![Installation](https://i.imgur.com/2PPxzC9.png)
