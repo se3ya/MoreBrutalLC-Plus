@@ -1,14 +1,131 @@
+# MoreBrutalLethalCompanyPlus _v73.1.0_
+
+## 🐞 FIXES
+
+- Fixed the bug when gift box has been opened, a new player joining the lobby still can see and use the gift box.
+- Fixed Cruiser horn getting stuck at wrong pitch when releasing and holding again.
+
+## ✨ GAMEPLAY & MECHANICS
+
+-
+
+### 🌘 MOONS
+
+- Difficulty overall was reduced.
+- Reduced interior sizes starting from tier D.
+- Increased value multiplier starting from tier D.
+- Increased scrap amount starting from tier D.
+- Less enemies at the day start.
+
+## 👾 ENEMIES
+
+- Balanced enemies probability curves.
+- Harder enemies spawn later in the day.
+- Balanced _Baboon Hawk, Circuit bees, Old Bird, Elder, Nutcracker,_ and _Thumper_ technical settings.
+
+## 🎨 VISUAL & AUDIO
+
+- Added missing hit sound for Giant Sapsucker.
+- Added global voice volume slider in lobby player list menu [ ESC menu ].
+- Removed LethalConfig button from main menu, the button is only available in lobby player list menu.
+
+## 🌌 OVERALL ADDITIONS
+
+### 🌙 Added Moons:
+
+- Added new moon: ?.
+
+  - _?_.
+  - Which system: ?.
+  - Risk Level: ?.
+
+### 🏠 Added Interiors:
+
+- Deep Sewers:
+
+  - _?_.
+
+- Store:
+
+  - _?_.
+
+### 👾 Added Enemies:
+
+- ?
+
+  - _?_.
+
+### 🛠️ Added Mods:
+
+- BetterSprayPaint
+
+## 🗑️ OVERALL REMOVALS
+
+### 🚫 Removed Mods:
+
+- BetterSprayPaintFIXED
+
+## 📦 MOD UPDATES
+
+_(Old version → New version)_
+
+- LethalLevelLoaderUpdated: 1.5.1 → 1.5.5
+- DawnLib: 0.4.3 → 0.4.9
+- LCLocalFixes: 0.0.1 → 0.0.2
+- ButterFixes: 1.15.3 → 1.15.5
+- itolib: 0.6.0 → 0.6.1
+- MrovLib: 0.3.6 → 0.3.7
+- WeatherTweaks: 1.1.6 → 1.1.7
+- SelfSortingStorage: 1.4.2 → 1.4.3
+- ScienceBirdTweaks: 4.4.9 → 4.4.10
+- LethalSponge: 1.2.0 → 1.3.6
+- ChuxiaFixes: 1.0.1 → 1.0.2
+- NicheTweaks: 0.0.7 → 0.1.3
+- RuntimeIcons BetterRotations: 1.1.1 → 1.1.5
+- LethalHUD: 1.3.4 → 1.3.5
+- EnemySoundFixes: 1.8.3 → 1.8.5
+- Chameleon: 2.2.0 → 2.2.1
+- FontUpdate: 0.8.1 → 0.8.2
+- Wesleys Weathers: 1.2.4 → 1.2.7
+- Wesleys Ememy Variants: 1.1.1 → 1.2.1
+- Polarus: 5.0.1 → 5.0.2
+- Alcatras: 2.0.1 → 2.0.2
+- Motra: 1.1.0 → 1.1.1
+- Hyx: 2.0.3 → 2.0.4
+- Gloom: 4.0.3 → 4.0.5
+- Calist: 2.0.3 → 2.0.4
+- Asteroid-13: 4.2.0 → 4.2.1
+- Faith: 1.0.5 → 1.0.6
+- Cosmocos: 5.0.1 → 5.0.3
+- Release: 1.0.4 → 1.0.5
+- Extort: 1.0.3 → 1.0.4
+- Crowd: 1.0.4 → 1.0.5
+- Wither: 2.0.1 → 2.0.2
+- 42 Kiri: 1.4.4 → 1.4.5
+- WesleysInteriors: 4.0.19 → 4.1.5
+
+# MoreBrutalLethalCompanyPlus _v73.0.1_
+
+## 🐞 FIXES
+
+- Fixed release version not having the updated configs.
+- Removed 1 unnecessarily mod.
+- Updated 2 mods that I missed somehow.
+
+## 🗑️ OVERALL REMOVALS
+
+### 🚫 Removed Mods:
+
+- Vacuity
+
+## 📦 MOD UPDATES
+
+_(Old version → New version)_
+
+- Scrap Insurance: 1.0.2 → 1.0.3
+- Mirage: 1.27.0 → 1.28.0
+
 # MoreBrutalLethalCompanyPlus _v73.0.0_
-
-# DEV notes
-
-- Tiers explained in poster.
-- Test the new enabled setting from ButteryFixes - EndOrbitEarly.
-- More tips.
-- Decide removing or leaving BetterStamina. Vanilla stamina already feels nice and my changes feel very not significant.
-- Balance store prices.
-- GhostCodes change.
-- Disable Interior Analiyses when updating modpack.
 
 ## 🐞 FIXES
 
@@ -26,6 +143,9 @@
 - Fixed missing twist SFX when first inserting car key to ignition.
 - Fixed gift boxes having increased spawn chances ever since.
 - Scan command no more shows the exact total value.
+- Fixed Snare Flea getting stuck on players head.
+- Fixed UI scrolling issue.
+- _And various other minor fixes._
 
 ## ✨ GAMEPLAY & MECHANICS
 
@@ -38,13 +158,23 @@
 - Cruiser no more automatically gearbox switch between drive & reverse and doesn't automatically center wheel.
 - Masked enemy can't hold any item anymore.
 - Reduced Belt bag capacity from 10 to 7.
-- Reduced Shotgun price from 900 to 650.
+- Balanced store item prices.
+- Balanced Medkit.
+- Because of Gambling Machines removal, last day buy rate at company was slightly improved.
+- Tweaked weight for some items.
+- Extended deadline price was decreased from 500 to 350.
+- Scrap insurance price was decreased from 650 to 300.
+- Quota increases by 3% for every dead player that is not retrived.
+- Fines for each dead player have been slighty more balanced.
+- _And various other minor changes that I forgot._
 
 ### 📊 TIERS & CONSTELLATIONS
 
 - Renamed all constellations.
 - Added 2 new constellation.
 - Moons placement on constellations were rebalanced based on moons tier and constellation tag.
+- Balanced interior curves, probability range, scrap value and amount multipliers, enemies list and their spawn chances and other stuff.
+- Balaned Turrets and Traps amount on all tier moons.
 - Constellation changes:
   - AST-17 _[ starting constellation ]_
     - _Wasteland, Ocean, Canyon, Rocky._
@@ -89,7 +219,6 @@
 
 - Removed bridge from March.
 - Small improvements to Generic moons.
-- Reduced Turrets and Traps amount on all tier moons.
 - Removed moons
   - Attenuation
   - Retinue
@@ -99,7 +228,6 @@
   - Acheron
   - Derelict
   - Arcadia
-- Rebalanced enemies and their spawn chance on moons.
 - Wither:
   - Terrain has been entirely remodeled and repainted.
   - Combined the spikes into a few large, abstract structures. Added more mountainous terrain and completely overhauled the desert rock formations.
@@ -159,28 +287,31 @@
 - Bunker Spider:
   - Chase speed was slightly reduced.
   - Dealing damage to play was reduced.
-  - Health was increased.
 - Old bird visibility through fog was reduced.
 - Tourists:
   - Can no longer go under the ship.
   - No more explodes behind the players back.
+- Snare flea:
+  - No more there is second chance, behavior is vanilla.
+    - _Was done to fix an issue_.
 
 ## 🎨 VISUAL & AUDIO
 
 - Any item/scrap scanned will be covered in a holographic highlight.
 - Reduced scan light range and intensity.
-- Replaced modified posterization shader with vanilla.
 - Moon videos are no longer shown in terminal when choosing moon. Still visible on main monitor.
 - Increased amount of tips.
 - After getting killed by _Locker, The Cabinet, SCP-096_ and _Ogopogo_ you get the correct cause of death.
-- Improved dropped state rotation for vanilla and some modded scraps.
+- Improved hotbar items/scrap rotation for vanilla and some modded scraps.
 - Added missing dashboard button SFX when using wipers, cabin window, etc.
 - Fixed posters not being affected by shaders.
 - Replaced 2 quad poster in the ship with vanilla meshes.
 - Re-enabled ships speaker playing intro.
 - Added unique sounds to some vanilla items.
 - Re-enabled boot animation on game launch startup.
-- Changed scrap Paintings to be more lore releated.
+- Changed scrap paintings to be more lore releated.
+- UI clock won't show up also on spectator UI.
+- Added zooming ability when pressing key _[ C ]_.
 
 ### 🖥️ HUD
 
@@ -258,19 +389,19 @@
 
 ### 🏠 Added Interiors:
 
-- Habitat:
-
-  - _Looks lost, don't let him take you_.
-
-- Deepcore:
+- Deepcore mines:
 
   - _Dynamite veins pulse red_.
 
-- Midnight Sanctuary:
+- Sanctuary:
 
   - _Paths loop back to your footprints_.
 
 - Raven Manor:
+
+  - _People on paintings blink, eyes follow you_.
+
+- Fractured Complex:
 
   - _People on paintings blink, eyes follow you_.
 
@@ -287,6 +418,14 @@
 - Hurricane.
 
   - _Intense winds and rain batter, making movement dangerous and visibility poor_.
+
+- Darkness.
+
+  - _Moon plunged into total darkness_.
+
+- Upcoming Storm.
+
+  - _Wind and clouds build before heavy rain hits_.
 
 ### 👾 Added Enemies:
 
@@ -310,7 +449,7 @@
   - itolib
 - LethalError
 - True Darkness client
-- 47Chronos _[ already in the pack, just added as standalone ]_
+- 47Chronos _[ * ]_
 - 28Terra _[ * ]_
 - 3Bilge _[ * ]_
 - 615Noctis _[ * ]_
@@ -323,7 +462,6 @@
 - CoronerIntegrations
 - CoronerMimicsFixEnUS
 - FairerFireExits
-- AsyncLoggers Experimental
 - FontUpdate
 - SmartEnemyPathfinding
 - LCLocalFixes
@@ -336,11 +474,33 @@
 - Wesleys Weathers
 - NicheTweaks
 - LCZoom
-- HalloweenCostumes
-- HalloweenAction
 - Pigeons HighVis Suits
 - V73dcfix
 - FlashlightToolLoader
+- CustomDeathPenalty
+- LethalScrollFix
+- ChuxiaFixes
+- BetterSprayPaintFIXED
+- UniqueItemSounds
+- Piggys Variety Mod Fork
+- Release
+- Aquatis
+- Celest
+- 01 Lua
+- Crowd
+- Midnight Sanctuary
+- Raven Manor Interior
+- Deepcore Mines
+  - Beanies Lib
+- 42 Kiri
+- Extort
+- Vigilance moon
+- MPLCPP
+- Combined Weathers Toolkit
+- WeatherTweaks
+- LobbyControl
+- CustomPaintings
+- RuntimeIcons BetterRotations
 
 ## 🗑️ OVERALL REMOVALS
 
@@ -365,30 +525,22 @@
 - VoxxMoons
 - OiiaCat
 - Vacuity Moon
-- RebalancedMoonsBeta
 - SpikeTrapFixes
-- MQLCTP
 - BetterSprayPaint
 - Sleight Of Hand Piggy Variety Patch
-- LCBetterSaves /// Not sure
-- LCBetterSavesFix /// Not sure
 - NestFix
 - LandFromOrbit
 - BreakableSnowmen
 - BetterVehicleControls
 - EnhancedMonsters
-- BetterStamina
 - Supercharger
 - GamblingMachineAtTheCompany
 - FacilityMeltdown
 - Meltdown Chance
-- LLLHotreloadPatch
-- AsyncLoggers
 - ItemWeights
 - Piggy Variety Mod
 - Longer Day
 - CruiserTunes
-- Sleight Of Hand Piggy Variety Patch
 - BetterSprayPaint
 - MissileTurrets
 - RadioBabyFace
@@ -410,12 +562,19 @@
 - SnatchinBracken
 - NetworkMetricsFix
 - FixPlayerName
+- ghostCodes
+- AutoCompanyBuilding
+- Oxygen
+- LobbyControl Experimental
+- darmuhsTerminalVideos
+- Company Hauler
 
 ## 📦 MOD UPDATES
 
 _(Old version → New version)_
 
-- CustomPosters: 2.0.0 → 4.0.1
+- BepInExPack: 5.4.2100 → 5.4.2304
+- CustomPosters: 2.0.0 → 4.0.2
 - SkelaahsWildMoons: 2.5.5 → 2.6.9
 - FacilityMeltdown: 2.7.1 → 2.7.3
 - MelaniesVoice: 1.1.0 → 1.3.0
@@ -435,7 +594,7 @@ _(Old version → New version)_
 - LobbyImprovements: 1.1.1 → 1.1.2
 - LethalFixes: 1.2.7 → 1.2.8
 - JLL: 1.9.8 → 1.9.9
-- LegaFusionCore: 1.0.0 → 1.0.1
+- LegaFusionCore: 1.0.0 → 1.0.3
 - TheDoctor: 1.0.2 → 1.0.4
 - ToilHead: 1.7.2 → 1.8.0
 - Mirage: 1.27.0 → 1.28.0
@@ -472,21 +631,23 @@ _(Old version → New version)_
 - Lategame Upgrades: 3.12.5 → 3.12.8
 - MrovLib: 0.3.1 → 0.3.6
 - RuntimeIcons: 0.3.2 → 0.3.3
-- WeatherRegistry: 0.6.1 → 0.7.4
+- WeatherRegistry: 0.6.1 → 0.7.5
 - BetterStamina: 1.5.6 → 1.5.7
 - LooseJesterSpring: 1.0.4 → 1.0.5
 - HotbarPlus: 1.8.5 → 1.8.6
 - SpiderPositionFix: 1.5.2 → 1.5.3
 - CullFactory: 1.7.0 → 2.0.0
-- Liminal House: 1.0.7 → 1.0.9
+- Liminal House: 1.0.7 → 1.1.0
+- LethalHud: 1.0.2 → 1.3.3
 - Alcatras: 2.0.0 → 2.0.1
 - Oldred: 4.0.0 → 4.0.1
+- Cosmocos: 5.0.0 → 5.0.1
 - Hyx: 2.0.2 → 2.0.3
 - Repress: 1.0.4 → 1.0.5
 - Gratar: 4.2.1 → 4.2.2
 - Gloom: 4.0.2 → 4.0.3
 - Calist: 2.0.2 → 2.0.3
-- WesleyInteriors: 3.0.8 → 4.0.14
+- WesleyInteriors: 3.0.8 → 4.0.19
 - Storage Complex: 1.1.5 → 1.1.6
 - TestAccountCore: 1.14.3 → 1.14.4
 - ShipWindows: 2.5.1 → 2.6.0
@@ -496,11 +657,11 @@ _(Old version → New version)_
 - SelfSortingStorage: 1.2.1 → 1.4.2
 - MoreCompany: 1.11.2 → 1.12.0
 - ReservedItemSlotCore: 2.0.52 → 2.0.53
-- LethalSponge: 1.1.10 → 1.1.11
-- LethalPhones: 1.3.17 → 1.3.18
+- LethalSponge: 1.1.10 → 1.2.0
+- LethalPhones: 1.3.17 → 1.3.19
 - LethalPerformance: 0.0.130 → 1.2.1
-- MonoDetour BepInEx 5: 0.6.14 → 0.7.4
-- MonoDetour 5: 0.6.14 → 0.7.4
+- MonoDetour BepInEx 5: 0.6.14 → 0.7.5
+- MonoDetour 5: 0.6.14 → 0.7.5
 - DetourContext Dispose Fix: 1.0.5 → 1.0.6
 - AutoHookGenPatcher: 1.0.7 → 1.0.9
 - ButteRyBalance: 0.2.4 → 0.3.1

@@ -1,7 +1,7 @@
 ---
 [![Discord](https://i.imgur.com/6xZmhQ3.png)](https://discord.gg/Z9rUwTtUpx)
 
-⠀⠀[![Thunderstore Version](https://img.shields.io/thunderstore/v/seechela/MoreBrutalLethalCompanyPlus?style=for-the-badge&logo=Thunderstore&logoColor=white&label=VERSION&labelColor=Grey)](https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLethalCompanyPlus/)⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[![Thunderstore Downloads](https://img.shields.io/thunderstore/dt/seechela/MoreBrutalLethalCompanyPlus?style=for-the-badge&logo=Thunderstore&logoColor=white&label=DOWNLOADS&labelColor=Grey&link=https%3A%2F%2Fthunderstore.io%2Fc%2Flethal-company%2Fp%2Fseechela%2FMoreBrutalLethalCompanyPlus%2F)](https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLethalCompanyPlus/)⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fthunderstore.io%2Fapi%2Fv1%2Fpackage-metrics%2Fseechela%2FMoreBrutalLethalCompanyPlus&query=rating_score&style=for-the-badge&logo=thunderstore&logoColor=white&label=Total%20Rating&labelColor=grey)](https://discord.gg/Z9rUwTtUpx)⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FZ9rUwTtUpx%3Fwith_counts%3Dtrue&query=approximate_member_count&style=for-the-badge&logo=discord&logoColor=white&label=TOTAL%20MEMBERS&labelColor=grey&link=%20https%3A%2F%2Fdiscord.gg%2FZ9rUwTtUpx)](https://discord.gg/Z9rUwTtUpx)
+⠀⠀[![Thunderstore Version](https://img.shields.io/thunderstore/v/seechela/MoreBrutalLethalCompanyPlus?style=for-the-badge&logo=Thunderstore&logoColor=white&label=VERSION&labelColor=Grey)](https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLethalCompanyPlus/)⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[![Thunderstore Downloads](https://img.shields.io/thunderstore/dt/seechela/MoreBrutalLethalCompanyPlus?style=for-the-badge&logo=Thunderstore&logoColor=white&label=DOWNLOADS&labelColor=Grey&link=https%3A%2F%2Fthunderstore.io%2Fc%2Flethal-company%2Fp%2Fseechela%2FMoreBrutalLethalCompanyPlus%2F)](https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLethalCompanyPlus/)⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FZ9rUwTtUpx%3Fwith_counts%3Dtrue&query=approximate_member_count&style=for-the-badge&logo=discord&logoColor=white&label=TOTAL%20MEMBERS&labelColor=grey&link=%20https%3A%2F%2Fdiscord.gg%2FZ9rUwTtUpx)](https://discord.gg/Z9rUwTtUpx)⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀![Live Players](https://img.shields.io/endpoint?url=https://mblcp-player-tracker-still-snow-8423.fly.dev/count&style=for-the-badge&logo=steam)
 
 # ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  Perfect Balance of Challenge and Fun!
 
@@ -11,41 +11,37 @@
 ![Key Features](https://i.imgur.com/Go0CPtK.png)
 
 - **Tiers:** The higher the Tier of the moon, the more amount of enemies, scrap amount and hazards amount there will be.
-- **Explore New Worlds:** Explore _62_ moons across 10 systems, each with distinct themes and difficulty levels.
-- **Longer Days:** Enjoy slightly extended daylight hours, giving a player more time to explore and loot.
-- **More Items:** Find more item to buy and more types of scrap.
-- **New Monsters:** Brace yourself for _20_ new terrifying monsters.
+- **Moons:** Explore _67_ moons across 12 systems, each with distinct difficulty levels.
+- **More Items:** Find more items to buy and more types of scrap inside the facilities.
+- **New Monsters:** Get ready for _12_ new monsters.
 - **Enhanced Vanilla Monsters:** Several vanilla monsters have been upgraded with new behaviors and features.
 - **Immersive Experience:** Enjoy enhanced sound effects and new game mechanics, such as adrenaline boosts.
 - **Customization Galore:** Choose from _20+_ suits, _50+_ cosmetics, and _100+_ emotions to personalize and express yourself.
 - **Regeneration:** Players can regenerate health after taking damage while inside the ship with closed ship doors or outside but much slower.
-- **Oxygen:** Plan your exploration carefully - oxygen depletes when you're outside the ship _[ except on green planets ]_.
 - **Enhanced Saves:** Create additional saves beyond the default three and rename them for better organization.
 - **Quality:** Increased game resolution from **520p → 720p**, maintaining performance while improving visuals.
 - **Fog:** Reduced the noise/graininess visible in fog, improving light definition.
 - **Optimized Gameplay:** Enjoy smoother performance with multiple fixes and optimizations.
 - **Noise Suppression:** Enabled advanced background sound removal, effectively reducing distractions like chatter and keyboard noise while maintaining speech clarity.
-- **Revamped HUD:** Enjoy a revamped minimalistic HUD that hides the health bar after a period of no damage, while a dedicated panel clearly displays flashlight battery status.
+- **Revamped HUD:** Enjoy a revamped minimalistic HUD with an dedicated panel clearly displaying battery status of anelectrical usable item.
 - **Hot-Reload:** Dynamically loads and unloads custom moon AssetBundles as needed, significantly reducing RAM usage.
-- **Beware of the Unknown:** Watch out for the masked enemy who has learned to mimic the voices of your friends.
-- **Missile Turrets:** New inside hazard - Missile Turrets. The missiles travel slower than standard projectiles, they accelerate over time. These turrets require a brief reload period after each shot.
+- **Mimics:** Watch out for the masked enemy who has learned to mimic the voices of your friends.
 - **Toil-Heads:** Coil-head, Manti-coil and Masked now with a small chance can spawn with turrets mounted on their heads.
-- **Enhanced Darkness:** The darkness is now even more intense, but players can illuminate their path with each scan, making navigation through the shadows easier.
+- **Enhanced Darkness:** The darkness is now even more intense, but players can illuminate their path with each scan, making navigation through the dark easier.
 - **High-Amount Scrap:** Moons with active weather will contain higher amount scrap.
-- **Ship Features:** The ship has its own window, top-mounted floodlight will be rotating upon landing, auto reroute to The Company moon on the last day, customized posters, but the ship may sometimes malfunction.
+- **Ship Features:** The ship has its own window, top-mounted floodlight will be rotating upon landing, custom posters, but the ship may sometimes malfunction.
 - **Enhanced Radar Booster:** Upgraded Radar Booster has doubled range on the map. Teleport your Radar Booster back to the ship or Inverse teleporter it into the facility.
-- **Orbit:** Experience a more beautiful and immersive orbit.
-- **Upgrades:** Upgrade your ship or character through the terminal.
-- **Terminal:** Terminal home screen is beautiful and has all commands with all information that player needs to know.
-- **Dungeons:** Dungeon Shuffler system that boosts the chances of dungeons being selected if they were not chosen on previous days, diversifying dungeon encounters.
-- **Quota:** Carefully balanced custom quota to make playing more enjoyable.
-- **Rebalance:** Several gameplay elements have been adjusted to enhance the overall player experience.
-- **Automatic Signals:** Signal translator may warn you of enemies, open blast doors, or even teleport a player when a giant is about to consume him.
-- **Apparatus:** By pulling apparatus out, all players inside the factory will take a decent amount of damage. There is even an chance of self destruction sequence happening.
+- **Enhanced Lockpicker:** Upgraded Lockpicker reduced time of lockpicking and ability to jam a door lock.
 - **Enhanced Zap Gun:** The Zap Gun has a new abilities like, allowing players to eliminate bees, deal damage to players, temporarily stun Turrets, Mines, and Spike traps depending on how long player zap them and an ability to hold open the closed big airlock*/*pressure doors facility doors while zapping.
+- **Orbit:** Experience a more beautiful and immersive orbit.
+- **Upgrades:** Upgrade your ship or character through the terminal with command _[ LGU ]_.
+- **Terminal:** Terminal home screen is beautiful and has all commands with all information that player needs to know.
+- **Quota:** Carefully balanced quota and penalties to make playing more enjoyable and balanced.
+- **Re-balance:** Some gameplay elements have been adjusted to balance and enhance the overall player experience.
+- **Apparatus:** By pulling apparatus out, all players inside the factory will take a decent amount of damage.
 - **Scrap Insurance:** Players can now purchase this feature in the terminal to protect their hard-earned scrap.
 - **Extend Deadline:** Need more time to complete your quota? Players can now extend the deadline through the terminal by selecting the desired number of additional days, giving you a better chance to succeed in your mission.
-- **Interactive Menu:** Moons page & store page now feature an interactive catalog.
+- **Interactive Menu:** Moons page & store page are an interactive catalog.
 
 **Please note that not all game-changing mechanics/features are listed here.**
 
@@ -55,8 +51,7 @@
 
 - 10 unique systems: Each system features:
   - **Progressive Difficulty**: Systems increase in challenge and reward as you progress through tiers _[ F to S++ ]_.
-  - **Balanced Moons**: Moons are carefully assigned to match their system's theme.
-  - **Themed Scrap Assignments**: Scrap items now match their interior themes.
+  - **Balanced Moons**: Moons scrap, enemies and other stuff are nicely balanced.
   - **Dynamic Progression**: Use the '_info <system>_' command to discover details about each system.
 
 ---
@@ -65,6 +60,10 @@
 
 - **New Weather**: Blackout: Disables all lights planet-wide.
 - **New Weather**: Black fog: A dense, dark fog that greatly reduces visibility outside and indoors.
+- **New Weather**: Earthquakes: Ground can suddenly start to tremble and shake.
+- **New Weather**: Hurricane: Intense wind and rain.
+- **New Weather**: Darkness: Combo of Blackout and Black fog.
+- **New Weather**: Upcoming Storm: Storm is slowly incoming.
 
 ---
 
@@ -91,10 +90,10 @@
 
 ![Notes](https://i.imgur.com/YqG3gKf.png)
 
-- Modpack size: 3.2 GB
-- Stutters: Try turning off V-Sync in game settings... If that doesn't work, join our [Discord Server](https://discord.gg/Z9rUwTtUpx).
-- High RAM Usage: Try removing some moons you don’t like.
-- Epilepsy Warning: Disable Rapid Lights in `ghostCodes.Setup - Effects/Sound` config.
+- **Modpack size**: 3.4 GB
+- If you have stutters, try turning off V-Sync, uncapping FPS in game settings, going to config section and search for _LCUltrawide Community_ config and changing value 720 to 0. If that doesn't fix the problem, join our and tell about your problem [Discord Server](https://discord.gg/Z9rUwTtUpx).
+- If you have high RAM usage, try removing some moons you don’t like.
+- **Epilepsy Warning**: Disable Rapid Lights in `ghostCodes.Setup - Effects/Sound` config.
 
 ---
 
@@ -110,14 +109,14 @@
   - Toggle flashlight _[ F ]_.
 - **Mute:**
   - Mute yourself _[ M ]_
+- **Zoom:**
+  - Zoom with _[ C ]_
 - **Emotes:**
   - Open emotes wheel _[ Y ]_.
 - **QuickQuitToMenu:**
   - Instantly quit to the main menu _[ Ctrl + Alt + Shift + Q ]_.
 - **Batteries:**
   - Hold battery in hands and charge an item _[ C ]_
-- **Oxygen:**
-  - Hold _[ J ]_ to die faster underwater.
 - **Phones:**
   - After purchasing _Phones_ upgrade, press _[ 5 ]_ to toggle it.
   - To hangup call press _[ R ]_.
@@ -134,20 +133,20 @@
   - Default keybind for all reserved slots - _[ ALT ]_
   - Flashlight:
     - **Use** - _[ F ]_
-  - **Equip** - _[ X ]_
+    - **Equip** - _[ X ]_
   - Walkie-talkie:
     - **Use** - _[ R ]_
-  - **Equip** - _[ T ]_
+    - **Equip** - _[ T ]_
   - Spray paint:
-  - **Equip** - _[ H ]_
+    - **Equip** - _[ H ]_
   - Weapons:
-  - **Equip** - _[ B ]_
+    - **Equip** - _[ B ]_
   - Firearms:
-  - **Equip** - _[ V ]_
+    - **Equip** - _[ V ]_
   - Ammo:
-  - **Equip** - _[ U ]_
+    - **Equip** - _[ U ]_
   - Utility:
-  - **Equip** - _[ N ]_
+    - **Equip** - _[ N ]_
 
 ---
 

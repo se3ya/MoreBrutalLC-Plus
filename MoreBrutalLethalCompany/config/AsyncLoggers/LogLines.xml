@@ -3662,9 +3662,9 @@
       </Method>
     </Class>
     <Class name="GiantKiwiAI">
-      <Method name="Start">
+      <Method obsolete="true" name="Start">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log("Giant kiwi has detected the game is in test mode.")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Giant kiwi has detected the game is in test mode.")</LogCall>
       </Method>
       <Method name="CheckLOSForCreatures">
         <!--Edit 'status' to customize log behavior-->

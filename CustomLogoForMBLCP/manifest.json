@@ -1,10 +1,10 @@
 ﻿{
     "name": "CustomLogoForMBLCP",
-    "version_number": "1.1.5",
+    "version_number": "3.0.0",
     "website_url": "https://discord.gg/4DhJQcheAf",
-    "description": "Replaces default Lethal Company logo to custom *[ For MoreBrutalLethalCompanyPlus ]*",
+    "description": "Replaces default Lethal Company logo to custom made for MoreBrutalLethalCompanyPlus modpack.",
     "dependencies": [
-        "BepInEx-BepInExPack-5.4.2100",
+        "BepInEx-BepInExPack-5.4.2304",
         "Evaisa-LethalLib-1.1.1",
         "loaforc-loaforcsSoundAPI-2.0.8",
 		"Darkbrewery-Emblem-1.6.4"
