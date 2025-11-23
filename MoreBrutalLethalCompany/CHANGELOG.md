@@ -1,23 +1,284 @@
-# MoreBrutalLethalCompanyPlus *v72.2.0*
+# MoreBrutalLethalCompanyPlus _v73.1.0_
 
 ## DEV NOTES
 
-- Shy guy
-- Lethal Hud
+- Update the spawnable scrap to include new scraps like Nuclear Bomb
+- Quota base increase and steepness may need to be changed because of system prices.
+- Configure interior scrap bonus for some moons.
+- On Aquatis only? scrap spawns on terrian???
+- Feels too easy for first system?
 
 ## 🐞 FIXES
 
-- Fixed lag and audio issue when entering/exiting ships reverb trigger by disabling *LR* outside ambience.
+- Fixed the bug when gift box has been opened, a new player joining the lobby still can see and use the gift box.
+- Fixed Cruiser horn getting stuck at wrong pitch when releasing and holding again.
+- Fixed _Aquatis_ having incorrect quicksand texture.
+- Fixed a networking bug with _Maneaters_ that would cause them to sometimes skip their windup animation when attacking after switching targets.
 
 ## ✨ GAMEPLAY & MECHANICS
 
-- 
+- 1 extra hotbar slot can be bought for 750 credits.
+- Added radio with thousands of random real radio stations as ship furniture upgrade for 60.
+- Added 6 new vanilla styled furnitures.
+- Changed LGU interactive hotkeys from WASD to arrows to match moons, store and systems pages.
+- Balanced out some vanilla scraps and all store item weights.
+- Increased ships floodlight intensity in blackout and rotation speed slightly.
+- Gambling machines are back in the Company.
+- During flooded and sometimes stormy and rainy weathers, water will also appear indoors, and its level will increase slowly.
+
+### 🫁 OXYGEN
+
+- Added oxygen consumption back.
+- Fixed previously oxygen being consumed very fast when running.
+  - Before, 0.0025 was added to the base consumption and that's quite a big value, but now, only 0.0005 is added.
+- Players while walking on clear air moons ~15 minutes.
+- Players while running on clear air moons ~6 minutes.
+- Players while walking on toxic, cold and thin air moons ~13 minutes.
+- Players while running on toxic, cold and thin air moons ~5 minutes.
+
+### 📊 QUOTA
+
+- Quota increase steepness and base increase has been changed to be vanilla values.
+- Quota multiplies for each new player in the lobby if there are more than 2.
+  - More than 12 players will not multiply the quota.
+  - Calculation: Quota multiplier = _1 + 0.18 * max(0, min(playerCount, 12) - 2)_
+- Quota will be increased by 3% for each dead player without recovering their body.
+  - 12% is the max quota increase if 4+ players died.
+  - Recovering a player's body reduces that body's penalty reduction by 85%.
+  - Penalty = 12% * (deadPlayers / playerCount).
+    - Example: 16 players in the lobby and 4 unrecovered deaths, penalty = 12% * (4/16) = 3%.
+- Credits will be reduced by 5% for each dead player without recovering his body.
+  - 20% is the max that can be reduced if 4+ players died.
+  - Recovering players body will reduce the penalty by 90%.
+  - Penalty is calculated based on crew count so it's balanced in larger lobbies.
+    - Example: 16 players in lobby and 4 unrecovered deaths, 4/16 = 0.25, penalty = 20 * 0.25 = 5%.
+
+### 🌘 MOONS
+
+- Difficulty overall was reduced.
+- Reduced interior sizes starting from tier D.
+- Increased value multiplier starting from tier D.
+- Increased scrap amount starting from tier D.
+- Less hard enemies at the day start.
+- Added rare _Nuclear Bomb_ scrap starting from D tier moons.
+- Added Rainy and Stormy weathers to Aquatis weather list.
+
+## 👾 ENEMIES
+
+- Balanced enemies probability curves.
+- Harder enemies spawn later in the day.
+- Balanced _Baboon Hawk, Circuit bees, Old Bird, Elder, Nutcracker,_ and _Thumper_ technical settings.
 
 ## 🎨 VISUAL & AUDIO
 
-- 
+- Tools in the hotbar that are not chosen will be visible on the players equipment slots.
+- Added more ambient and music sounds.
+- Enabled shadow casting on moons where it's disabled.
+- Improved some ships buyable furniture default positions when buying.
+- Added missing hit sound for Giant Sapsucker.
+- Added global voice volume slider in lobby player list menu.
+- Removed LethalConfig button from main menu, the button is only available in lobby player list menu.
+- Count of how many players are playing the modpack live are visible on readme page and in discord server.
+  - How it works, heartbeat (ping) is getting sent to server with a random ID.
 
-## 🌘 MOONS
+## 🌌 OVERALL ADDITIONS
+
+### 🌙 Added Moons:
+
+- Added new moon: Vacuity.
+
+  - _The sun bleeds across the sand, emptiness has a hunger_.
+  - Which system: OME-717.
+  - Risk Level: S.
+
+- Added new moon: Kanie.
+
+  - _The harvest was abandoned, now the vegetation watches you_.
+  - Which system: ARC-913.
+  - Risk Level: A.
+
+- Added new moon: Forsaken.
+
+  - _The mountain breathes steam, it's iron lungs are failing_.
+  - Which system: WRH-118.
+  - Risk Level: B.
+
+- Added new moon: Kiln.
+
+  - _The trees have keepers, their nests are made of steel_.
+  - Which system: VLK-300.
+  - Risk Level: A.
+
+### 🏠 Added Interiors:
+
+- Deep Sewers:
+
+  - _?_.
+
+### 🛠️ Added Mods:
+
+- BetterSprayPaint
+
+## 🗑️ OVERALL REMOVALS
+
+### 🚫 Removed Mods:
+
+- BetterSprayPaintFIXED
+- Piggys Variety Mod Fork
+
+## 📦 MOD UPDATES
+
+_(Old version → New version)_
+
+- LethalLevelLoaderUpdated: 1.5.1 → 1.5.5
+- DawnLib: 0.4.3 → 0.4.9
+- LunarConfig: 0.1.12 → 0.1.13
+- LCLocalFixes: 0.0.1 → 0.0.2
+- ButterFixes: 1.15.3 → 1.15.6
+- itolib: 0.6.0 → 0.6.1
+- MrovLib: 0.3.6 → 0.3.7
+- WeatherTweaks: 1.1.6 → 1.1.7
+- SelfSortingStorage: 1.4.2 → 1.4.3
+- ScienceBirdTweaks: 4.4.9 → 4.5.0
+- LethalSponge: 1.2.0 → 1.3.6
+- ChuxiaFixes: 1.0.1 → 1.0.2
+- NicheTweaks: 0.0.7 → 0.1.4
+- RuntimeIcons BetterRotations: 1.1.1 → 1.1.5
+- LethalHUD: 1.3.4 → 1.3.5
+- EnemySoundFixes: 1.8.3 → 1.8.5
+- Chameleon: 2.2.0 → 2.2.1
+- FontUpdate: 0.8.1 → 0.8.2
+- WaterAssetRestorer: 1.0.1 → 1.0.2
+- Wesleys Weathers: 1.2.4 → 1.2.7
+- Wesleys Ememy Variants: 1.1.1 → 1.2.1
+- Polarus: 5.0.1 → 5.0.2
+- Alcatras: 2.0.1 → 2.0.2
+- Motra: 1.1.0 → 1.1.1
+- Hyx: 2.0.3 → 2.0.4
+- Gloom: 4.0.3 → 4.0.5
+- Calist: 2.0.3 → 2.0.4
+- Asteroid-13: 4.2.0 → 4.2.1
+- Faith: 1.0.5 → 1.0.6
+- Cosmocos: 5.0.1 → 5.0.3
+- Release: 1.0.4 → 1.0.5
+- Extort: 1.0.3 → 1.0.5
+- Crowd: 1.0.4 → 1.0.5
+- Wither: 2.0.1 → 2.0.2
+- 42 Kiri: 1.4.4 → 1.4.5
+- WesleysInteriors: 4.0.19 → 4.1.10
+
+# MoreBrutalLethalCompanyPlus _v73.0.1_
+
+## 🐞 FIXES
+
+- Fixed release version not having the updated configs.
+- Removed 1 unnecessarily mod.
+- Updated 2 mods that I missed somehow.
+
+## 🗑️ OVERALL REMOVALS
+
+### 🚫 Removed Mods:
+
+- Vacuity
+
+## 📦 MOD UPDATES
+
+_(Old version → New version)_
+
+- Scrap Insurance: 1.0.2 → 1.0.3
+- Mirage: 1.27.0 → 1.28.0
+
+# MoreBrutalLethalCompanyPlus _v73.0.0_
+
+## 🐞 FIXES
+
+- Fixed lag and audio issue when entering/exiting ships reverb trigger.
+- Fixed _the Cabinet_ not being scannable after angering it by trying to open it.
+- Fixed several issues for _Shy guy_.
+- Fixed inventory weight resetting when dropping items with a tulip snake attached.
+- Fixed a quite rare bug where player was not able to pull the lever to land the ship.
+- Fixed possible soft-locks/crashes on modded moons.
+- Fixed _Divide_ moon having no nav-mesh.
+- Fixed apparatus price being visible.
+- Fixed the blood spillage effect getting stuck in spectator mode.
+- Fixed Spider webs slowing down enemies that haven't finished vent animation, resulting in deformities.
+- Fixed Bees and Spiders not being able to damage enemies.
+- Fixed missing twist SFX when first inserting car key to ignition.
+- Fixed gift boxes having increased spawn chances ever since.
+- Scan command no more shows the exact total value.
+- Fixed Snare Flea getting stuck on players head.
+- Fixed UI scrolling issue.
+- _And various other minor fixes._
+
+## ✨ GAMEPLAY & MECHANICS
+
+- Reduced sprinting speed on ladders.
+- Pulling Apparatus out will disable all traps and hazards.
+- Switching breaker power off will disable all traps and hazards.
+- Reduced radiation damage which happens once apparatus is pulled out from 25 to 20.
+  - Reduced radiation increasing value every hour from 8 to 5.
+- Fire exits spawn more far away from main entrance.
+- Cruiser no more automatically gearbox switch between drive & reverse and doesn't automatically center wheel.
+- Masked enemy can't hold any item anymore.
+- Reduced Belt bag capacity from 10 to 7.
+- Balanced store item prices.
+- Balanced Medkit.
+- Because of Gambling Machines removal, last day buy rate at company was slightly improved.
+- Tweaked weight for some items.
+- Extended deadline price was decreased from 500 to 350.
+- Scrap insurance price was decreased from 650 to 300.
+- Quota increases by 3% for every dead player that is not retrived.
+- Fines for each dead player have been slighty more balanced.
+- _And various other minor changes that I forgot._
+
+### 📊 TIERS & CONSTELLATIONS
+
+- Renamed all constellations.
+- Added 2 new constellation.
+- Moons placement on constellations were rebalanced based on moons tier and constellation tag.
+- Balanced interior curves, probability range, scrap value and amount multipliers, enemies list and their spawn chances and other stuff.
+- Balaned Turrets and Traps amount on all tier moons.
+- Constellation changes:
+  - AST-17 _[ starting constellation ]_
+    - _Wasteland, Ocean, Canyon, Rocky._
+    - Contains - 5 moons.
+  - ARC-913
+    - _Valley, Canyon, Rocky._
+    - Contains - 5 moons.
+  - OME-717
+    - _Tundra, Wasteland, Valley._
+    - Contains - 5 moons.
+  - WRH-118
+    - _Ocean, Valley, Canyon._
+    - Contains - 5 moons.
+  - ZYN-300
+    - _Canyon, Valley, Ocean._
+    - Contains - 6 moons.
+  - ZRC-81
+    - _Company, Valley, Ocean, Tundra._
+    - Contains - 6 moons.
+  - HYDR-57
+    - _Wasteland, Valley, Canyon._
+    - Contains - 6 moons.
+  - STRM-501
+    - _Argon, Canyon, Company, Wasteland, Valley._
+    - Contains - 6 moons.
+  - VLK-300
+    - _Volcanic, Rocky, Canyon._
+    - Contains - 6 moons.
+  - CPHR-77
+    - _Military, Canyon, Tundra, Rocky._
+    - Contains - 6 moons.
+  - NAV-42
+    - Tags - _Tundra, Canyon, Valley, Rocky._
+    - Contains - 7 moons.
+  - SRB-1806
+    - Tags - _Tundra, Argon._
+    - Contains - 6 moons.
+- Removed tiers: _D+, C+, C++, B+, B++, A+, A++, SS, SS+, SS++, SSS_ and _Hell_.
+- Added new tier - _E_, goes after _F_ tier.
+
+### 🌘 MOONS
 
 - Removed bridge from March.
 - Wither:
@@ -29,14 +290,14 @@
   - Improved lighting with new lights and animated sequences, now connected to the interior's power system *[ Breaker, apparatus ]*.
   - Redrew posters, improved texture, added new posters and drawings.
   - Added a pulley system to transport players and items to the upper catwalk.
-  - Added new buttons, textures, music and other stuff to elevator. 
+  - Added new buttons, textures, music and other stuff to elevator.
   - Fixed all the stretched hover icons on the map.
   - Fixed item dropship music starting before it's landed.
   - Fixed some incorrect normals on small spotlight objects and door knobs.
   - Fixed incorrectly set normal maps on some decals.
   - Fixed fragile catwalk sometimes being able to be triggered two times at once.
 <details>
-  <summary>Wither event rework spoilers</summary>  
+  <summary>Wither event rework spoilers</summary>
 
   - A new endemic creature will be awakened after triggering the event on Wither.
   - Improved apparatus insertion: new sound effects, textures, models, animations, and lights.
@@ -80,7 +341,7 @@
 
 ### 🛠️ Added Mods:
 
-- 
+-
 
 ## 🗑️ OVERALL REMOVALS
 
@@ -345,7 +606,7 @@
 - Increased *SSS* tier enemy spawn speed from 0.6 > 0.7.
 - Updated the list of scrap and their spawn weight for each tier.
 - Rebalanced each tier enemy list and their chances.
-- ++ tiers moons are now displayed as hidden. 
+- ++ tiers moons are now displayed as hidden.
 
 ## 🌘 MOONS
 
@@ -399,12 +660,12 @@
   - *Jungle swallowed fortress. The secrets were buried or stolen*.
   - Which system: Aquarius.
   - Risk Level: A+.
-  
+
 - Added new moon: Hyve.
   - *A thousand wings. A million stingers. One queen*.
   - Which system: Pegasus.
   - Risk Level: A++.
-  
+
 - Added new moon: Etern.
   - *The mind breaks before the body*.
   - Which system: Gemini.
@@ -414,7 +675,7 @@
   - *A graveyard of petrified giants*.
   - Which system: Taurus.
   - Risk Level: S+.
-  
+
 - Added new moon: Makron.
   - *Gold took the green. Now it wants blood*.
   - Which system: Gemini.
@@ -439,12 +700,12 @@
   - *Rusted metal still screams*.
   - Which system: Thanatros.
   - Risk Level: Hell.
-  
+
 - Added new moon: Cosmocos.
   - *3 landings, 0 takeoffs*.
   - Which system: Thanatros.
   - Risk Level: Hell.
-  
+
 ### 👾 Added Enemies:
 
 - Cat
@@ -677,7 +938,7 @@
 - Reduced Apparatus value from 220 credits > 140 credits.
 - Scrap value multiplier on moons was reduced.
 - The scrap value of dropped masks recovered from masked enemies has been reduced from 50 > 38 credits.
-- Reduced the range in meters at which the Apparatus reduces phone connection quality from 50 > 35. 
+- Reduced the range in meters at which the Apparatus reduces phone connection quality from 50 > 35.
 - Increased the damage that increases by at the top of each hour from 15 > 25.
 - Disabled malfunction penalty. Malfunction chances no more increases when not recovering a player.
 - Reduced lever malfunction chance from 3% > 1%.
@@ -692,8 +953,8 @@
 - Slightly increased movement speed while limping.
 - Reduced the amount of turrets on moons.
 - Some store items can spawn on moons with a small chance.
-- Slightly reduced max ships scan distance. 
-- Slightly reduced max main entrance scan distance. 
+- Slightly reduced max ships scan distance.
+- Slightly reduced max main entrance scan distance.
 - Adjusted enemy, scrap and interior shuffle.
 - Increased darkness intensity.
 
@@ -702,7 +963,7 @@
 - Reduced jackpot rate chance from 5% > 3%.
 - Jackpot rate can only happen on last day.
 - Increased the chance of last day to be randomized within the 'Last day 85% <-> 105%' range instead of being the default 100% from 50% > 80%.
-  
+
 ### 📊 QUOTA
 
 - Reduced starting credits from 100 > 55.
@@ -713,7 +974,7 @@
 - Base quota increase was reduced from 250 > 150.
 - Reduced curve sharpness from 4 > 2.
 - Increased rollover amount from 30% > 40%.
-  
+
 ### 🔫 SHOTGUN
 
 - Reduced tight pellet count from 3 > 2, less reliable close-range damage, more skill needed.
@@ -791,7 +1052,7 @@
 - Removed Tower and Atlantean Citadel interiors.
 - Reduced Castellum Carnis occuring chance on moons.
 
-## 🌘 MOON CHANGES	
+## 🌘 MOON CHANGES
 
 - **Chronos:**
   - Fixed an issue with the video now showing in orbit.
@@ -802,14 +1063,14 @@
 
 - *Smart Cupboard* no longer accepts Maneater in the storage.
 
-## 🌌 OVERALL ADDITIONS	
+## 🌌 OVERALL ADDITIONS
 
 ### 🌙 Added Moons:
 
 - Added new moon: Acheron.
   - Which system: Cygnus.
   - Risk Level: SSS.
-  
+
 - Added new moon: Bilge.
   - Which system: Aquarius.
   - Risk Level: B++.
@@ -858,7 +1119,7 @@
   - LCUtils
 - ShipWindowsBeta
 - HalloweenAction
- 
+
 ## 📦 MOD UPDATES
 *(Old version → New version)*
 
@@ -1003,7 +1264,7 @@
 - All *Barbers* will play the drumroll audio before they are going to *jump*.
 - Increased *Walkers* spawn chance.
 
-## 🌘 MOON CHANGES	
+## 🌘 MOON CHANGES
 
 - **Chronos:**
   - Removed one of the Fire Exits.
@@ -1038,7 +1299,7 @@
 - Meltdown's Red lights now appear properly again.
 - look at this stupid...
 
-## 🌌 OVERALL ADDITIONS	
+## 🌌 OVERALL ADDITIONS
 
 ### 👾 Added Enemies:
 
@@ -1062,7 +1323,7 @@
 - LethalBestiary
 - Football
 - StoreTweaks
- 
+
 ## 📦 MOD UPDATES
 *(Old version → New version)*
 
@@ -1168,7 +1429,7 @@
 - **Systems Overhaul**:
   - Balanced hazards amount of SS tier and higher.
   - Slightly reduced scrap value multiplier on F, D and D+ moons.
-  - Slightly increased the price of **+** moons. 
+  - Slightly increased the price of **+** moons.
     - C+ and C++ also now have a price.
   - Dungeon size increase is based on tiers instead of system.
   - Renamed *Corruption Detected* system to *Thanatros*.
@@ -1370,15 +1631,15 @@
   - Maximum Gift boxes in facility are 3.
 - Increased the randomness spawning feeling between Gift boxes in the same position.
 
-## 🌘 MOON CHANGES	
+## 🌘 MOON CHANGES
 
 - Removed vanilla moons improvements temporarily to fix de-syncs.
 
-## 🚀 UPGRADES	
+## 🚀 UPGRADES
 
 - Removed *Night Vision* upgrade.
 
-## 🌌 ADDITIONS	
+## 🌌 ADDITIONS
 
 ### 🌙 Added Moons:
 
@@ -1474,7 +1735,7 @@
 - ShipWindows
 - LethalSettings
 - TwitchChatAPI
- 
+
 ## 📦 MOD UPDATES
 *(Old version → New version)*
 
@@ -1532,7 +1793,7 @@
 - Fixed issues with animation transitions.
 - Fixed an issue where if the soul devourer has exactly 120 stamina it will just walk towards the player without entering any phases.
 
-## 🌌 ADDITIONS	
+## 🌌 ADDITIONS
 
 ### 🛠️ Overall Added Mods:
 
@@ -1548,7 +1809,7 @@
 - BepInEx MonoMod Debug Patcher
 - ExtraEnemyVariety
 - ScaredBaboon
-  
+
 ## 📦 MOD UPDATES
 *(Old version → New version)*
 
@@ -1589,7 +1850,7 @@
 - Added *Motion Tracker* to the store.
   - Can be used to track movement of near entity.
 
-## 🛍 STORE CHANGES	
+## 🛍 STORE CHANGES
 
 - Removed *Rocket* from the store.
 - Increased *Belt Bag* price from 45 > 65 credits.
@@ -1609,7 +1870,7 @@
 - Reduced *Spray paint* price from 50 > 45 credits.
 - Reduced *Zap gun* price from 400 > 350 credits.
 
-## 🌘 MOON CHANGES	
+## 🌘 MOON CHANGES
 
 - Added lights to fire exits on some vanilla moons.
 - Enemies and stuff can fall on the *Adamance* and *March* bridge now.
@@ -1644,7 +1905,7 @@
 - **Titan**:
   - Reworked fog slightly.
 
-## 🌌 ADDITIONS	
+## 🌌 ADDITIONS
 
 ### 🏠 New Interiors:
 
@@ -1674,7 +1935,7 @@
 
 - ItemWeights
 - PathfindingLagFix Beta
-  
+
 ## 📦 MOD UPDATES
 *(Old version → New version)*
 
@@ -1706,7 +1967,7 @@
 
 - a lot
 
-## 🌌 ADDITIONS	
+## 🌌 ADDITIONS
 
 ### 🛠️ Overall Added Mods:
 
@@ -1773,16 +2034,16 @@
 
 - **Retinue**:
   - Many minor fixes outside.
-  
+
 - **Detritus**:
   - Fixed naturally spawned missile float.
 
-## 🌌 ADDITIONS	
+## 🌌 ADDITIONS
 
 ### 🛠️ Overall Added Mods:
 
 - TalkingHeads
-  
+
 ## 📦 MOD UPDATES
 *(Old version → New version)*
 
@@ -1854,7 +2115,7 @@
 - Added / Changed several other off mesh links to hopefully make some pathfinding easier.
 - Fixed scaling on the train carts around the map.
 
-## 🌌 ADDITIONS	
+## 🌌 ADDITIONS
 
 ### 🛠️ Overall Added Mods:
 
@@ -1866,7 +2127,7 @@
 
 - SurvivalBonus
 - FunnySuit
-  
+
 ## 📦 MOD UPDATES
 *(Old version → New version)*
 
@@ -1974,7 +2235,7 @@
 - Clock scrap will show the actual in-game day time.
   - Will show real life time when in orbit or The Company.
 - Slightly increased the rollover.
-  
+
 ### ⚖️ MODPACK BALANCE OVERHAUL
 
 - Fixed scrap value multipliers.
@@ -2211,7 +2472,7 @@
 - Increased the distance the Pipe pile in the entry room change.
 - Flooded weather floods the death pits with water.
 
-## 🌌 ADDITIONS	
+## 🌌 ADDITIONS
 
 ### 👾 Added Enemies:
 
@@ -2269,7 +2530,7 @@
 - Added new moon: Asteroid-13.
   - Which system: Andromeda.
   - Risk Level: B.
-  
+
 - Added new moon: Nephrite.
   - Which system: Scorpius.
   - Risk Level: S.
@@ -2604,14 +2865,14 @@
   - Will talk to the player during hauntings.
 - Puffer:
   - Are now more aggressive and territorial.
-- Baboon hawks: 
+- Baboon hawks:
   - Can get scared of loud sounds *[ screaming ]* and will run away.
 - Butler:
   - When bumping into the Butler, it will go into the *Berserk* mode.
   - Will attack faster.
 - Jester:
   - Reduced the average time before a Jester winds.
-  
+
 ### 🛍️ STORE ITEMS TWEAKS:
 
 - Increased *Shotgun Shell* price from 20 > 45.
@@ -2648,7 +2909,7 @@
 - Increased chance for the last day rate to be randomized within the *'Last Day Min/Max'* range from 0.3 > 0.5
 - Reduced the minimum rate to occur on the last day of the deadline from 1 > 0.9.
 - Reduced the minimum rate the Company will buy your scrap for from 0.2 > 0.1. *[ 10% ]*
-  
+
 ### 🩸 CASTELLUM CARNIS INTERIOR CHANGES:
 
 - Fixed the minimap hiders for the *void* room.
@@ -2677,7 +2938,7 @@
 - Increased *Starting quota* from 300 > 380.
 - Adjusted rollover.
 
-## 🌌 ADDITIONS	
+## 🌌 ADDITIONS
 
 ### 🏠 New Interiors:
 
@@ -2689,7 +2950,7 @@
 - Added new moon: Wither.
   - Which system: Harmonia.
   - Risk Level: C+.
-  
+
 - Added new moon: CaltPrime.
   - Which system: Aquarius.
   - Risk Level: A++.
@@ -2840,7 +3101,7 @@
 - Forgot to update some mods in manifest.
 - Forgot to remove CoilHeadMod from manifest.
 - Forgot to change LC FastStartup from Lan > Online mode.
-- sowwy D: 
+- sowwy D:
 
 ## 📦 MOD UPDATES
 *(Old version → New version)*
