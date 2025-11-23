@@ -1,5 +1,3 @@
----
-
 [![Discord](https://i.imgur.com/6xZmhQ3.png)](https://discord.gg/Z9rUwTtUpx)
 
 ⠀⠀⠀⠀[![Thunderstore Version](https://img.shields.io/thunderstore/v/seechela/MoreBrutalLethalCompanyPlus?style=for-the-badge&logo=Thunderstore&logoColor=white&label=VERSION&labelColor=Grey)](https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLethalCompanyPlus/)⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[![Thunderstore Downloads](https://img.shields.io/thunderstore/dt/seechela/MoreBrutalLethalCompanyPlus?style=for-the-badge&logo=Thunderstore&logoColor=white&label=DOWNLOADS&labelColor=Grey&link=https%3A%2F%2Fthunderstore.io%2Fc%2Flethal-company%2Fp%2Fseechela%2FMoreBrutalLethalCompanyPlus%2F)](https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLethalCompanyPlus/)⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FZ9rUwTtUpx%3Fwith_counts%3Dtrue&query=approximate_member_count&style=for-the-badge&logo=discord&logoColor=white&label=TOTAL%20MEMBERS&labelColor=grey&link=%20https%3A%2F%2Fdiscord.gg%2FZ9rUwTtUpx)](https://discord.gg/Z9rUwTtUpx)⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀![Live Players](https://img.shields.io/endpoint?url=https://mblcp-player-tracker-still-snow-8423.fly.dev/count&style=for-the-badge&logo=steam)
@@ -52,6 +50,28 @@
 > ℹ️ For a complete list of all gameplay-relevant mods and what they do in this modpack, [check here](https://github.com/Team-Rebirth/Lethal-Rebirth/wiki/Mods-&-Features).
 
 → Further recommendations can be found here: [Recommended Mods](https://github.com/Team-Rebirth/Lethal-Rebirth/wiki/Recommended-Mods)
+
+---
+
+![Systems Overhaul](https://i.imgur.com/MuyA39G.png)
+
+- 10 unique systems: Each system features:
+  - **Progressive Difficulty**: Systems increase in challenge and reward as you progress through tiers _[ F to S++ ]_.
+  - **Balanced Moons**: Moons scrap, enemies and other stuff are nicely balanced.
+  - **Dynamic Progression**: Use the '_info <system>_' command to discover details about each system.
+
+---
+
+![Weather Mechanics](https://i.imgur.com/HyjCXQR.png)
+
+- **New Weather**: Blackout: Disables all lights planet-wide.
+- **New Weather**: Black fog: A dense, dark fog that greatly reduces visibility outside and indoors.
+- **New Weather**: Earthquakes: Ground can suddenly start to tremble and shake.
+- **New Weather**: Hurricane: Intense wind and rain.
+- **New Weather**: Darkness: Combo of Blackout and Black fog.
+- **New Weather**: Upcoming Storm: Storm is slowly incoming.
+
+---
 
 ## Credits
 
