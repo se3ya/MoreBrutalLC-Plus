@@ -45,12 +45,6 @@
 
 **Please note that not all game-changing mechanics/features are listed here.**
 
-> For a proper guide to these changes, [check here](https://github.com/Team-Rebirth/Lethal-Rebirth/wiki).
->
-> ℹ️ For a complete list of all gameplay-relevant mods and what they do in this modpack, [check here](https://github.com/Team-Rebirth/Lethal-Rebirth/wiki/Mods-&-Features).
-
-→ Further recommendations can be found here: [Recommended Mods](https://github.com/Team-Rebirth/Lethal-Rebirth/wiki/Recommended-Mods)
-
 ---
 
 ![Systems Overhaul](https://i.imgur.com/MuyA39G.png)
