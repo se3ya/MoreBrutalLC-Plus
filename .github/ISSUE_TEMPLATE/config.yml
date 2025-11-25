@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discord Community
+    url: https://discord.gg/your-server-here
+    about: Join our Discord server for real-time support and community discussions
+  - name: Documentation
+    url: https://github.com/se3ya/MoreBrutalLC-Plus/wiki
+    about: Check our wiki for more information and FAQs
+  - name: Thunderstore Page
+    url: https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLethalCompanyPlus/
+    about: Download the modpack from Thunderstore

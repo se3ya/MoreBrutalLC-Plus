@@ -1,0 +1,89 @@
+name: Bug Report
+description: Report a bug or issue with the modpack
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the information below.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which component is affected?
+      description: Select the modpack component having the issue
+      options:
+        - Main Modpack
+        - Cosmetics Pack
+        - Moons Pack
+        - Posters Pack
+        - Logo Pack
+        - Multiple Components
+        - Not Sure
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Modpack Version
+      description: What version are you using?
+      placeholder: "73.1.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear description of what the bug is
+      placeholder: Interacting with... crashes the modpack.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this bug?
+      placeholder: |
+        1. Start game with modpack
+        2. Go to moon...
+        3. Interact with...
+        4. Modpack crashes
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should happen?
+      placeholder: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log Files
+      description: Paste log file (BepInEx/LogOutput.log)
+      placeholder: Paste log contents here...
+      render: shell
+
+  - type: input
+    id: game_version
+    attributes:
+      label: "Game Version"
+      description: "Which version of the Lethal Company are you using?"
+      placeholder: "Example: v73"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other information that might help (screenshots, videos, etc.)
+      placeholder: Add any other context about the problem here

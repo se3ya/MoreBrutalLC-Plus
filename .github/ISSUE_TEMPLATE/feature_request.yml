@@ -1,0 +1,46 @@
+name: Feature Request
+description: Suggest a new feature or improvement for the modpack
+title: "[FEATURE] "
+labels: ["enhancement", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us understand what you'd like to see.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which component?
+      description: Which part of the modpack should this feature be added to?
+      options:
+        - Core
+        - Cosmetics
+        - Posters
+        - Moons
+        - Configuration
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Provide a clear and detailed description of the feature or improvement you're suggesting"
+      placeholder: |
+          - What feature or improvement you'd like to see
+          - Why this would benefit the modpack
+          - Which mods or gameplay mechanics are affected
+          - Any related issues or similar features in other modpacks
+    validations:
+      required: true
+
+  - type: input
+    id: notes
+    attributes:
+      label: "Additional Context"
+      description: "Any extra information that might help us understand this feature request better? (e.g., performance, related mods)"
+    validations:
+      required: false
