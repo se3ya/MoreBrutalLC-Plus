@@ -1,13 +1,5 @@
 # MoreBrutalLethalCompanyPlus _v73.1.0_
 
-## DEV NOTES
-
-- Update the spawnable scrap to include new scraps like Nuclear Bomb
-- Quota base increase and steepness may need to be changed because of system prices.
-- Configure interior scrap bonus for some moons.
-- On Aquatis only? scrap spawns on terrian???
-- Feels too easy for first system?
-
 ## 🐞 FIXES
 
 - Fixed the bug when gift box has been opened, a new player joining the lobby still can see and use the gift box.
@@ -25,6 +17,7 @@
 - Increased ships floodlight intensity in blackout and rotation speed slightly.
 - Gambling machines are back in the Company.
 - During flooded and sometimes stormy and rainy weathers, water will also appear indoors, and its level will increase slowly.
+- Reduced chance of Meteor shower occuring.
 
 ### 🫁 OXYGEN
 

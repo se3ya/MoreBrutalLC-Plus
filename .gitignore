@@ -1,1 +1,90 @@
-.vscode
+# ignore all
+*
+
+# whitelist .github directory
+!.github/
+!.github/workflows/
+!.github/workflows/publish.yml
+!.github/ISSUE_TEMPLATE/
+!.github/ISSUE_TEMPLATE/*.yml
+!.github/ISSUE_TEMPLATE/config.yml
+!.github/PULL_REQUEST_TEMPLATE/
+!.github/PULL_REQUEST_TEMPLATE/*.md
+
+# whitelist documentation
+!docs/
+!docs/**/*.md
+!docs/**/*.png
+!docs/**/*.jpg
+
+# whitelist root md files
+!README.md
+!CHANGELOG.md
+!CONTRIBUTING.md
+!CODE_OF_CONDUCT.md
+!LICENSE!
+!ToDo.md
+
+# whitelist Thunderstore files
+!icon.png
+!manifest.json
+!categories.txt
+!dependencies.txt
+
+# witelist each sub-pack directory
+!MoreBrutalLethalCompany/
+!MoreBrutalLethalCompany/**/*.cfg
+!MoreBrutalLethalCompany/**/*.txt
+!MoreBrutalLethalCompany/**/manifest.json
+!MoreBrutalLethalCompany/**/icon.png
+!MoreBrutalLethalCompany/**/README.md
+
+!BrutalLCMain/
+!BrutalLCMain/**/*.cfg
+!BrutalLCMain/**/*.txt
+!BrutalLCMain/**/manifest.json
+!BrutalLCMain/**/icon.png
+!BrutalLCMain/**/README.md
+
+!BrutalLCCosmetics/
+!BrutalLCCosmetics/**/*.cfg
+!BrutalLCCosmetics/**/*.txt
+!BrutalLCCosmetics/**/manifest.json
+!BrutalLCCosmetics/**/icon.png
+!BrutalLCCosmetics/**/README.md
+
+!BrutalLCMoons/
+!BrutalLCMoons/**/*.cfg
+!BrutalLCMoons/**/*.txt
+!BrutalLCMoons/**/manifest.json
+!BrutalLCMoons/**/icon.png
+!BrutalLCMoons/**/README.md
+
+!BrutalLCPosters/
+!BrutalLCPosters/**/*.cfg
+!BrutalLCPosters/**/*.txt
+!BrutalLCPosters/**/manifest.json
+!BrutalLCPosters/**/icon.png
+!BrutalLCPosters/**/README.md
+
+!CustomLogoForMBLCP/
+!CustomLogoForMBLCP/**/*.cfg
+!CustomLogoForMBLCP/**/*.txt
+!CustomLogoForMBLCP/**/manifest.json
+!CustomLogoForMBLCP/**/icon.png
+!CustomLogoForMBLCP/**/README.md
+
+# whitelist this itself
+!.gitignore
+!.gitattributes
+
+# always ignore these
+.DS_Store
+Thumbs.db
+*.log
+*.dll
+*.exe
+BepInEx/cache/
+BepInEx/plugins/**/*.dll
+
+

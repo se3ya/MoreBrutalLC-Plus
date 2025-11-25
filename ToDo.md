@@ -1,0 +1,5 @@
+- Update the spawnable scrap to include new scraps like Nuclear Bomb
+- Quota base increase and steepness may need to be changed because of system prices.
+- Configure interior scrap bonus for some moons.
+- On Aquatis scrap spawns on terrian
+- Feels too easy for first system?

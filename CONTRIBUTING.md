@@ -1,29 +1,82 @@
-# Contributing to Lethal Rebirth
-
-Thank you for your interest in contributing to this project! All kinds of contributions are welcome, whether it's in the form of code, documentation, bug reports, or feature requests.
+# Contributing to modpack
 
 ## How to Contribute
 
-Here are a few ways you can contribute to the project:
+### Report Bugs
 
-* **Report bugs:** If you find a bug, please report it in the [Issue Tracker](https://github.com/se3ya/MoreBrutalLC-Plus/issues). Make sure to include all relevant information, such as steps to reproduce the bug, expected behavior, and actual behavior. Please also let us know if you have modified our modpack.
-* **Improve documentation:** Documentation is just as important as the modpack itself. If you find an error in the documentation or have a suggestion for improvement, please open an issue.
-* **Contribute:** If you would like to contribute, please follow these steps:
-    1. Fork the repository.
-    2. Add mods & make changes.
-    3. Make sure your changes don't cause bugs, degrade the gaming experience, or deviate too much from vanilla gameplay.
-    4. Submit a pull request with a clear description of your changes.
-* **Feature requests:** If you have an idea for a new feature, please open an issue in the [Issue Tracker](https://github.com/se3ya/MoreBrutalLC-Plus/issues). Describe the feature and why you think it would be useful.
+Found a bug? [Open an issue](https://github.com/se3ya/MoreBrutalLC-Plus/issues) with:
+- Steps to reproduce
+- Expected vs actual behavior
+- Your modpack version
+- BepInEx log file (if applicable)
 
-## Contribution Guidelines
+### Suggest Features
 
-To ensure that all contributions are of high quality and fit in with the project, we ask that you follow these guidelines:
+Have an idea? [Open an issue](https://github.com/se3ya/MoreBrutalLC-Plus/issues) describing:
+- The feature and why it's useful
+- How it fits the modpack theme
+- Any implementation ideas
 
-* **Commit messages:** Write clear and concise commit messages that clearly describe your changes.
-* **Documentation:** Document your additions so that others can understand it.
+### Request Mods
 
-## Contact
+Want a mod added? Use the [Mod Request template](https://github.com/se3ya/MoreBrutalLC-Plus/issues/new/choose):
+- Mod name and Thunderstore link
+- Why it fits the modpack
+- Compatibility with v73
 
-If you have any questions or need help, you can contact us in the [Issue Tracker](https://github.com/se3ya/MoreBrutalLC-Plus/issues).
+### Submit Changes
 
-Thank you for your contributions!
+1. Fork the repository
+2. Create a branch: `git checkout -b feature/your-feature`
+3. Make your changes
+4. Test thoroughly (no crashes, balanced gameplay)
+5. Commit: `git commit -m "feat: add ... feature"`
+6. Push: `git push origin feature/your-feature`
+7. Open a Pull Request with a clear description
+
+## Guidelines
+
+### Config Changes
+
+- Test in singleplayer and multiplayer
+- Ensure changes don't break vanilla feel
+- Document your reasoning in PR description
+
+### Mod Additions
+
+- Must be compatible with the current modpacks Lethal Company version - __v73__
+- Must fit vanilla aesthetic
+- No game breaking mods
+- Check for conflicts with existing mods
+
+### Documentation
+
+- Use clear, simple language
+- Include examples where helpful
+- Update README if adding features
+
+### Commit Messages
+
+Use conventional commits:
+- `feat:` New feature
+- `fix:` Bug fix
+- `docs:` Documentation
+- `config:` Configuration changes
+- `chore:` Maintenance tasks
+
+## Questions?
+
+- [Discord Server](https://discord.gg/Z9rUwTtUpx)
+- [GitHub Issues](https://github.com/se3ya/MoreBrutalLC-Plus/issues)
+
+---
+
+**Maintained by**: [seeya](https://github.com/se3ya)
+
+<p align="center">
+  <i>Thank you for making MBLCP better!</i>
+</p>
+
+<p align="center">
+  Made with ❤️ by the MBLCP community
+</p>

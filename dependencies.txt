@@ -1,0 +1,5 @@
+seechela-MoreBrutalLethalCompanyMain-2.3.6
+seechela-MoreBrutalLCMoons-2.3.5
+seechela-MoreBrutalLCCosmetics-2.2.4
+seechela-MoreBrutalLCPosters-1.1.3
+seechela-CustomLogoForMBLCP-1.1.5
