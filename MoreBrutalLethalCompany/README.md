@@ -1,16 +1,39 @@
+<p align="center">
+  <a href="https://discord.gg/Z9rUwTtUpx">
+    <img src="https://i.imgur.com/7MaTksy.png">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://discord.gg/Z9rUwTtUpx">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FZ9rUwTtUpx%3Fwith_counts%3Dtrue&query=approximate_member_count&style=for-the-badge&logo=discord&logoColor=white&label=TOTAL%20MEMBERS&labelColor=grey&link=%20https%3A%2F%2Fdiscord.gg%2FZ9rUwTtUpx" alt="Discord">
+  </a>
+  <a href="https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLethalCompanyPlus/">
+    <img src="https://img.shields.io/thunderstore/v/seechela/MoreBrutalLethalCompanyPlus?style=for-the-badge&logo=thunderstore&label=Version" alt="Version">
+  </a>
+  <a href="https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLethalCompanyPlus/">
+    <img src="https://img.shields.io/thunderstore/dt/seechela/MoreBrutalLethalCompanyPlus?style=for-the-badge&logo=thunderstore&label=Downloads" alt="Downloads">
+  </a>
+  <a href="https://store.steampowered.com/app/1966720/Lethal_Company/">
+    <img src="https://img.shields.io/endpoint?url=https://mblcp-player-tracker-still-snow-8423.fly.dev/count&style=for-the-badge&logo=steam" alt="Live Players">
+  </a>
+</p>
+
+<h1 align="center">Perfect Balance of Challenge and Fun!</h1>
+
+<p align="center">
+  <b>A bit more challenging yet enjoyable • Vanilla style • 4-16 players</b><br>
+  <i>Over 300 mods • 47 moons • 33 enemies</i>
+</p>
+
 ---
-[![Discord](https://i.imgur.com/6xZmhQ3.png)](https://discord.gg/Z9rUwTtUpx)
 
-⠀⠀[![Thunderstore Version](https://img.shields.io/thunderstore/v/seechela/MoreBrutalLethalCompanyPlus?style=for-the-badge&logo=Thunderstore&logoColor=white&label=VERSION&labelColor=Grey)](https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLethalCompanyPlus/)⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[![Thunderstore Downloads](https://img.shields.io/thunderstore/dt/seechela/MoreBrutalLethalCompanyPlus?style=for-the-badge&logo=Thunderstore&logoColor=white&label=DOWNLOADS&labelColor=Grey&link=https%3A%2F%2Fthunderstore.io%2Fc%2Flethal-company%2Fp%2Fseechela%2FMoreBrutalLethalCompanyPlus%2F)](https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLethalCompanyPlus/)⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fthunderstore.io%2Fapi%2Fv1%2Fpackage-metrics%2Fseechela%2FMoreBrutalLethalCompanyPlus&query=rating_score&style=for-the-badge&logo=thunderstore&logoColor=white&label=Total%20Rating&labelColor=grey)](https://discord.gg/Z9rUwTtUpx)⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FZ9rUwTtUpx%3Fwith_counts%3Dtrue&query=approximate_member_count&style=for-the-badge&logo=discord&logoColor=white&label=TOTAL%20MEMBERS&labelColor=grey&link=%20https%3A%2F%2Fdiscord.gg%2FZ9rUwTtUpx)](https://discord.gg/Z9rUwTtUpx)
-
-# ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  Perfect Balance of Challenge and Fun!
-
-### **Our modpack introduces over 300 mods, making the game a bit more challenging yet enjoyable and still keeping it in vanilla style. It's best experienced with a group of 4 to 16 players.**
----
-![Key Features](https://i.imgur.com/Go0CPtK.png)
+<p align="center">
+  <img src="https://i.imgur.com/z1YrkqH.png">
+</p>
 
 - **Tiers:** The higher the Tier of the moon, the more amount of enemies, scrap amount and hazards amount there will be.
-- **Explore New Worlds:** Explore *56+* modded moons across 10 systems, each with distinct themes and difficulty levels.
+- **Explore New Worlds:** Explore *47* moons across 10 systems, each with distinct themes and difficulty levels.
 - **Longer Days:** Enjoy sligtly extended daylight hours, giving a player more time to explore and loot.
 - **More Items:** Find more item to buy and more types of scrap.
 - **New Monsters:** Brace yourself for *20* new terrifying monsters.
@@ -46,101 +69,131 @@
 - **Extend Deadline:** Need more time to complete your quota? Players can now extend the deadline through the terminal by selecting the desired number of additional days, giving you a better chance to succeed in your mission.
 - **Interactive Menu:** Moons page & store page now feature an interactive catalog.
 
-**Please note that not all game-changing mechanics/features are listed here.**
+> 📚 **Wiki**: Check out our [Wiki](https://github.com/se3ya/MoreBrutalLC-Plus/wiki) for detailed guides *(work in progress)*
 
 ---
-![Systems Overhaul](https://i.imgur.com/MuyA39G.png)
+<p align="center">
+  <img src="https://i.imgur.com/YkqdO86.png">
+</p>
+
 - 10 unique systems: Each system features:
-  - **Progressive Difficulty**: Systems increase in challenge and reward as you progress through tiers *[ F to Hell ]*.
-  - **Balanced Moons**: Moons are carefully assigned to match their system's theme.
-  - **Themed Scrap Assignments**: Scrap items now match their interior themes.
-  - **Dynamic Progression**: Use the '*info <system>*' command to discover details about each system.
+  - **Progressive Difficulty**: Systems increase in challenge and reward as you progress through tiers
+  - **Balanced Moons**: Moons are carefully assigned to match their system's theme
+  - **Themed Scrap Assignments**: Scrap items now match their interior themes
+  - **Dynamic Progression**: Use the '*info <system>*' command to discover details about each system
 ---
-![Weather Mechanics](https://i.imgur.com/HyjCXQR.png)
+<p align="center">
+  <img src="https://i.imgur.com/5MuvRAE.png">
+</p>
+
+- **New Weather**: Blackout: Disables all lights planet-wide.
+- **New Weather**: Snowfall: A quiet but persistent snowfall of snow that reshapes the environment.
+- **New Weather**: Toxic Smog: Drastically reduces visibility, breathing the fumes causes severe poisoning.
+- **New Weather**: Heatwave: Brace yourself for scorching temperatures that will push your endurance to the limit.
+- **New Weather**: Solar Flare: Beware the unpredictable and disruptive effects of solar radiation.
+
+---
+<p align="center">
+  <img src="https://i.imgur.com/p4cjd1d.png">
+</p>
+
 - **New Weather**: Blackout: Disables all lights planet-wide.
 - **New Weather**: Snowfall: A quiet but persistent snowfall of snow that reshapes the environment.
 - **New Weather**: Toxic Smog: Drastically reduces visibility, breathing the fumes causes severe poisoning.
 - **New Weather**: Heatwave: Brace yourself for scorching temperatures that will push your endurance to the limit.
 - **New Weather**: Solar Flare: Beware the unpredictable and disruptive effects of solar radiation.
 ---
-![Installation](https://i.imgur.com/2PPxzC9.png)
+<p align="center">
+  <img src="https://i.imgur.com/duryy6j.png">
+</p>
 
-### Installation with GaleModManager:
-1. Download [GaleModManager](https://thunderstore.io/c/lethal-company/p/Kesomannen/GaleModManager/) [Use manual download!]
-2. Choose **Lethal Company** as your game.
-3. Wait for *GaleModManager* to fech all of mods from Thunderstore.
-4. Search for **"MoreBrutalLethalCompanyPlus"** and press install.
-5. Wait when it finishes downloading and click **Launch game** to start the game with mods.
-### Updating:
-1. Check for an updated version number on the modpack (by checking #📃・modpack-updates channel for new posts on the [Discord Server](https://discord.gg/Z9rUwTtUpx) or on this site).
-1. Delete previous modpack profile.
-2. Create new profile and name it however you want and select it.
-3. Download updated version of modpack.
+### Installation with GaleModManager
 
-![Keep Mods Unchanged](https://i.imgur.com/A7jsBfG.png)
+1. Download [GaleModManager](https://github.com/Kesomannen/gale/releases)
+2. Select **Lethal Company**
+3. Search **"MoreBrutalLethalCompanyPlus"**
+4. Click **Install**
+5. Launch the game
+
+> **Modpack Size**: ~3.2 GB
+
+### Updating the modpack
+
+1. Create new profile in [Gale](https://github.com/Kesomannen/gale/)
+2. Search **"MoreBrutalLethalCompanyPlus"**
+3. Click **Install**
+
+> ⚠️ **All players must have this modpack installed for multiplayer**
+
+> ⚠️ **All players must have <u>not changed</u> modpack for multiplayer**
+
+---
+
+<p align="center">
+  <img src="https://i.imgur.com/a4BWIRn.png">
+</p>
+
+<p align="center">
+  Check <a href="https://github.com/se3ya/MoreBrutalLC-Plus?tab=contributing-ov-file">CONTRIBUTING</a> for guidelines.
+</p>
+
+**Report bugs:**
+- [Github Issues](https://github.com/se3ya/MoreBrutalLC-Plus/issues)
+- [Discord Forum](https://discord.gg/CBfamjDeCG)
+
+**Suggest mods:**
+- [Github Request](https://github.com/se3ya/MoreBrutalLC-Plus/issues/new/choose)
+- [Discord Suggestions](https://discord.gg/CBfamjDeCG)
+
+**Submit changes:**
+- [Pull Requests](https://github.com/se3ya/MoreBrutalLC-Plus?tab=contributing-ov-file)
 
 ---
 
-![Notes](https://i.imgur.com/YqG3gKf.png)
-- Modpacks size: 3.2 GB
-- Stutters: Try turning off V-Sync in game settings... If that doesn't work, join our [Discord Server](https://discord.gg/Z9rUwTtUpx).
-- High RAM Usage: Try removing some moons you don’t like.
-- Epilepsy Warning: Disable Rapid Lights in `ghostCodes.Setup - Effects/Sound` config.
+<p align="center">
+  <img src="https://i.imgur.com/VLxzRMi.png">
+</p>
 
---- 
+<p align="center">
+  Check <a href="https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLethalCompanyPlus/changelog/">CHANGELOG</a> for version history.
+</p>
 
-![Keybinds](https://i.imgur.com/UDBOLXE.png)
-- **Push to Talk:**
-  - Hold *[ V ]* to talk in-game.
-- **Terminal:**
-  - Use the *[ LEFT ]* | *[ RIGHT ]* arrow keys to quickly switch cams.
-- **Walkie-Talkie:**
-  - Use walkie-talkie in the terminal **HOLD** *[ LeftAlt ]* or *[ LMB ]*.
-- **Flashlight:** 
-  - Toggle flashlight *[ F ]*.
-- **Mute:** 
-  - Mute yourself *[ M ]*
-- **Emotes:** 
-  - Open emotes wheel *[ Y ]*.
-- **QuickQuitToMenu:**
-  - Instantly quit to the main menu *[ Ctrl + Alt + Shift + Q ]*.
-- **Batteries:**
-  - Hold battery in hands and charge an item *[ C ]*
-- **Oxygen:**
-  - Hold *[ J ]* to die faster underwater.
-- **Phones:**
-  - After purchasing *Phones* upgrade, press *[ 5 ]* to toggle it.
-  - To hangup call press *[ R ]*.
-  - To dial hold *[ Z ]*.
-  - To toggle phone volume, use *[ G ]*.
-- **Spray Paint:**
-  - To erase, press *[ E ]* + *[ LMB ]* at the same time.
-  - To change the color of spray paint press*[ N ]*.
-  - Control the size of spray
-    - *[ - ]* to make spray smaller.
-    - *[ + ]* to make spray bigger.
-  - To toggle phone volume, use *[ G ]*.
-- **Reserved Slots:**
-  - Default keybind for all reserved slots - *[ ALT ]*
-  - Flashlight:
-    - **Use** - *[ F ]*
-	- **Equip** - *[ X ]*
-  - Walkie-talkie:
-    - **Use** - *[ R ]*
-	- **Equip** - *[ T ]*
-  - Spray paint:
-	- **Equip** - *[ H ]*
-  - Weapons:
-	- **Equip** - *[ B ]*
-  - Firearms:
-	- **Equip** - *[ V ]*
-  - Ammo:
-	- **Equip** - *[ U ]*
-  - Utility:
-	- **Equip** - *[ N ]*
+<p align="center">
+  <b>Latest:</b> <u>v73.1.0</u> - <a href="https://github.com/se3ya/MoreBrutalLC-Plus/releases/tag/v73.1.0">View Changes</a>
+</p>
 
 ---
-### 💖 Support
-If you enjoy our modpack, consider [supporting](https://www.buymeacoffee.com/see_ya) me. Donations are optional but greatly appreciated. Your support will help us do more.
+
+<p align="center">
+  <img src="https://i.imgur.com/PW0DWtx.png">
+</p>
+
+- **Discord**: [Join Server](https://discord.gg/Z9rUwTtUpx)
+- **Thunderstore**: [View Modpack](https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLethalCompanyPlus/)
+- **Issues**: [Report Problems](https://github.com/se3ya/MoreBrutalLC-Plus/issues)
+- **Support**: [Coffee](https://www.buymeacoffee.com/see_ya)
+- **Wiki**: [Documentation](https://github.com/se3ya/MoreBrutalLC-Plus/wiki) *(in progress)*
 
 ---
+
+<p align="center">
+  <img src="https://i.imgur.com/BvStgjM.png">
+</p>
+
+- **Developer**: [seeya](https://github.com/se3ya)
+- **Modpack Helper**: [Gus](https://github.com/baldugus)
+- **Mod Creators**: Moroxide, darmuh and other mod authors for their mods
+- **Early Testers**: Strv-103, Mahoraga, Yuri
+- **Inspiration**: [Shaydelity](https://github.com/Team-Rebirth/Lethal-Rebirth)
+- **Supporters**: [Gus](https://github.com/baldugus), st.coiled at [BuyMeACoffee](https://www.buymeacoffee.com/see_ya)
+- **Community**: Thanks to everyone who plays the modpack, suggests features, reports bugs, and is active on our [Discord server](https://discord.gg/Z9rUwTtUpx). You're the heart of MBLCP!
+
+---
+
+<p align="center">
+  <i>Experience the company. Brutally.</i>
+</p>
+
+<p align="center">
+  Made with ❤️ by the MBLCP community
+</p>
