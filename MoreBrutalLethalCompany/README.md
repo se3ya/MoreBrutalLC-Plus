@@ -125,7 +125,7 @@
 
 > ⚠️ **All players must have this modpack installed for multiplayer**
 
-> ⚠️ **All players must have <u>not changed</u> modpack for multiplayer**
+> ⚠️ **All players must have not changed modpack for multiplayer**
 
 ---
 
@@ -159,7 +159,7 @@
 </p>
 
 <p align="center">
-  <b>Latest:</b> <u>v73.1.0</u> - <a href="https://github.com/se3ya/MoreBrutalLC-Plus/releases/tag/v73.1.0">View Changes</a>
+  <b>Latest:</b> v73.1.0 - <a href="https://github.com/se3ya/MoreBrutalLC-Plus/releases/tag/v73.1.0">View Changes</a>
 </p>
 
 ---
