@@ -153,9 +153,7 @@
   <img src="https://i.imgur.com/a4BWIRn.png">
 </p>
 
-<p align="center">
-  Check <a href="https://github.com/se3ya/MoreBrutalLC-Plus?tab=contributing-ov-file">CONTRIBUTING</a> for guidelines.
-</p>
+  Check [CONTRIBUTING](https://github.com/se3ya/MoreBrutalLC-Plus?tab=contributing-ov-file) for guidelines.
 
 **Report bugs:**
 - [Github Issues](https://github.com/se3ya/MoreBrutalLC-Plus/issues)
