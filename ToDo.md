@@ -3,3 +3,10 @@
 - Configure interior scrap bonus for some moons.
 - On Aquatis scrap spawns on terrian
 - Feels too easy for first system?
+- Baboon hawk probability curve balance
+- Disable LoadingScreen debug before uploading update
+- Try placing tips at the top of the screen.
+  - if using LoadingInfo also
+- Decide if leave extra hotbar purchase or not
+  - if leave, decide the price and add to DarmuhTerminallStuff
+- Make bunch of tips posters with bunch of tips.

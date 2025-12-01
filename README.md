@@ -19,12 +19,21 @@
   </a>
 </p>
 
-<h1 align="center">Perfect Balance of Challenge and Fun!</h1>
+<h1 align="center">Perfect Balance of Challenge and Fun</h1>
 
 <p align="center">
-  <b>A bit more challenging yet enjoyable • Vanilla style • 4-16 players</b><br>
-  <i>Over 300 mods • 47 moons • 33 enemies</i>
+  <b>Balanced Difficulty • Vanilla feel • 4-16 players</b><br>
+  <i>300+ mods • 47 moons • 8 Systems • 30+ enemies</i>
 </p>
+
+> <p align="center">
+>   <i>MoreBrutalLethalCompanyPlus is a complete revamp in quality of life for Lethal Company, <b>improving, rebalancing, and expanding</b> upon it while keeping the vanilla feel. The focus of this modpack is to create a <b>difficult yet fair</b> experience, suitable for casual and competitive play.</i>
+> </p>
+>
+> <p align="center">
+>   <i>Whether you're an intern or leader, MBLCP delivers the gameplay depth the Company demands.</i>
+> </p>
+
 
 ---
 
@@ -32,76 +41,87 @@
   <img src="https://i.imgur.com/z1YrkqH.png">
 </p>
 
-- **Tiers:** The higher the Tier of the moon, the more amount of enemies, scrap amount and hazards amount there will be.
-- **Explore New Worlds:** Explore *47* moons across 10 systems, each with distinct themes and difficulty levels.
-- **Longer Days:** Enjoy sligtly extended daylight hours, giving a player more time to explore and loot.
-- **More Items:** Find more item to buy and more types of scrap.
-- **New Monsters:** Brace yourself for *20* new terrifying monsters.
-- **Enhanced Vanilla Monsters:** Several vanilla monsters have been upgraded with new behaviors and features.
-- **Immersive Experience:** Enjoy enhanced sound effects and new game mechanics, such as adrenaline boosts.
-- **Customization Galore:** Choose from *20+* suits, *50+* cosmetics, and *100+* emotions to personalize and express yourself.
-- **Regeneration:** Players can regenerate health after taking damage while inside the ship with closed ship doors or outside but much slower.
-- **Oxygen:** Plan your exploration carefully - oxygen depletes when you're outside the ship *[ except on green planets ]*.
-- **Enhanced Saves:** Create additional saves beyond the default three and rename them for better organization.
-- **Quality:** Increased game resolution from **520p → 720p**, maintaining performance while improving visuals.
-- **Fog:** Reduced the noise/graininess visible in fog, improving light definition.
-- **Optimized Gameplay:** Enjoy smoother performance with multiple fixes and optimizations.
-- **Noise Suppression:** Enabled advanced background sound removal, effectively reducing distractions like chatter and keyboard noise while maintaining speech clarity.
-- **Revamped HUD:** Enjoy a revamped minimalistic HUD that hides the health bar after a period of no damage, while a dedicated panel clearly displays flashlight battery status.
-- **Hot-Reload:** Dynamically loads and unloads custom moon AssetBundles as needed, significantly reducing RAM usage.
-- **Beware of the Unknown:** Watch out for the masked enemy who has learned to mimic the voices of your friends.
-- **Missile Turrets:** New inside hazard - Missile Turrets. The missiles travel slower than standard projectiles, they accelerate over time. These turrets require a brief reload period after each shot.
-- **Toil-Heads:** CoilHeads, Manticoils, Maskeds, and other entities can now spawn with turrets mounted on their heads.
-- **Enhanced Darkness:**  The darkness is now even more intense, but players can illuminate their path with each scan, making navigation through the shadows easier.
-- **High-Amount Scrap:** Moons with active weather will contain higher amount scrap.
-- **Ship Features:** The ship has its own window, top-mounted floodlight will be rotating upon landing, auto reroute to The Company moon on the last day, customized posters, but the ship may sometimes malfunction.
-- **Enhanced Radar Booster:** Upgraded Radar Booster has doubled range on the map. Teleport your Radar Booster back to the ship or inverse Teleporter it into the facility.
-- **Orbit:** Experience a more beautiful and immersive orbit.
-- **Upgrades:** Upgrade your ship or character through the terminal.
-- **Terminal:** Terminal home screen is beautiful and has all commands with all information that player needs to know.
-- **Dungeons:** Dungeon Shuffler system that boosts the chances of dungeons being selected if they were not chosen on previous days, diversifying dungeon encounters.
-- **Quota:** Carefully balanced custom quota to make playing more enjoyable.
-- **Rebalance:** Several gameplay elements have been adjusted to enhance the overall player experience.
-- **Automatic Signals:** Signal translator may warn you of enemies, open blast doors, or even teleport a player when a giant is about to consume him.
-- **Apparatus:** By pulling apparatus out, all players inside the factory will take a decent amount of damage. There is even an chance of self destruction sequence happening.
-- **Enhanced Zap Gun:** The Zap Gun has a new abilities like, allowing players to eliminate bees, deal damage to players, temporarily stun Turrets, Mines, and Spike traps depending on how long player zap them and an ability to hold open the closed big airlock*/*pressure doors facility doors while zapping.
-- **Scrap Insurance:** Players can now purchase this feature in the terminal to protect their hard-earned scrap.
-- **Extend Deadline:** Need more time to complete your quota? Players can now extend the deadline through the terminal by selecting the desired number of additional days, giving you a better chance to succeed in your mission.
-- **Interactive Menu:** Moons page & store page now feature an interactive catalog.
+<p align="left">
+  <img src="https://i.imgur.com/ZjQBNdx.png" width="450">
+</p>
 
-> 📚 **Wiki**: Check out our [Wiki](https://github.com/se3ya/MoreBrutalLC-Plus/wiki) for detailed guides *(work in progress)*
+- **Quality**: *520p > 720p* resolution and cleaner visuals
+- **Performance**: Reduced RAM usage, overall optimization
+- **Progression**: 9 difficulty tiers *[ F–S++ ]* balancing risk vs reward
+- **Quality-of-Life**: Improved HUD, voice suppresion, terminal, radar, weathers and multiple fixes
+
+<p align="left">
+  <img src="https://i.imgur.com/3d3mXUU.png" width="450">
+</p>
+
+- **47 Moons** across 8 systems with balanced difficulty curves
+- **50+ Scrap Types** with rebalanced weight and value
+- **30+ Enemies** with vanilla enemies improved behaviors
+- **100+ Cosmetics** suits, cosmetics and emotes
+- **500+ Sounds** new sounds
+
+<p align="left">
+  <img src="https://i.imgur.com/dwXwxd1.png" width="450">
+</p>
+
+- **Health Regeneration**: Players regenerate health, faster in ship, slower outside/indoors
+- **Oxygen**: Oxygen consumes outside except on green moons
+- **Weather**: Scrap multipliers adjust based on moons weather
+- **Quota**: Rebalanced quota with player count, players deaths multiplying quota and reducing credits
+
+> 📚 **Wiki**: Check out [Wiki](https://github.com/se3ya/MoreBrutalLC-Plus/wiki) for detailed guides *(work in progress)*
 
 ---
 <p align="center">
-  <img src="https://i.imgur.com/YkqdO86.png">
+  <img src="https://i.imgur.com/YkqdO86.png" width="900">
 </p>
 
-- 10 unique systems: Each system features:
-  - **Progressive Difficulty**: Systems increase in challenge and reward as you progress through tiers
-  - **Balanced Moons**: Moons are carefully assigned to match their system's theme
-  - **Themed Scrap Assignments**: Scrap items now match their interior themes
-  - **Dynamic Progression**: Use the '*info <system>*' command to discover details about each system
+| System | Difficulty | Features |
+|--------|-----------|----------|
+| **AST-17** | Starter | Wasteland, Ocean, Canyon, Rocky environments |
+| **ARC-913** | Early | Valley, Canyon, Rocky with unique hazards |
+| **OME-717** | Mid | Tundra, Wasteland, Valley transitions |
+| **WRH-118** | Mid | Ocean, Valley, Canyon complexity increases |
+| **ZYN-300** | Late | Canyon, Valley, Ocean high-risk areas |
+| **ZRC-81** | Late | Company access, Valley, Ocean, Tundra extremes |
+| **HYDR-57** | Extreme | Wasteland, Valley, Canyon intense challenges |
+| **STRM-501** | Extreme | Argon, Canyon, Company, multi-biome danger |
+
+> 📝 **Use `info <system>`** in terminal to discover system details
 ---
 <p align="center">
   <img src="https://i.imgur.com/5MuvRAE.png">
 </p>
 
-- **New Weather**: Blackout: Disables all lights planet-wide.
-- **New Weather**: Snowfall: A quiet but persistent snowfall of snow that reshapes the environment.
-- **New Weather**: Toxic Smog: Drastically reduces visibility, breathing the fumes causes severe poisoning.
-- **New Weather**: Heatwave: Brace yourself for scorching temperatures that will push your endurance to the limit.
-- **New Weather**: Solar Flare: Beware the unpredictable and disruptive effects of solar radiation.
+| Tier | Difficulty | Loot | Threats |
+|------|--------------|-------|-------|
+| **F** | Very Low | Negligible | Negligible |
+| **E** | Low | Low | Low |
+| **D** | Low-Mid | Standard | Moderate |
+| **C** | Mid | Moderate | Significant |
+| **B** | Mid-High | High | High |
+| **A** | High | Critical | Critical |
+| **S** | Very High | Epic | Extreme |
+| **S+** | Critical | Legendary | Catastrophic |
+| **S++** | Extreme | Maximum | Apocalyptic |
 
+> 📝 **9 Difficulty Tiers** *[ F through S++ ]* which balance risk, enemy types, interior sizes and scrap rewards
 ---
 <p align="center">
   <img src="https://i.imgur.com/p4cjd1d.png">
 </p>
 
-- **New Weather**: Blackout: Disables all lights planet-wide.
-- **New Weather**: Snowfall: A quiet but persistent snowfall of snow that reshapes the environment.
-- **New Weather**: Toxic Smog: Drastically reduces visibility, breathing the fumes causes severe poisoning.
-- **New Weather**: Heatwave: Brace yourself for scorching temperatures that will push your endurance to the limit.
-- **New Weather**: Solar Flare: Beware the unpredictable and disruptive effects of solar radiation.
+- **Foggy**: Reduced visibility
+- **Rainy**: Large quicksands
+- **Stormy**: Lightning strikes conductive items
+- **Snowfall**: Snow accumulates, slows movement
+- **Earthquakes**: Ground instability
+- **Hurricane**: Strong winds, heavy rain and falling...
+- **Blackout**: All lights disabled
+- **Black Fog**: Approaching darkness
+- **Flooded**: Water everywhere
+- **Eclipsed**: Increased difficulty
+
 ---
 <p align="center">
   <img src="https://i.imgur.com/duryy6j.png">
@@ -115,15 +135,15 @@
 4. Click **Install**
 5. Launch the game
 
-> **Modpack Size**: ~3.2 GB
-
 ### Updating the modpack
 
 1. Create new profile in [Gale](https://github.com/Kesomannen/gale/)
 2. Search **"MoreBrutalLethalCompanyPlus"**
 3. Click **Install**
 
-> ⚠️ **All players must have this modpack installed for multiplayer**
+> **Modpack Size**: ~3 GB
+
+> ⚠️ **All players must have identical modpack version for multiplayer**
 
 > ⚠️ **All players must have <u>not changed</u> modpack for multiplayer**
 
@@ -171,8 +191,8 @@
 - **Discord**: [Join Server](https://discord.gg/Z9rUwTtUpx)
 - **Thunderstore**: [View Modpack](https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLethalCompanyPlus/)
 - **Issues**: [Report Problems](https://github.com/se3ya/MoreBrutalLC-Plus/issues)
-- **Support**: [Coffee](https://www.buymeacoffee.com/see_ya)
 - **Wiki**: [Documentation](https://github.com/se3ya/MoreBrutalLC-Plus/wiki) *(in progress)*
+- **Support**: [Buy Coffee](https://www.buymeacoffee.com/see_ya)
 
 ---
 
@@ -184,9 +204,9 @@
 - **Modpack Helper**: [Gus](https://github.com/baldugus)
 - **Mod Creators**: Moroxide, darmuh and other mod authors for their mods
 - **Early Testers**: Strv-103, Mahoraga, Yuri
-- **Inspiration**: [Shaydelity](https://github.com/Team-Rebirth/Lethal-Rebirth)
-- **Supporters**: [Gus](https://github.com/baldugus), st.coiled at [BuyMeACoffee](https://www.buymeacoffee.com/see_ya)
-- **Community**: Thanks to everyone who plays the modpack, suggests features, reports bugs, and is active on our [Discord server](https://discord.gg/Z9rUwTtUpx). You're the heart of MBLCP!
+- **Github Inspiration**: [Shaydelity](https://github.com/Team-Rebirth/Lethal-Rebirth)
+- **Coffee Supporters**: [Gus](https://github.com/baldugus) and st.coiled
+- **Community**: Thanks to everyone who plays the modpack, suggests features, reports bugs and is active on our [Discord server](https://discord.gg/Z9rUwTtUpx)!
 
 ---
 

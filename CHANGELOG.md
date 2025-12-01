@@ -12,7 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 > - **MAJOR** version is a significant modpack change *[ new mods, new features, breaking changes ]*
 > - **MINOR** version is a small modpack change *[ hotfixes, patches, config tweaks ]*
 
-# [v73.1.0 - _**Unreleased**_] - 2025-MM-DD
+# [v73.1.0] - _**Unreleased**_ - 2025-12-DD
 
 ## 🐞 FIXED
 
@@ -25,96 +25,171 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### ✨ GAMEPLAY & MECHANICS
 
-- 1 extra hotbar slot can be bought for 750 credits.
-- Added radio with thousands of random real radio stations as ship furniture upgrade for 60.
-- Added 6 new vanilla styled furnitures.
-- Changed LGU interactive hotkeys from WASD to arrows to match moons, store and systems pages.
-- Balanced out some vanilla scraps and all store item weights.
-- Increased ships floodlight intensity in blackout and rotation speed slightly.
-- Gambling machines are back in the Company.
-- During flooded and sometimes stormy and rainy weathers, water will also appear indoors, and its level will increase slowly.
-- Reduced chance of Meteor shower occuring.
-
-### 🫁 OXYGEN
-
-- Added oxygen consumption back.
-- Fixed previously oxygen being consumed very fast when running.
-  - Before, 0.0025 was added to the base consumption and that's quite a big value, but now, only 0.0005 is added.
-- Players while walking on clear air moons ~15 minutes.
-- Players while running on clear air moons ~6 minutes.
-- Players while walking on toxic, cold and thin air moons ~13 minutes.
-- Players while running on toxic, cold and thin air moons ~5 minutes.
+- LGU interactive hotkeys from WASD to arrows to match moons, store and systems pages
+- Balanced out vanilla scraps and all store item weights
+- Increased ships floodlight intensity in blackout and rotation speed slightly
+- Reduced chance of Meteor shower occuring
+- Meteor shower can no longer occur at the day start
+- Reduced chance of Single item day occuring
 
 ### 📊 QUOTA
 
-- Quota increase steepness and base increase has been changed to be vanilla values.
-- Quota multiplies for each new player in the lobby if there are more than 2.
-  - More than 12 players will not multiply the quota.
-  - Calculation: Quota multiplier = _1 + 0.18 * max(0, min(playerCount, 12) - 2)_
-- Quota will be increased by 3% for each dead player without recovering their body.
-  - 12% is the max quota increase if 4+ players died.
-  - Recovering a player's body reduces that body's penalty reduction by 85%.
-  - Penalty = 12% * (deadPlayers / playerCount).
-    - Example: 16 players in the lobby and 4 unrecovered deaths, penalty = 12% * (4/16) = 3%.
-- Credits will be reduced by 5% for each dead player without recovering his body.
-  - 20% is the max that can be reduced if 4+ players died.
-  - Recovering players body will reduce the penalty by 90%.
-  - Penalty is calculated based on crew count so it's balanced in larger lobbies.
-    - Example: 16 players in lobby and 4 unrecovered deaths, 4/16 = 0.25, penalty = 20 * 0.25 = 5%.
+- Quota increase steepness balanced with scrap value and systems prices
+- Quota randomness multiplier reduced to be a little less random quota increase
+- Quota multiplies for each new player in the lobby if there are more than 2
+  - More than 12 players will not multiply the quota
+  - Quota multiplier = `1 + 0.18 * max(0, min(playerCount, 12) - 2)`
+- Quota will be increased by 3% for each dead player without recovering their body
+  - 12% is the max quota increase
+  - 2+ players must be dead to trigger quota increase
+  - Recovering a player's body reduces that body's penalty reduction by 85%
+  - Penalty = `12% * (deadPlayers / playerCount)`
+    - Example: 16 players, 4 unrecovered deaths - penalty = `12% * (4/16) = 3%`
+- Credits will be reduced by 5% for each dead player without recovering his body
+  - 20% is the max that can be reduced
+  - Recovering players body will reduce the penalty by 90%
+    - Example: 16 players, 4 unrecovered deaths - `4/16 = 0.25`, penalty = `20 * 0.25 = 5%`
 
 ### 🌘 MOONS
 
-- Difficulty overall was reduced.
-- Reduced interior sizes starting from tier D.
-- Increased value multiplier starting from tier D.
-- Increased scrap amount starting from tier D.
-- Less hard enemies at the day start.
-- Added rare _Nuclear Bomb_ scrap starting from D tier moons.
-- Added Rainy and Stormy weathers to Aquatis weather list.
+- Overall difficulty reduced
+- Reduced interior sizes starting from tier D
+- Increased value multiplier starting from tier D
+- Increased scrap amount starting from tier D
+- Added rare _Nuclear Bomb_ scrap starting from D tier
+
+### 🌨️ WEATHER
+
+- Slightly re-balanced moons weather list
+- Removed Hurricane from the Company
+- Scrap amount/value multipliers work again
+- _Black Fog_
+  - Occuring chance reduced from 43 > 22
+  - Reduced chance on _Snowy_ moons
+  - Scrap value - ×1.15
+  - Scrap amount - ×0.95
+- _Blackout_
+  - Reduced chance on _Snowy_ moons
+  - Increased chance on _Military, Argon_ moons
+  - Scrap value - ×1.25
+  - Scrap amount - ×0.9
+- _Earthquakes_
+  - Reduced chance on _Snowy_ moons
+  - Increased chance on _Rocky_ moons
+  - Scrap value - ×1.15
+  - Scrap amount - ×0.9
+- _Hurricane_
+  - Reduced chance on _Valley_ moons
+  - Increased chance on _Ocean_ moons
+  - Scrap value - ×1.2
+  - Scrap amount - ×0.85
+- _Flooded_
+  - Occuring chance reduced from 50 > 40
+  - Reduced chance on _Valley_ moons
+  - Increased chance on _Ocean_ moons
+  - Scrap value - ×1.15
+  - Scrap amount - ×1.2
+- _Eclipsed_
+  - Scrap value - ×1.15
+  - Scrap amount - ×1.2
+- _Foggy_
+  - Scrap value - ×1.08
+  - Scrap amount - ×0.95
+- _Rainy_
+  - Scrap value - ×1.07
+  - Scrap amount - ×0.95
+- _Stormy_
+  - Reduced chance on _Snowy_ moons
+  - Increased chance on _Ocean_ moons
+  - Scrap value - ×1.1
+  - Scrap amount - ×0.9
 
 ### 👾 ENEMIES
 
-- Balanced enemies probability curves.
-- Harder enemies spawn later in the day.
-- Balanced _Baboon Hawk, Circuit bees, Old Bird, Elder, Nutcracker,_ and _Thumper_ technical settings.
+- Balanced outside and inside enemies _probability curves, max count, power level_ and _enemy HP_
+- Harder enemies spawn later in the day
+- Less hard enemies spawn at the day start
 
 ### 🎨 VISUAL & AUDIO
 
-- Tools in the hotbar that are not chosen will be visible on the players equipment slots.
-- Added more ambient and music sounds.
-- Enabled shadow casting on moons where it's disabled.
-- Improved some ships buyable furniture default positions when buying.
-- Added missing hit sound for Giant Sapsucker.
-- Added global voice volume slider in lobby player list menu.
-- Removed LethalConfig button from main menu, the button is only available in lobby player list menu.
-- Count of how many players are playing the modpack live are visible on readme page and in discord server.
-  - How it works, heartbeat (ping) is getting sent to server with a random ID.
+- Added realistic visor effects
+  - Raindrops appear on visor during Rainy, Stormy and Flooded weather.
+  - Visor cracks when taking damage _[ Level 1 - 75 HP or below, level 2 - 35 HP or below ]_
+    - Level 2 crack increases oxygen consumption
+  - Physical visor rim around screen edges
+  - Visor cracks repair only on death
+- Tools in the hotbar that are not chosen will be visible on the players equipment slots
+- Added more ambient and music sounds
+- Enabled shadow casting on moons where it's disabled
+- Improved some ships buyable furniture default positions when buying
+- Added missing hit sound for Giant Sapsucker
+- Added global voice volume slider in lobby player list menu
+- Removed LethalConfig button from main menu, the button is only available in lobby player list menu
+- Count of how many players are playing the modpack live are visible in readme and discord server
+  - How it works, heartbeat (ping) is getting sent to server with a random ID
 
 ## 🌟 ADDED
 
+### ✨ Gameplay & Mechanics
+
+- 1 extra hotbar slot for 750 credits
+- Radio with thousands of random real radio stations as ship furniture upgrade for 60
+- 6 new vanilla styled furnitures
+- Gambling machines to the Company moon
+- During Flooded, Stormy, Rainy weather water appears indoors and level increases slowly
+
+### 🫁 OXYGEN
+
+- Added oxygen consumption back
+- Fixed previously oxygen being consumed very fast when running
+  - Before, 0.0025 was added to the base consumption and that's quite a big value, but now, only 0.0005 is added
+- Players while walking on clear air moons ~15 minutes
+- Players while running on clear air moons ~6 minutes
+- Players while walking on toxic, cold and thin air moons ~13 minutes
+- Players while running on toxic, cold and thin air moons ~5 minutes
+
 ### 🌙 MOONS
 
-- Vacuity
-
-  - _The sun bleeds across the sand, emptiness has a hunger_
-  - Which system: OME-717
+- _Vacuity_
+  - _sun bleeds across the sand_
+  - Which system: ZRC-81
   - Risk Level: S
 
-- Forsaken.
-
-  - _The mountain breathes steam, it's iron lungs are failing_
+- _Forsaken_
+  - _mountain breathes steam_
   - Which system: WRH-118
   - Risk Level: B
 
 ### 🏠 INTERIORS
 
-- Deep Sewers:
+- Deep Sewers
 
   - _?_
+
+### 🌨️ WEATHERS
+
+- Snowfall
 
 ### 🛠️ MODS
 
 - BetterSprayPaint
+- GamblingMachineAtTheCompanyFork
+- Vacuity Moon
+- Lunas Moons
+- Lethal Nuke
+- QuotaOverhaul
+- ReservedSlotPositionsForInventory
+- RadioFurnitureFixed
+  - UniTask
+- OopsAllFloodedFixed
+- AmbientPackMusicFork
+- Beanies Furniture
+- Oxygen
+- LethalElementsTheta
+- ScannableTools
+- LoadingInfo
+- Immersive Visor
+- RNGConfigurator
 
 ## 🗑️ REMOVED
 
@@ -122,47 +197,70 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - BetterSprayPaintFIXED
 - Piggys Variety Mod Fork
+- ChocoQuota
+- MelaniesVoice
+- EGypt
+- 26 Feign
+- Demetrica
+- Oldred
+- Infernis
+- Gloom
+- Asteroid-14
+- Faith
+- Core
+- Etern
+- Empra
+- Cosmocos
+- Crowd
+- Makron
+- Praetor
+- Vigilance
+- 3Bilge
+- 81Deadlock
+- Midnight Sanctuary
 
 ## 📦 MOD UPDATES
 
 _(Old version → New version)_
 
 - LethalLevelLoaderUpdated: 1.5.1 → 1.5.5
-- DawnLib: 0.4.3 → 0.4.9
+- DawnLib: 0.4.3 → 0.5.3
 - LunarConfig: 0.1.12 → 0.1.13
 - LCLocalFixes: 0.0.1 → 0.0.2
 - ButterFixes: 1.15.3 → 1.15.6
 - itolib: 0.6.0 → 0.6.1
 - MrovLib: 0.3.6 → 0.3.7
 - WeatherTweaks: 1.1.6 → 1.1.7
-- SelfSortingStorage: 1.4.2 → 1.4.3
+- SelfSortingStorage: 1.4.2 → 1.4.4
 - ScienceBirdTweaks: 4.4.9 → 4.5.0
 - LethalSponge: 1.2.0 → 1.3.6
-- ChuxiaFixes: 1.0.1 → 1.0.2
-- NicheTweaks: 0.0.7 → 0.1.4
-- RuntimeIcons BetterRotations: 1.1.1 → 1.1.5
-- LethalHUD: 1.3.4 → 1.3.5
+- ChuxiaFixes: 1.0.1 → 1.0.3
+- Company Globes: 1.0.3 → 1.0.4
+- NicheTweaks: 0.0.7 → 0.2.0
+- RuntimeIcons BetterRotations: 1.1.1 → 1.1.7
+- LethalHUD: 1.3.4 → 1.3.7
 - EnemySoundFixes: 1.8.3 → 1.8.5
 - Chameleon: 2.2.0 → 2.2.1
 - FontUpdate: 0.8.1 → 0.8.2
 - WaterAssetRestorer: 1.0.1 → 1.0.2
-- Wesleys Weathers: 1.2.4 → 1.2.7
+- Wesleys Weathers: 1.2.4 → 1.2.8
 - Wesleys Ememy Variants: 1.1.1 → 1.2.1
 - Polarus: 5.0.1 → 5.0.2
 - Alcatras: 2.0.1 → 2.0.2
 - Motra: 1.1.0 → 1.1.1
 - Hyx: 2.0.3 → 2.0.4
-- Gloom: 4.0.3 → 4.0.5
 - Calist: 2.0.3 → 2.0.4
 - Asteroid-13: 4.2.0 → 4.2.1
-- Faith: 1.0.5 → 1.0.6
-- Cosmocos: 5.0.1 → 5.0.3
 - Release: 1.0.4 → 1.0.5
 - Extort: 1.0.3 → 1.0.5
-- Crowd: 1.0.4 → 1.0.5
 - Wither: 2.0.1 → 2.0.2
 - 42 Kiri: 1.4.4 → 1.4.5
-- WesleysInteriors: 4.0.19 → 4.1.10
+- Aquatis: 2.2.6 → 2.2.7
+- Celest: 1.1.7 → 1.1.8
+- Mazon moon: 2.3.0 → 2.3.1
+- WesleysInteriors: 4.0.19 → 4.1.12
+- Raven Manor Interior: 1.1.3 → 1.1.4
+- Liminal House: 1.1.0 → 1.1.2
 
 # MoreBrutalLethalCompanyPlus _v73.0.1_
 
