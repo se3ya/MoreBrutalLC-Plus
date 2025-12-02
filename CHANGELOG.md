@@ -23,6 +23,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## 🔧 CHANGED
 
+### ⚙️ TECHNICAL
+
+- Overhauled README.md and CHANGELOG.md
+- Updated and made [github page](https://github.com/se3ya/MoreBrutalLC-Plus) public
+- Moved thunderstore wiki to github
+
 ### ✨ GAMEPLAY & MECHANICS
 
 - LGU interactive hotkeys from WASD to arrows to match moons, store and systems pages

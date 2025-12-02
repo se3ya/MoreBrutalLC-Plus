@@ -31,9 +31,8 @@
 > </p>
 >
 > <p align="center">
->   <i>Whether you're an intern or leader, MBLCP delivers the gameplay depth the Company demands.</i>
+>   <i>Whether you are an intern or leader, MBLCP delivers the gameplay depth the Company demands.</i>
 > </p>
-
 
 ---
 
@@ -47,7 +46,7 @@
 
 - **Quality**: *520p > 720p* resolution and cleaner visuals
 - **Performance**: Reduced RAM usage, overall optimization
-- **Progression**: 9 difficulty tiers *[ F–S++ ]* balancing risk vs reward
+- **Progression**: 9 difficulty tiers *[ F > S++ ]* balancing risk vs reward
 - **Quality-of-Life**: Improved HUD, voice suppresion, terminal, radar, weathers and multiple fixes
 
 <p align="left">
@@ -200,9 +199,9 @@
 
 - **Developer**: [seeya](https://github.com/se3ya)
 - **Modpack Helper**: [Gus](https://github.com/baldugus)
-- **Mod Creators**: Moroxide, darmuh and other mod authors for their mods
+- **Mod Creators**: [Moroxide](https://thunderstore.io/c/lethal-company/p/Megalophobia/MEGALOPHOBIA/), darmuh and other mod authors for their mods
 - **Early Testers**: Strv-103, Mahoraga, Yuri
-- **Github Inspiration**: [Shaydelity](https://github.com/Team-Rebirth/Lethal-Rebirth)
+- **Inspiration**: [Shaydelity](https://github.com/Team-Rebirth/Lethal-Rebirth) - github page inspiration, [Moroxide](https://thunderstore.io/c/lethal-company/p/Megalophobia/MEGALOPHOBIA/) - terminal customization inspiration
 - **Coffee Supporters**: [Gus](https://github.com/baldugus) and st.coiled
 - **Community**: Thanks to everyone who plays the modpack, suggests features, reports bugs and is active on our [Discord server](https://discord.gg/Z9rUwTtUpx)!
 
