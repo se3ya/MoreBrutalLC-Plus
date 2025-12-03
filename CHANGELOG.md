@@ -2,9 +2,13 @@
   <img src="https://i.imgur.com/VLxzRMi.png">
 </p>
 
-All notable changes to MoreBrutalLethalCompanyPlus will be documented here.
+<p align="center">
+  All notable changes to MoreBrutalLethalCompanyPlus will be documented here.
+</p>
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+<p align="center">
+  The format is based on <a href="https://keepachangelog.com/en/1.1.0/">Keep a Changelog</a>.
+</p>
 
 ## Versioning
 
@@ -56,13 +60,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - Recovering players body will reduce the penalty by 90%
     - Example: 16 players, 4 unrecovered deaths - `4/16 = 0.25`, penalty = `20 * 0.25 = 5%`
 
-### 🌘 MOONS
+### 📈 TIERS & SYSTEMS
 
-- Overall difficulty reduced
-- Reduced interior sizes starting from tier D
-- Increased value multiplier starting from tier D
-- Increased scrap amount starting from tier D
-- Added rare _Nuclear Bomb_ scrap starting from D tier
+- Overall difficulty re-balanced
+  - Mostly reduced difficulty on lower tiers
+- Reduced interior sizes on starting systems
+- Reduced value multiplier on A tier and below
+- Increased scrap amount across all tiers
+- Updated scrap list and their chances
 
 ### 🌨️ WEATHER
 
@@ -115,6 +120,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Balanced outside and inside enemies _probability curves, max count, power level_ and _enemy HP_
 - Harder enemies spawn later in the day
 - Less hard enemies spawn at the day start
+- Re-balanced enemies spawn chance
 
 ### 🎨 VISUAL & AUDIO
 
@@ -139,10 +145,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### ✨ Gameplay & Mechanics
 
 - 1 extra hotbar slot for 750 credits
-- Radio with thousands of random real radio stations as ship furniture upgrade for 60
+- Radio with thousands of real radio stations as ship furniture upgrade for 60 credits
 - 6 new vanilla styled furnitures
 - Gambling machines to the Company moon
 - During Flooded, Stormy, Rainy weather water appears indoors and level increases slowly
+- Added _Nuclear Bomb_ scrap starting from S tier
 
 ### 🫁 OXYGEN
 
@@ -205,6 +212,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Piggys Variety Mod Fork
 - ChocoQuota
 - MelaniesVoice
+- MeteorShowerChance
 - EGypt
 - 26 Feign
 - Demetrica
@@ -237,13 +245,14 @@ _(Old version → New version)_
 - itolib: 0.6.0 → 0.6.1
 - MrovLib: 0.3.6 → 0.3.7
 - WeatherTweaks: 1.1.6 → 1.1.7
-- SelfSortingStorage: 1.4.2 → 1.4.4
+- SelfSortingStorage: 1.4.2 → 1.4.5
 - ScienceBirdTweaks: 4.4.9 → 4.5.0
 - LethalSponge: 1.2.0 → 1.3.6
 - ChuxiaFixes: 1.0.1 → 1.0.3
 - Company Globes: 1.0.3 → 1.0.4
-- NicheTweaks: 0.0.7 → 0.2.0
-- RuntimeIcons BetterRotations: 1.1.1 → 1.1.7
+- BagConfig: 1.0.0 → 1.0.1
+- NicheTweaks: 0.0.7 → 0.2.1
+- RuntimeIcons BetterRotations: 1.1.1 → 1.1.8
 - LethalHUD: 1.3.4 → 1.3.7
 - EnemySoundFixes: 1.8.3 → 1.8.5
 - Chameleon: 2.2.0 → 2.2.1
@@ -260,7 +269,7 @@ _(Old version → New version)_
 - Release: 1.0.4 → 1.0.5
 - Extort: 1.0.3 → 1.0.5
 - Wither: 2.0.1 → 2.0.2
-- 42 Kiri: 1.4.4 → 1.4.5
+- 42 Kiri: 1.1.4 → 1.1.6
 - Aquatis: 2.2.6 → 2.2.7
 - Celest: 1.1.7 → 1.1.8
 - Mazon moon: 2.3.0 → 2.3.1

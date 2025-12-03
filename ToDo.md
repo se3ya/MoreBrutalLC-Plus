@@ -1,4 +1,3 @@
-- On Aquatis scrap spawns on terrian
 - Disable LoadingScreen debug before uploading update
 - Add more tips.
 - Decide if leave extra hotbar purchase or not

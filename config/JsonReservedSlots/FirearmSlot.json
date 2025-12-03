@@ -1,0 +1,67 @@
+{
+  "reservedSlotName": "firearms",
+  "slotPriority": 350,
+  "purchasePrice": 1000,
+  "itemsForSlot": [
+    {
+      "itemName": "Shotgun",
+      "bone": 3,
+      "position": {
+        "x": -0.2,
+        "y": 0.3,
+        "z": -0.45
+      },
+      "rotation": {
+        "x": 75,
+        "y": 90,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "Revolver",
+      "bone": 3,
+      "position": {
+        "x": -0.2,
+        "y": 0.5,
+        "z": -0.45
+      },
+      "rotation": {
+        "x": 285,
+        "y": 270,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "Rifle",
+	  "bone": 3,
+      "position": {
+        "x": -0.1,
+        "y": 0.3,
+        "z": -0.45
+      },
+      "rotation": {
+        "x": 0,
+        "y": 180,
+        "z": 75
+      }
+    },
+	{
+      "itemName": "Double-Barreled Shotgun",
+      "bone": 3,
+      "position": {
+        "x": -0.2,
+        "y": 0.3,
+        "z": -0.45
+      },
+      "rotation": {
+        "x": 75,
+        "y": 90,
+        "z": 0
+      }
+    }
+  ],
+  "equipKeybind": {
+	"defaultBind": "v",
+    "toggle": true
+  }
+}

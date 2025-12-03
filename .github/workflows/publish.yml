@@ -1,0 +1,305 @@
+name: Publish to Thunderstore
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to publish'
+        required: true
+        type: string
+      publish_main:
+        description: 'Publish core modpack'
+        required: false
+        type: boolean
+        default: false
+      publish_cosmetics:
+        description: 'Publish cosmetics pack'
+        required: false
+        type: boolean
+        default: false
+      publish_moons:
+        description: 'Publish moons pack'
+        required: false
+        type: boolean
+        default: false
+      publish_posters:
+        description: 'Publish posters pack'
+        required: false
+        type: boolean
+        default: false
+      publish_logo:
+        description: 'Publish logo pack'
+        required: false
+        type: boolean
+        default: false
+      publish_modpack:
+        description: 'Publish MoreBrutalLethalCompanyPlus'
+        required: true
+        type: boolean
+        default: true
+
+env:
+  GAME_NAME: lethalcompany
+  NAMESPACE: seechela
+
+jobs:
+  preparation:
+    name: Prepare Metadata
+    runs-on: ubuntu-latest
+    outputs:
+      categories: ${{ steps.categories.outputs.list }}
+      dependencies: ${{ steps.dependencies.outputs.list }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Read categories
+        id: categories
+        run: |
+          CATEGORIES=$(cat categories.txt)
+          echo "list<<EOF" >> $GITHUB_OUTPUT
+          echo "$CATEGORIES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Read dependencies
+        id: dependencies
+        run: |
+          DEPS=$(tr '\n' ',' < dependencies.txt | sed 's/,$//')
+          echo "list=$DEPS" >> $GITHUB_OUTPUT
+
+  publish-main-core:
+    name: Publish Core Pack
+    if: ${{ github.event.inputs.publish_main == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Upload to Thunderstore
+        uses: GreenTF/upload-thunderstore-package@v4.3
+        with:
+          community: ${{ env.GAME_NAME }}
+          namespace: ${{ env.NAMESPACE }}
+          name: MoreBrutalLCMain
+          version: ${{ github.event.inputs.version }}
+          description: "Contains all core mods for MoreBrutalLethalCompanyPlus. MoreBrutalLethalCompanyPlus is required!"
+          token: ${{ secrets.Automatic_Publish }}
+          categories: |
+            Mods
+            Modpacks
+          file: packs/BrutalLCMain
+
+  publish-cosmetics:
+    name: Publish Cosmetics Pack
+    if: ${{ github.event.inputs.publish_cosmetics == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Upload to Thunderstore
+        uses: GreenTF/upload-thunderstore-package@v4.3
+        with:
+          community: ${{ env.GAME_NAME }}
+          namespace: ${{ env.NAMESPACE }}
+          name: MoreBrutalLCCosmetics
+          version: ${{ github.event.inputs.version }}
+          description: "Contains all modded cosmetics for MoreBrutalLethalCompanyPlus! MoreBrutalLethalCompanyPlus is required!"
+          token: ${{ secrets.Automatic_Publish }}
+          categories: |
+            Cosmetics
+            Suits
+            Modpacks
+          file: packs/BrutalLCCosmetics
+
+  publish-moons:
+    name: Publish Moons Pack
+    if: ${{ github.event.inputs.publish_moons == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Upload to Thunderstore
+        uses: GreenTF/upload-thunderstore-package@v4.3
+        with:
+          community: ${{ env.GAME_NAME }}
+          namespace: ${{ env.NAMESPACE }}
+          name: MoreBrutalLCMoons
+          version: ${{ github.event.inputs.version }}
+          description: "Contains all modded moons for MoreBrutalLethalCompanyPlus! MoreBrutalLethalCompanyPlus is required!"
+          token: ${{ secrets.Automatic_Publish }}
+          categories: |
+            Mods
+            Moons
+            Modpacks
+          file: packs/BrutalLCMoons
+
+  publish-posters:
+    name: Publish Posters Pack
+    if: ${{ github.event.inputs.publish_posters == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Upload to Thunderstore
+        uses: GreenTF/upload-thunderstore-package@v4.3
+        with:
+          community: ${{ env.GAME_NAME }}
+          namespace: ${{ env.NAMESPACE }}
+          name: MoreBrutalLCPosters
+          version: ${{ github.event.inputs.version }}
+          description: "Contains all customized posters for MoreBrutalLethalCompanyPlus! MoreBrutalLethalCompanyPlus is required!"
+          token: ${{ secrets.Automatic_Publish }}
+          categories: |
+            Asset Replacements
+            Modpacks
+          file: packs/BrutalLCPosters
+
+  publish-logo:
+    name: Publish Logo Pack
+    if: ${{ github.event.inputs.publish_logo == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Upload to Thunderstore
+        uses: GreenTF/upload-thunderstore-package@v4.3
+        with:
+          community: ${{ env.GAME_NAME }}
+          namespace: ${{ env.NAMESPACE }}
+          name: CustomLogoForMBLCP
+          version: ${{ github.event.inputs.version }}
+          description: "Replaces default Lethal Company logo with custom branding for MoreBrutalLethalCompanyPlus!"
+          token: ${{ secrets.Automatic_Publish }}
+          categories: |
+            Asset Replacements
+            Modpacks
+          file: packs/CustomLogoForMBLCP
+
+  publish-modpack:
+    name: Publish MoreBrutalLethalCompanyPlus
+    needs: [preparation, publish-main-core, publish-cosmetics, publish-moons, publish-posters, publish-logo]
+    if: |
+      always() &&
+      github.event.inputs.publish_modpack == 'true' &&
+      (needs.publish-main-core.result == 'success' || needs.publish-main-core.result == 'skipped') &&
+      (needs.publish-cosmetics.result == 'success' || needs.publish-cosmetics.result == 'skipped') &&
+      (needs.publish-moons.result == 'success' || needs.publish-moons.result == 'skipped') &&
+      (needs.publish-posters.result == 'success' || needs.publish-posters.result == 'skipped') &&
+      (needs.publish-logo.result == 'success' || needs.publish-logo.result == 'skipped')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: update Emblem version
+        run: |
+          NEW_VERSION="v${{ github.event.inputs.version }}"
+          CURRENT_VERSION=$(grep -A 1 "\[8\. Version Number\]" config/Darkbrewery.Emblem.cfg | grep "^Text = " | sed 's/Text = //')
+
+          if [ "$CURRENT_VERSION" = "$NEW_VERSION" ]; then
+            echo "✅ Emblem version already correct: $CURRENT_VERSION"
+          else
+            echo "🔄 Updating Emblem version: $CURRENT_VERSION → $NEW_VERSION"
+            sed -i "/\[8\. Version Number\]/,/^\[/ s|^Text = .*|Text = $NEW_VERSION|" config/Darkbrewery.Emblem.cfg
+          fi
+
+      - name: update Terminal version
+        run: |
+          NEW_VERSION="${{ github.event.inputs.version }}"
+          CONFIG_FILE="config/darmuh.TerminalStuff.cfg"
+
+          # Extract current version from the MOREBRUTAL-XX.XX.XX pattern
+          CURRENT_VERSION=$(grep "MOREBRUTAL-" "$CONFIG_FILE" | grep -oP 'MOREBRUTAL-\K[0-9]+\.[0-9]+\.[0-9]+' | head -1)
+
+          if [ "$CURRENT_VERSION" = "$NEW_VERSION" ]; then
+            echo "✅ Terminal version already correct: $CURRENT_VERSION"
+          else
+            echo "🔄 Updating Terminal version: $CURRENT_VERSION → $NEW_VERSION"
+            sed -i "s/MOREBRUTAL-${CURRENT_VERSION}/MOREBRUTAL-${NEW_VERSION}/g" "$CONFIG_FILE"
+          fi
+
+      - name: disable BepInEx console
+        run: |
+          # Check current state
+          CURRENT_STATE=$(grep -A 5 "\[Logging\.Console\]" config/BepInEx.cfg | grep "^Enabled = " | awk '{print $3}')
+
+          if [ "$CURRENT_STATE" = "false" ]; then
+            echo "✅ BepInEx console already disabled"
+          else
+            echo "🔄 Disabling BepInEx console (was: $CURRENT_STATE)"
+            sed -i '/^\[Logging\.Console\]/,/^\[/ s/^Enabled = true/Enabled = false/' config/BepInEx.cfg
+          fi
+
+      - name: Upload to Thunderstore
+        uses: GreenTF/upload-thunderstore-package@v4.3
+        with:
+          community: ${{ env.GAME_NAME }}
+          namespace: ${{ env.NAMESPACE }}
+          name: MoreBrutalLethalCompanyPlus
+          version: ${{ github.event.inputs.version }}
+          description: "[V73] Balanced modpack that makes game slightly harder and still enjoyable and still keeping it in vanilla style!"
+          token: ${{ secrets.Automatic_Publish }}
+          categories: |
+            Mods
+            Modpacks
+          deps: ${{ needs.preparation.outputs.dependencies }}
+          file: packs/MoreBrutalLethalCompany
+
+  create-release:
+    name: Create GitHub Release
+    needs: [publish-modpack, publish-main-core, publish-cosmetics, publish-moons, publish-posters, publish-logo]
+    if: |
+      always() &&
+      (needs.publish-modpack.result == 'success' ||
+       needs.publish-main-core.result == 'success' ||
+       needs.publish-cosmetics.result == 'success' ||
+       needs.publish-moons.result == 'success' ||
+       needs.publish-posters.result == 'success' ||
+       needs.publish-logo.result == 'success')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ github.event.inputs.version }}
+          release_name: "MoreBrutalLethalCompanyPlus v${{ github.event.inputs.version }}"
+          body: |
+            # MoreBrutalLethalCompanyPlus v${{ github.event.inputs.version }}
+
+            ## 📦 Published Packages
+
+            ### Sub-packs (published first):
+            - ${{ needs.publish-main-core.result == 'success' && '✅ BrutalLCMain' || '⏭️ BrutalLCMain (skipped)' }}
+            - ${{ needs.publish-cosmetics.result == 'success' && '✅ Cosmetics Pack' || '⏭️ Cosmetics Pack (skipped)' }}
+            - ${{ needs.publish-moons.result == 'success' && '✅ Moons Pack' || '⏭️ Moons Pack (skipped)' }}
+            - ${{ needs.publish-posters.result == 'success' && '✅ Posters Pack' || '⏭️ Posters Pack (skipped)' }}
+            - ${{ needs.publish-logo.result == 'success' && '✅ Logo Pack' || '⏭️ Logo Pack (skipped)' }}
+
+            ### Main modpack (published last):
+            - ${{ needs.publish-modpack.result == 'success' && '✅ MoreBrutalLethalCompanyPlus' || '⏭️ MoreBrutalLethalCompanyPlus (skipped)' }}
+
+            ## 📥 Download
+            All packages are available on Thunderstore:
+            - [MoreBrutalLethalCompanyPlus](https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLethalCompanyPlus/)
+            - [MoreBrutalLCMain](https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLCMain/)
+            - [MoreBrutalLCCosmetics](https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLCCosmetics/)
+            - [MoreBrutalLCMoons](https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLCMoons/)
+            - [MoreBrutalLCPosters](https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLCPosters/)
+            - [CustomLogoForMBLCP](https://thunderstore.io/c/lethal-company/p/seechela/CustomLogoForMBLCP/)
+
+            ## 📝 Changelog
+            See [CHANGELOG.md](https://github.com/se3ya/MoreBrutalLC-Plus/blob/main/CHANGELOG.md) for detailed version history.
+
+            ---
+            **Experience the Company. Brutally.**
+          draft: false
+          prerelease: false
