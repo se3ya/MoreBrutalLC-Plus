@@ -89,6 +89,12 @@ jobs:
             Modpacks
           file: packs/BrutalLCMain
 
+      - name: Wait for upload completion
+        run: |
+          echo "⏳ Waiting 10 seconds to ensure upload is complete..."
+          sleep 10
+          echo "✅ Upload wait complete"
+
   publish-cosmetics:
     name: Publish Cosmetics Pack
     if: ${{ github.event.inputs.publish_cosmetics == 'true' }}
@@ -111,6 +117,12 @@ jobs:
             Suits
             Modpacks
           file: packs/BrutalLCCosmetics
+
+      - name: Wait for upload completion
+        run: |
+          echo "⏳ Waiting 10 seconds to ensure upload is complete..."
+          sleep 10
+          echo "✅ Upload wait complete"
 
   publish-moons:
     name: Publish Moons Pack
@@ -135,6 +147,12 @@ jobs:
             Modpacks
           file: packs/BrutalLCMoons
 
+      - name: Wait for upload completion
+        run: |
+          echo "⏳ Waiting 10 seconds to ensure upload is complete..."
+          sleep 10
+          echo "✅ Upload wait complete"
+
   publish-posters:
     name: Publish Posters Pack
     if: ${{ github.event.inputs.publish_posters == 'true' }}
@@ -156,6 +174,12 @@ jobs:
             Asset Replacements
             Modpacks
           file: packs/BrutalLCPosters
+
+      - name: Wait for upload completion
+        run: |
+          echo "⏳ Waiting 15 seconds to ensure upload is complete..."
+          sleep 15
+          echo "✅ Upload wait complete"
 
   publish-logo:
     name: Publish Logo Pack
@@ -179,6 +203,12 @@ jobs:
             Modpacks
           file: packs/CustomLogoForMBLCP
 
+      - name: Wait for upload completion
+        run: |
+          echo "⏳ Waiting 15 seconds to ensure upload is complete..."
+          sleep 15
+          echo "✅ Upload wait complete"
+
   publish-modpack:
     name: Publish MoreBrutalLethalCompanyPlus
     needs: [preparation, publish-main-core, publish-cosmetics, publish-moons, publish-posters, publish-logo]
@@ -195,7 +225,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: update Emblem version
+      - name: Update Emblem version
         run: |
           NEW_VERSION="v${{ github.event.inputs.version }}"
           CURRENT_VERSION=$(grep -A 1 "\[8\. Version Number\]" config/Darkbrewery.Emblem.cfg | grep "^Text = " | sed 's/Text = //')
@@ -207,7 +237,7 @@ jobs:
             sed -i "/\[8\. Version Number\]/,/^\[/ s|^Text = .*|Text = $NEW_VERSION|" config/Darkbrewery.Emblem.cfg
           fi
 
-      - name: update Terminal version
+      - name: Update Terminal version
         run: |
           NEW_VERSION="${{ github.event.inputs.version }}"
           CONFIG_FILE="config/darmuh.TerminalStuff.cfg"
@@ -222,7 +252,7 @@ jobs:
             sed -i "s/MOREBRUTAL-${CURRENT_VERSION}/MOREBRUTAL-${NEW_VERSION}/g" "$CONFIG_FILE"
           fi
 
-      - name: disable BepInEx console
+      - name: Disable BepInEx console
         run: |
           # Check current state
           CURRENT_STATE=$(grep -A 5 "\[Logging\.Console\]" config/BepInEx.cfg | grep "^Enabled = " | awk '{print $3}')
@@ -233,6 +263,26 @@ jobs:
             echo "🔄 Disabling BepInEx console (was: $CURRENT_STATE)"
             sed -i '/^\[Logging\.Console\]/,/^\[/ s/^Enabled = true/Enabled = false/' config/BepInEx.cfg
           fi
+
+      - name: Copy configs to modpack folder
+        run: |
+          echo "📦 Copying config folder to modpack..."
+
+          # Create BepInEx/config directory in modpack folder
+          mkdir -p packs/MoreBrutalLethalCompany/BepInEx/config
+
+          # Copy entire config folder contents
+          cp -r config/* packs/MoreBrutalLethalCompany/BepInEx/config/
+
+          # Count copied files
+          COPIED_FILES=$(find packs/MoreBrutalLethalCompany/BepInEx/config -type f | wc -l)
+          echo "✅ Copied $COPIED_FILES config files to modpack"
+
+          # Show structure for verification
+          echo "📂 Modpack structure:"
+          ls -la packs/MoreBrutalLethalCompany/
+          echo "📂 Config folder (first 20 files):"
+          ls -la packs/MoreBrutalLethalCompany/BepInEx/config/ | head -20
 
       - name: Upload to Thunderstore
         uses: GreenTF/upload-thunderstore-package@v4.3
@@ -248,6 +298,23 @@ jobs:
             Modpacks
           deps: ${{ needs.preparation.outputs.dependencies }}
           file: packs/MoreBrutalLethalCompany
+
+      - name: Wait for upload completion
+        run: |
+          echo "⏳ Waiting 15 seconds to ensure upload is complete..."
+          sleep 15
+          echo "✅ Upload wait complete"
+
+      - name: Cleanup copied configs
+        run: |
+          echo "🧹 Cleaning up copied config folder..."
+
+          # Remove the copied BepInEx folder from modpack
+          rm -rf packs/MoreBrutalLethalCompany/BepInEx
+
+          echo "✅ Cleanup complete - configs removed from modpack folder"
+          echo "📂 Modpack folder after cleanup:"
+          ls -la packs/MoreBrutalLethalCompany/
 
   create-release:
     name: Create GitHub Release
@@ -288,6 +355,7 @@ jobs:
             - ${{ needs.publish-modpack.result == 'success' && '✅ MoreBrutalLethalCompanyPlus' || '⏭️ MoreBrutalLethalCompanyPlus (skipped)' }}
 
             ## 📥 Download
+
             All packages are available on Thunderstore:
             - [MoreBrutalLethalCompanyPlus](https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLethalCompanyPlus/)
             - [MoreBrutalLCMain](https://thunderstore.io/c/lethal-company/p/seechela/MoreBrutalLCMain/)
@@ -297,9 +365,11 @@ jobs:
             - [CustomLogoForMBLCP](https://thunderstore.io/c/lethal-company/p/seechela/CustomLogoForMBLCP/)
 
             ## 📝 Changelog
+
             See [CHANGELOG.md](https://github.com/se3ya/MoreBrutalLC-Plus/blob/main/CHANGELOG.md) for detailed version history.
 
             ---
+
             **Experience the Company. Brutally.**
           draft: false
           prerelease: false

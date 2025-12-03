@@ -8,7 +8,7 @@ Thumbs.db
 .AppleDouble
 .LSOverride
 
-.vscode/
+/.vscode
 .idea/
 *.swp
 *.swo
