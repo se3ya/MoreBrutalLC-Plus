@@ -87,7 +87,7 @@ jobs:
           categories: |
             Mods
             Modpacks
-          file: packs/BrutalLCMain
+          path: packs/BrutalLCMain
 
       - name: Wait for upload completion
         run: |
@@ -116,7 +116,7 @@ jobs:
             Cosmetics
             Suits
             Modpacks
-          file: packs/BrutalLCCosmetics
+          path: packs/BrutalLCCosmetics
 
       - name: Wait for upload completion
         run: |
@@ -145,7 +145,7 @@ jobs:
             Mods
             Moons
             Modpacks
-          file: packs/BrutalLCMoons
+          path: packs/BrutalLCMoons
 
       - name: Wait for upload completion
         run: |
@@ -173,7 +173,7 @@ jobs:
           categories: |
             Asset Replacements
             Modpacks
-          file: packs/BrutalLCPosters
+          path: packs/BrutalLCPosters
 
       - name: Wait for upload completion
         run: |
@@ -201,7 +201,7 @@ jobs:
           categories: |
             Asset Replacements
             Modpacks
-          file: packs/CustomLogoForMBLCP
+          path: packs/CustomLogoForMBLCP
 
       - name: Wait for upload completion
         run: |
@@ -297,7 +297,7 @@ jobs:
             Mods
             Modpacks
           deps: ${{ needs.preparation.outputs.dependencies }}
-          file: packs/MoreBrutalLethalCompany
+          path: packs/MoreBrutalLethalCompany
 
       - name: Wait for upload completion
         run: |
