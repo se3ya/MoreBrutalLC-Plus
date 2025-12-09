@@ -26,10 +26,10 @@
   <i>300+ mods • 47 moons • 8 Systems • 30+ enemies</i>
 </p>
 
-> <p align="center">
->   <i>MoreBrutalLethalCompanyPlus is a complete revamp in quality of life for Lethal Company, <b>improving, rebalancing, and expanding</b> upon it while keeping the vanilla feel. The focus of this modpack is to create a <b>difficult yet fair</b> experience, suitable for casual and competitive play.</i>
-> </p>
->
+<p align="center">
+   <i>MoreBrutalLethalCompanyPlus is a complete revamp in quality of life for Lethal Company, <b>improving, rebalancing, and expanding</b> upon it while keeping the vanilla feel. The focus of this modpack is to create a <b>difficult yet fair</b> experience, suitable for casual and competitive play.</i>
+</p>
+
 > <p align="center">
 >   <i>Whether you are an intern or leader, MBLCP delivers the gameplay depth the Company demands.</i>
 > </p>
