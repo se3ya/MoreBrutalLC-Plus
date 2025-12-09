@@ -144,7 +144,7 @@
 
 > ⚠️ **All players must have identical modpack version for multiplayer**
 
-> ⚠️ **All players must have <u>not changed</u> modpack for multiplayer**
+> ⚠️ **All players must have not changed modpack for multiplayer**
 
 ---
 

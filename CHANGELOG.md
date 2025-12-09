@@ -16,7 +16,7 @@
 > - **MAJOR** version is a significant modpack change *[ new mods, new features, breaking changes ]*
 > - **MINOR** version is a small modpack change *[ hotfixes, patches, config tweaks ]*
 
-# [v73.1.0] - _**Unreleased**_ - 2025-12-08
+# [v73.1.0] - 2025-12-09
 
 ## 📋 KNOWN ISSUES
 
