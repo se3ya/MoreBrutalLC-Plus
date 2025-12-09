@@ -57,7 +57,7 @@
 - **50+ Scrap Types** with rebalanced weight and value
 - **30+ Enemies** with vanilla enemies improved behaviors
 - **100+ Cosmetics** suits, cosmetics and emotes
-- **500+ Sounds** new sounds
+- **500+ Sounds** of ambient, music and others
 
 <p align="left">
   <img src="https://i.imgur.com/dwXwxd1.png" width="450">

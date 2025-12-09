@@ -8,6 +8,10 @@ Thumbs.db
 .AppleDouble
 .LSOverride
 
+mod_checker.py
+mod_check_report.txt
+*.ps1
+
 /.vscode
 .idea/
 *.swp

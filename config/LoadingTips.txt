@@ -1,10 +1,12 @@
-﻿Approaching large water areas could be very dangerous.
-To suggest something for the modpack, type 'discord' in the terminal.
+﻿## MODPACK
+Type 'discord' in the terminal to suggest something for the modpack.
 Found a bug? Type 'discord' in the terminal to report it in discord server.
 Enjoying the modpack? Type 'modpack' in the terminal and smash that like button!
+Having a soft-lock? Press CTRL+ALT+SHIFT+Q to return to the main menu.
+## GAMEPLAY
+Approaching large water areas could be very dangerous.
 Fire exit may be blocked by planks, preventing entry or exit. They can be broken with any weapon, such as a shovel.
 Found a bug? Then kill it with the shovel.
-Experiencing soft-lock? Press CTRL+ALT+SHIFT+Q to return to the main menu.
 Use the arrow keys to switch between player cameras in the terminal.
 Enabled boombox makes Hygroderes move faster and not dealing damage.
 Stand on railings to avoid Hygroderes.
@@ -24,5 +26,13 @@ Circuit bees will attack some enemies that gets too close to them.
 Circuit bees have a chance to set Forest Keepers on fire.
 Earth Leviathans hunt nearby enemies, but they ignore smaller prey.
 Lobby automatically re-opens when going back to orbit.
-If dead body was not retrived, quota increases by 3%.
-8% of crew credits will be taken if dead body wasn't retrived.
+Flashlights dims and flickers when reaching 30% battery
+Gifts sometimes can be lethal
+Bracken drags grabbed players doing gradual damage toward a favorite spot
+Having an level 2 visor crack increases oxygen consumption
+Dig a snow on snowy weather to clear paths
+During Flooded and rarely Stormy and Rainy weather water appears indoors and level increases slowly
+## QUOTA
+Credits will be reduced by 5% for each dead player without recovering their body
+Quota will be increased by 3% for 2+ dead player without recovering their body
+Quota multiplies for each new player in the lobby if there are more than 2

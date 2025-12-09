@@ -16,7 +16,17 @@
 > - **MAJOR** version is a significant modpack change *[ new mods, new features, breaking changes ]*
 > - **MINOR** version is a small modpack change *[ hotfixes, patches, config tweaks ]*
 
-# [v73.1.0] - _**Unreleased**_ - 2025-12-DD
+# [v73.1.0] - _**Unreleased**_ - 2025-12-08
+
+## 📋 KNOWN ISSUES
+
+Issues that are getting tracked for the next update
+
+- [ ] Shutter switch interact icon is blank
+- [~] High tier enemies like Eyeless dog, Forest Keeper, Jester have a chance to spawn too early
+- [ ] Some scrap may not de-spawn from moon when all crew dies
+
+> Report bugs on [GitHub](https://github.com/se3ya/MoreBrutalLC-Plus/issues) or [Discord](https://discord.gg/Z9rUwTtUpx)
 
 ## 🐞 FIXED
 
@@ -24,6 +34,11 @@
 - Cruiser horn pitch getting stuck
 - Aquatis quicksand texture
 - Maneater animation skip on target switch
+- Several visual errors and clipping on _Liminal House_ interior
+- Scrap generating inside furniture on _Raven Manor_ interior
+- Ambience of _Noctis_ playing indoors
+- Clear day lightning being on Eclipsed and plants LoDs on _Kiri_ moon
+- _Wither_ moon interiors having incorrect footsteps sounds
 
 ## 🔧 CHANGED
 
@@ -32,9 +47,12 @@
 - Overhauled README.md and CHANGELOG.md
 - Updated and made [github page](https://github.com/se3ya/MoreBrutalLC-Plus) public
 - Moved thunderstore wiki to github
+- Count of how many players are playing the modpack live are visible in README.md and discord server
+- Improved performance
 
 ### ✨ GAMEPLAY & MECHANICS
 
+- Turrets do less damage and slower fire rate but has a wider rotation range.
 - LGU interactive hotkeys from WASD to arrows to match moons, store and systems pages
 - Balanced out vanilla scraps and all store item weights
 - Increased ships floodlight intensity in blackout and rotation speed slightly
@@ -55,7 +73,7 @@
   - Recovering a player's body reduces that body's penalty reduction by 85%
   - Penalty = `12% * (deadPlayers / playerCount)`
     - Example: 16 players, 4 unrecovered deaths - penalty = `12% * (4/16) = 3%`
-- Credits will be reduced by 5% for each dead player without recovering his body
+- Credits will be reduced by 5% for each dead player without recovering their body
   - 20% is the max that can be reduced
   - Recovering players body will reduce the penalty by 90%
     - Example: 16 players, 4 unrecovered deaths - `4/16 = 0.25`, penalty = `20 * 0.25 = 5%`
@@ -64,10 +82,18 @@
 
 - Overall difficulty re-balanced
   - Mostly reduced difficulty on lower tiers
+- Updated constellations prices
 - Reduced interior sizes on starting systems
 - Reduced value multiplier on A tier and below
 - Increased scrap amount across all tiers
+- Increased _Gift_ spawn chance
 - Updated scrap list and their chances
+
+### 🌙 MOONS
+
+- Optimization improvements done on _Celest_
+- Changed the position of fire exit on _Terra_
+- Terrain overhaul and skybox update on _Chronos_
 
 ### 🌨️ WEATHER
 
@@ -124,32 +150,46 @@
 
 ### 🎨 VISUAL & AUDIO
 
-- Added realistic visor effects
+- Enabled shadow casting on moons where it's disabled
+- Scan command no more shows detailed information
+- Improved some ships buyable furniture default positions when buying
+- Removed LethalConfig button from main menu, the button is only available in lobby player list menu
+
+### 🏠 INTERIORS
+
+- Liminal House
+  - Tile generation was improved
+
+## 🌟 ADDED
+
+### ✨ GAMEPLAY & MECHANICS
+
+- Opening a gift there's a small chance that a low tier enemy will spawn
+- Flashlight brightness start decreasing when reaching 30% battery
+- Turrets that shoot missiles
+- Bracken now drags grabbed players doing gradual damage toward a favorite spot instead of killing instantly
+- Terminal command _[ eject ]_ to restart lobby
+  - **use with caution, may break the save file**
+- 1 extra hotbar slot for 1000 credits
+- Radio with thousands of real radio stations as ship furniture upgrade for 60 credits
+- 6 new vanilla styled furnitures
+- Gambling machines to the Company moon
+- During Flooded, Stormy, Rainy weather water appears indoors and level increases slowly
+- Added _Nuclear Bomb_ scrap starting from S tier
+- Fully destroyed players body in radar will show 'No Signal!'
+
+### 🎨 VISUAL & AUDIO
+
+- Realistic visor effects
   - Raindrops appear on visor during Rainy, Stormy and Flooded weather.
   - Visor cracks when taking damage _[ Level 1 - 75 HP or below, level 2 - 35 HP or below ]_
     - Level 2 crack increases oxygen consumption
   - Physical visor rim around screen edges
   - Visor cracks repair only on death
 - Tools in the hotbar that are not chosen will be visible on the players equipment slots
-- Added more ambient and music sounds
-- Enabled shadow casting on moons where it's disabled
-- Improved some ships buyable furniture default positions when buying
-- Added missing hit sound for Giant Sapsucker
-- Added global voice volume slider in lobby player list menu
-- Removed LethalConfig button from main menu, the button is only available in lobby player list menu
-- Count of how many players are playing the modpack live are visible in readme and discord server
-  - How it works, heartbeat (ping) is getting sent to server with a random ID
-
-## 🌟 ADDED
-
-### ✨ Gameplay & Mechanics
-
-- 1 extra hotbar slot for 750 credits
-- Radio with thousands of real radio stations as ship furniture upgrade for 60 credits
-- 6 new vanilla styled furnitures
-- Gambling machines to the Company moon
-- During Flooded, Stormy, Rainy weather water appears indoors and level increases slowly
-- Added _Nuclear Bomb_ scrap starting from S tier
+- Ambient and music sounds
+- Missing hit sound for Giant Sapsucker
+- Global voice volume slider in lobby player list menu
 
 ### 🫁 OXYGEN
 
@@ -176,8 +216,7 @@
 ### 🏠 INTERIORS
 
 - Deep Sewers
-
-  - _?_
+  - _claustrophobic, water flooded tunnels_
 
 ### 🌨️ WEATHERS
 
@@ -200,19 +239,25 @@
 - Oxygen
 - LethalElementsTheta
 - ScannableTools
-- LoadingInfo
 - Immersive Visor
 - RNGConfigurator
+- SnatchinBracken
+- MissileTurretsFork
+- DimmingFlashlights
+- TurretSettings
+- LethalPresents
 
 ## 🗑️ REMOVED
 
 ### 🚫 MODS
 
+- MoreBlood
 - BetterSprayPaintFIXED
 - Piggys Variety Mod Fork
 - ChocoQuota
 - MelaniesVoice
 - MeteorShowerChance
+- TerminalFormatter
 - EGypt
 - 26 Feign
 - Demetrica
@@ -238,22 +283,27 @@
 _(Old version → New version)_
 
 - LethalLevelLoaderUpdated: 1.5.1 → 1.5.5
-- DawnLib: 0.4.3 → 0.5.3
+- DawnLib: 0.4.3 → 0.5.8
+- OpenLib: 0.4.0 → 0.4.1
 - LunarConfig: 0.1.12 → 0.1.13
 - LCLocalFixes: 0.0.1 → 0.0.2
 - ButterFixes: 1.15.3 → 1.15.6
 - itolib: 0.6.0 → 0.6.1
 - MrovLib: 0.3.6 → 0.3.7
+- MonoDetour BepInEx 5: 0.7.5 → 0.7.7
+- MonoDetour: 0.7.5 → 0.7.7
+- UniqueItemSounds: 0.1.2 → 0.1.4
 - WeatherTweaks: 1.1.6 → 1.1.7
 - SelfSortingStorage: 1.4.2 → 1.4.5
 - ScienceBirdTweaks: 4.4.9 → 4.5.0
 - LethalSponge: 1.2.0 → 1.3.6
 - ChuxiaFixes: 1.0.1 → 1.0.3
 - Company Globes: 1.0.3 → 1.0.4
-- BagConfig: 1.0.0 → 1.0.1
-- NicheTweaks: 0.0.7 → 0.2.1
-- RuntimeIcons BetterRotations: 1.1.1 → 1.1.8
-- LethalHUD: 1.3.4 → 1.3.7
+- BagConfig: 1.0.0 → 1.0.3
+- NicheTweaks: 0.0.7 → 0.2.3
+- RuntimeIcons BetterRotations: 1.1.1 → 1.1.9
+- Lategame Upgrades: 3.12.8 → 3.12.9
+- LethalHUD: 1.3.4 → 1.3.9
 - EnemySoundFixes: 1.8.3 → 1.8.5
 - Chameleon: 2.2.0 → 2.2.1
 - FontUpdate: 0.8.1 → 0.8.2
@@ -269,13 +319,16 @@ _(Old version → New version)_
 - Release: 1.0.4 → 1.0.5
 - Extort: 1.0.3 → 1.0.5
 - Wither: 2.0.1 → 2.0.2
-- 42 Kiri: 1.1.4 → 1.1.6
+- 42 Kiri: 1.1.4 → 1.1.8
+- 47Chronos: 1.2.0 → 2.0.2
+- 615Noctis: 0.2.1 → 0.2.3
+- 28Terra: 1.0.2 → 1.0.3
 - Aquatis: 2.2.6 → 2.2.7
 - Celest: 1.1.7 → 1.1.8
-- Mazon moon: 2.3.0 → 2.3.1
+- Mazon moon: 2.3.0 → 2.4.0
 - WesleysInteriors: 4.0.19 → 4.1.12
 - Raven Manor Interior: 1.1.3 → 1.1.4
-- Liminal House: 1.1.0 → 1.1.2
+- Liminal House: 1.1.0 → 1.1.3
 
 # MoreBrutalLethalCompanyPlus _v73.0.1_
 

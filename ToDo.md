@@ -1,6 +1,2 @@
-- Disable LoadingScreen debug before uploading update
-- Add more tips.
-- Decide if leave extra hotbar purchase or not
-  - if leave, decide the price and add to DarmuhTerminallStuff
-- Make bunch of tips posters with bunch of tips.
-- Deep Sewers
+- remove Sanguine?
+- replace QuotaOverhaul with CustomDeathPenalty and ChocoQuota? Much stable, same features instead of player count multiplier

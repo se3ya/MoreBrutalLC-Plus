@@ -4,10 +4,10 @@
     "website_url": "https://discord.gg/4DhJQcheAf",
     "description": "[V73] Balanced modpack that makes game slightly harder and still enjoyable and still keeping it in vanilla style!",
     "dependencies": [
-        "seechela-MoreBrutalLethalCompanyMain-2.3.6",
-        "seechela-MoreBrutalLCMoons-2.3.5",
-        "seechela-MoreBrutalLCCosmetics-2.2.4",
-        "seechela-MoreBrutalLCPosters-1.1.3",
-        "seechela-CustomLogoForMBLCP-1.1.5"
+        "seechela-MoreBrutalLethalCompanyMain-3.0.2",
+        "seechela-MoreBrutalLCMoons-3.0.2",
+        "seechela-MoreBrutalLCCosmetics-3.0.1",
+        "seechela-MoreBrutalLCPosters-3.0.1",
+        "seechela-CustomLogoForMBLCP-3.0.1"
     ]
 }

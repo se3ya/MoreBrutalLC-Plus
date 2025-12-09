@@ -1,1 +1,1 @@
-{"overrides":[]}
+{"overrides":[{"action":"UpgradeStoreCursorUpKey","origPath":"<Keyboard>/w","path":"<Keyboard>/upArrow","groups":"KeyboardAndMouse"},{"action":"UpgradeStoreCursorDownKey","origPath":"<Keyboard>/s","path":"<Keyboard>/downArrow","groups":"KeyboardAndMouse"},{"action":"UpgradeStorePageUpKey","origPath":"<Keyboard>/d","path":"<Keyboard>/rightArrow","groups":"KeyboardAndMouse"},{"action":"UpgradeStorePageDownKey","origPath":"<Keyboard>/a","path":"<Keyboard>/leftArrow","groups":"KeyboardAndMouse"}]}
