@@ -9,106 +9,137 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: 📋 Backlog
-        if: contains(github.event.issue.labels.*.name, 'backlog')
-        run: |
-          curl -H "Content-Type: application/json" \
-          -d '{
-            "embeds": [{
-              "title": "📋 Added to Backlog",
-              "description": "**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**",
-              "color": 9807270,
-              "footer": {"text": "MBLC+ Pack Roadmap"}
-            }]
-          }' ${{ secrets.DISCORD_WEBHOOK }}
-
-      - name: ➕ To Add
+      - name: To Add
         if: contains(github.event.issue.labels.*.name, 'to-add')
         run: |
           curl -H "Content-Type: application/json" \
           -d '{
             "embeds": [{
-              "title": "➕ Mod Queued for Addition",
-              "description": "**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**",
+              "description": "**${{ github.actor }}** added a new card\n\n**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**\n\n**Column**\nTo Add",
               "color": 5763719,
-              "footer": {"text": "MBLC+ Pack Roadmap"}
+              "footer": {
+                "text": "MoreBrutalLC-Plus • MBLC+ Roadmap"
+              },
+              "timestamp": "${{ github.event.issue.created_at }}"
             }]
           }' ${{ secrets.DISCORD_WEBHOOK }}
 
-      - name: ➖ To Remove
+      - name: To Remove
         if: contains(github.event.issue.labels.*.name, 'to-remove')
         run: |
           curl -H "Content-Type: application/json" \
           -d '{
             "embeds": [{
-              "title": "➖ Mod Marked for Removal",
-              "description": "**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**",
+              "description": "**${{ github.actor }}** marked a mod for removal\n\n**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**\n\n**Column**\nTo Remove",
               "color": 15158332,
-              "footer": {"text": "MBLC+ Pack Roadmap"}
+              "footer": {
+                "text": "MoreBrutalLC-Plus • MBLC+ Roadmap"
+              },
+              "timestamp": "${{ github.event.issue.updated_at }}"
             }]
           }' ${{ secrets.DISCORD_WEBHOOK }}
 
-      - name: ⚙️ Config Change
+      - name: Config Change
         if: contains(github.event.issue.labels.*.name, 'config-change')
         run: |
           curl -H "Content-Type: application/json" \
           -d '{
             "embeds": [{
-              "title": "⚙️ Config Change Planned",
-              "description": "**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**",
+              "description": "**${{ github.actor }}** planned a config change\n\n**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**\n\n**Column**\nConfig Changes",
               "color": 16776960,
-              "footer": {"text": "MBLC+ Pack Roadmap"}
+              "footer": {
+                "text": "MoreBrutalLC-Plus • MBLC+ Roadmap"
+              },
+              "timestamp": "${{ github.event.issue.updated_at }}"
             }]
           }' ${{ secrets.DISCORD_WEBHOOK }}
 
-      - name: 🧪 Testing
+      - name: Testing
         if: contains(github.event.issue.labels.*.name, 'needs-testing')
         run: |
           curl -H "Content-Type: application/json" \
           -d '{
             "embeds": [{
-              "title": "🧪 Mod is Testing",
-              "description": "**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**",
+              "description": "**${{ github.actor }}** sent a mod to testing\n\n**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**\n\n**Column**\nTesting",
               "color": 16753920,
-              "footer": {"text": "MBLC+ Pack Roadmap"}
+              "footer": {
+                "text": "MoreBrutalLC-Plus • MBLC+ Roadmap"
+              },
+              "timestamp": "${{ github.event.issue.updated_at }}"
             }]
           }' ${{ secrets.DISCORD_WEBHOOK }}
 
-      - name: ⏳ Awaiting Author Fix
+      - name: Awaiting Author Fix
         if: contains(github.event.issue.labels.*.name, 'broken')
         run: |
           curl -H "Content-Type: application/json" \
           -d '{
             "embeds": [{
-              "title": "⏳ Awaiting Fix",
-              "description": "**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**",
+              "description": "**${{ github.actor }}** flagged a mod as broken\n\n**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**\n\n**Column**\nAwaiting Author Fix",
               "color": 16705372,
-              "footer": {"text": "MBLC+ Pack Roadmap"}
+              "footer": {
+                "text": "MoreBrutalLC-Plus • MBLC+ Roadmap"
+              },
+              "timestamp": "${{ github.event.issue.updated_at }}"
             }]
           }' ${{ secrets.DISCORD_WEBHOOK }}
 
-      - name: ⚔️ Conflict Hold
+      - name: Conflict Hold
         if: contains(github.event.issue.labels.*.name, 'conflict')
         run: |
           curl -H "Content-Type: application/json" \
           -d '{
             "embeds": [{
-              "title": "⚔️ Mod on Conflict Hold",
-              "description": "**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**",
+              "description": "**${{ github.actor }}** put a mod on conflict hold\n\n**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**\n\n**Column**\nConflict Hold",
               "color": 15105570,
-              "footer": {"text": "MBLC+ Pack Roadmap"}
+              "footer": {
+                "text": "MoreBrutalLC-Plus • MBLC+ Roadmap"
+              },
+              "timestamp": "${{ github.event.issue.updated_at }}"
             }]
           }' ${{ secrets.DISCORD_WEBHOOK }}
 
-      - name: ✅ Released
+      - name: Version Pinned
+        if: contains(github.event.issue.labels.*.name, 'version-pinned')
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d '{
+            "embeds": [{
+              "description": "**${{ github.actor }}** pinned a mod to an older version\n\n**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**\n\n**Column**\nVersion Pinned",
+              "color": 10181046,
+              "footer": {
+                "text": "MoreBrutalLC-Plus • MBLC+ Roadmap"
+              },
+              "timestamp": "${{ github.event.issue.updated_at }}"
+            }]
+          }' ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Released
         if: contains(github.event.issue.labels.*.name, 'released')
         run: |
           curl -H "Content-Type: application/json" \
           -d '{
             "embeds": [{
-              "title": "✅ Update released!",
-              "description": "**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**",
+              "description": "**${{ github.actor }}** shipped a change 🎉\n\n**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**\n\n**Column**\nReleased",
               "color": 5763719,
-              "footer": {"text": "MBLC+ Pack Roadmap"}
+              "footer": {
+                "text": "MoreBrutalLC-Plus • MBLC+ Roadmap"
+              },
+              "timestamp": "${{ github.event.issue.updated_at }}"
+            }]
+          }' ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Backlog
+        if: contains(github.event.issue.labels.*.name, 'backlog')
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d '{
+            "embeds": [{
+              "description": "**${{ github.actor }}** added a mod to backlog\n\n**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**\n\n**Column**\nBacklog",
+              "color": 9807270,
+              "footer": {
+                "text": "MoreBrutalLC-Plus • MBLC+ Roadmap"
+              },
+              "timestamp": "${{ github.event.issue.updated_at }}"
             }]
           }' ${{ secrets.DISCORD_WEBHOOK }}
