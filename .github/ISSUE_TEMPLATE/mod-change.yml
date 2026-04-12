@@ -17,49 +17,10 @@ body:
       required: true
 
   - type: input
-    id: thunderstore_link
-    attributes:
-      label: Thunderstore Link
-      placeholder: "https://thunderstore.io/c/lethal-company/p/Author/ModName/"
-    validations:
-      required: false
-
-  - type: input
-    id: current_version
-    attributes:
-      label: Current Version in Pack
-      placeholder: "1.0.0"
-    validations:
-      required: false
-
-  - type: input
     id: latest_version
     attributes:
       label: Latest Available Version
       placeholder: "1.1.0"
-    validations:
-      required: false
-
-  - type: dropdown
-    id: action
-    attributes:
-      label: Action Type
-      options:
-        - "➕ Add"
-        - "➖ Remove"
-        - "⚙️ Config Change"
-        - "📌 Version Pin (downgrade)"
-        - "⏳ Awaiting Author Fix"
-        - "⚔️ Conflict Hold"
-    validations:
-      required: true
-
-  - type: input
-    id: pack_version
-    attributes:
-      label: Target Pack Version
-      description: Which pack release is this planned for?
-      placeholder: "v82.0.0"
     validations:
       required: false
 
@@ -71,42 +32,3 @@ body:
       placeholder: "Author deprecated the mod"
     validations:
       required: true
-
-  - type: input
-    id: conflicts_with
-    attributes:
-      label: Conflicts With
-      placeholder: "CustomPosters"
-    validations:
-      required: false
-
-  - type: dropdown
-    id: test_result
-    attributes:
-      label: Test Result
-      options:
-        - "Untested"
-        - "✅ Pass"
-        - "❌ Fail"
-        - "⚠️ Conditional"
-    validations:
-      required: true
-
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Priority
-      options:
-        - "🚨 Must Have"
-        - "👍 Nice to Have"
-        - "🕐 Low"
-    validations:
-      required: true
-
-  - type: textarea
-    id: notes
-    attributes:
-      label: Notes
-      placeholder: "Re-check after mod hits v2.0, author said fix is coming this week"
-    validations:
-      required: false
