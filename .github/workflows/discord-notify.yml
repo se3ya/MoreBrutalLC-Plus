@@ -1,0 +1,114 @@
+name: Discord Roadmap Notifications
+
+on:
+  issues:
+    types: [opened, labeled]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: 📋 Backlog
+        if: contains(github.event.issue.labels.*.name, 'backlog')
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d '{
+            "embeds": [{
+              "title": "📋 Added to Backlog",
+              "description": "**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**",
+              "color": 9807270,
+              "footer": {"text": "MBLC+ Pack Roadmap"}
+            }]
+          }' ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: ➕ To Add
+        if: contains(github.event.issue.labels.*.name, 'to-add')
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d '{
+            "embeds": [{
+              "title": "➕ Mod Queued for Addition",
+              "description": "**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**",
+              "color": 5763719,
+              "footer": {"text": "MBLC+ Pack Roadmap"}
+            }]
+          }' ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: ➖ To Remove
+        if: contains(github.event.issue.labels.*.name, 'to-remove')
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d '{
+            "embeds": [{
+              "title": "➖ Mod Marked for Removal",
+              "description": "**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**",
+              "color": 15158332,
+              "footer": {"text": "MBLC+ Pack Roadmap"}
+            }]
+          }' ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: ⚙️ Config Change
+        if: contains(github.event.issue.labels.*.name, 'config-change')
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d '{
+            "embeds": [{
+              "title": "⚙️ Config Change Planned",
+              "description": "**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**",
+              "color": 16776960,
+              "footer": {"text": "MBLC+ Pack Roadmap"}
+            }]
+          }' ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: 🧪 Testing
+        if: contains(github.event.issue.labels.*.name, 'needs-testing')
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d '{
+            "embeds": [{
+              "title": "🧪 Mod is Testing",
+              "description": "**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**",
+              "color": 16753920,
+              "footer": {"text": "MBLC+ Pack Roadmap"}
+            }]
+          }' ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: ⏳ Awaiting Author Fix
+        if: contains(github.event.issue.labels.*.name, 'broken')
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d '{
+            "embeds": [{
+              "title": "⏳ Awaiting Fix",
+              "description": "**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**",
+              "color": 16705372,
+              "footer": {"text": "MBLC+ Pack Roadmap"}
+            }]
+          }' ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: ⚔️ Conflict Hold
+        if: contains(github.event.issue.labels.*.name, 'conflict')
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d '{
+            "embeds": [{
+              "title": "⚔️ Mod on Conflict Hold",
+              "description": "**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**",
+              "color": 15105570,
+              "footer": {"text": "MBLC+ Pack Roadmap"}
+            }]
+          }' ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: ✅ Released
+        if: contains(github.event.issue.labels.*.name, 'released')
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d '{
+            "embeds": [{
+              "title": "✅ Update released!",
+              "description": "**[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})**",
+              "color": 5763719,
+              "footer": {"text": "MBLC+ Pack Roadmap"}
+            }]
+          }' ${{ secrets.DISCORD_WEBHOOK }}
