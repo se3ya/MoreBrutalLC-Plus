@@ -1,0 +1,29 @@
+{
+  "reservedSlotName": "walkie_talkie",
+  "slotPriority": 450,
+  "purchasePrice": 400,
+  "itemsForSlot": [
+    {
+      "itemName": "Walkie-talkie",
+      "bone": 4,
+      "position": {
+        "x": 0.15,
+        "y": -0.05,
+        "z": 0.25
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": -90.0,
+        "z": 100.0
+      }
+    }
+  ],
+  "useKeybind": {
+    "defaultBind": "r",
+    "toggle": false
+  },
+  "equipKeybind": {
+	"defaultBind": "t",
+    "toggle": false
+  }
+}

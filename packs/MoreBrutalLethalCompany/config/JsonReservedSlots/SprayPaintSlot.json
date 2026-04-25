@@ -1,0 +1,25 @@
+{
+  "reservedSlotName": "spray_paint",
+  "slotPriority": 250,
+  "purchasePrice": 350,
+  "itemsForSlot": [
+    {
+      "itemName": "Spray paint",
+      "bone": 1,
+      "position": {
+        "x": 0.33,
+        "y": -0.14,
+        "z": 0.1
+      },
+      "rotation": {
+        "x": -110.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    }
+  ],
+  "equipKeybind": {
+	"defaultBind": "h",
+    "toggle": true
+  }
+}

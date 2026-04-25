@@ -12,7 +12,7 @@ function Write-Header {
 }
 
 $GALE_BASE_PATH = Join-Path $env:APPDATA "com.kesomannen.gale\lethal-company\profiles"
-$GITHUB_CONFIG_PATH = "C:\Users\Admin\Documents\Projects\MoreBrutalLethalCompanyPlus\config"
+$GITHUB_CONFIG_PATH = "C:\Users\seeya\Documents\Projects\MoreBrutalLethalCompanyPlus\config"
 $BACKUP_FOLDER_NAME = "config-backup"
 
 Clear-Host

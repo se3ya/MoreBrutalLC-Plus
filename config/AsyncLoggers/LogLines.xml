@@ -51,19 +51,20 @@
         <LogCall status="Default">Debug.LogError(String.Format("Baboon #{0} Error: DropItemAndSync called when baboon has no scrap!", this.thisEnemyIndex))</LogCall>
         <LogCall status="Default">Debug.LogError(String.Format("Baboon #{0} Error: No network object in held scrap {1}", this.thisEnemyIndex, this.heldScrap.gameObject.name))</LogCall>
       </Method>
-      <Method name="DropScrapServerRpc">
+      <Method obsolete="true" name="DropScrapServerRpc">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
-      <Method name="DropScrapClientRpc">
+      <Method obsolete="true" name="DropScrapClientRpc">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError(String.Format("Baboon #{0}; Error, was not able to get network object from dropped item client rpc", this.thisEnemyIndex))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Format("Baboon #{0}; Error, was not able to get network object from dropped item client rpc", this.thisEnemyIndex))</LogCall>
       </Method>
       <Method name="DropScrap">
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Baboon: my held item is null when attempting to drop it!!")</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Baboon #{0}: Dropped item which was held by a player", this.thisEnemyIndex))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Baboon #{0}: Dropped item which was held by a player", this.thisEnemyIndex))</LogCall>
         <LogCall status="Default">Debug.Log(String.Format("Baboon #{0}: Dropped item", this.thisEnemyIndex))</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Format("Baboon #{0}: Dropped item which was held by a player", this.thisEnemyIndex))</LogCall>
       </Method>
       <Method name="GrabItemAndSync">
         <!--Edit 'status' to customize log behavior-->
@@ -80,8 +81,9 @@
       </Method>
       <Method name="GrabScrap">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Format("Baboon #{0}: Trying to grab another item ({1}) while hands are already full with item ({2}). Dropping the currently held one.", this.thisEnemyIndex, item.gameObject.name, this.heldScrap.gameObject.name))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Baboon #{0}: Trying to grab another item ({1}) while hands are already full with item ({2}). Dropping the currently held one.", this.thisEnemyIndex, item.gameObject.name, this.heldScrap.gameObject.name))</LogCall>
         <LogCall status="Default">Debug.Log(String.Format("Baboon #{0}: Grabbing item!!! {1}", this.thisEnemyIndex, this.heldScrap.gameObject.name))</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Format("Baboon #{0}: Trying to grab another item ({1}) while hands are already full with item ({2}). Dropping the currently held one.", this.thisEnemyIndex, item.gameObject.name, this.heldScrap.gameObject.name))</LogCall>
       </Method>
       <Method name="StopFocusingThreatServerRpc">
         <!--Edit 'status' to customize log behavior-->
@@ -162,9 +164,9 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
-      <Method name="__rpc_handler_1418775270">
+      <Method obsolete="true" name="__rpc_handler_1418775270">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
       <Method name="__rpc_handler_869682226">
         <!--Edit 'status' to customize log behavior-->
@@ -218,6 +220,10 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.Log(String.Format("Baboon hawk fear level: {0} ; {1} ; going for scrap!", this.fearLevel, var_3))</LogCall>
       </Method>
+      <Method name="DropScrapRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError(String.Format("Baboon #{0}; Error, was not able to get network object from dropped item client rpc", this.thisEnemyIndex))</LogCall>
+      </Method>
     </Class>
     <Class name="BridgeTrigger">
       <Method name="Update">
@@ -236,18 +242,22 @@
     <Class name="BushWolfEnemy">
       <Method name="CalculateNestRange">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log("Got no colliders for nest range")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Got no colliders for nest range")</LogCall>
+        <LogCall status="Default">Debug.Log("Got no weeds for nest range")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Calculating nest range! use current hiding spot: {0}", useCurrentHidingSpot))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Nearby weeds: {0}", var_1))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Nest range: {0} ; '({1} - {2}) + 5'", this.nestRange, var_2, var_5))</LogCall>
       </Method>
       <Method name="SyncWeedPositionsServerRpc">
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
-      <Method name="GetBiggestWeedPatch">
+      <Method obsolete="true" name="GetBiggestWeedPatch">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Suppressed">Debug.Log("Bush wolf: No game objects found with spore tag; cancelling")</LogCall>
-        <LogCall status="Suppressed">Debug.Log(String.Format("{0}: Mold spore {1} at {2} surrounded by {3}", [var_6, var_0[var_6].gameObject.name, var_0[var_6].transform.position, var_3]))</LogCall>
-        <LogCall status="Suppressed">Debug.Log(String.Format("Bush wolf: Most surrounding spores is {0}", var_2))</LogCall>
-        <LogCall status="Suppressed">Debug.Log("Bush wolf: All spores found were lone spores; cancelling")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Bush wolf: No game objects found with spore tag; cancelling")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log(String.Format("{0}: Mold spore {1} at {2} surrounded by {3}", [var_6, var_0[var_6].gameObject.name, var_0[var_6].transform.position, var_3]))</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log(String.Format("Bush wolf: Most surrounding spores is {0}", var_2))</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Bush wolf: All spores found were lone spores; cancelling")</LogCall>
       </Method>
       <Method name="DoAIInterval">
         <!--Edit 'status' to customize log behavior-->
@@ -269,19 +279,19 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
-      <Method name="Update">
+      <Method obsolete="true" name="Update">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Suppressed">Debug.Log("Fox A")</LogCall>
-        <LogCall status="Suppressed">Debug.Log("Fox B")</LogCall>
-        <LogCall status="Suppressed">Debug.Log(String.Format("Fox C; {0}; {1}", var_14, var_15))</LogCall>
-        <LogCall status="Suppressed">Debug.Log("Fox D")</LogCall>
-        <LogCall status="Suppressed">Debug.Log("Fox E")</LogCall>
-        <LogCall status="Suppressed">Debug.Log("Fox F")</LogCall>
-        <LogCall status="Suppressed">Debug.Log("Fox G")</LogCall>
-        <LogCall status="Suppressed">Debug.Log("Fox H")</LogCall>
-        <LogCall status="Suppressed">Debug.Log("Fox I")</LogCall>
-        <LogCall status="Suppressed">Debug.Log("Fox J")</LogCall>
-        <LogCall status="Suppressed">Debug.Log(String.Format("Fox spotted meter: {0}", this.spottedMeter))</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Fox A")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Fox B")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log(String.Format("Fox C; {0}; {1}", var_14, var_15))</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Fox D")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Fox E")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Fox F")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Fox G")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Fox H")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Fox I")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Fox J")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log(String.Format("Fox spotted meter: {0}", this.spottedMeter))</LogCall>
       </Method>
       <Method name="__rpc_handler_4128579861">
         <!--Edit 'status' to customize log behavior-->
@@ -332,7 +342,7 @@
       <Method name="SwitchOwnershipAndSetToStateServerRpc">
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
-        <LogCall status="Default">Debug.LogError("Butler Error: SwitchOwnerShipAndSetToStateServerRpc tried to set owner to a player that is already the owner on the server")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError("Butler Error: SwitchOwnerShipAndSetToStateServerRpc tried to set owner to a player that is already the owner on the server")</LogCall>
       </Method>
       <Method name="StartCheckForPlayers">
         <!--Edit 'status' to customize log behavior-->
@@ -395,43 +405,43 @@
         <LogCall status="Suppressed">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
     </Class>
-    <Class name="CaveDwellerAI">
-      <Method name="PickUpBabyLocalClient">
+    <Class obsolete="true" name="CaveDwellerAI">
+      <Method obsolete="true" name="PickUpBabyLocalClient">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Format("Player held by null?: {0}", this.propScript.playerHeldBy == null))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Player held by: {0}", this.propScript.playerHeldBy))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Player held by playerclientid: {0}", this.propScript.playerHeldBy.playerClientId))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Set currentownershiponthisclient to {0}", this.currentOwnershipOnThisClient))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Player held by null?: {0}", this.propScript.playerHeldBy == null))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Player held by: {0}", this.propScript.playerHeldBy))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Player held by playerclientid: {0}", this.propScript.playerHeldBy.playerClientId))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Set currentownershiponthisclient to {0}", this.currentOwnershipOnThisClient))</LogCall>
       </Method>
-      <Method name="DropBabyLocalClient">
+      <Method obsolete="true" name="DropBabyLocalClient">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log("Drop baby A")</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Set ownership of creature. Currentownershiponthisclient: {0}", this.currentOwnershipOnThisClient))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Drop on position: {0}", var_2))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Drop Baby C; {0}", this.propScript.startFallingPosition))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Drop Baby C global; {0}", this.propScript.startFallingPosition))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Got nav mesh position : {0}; {1}; dist: {2}", RoundManager.Instance.GotNavMeshPositionResult, var_2, Vector3.Distance(this.transform.position, var_4.transform.position)))</LogCall>
-        <LogCall status="Default">Debug.Log("Drop baby D")</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Drop baby F; got no floor target; drop pos: {0}", var_2))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Drop baby A")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Set ownership of creature. Currentownershiponthisclient: {0}", this.currentOwnershipOnThisClient))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Drop on position: {0}", var_2))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Drop Baby C; {0}", this.propScript.startFallingPosition))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Drop Baby C global; {0}", this.propScript.startFallingPosition))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Got nav mesh position : {0}; {1}; dist: {2}", RoundManager.Instance.GotNavMeshPositionResult, var_2, Vector3.Distance(this.transform.position, var_4.transform.position)))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Drop baby D")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Drop baby F; got no floor target; drop pos: {0}", var_2))</LogCall>
       </Method>
-      <Method name="DoBabyAIInterval">
+      <Method obsolete="true" name="DoBabyAIInterval">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Concat("Starting search at node ", var_14.name), var_14.gameObject)</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Concat("Starting search at node ", var_14.name), var_14.gameObject)</LogCall>
       </Method>
-      <Method name="SetRolledOverLocalClient">
+      <Method obsolete="true" name="SetRolledOverLocalClient">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Format("Set rolled local client to {0}; scared: {1}", setRolled, scared))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Set fall over anim: {0}", setRolled))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Set rolled local client to {0}; scared: {1}", setRolled, scared))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Set fall over anim: {0}", setRolled))</LogCall>
       </Method>
-      <Method name="DetectNoise">
+      <Method obsolete="true" name="DetectNoise">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Format("Heard noise; noise loudness: {0}; noise distance: {1}", noiseLoudness, var_0))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Heard noise; noise loudness: {0}; noise distance: {1}", noiseLoudness, var_0))</LogCall>
       </Method>
-      <Method name="SetCryingLocalClient">
+      <Method obsolete="true" name="SetCryingLocalClient">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Suppressed">Debug.Log(String.Format("Baby crying set to {0}", setCrying))</LogCall>
-        <LogCall status="Suppressed">Debug.Log("Baby crying set true; play")</LogCall>
-        <LogCall status="Suppressed">Debug.Log("Baby crying  set false")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log(String.Format("Baby crying set to {0}", setCrying))</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Baby crying set true; play")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Baby crying  set false")</LogCall>
       </Method>
       <Method obsolete="true" name="Start">
         <!--Edit 'status' to customize log behavior-->
@@ -462,7 +472,8 @@
       </Method>
       <Method name="DiscardItem">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log("Discard function called")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Discard function called")</LogCall>
+        <LogCall status="Default">Debug.Log("Maneater: Discard function called")</LogCall>
       </Method>
       <Method name="__rpc_handler_565448931">
         <!--Edit 'status' to customize log behavior-->
@@ -554,6 +565,10 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
+      <Method name="StopLeapOnLocalClient">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Tulip snake: Could not get nav mesh position from pos: {0}; agentMask: {1}; instead chose node at pos: {2}", this.transform.position, this.agentMask, var_2.transform.position))</LogCall>
+      </Method>
     </Class>
     <Class name="GiftBoxItem">
       <Method name="OpenGiftBoxServerRpc">
@@ -601,7 +616,7 @@
       </Method>
       <Method name="CreateMimicServerRpc">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
         <LogCall status="Default">Debug.LogError("Previousplayerheldby is null so the mask mimic could not be spawned")</LogCall>
         <LogCall status="Default">Debug.Log("Server creating mimic from mask")</LogCall>
         <LogCall status="Default">Debug.Log("No mimic enemy set for mask")</LogCall>
@@ -616,9 +631,9 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
-      <Method name="__rpc_handler_1065539967">
+      <Method obsolete="true" name="__rpc_handler_1065539967">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
     </Class>
     <Class name="JesterAI">
@@ -829,7 +844,8 @@
     <Class name="MoldSpreadManager">
       <Method name="Start">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Format("planet mold states length: ${0}", this.planetMoldStates.Count()))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("planet mold states length: ${0}", this.planetMoldStates.Count()))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("planet mold states length: {0}", this.planetMoldStates.Count()))</LogCall>
       </Method>
       <Method name="SyncDestroyedMoldPositions">
         <!--Edit 'status' to customize log behavior-->
@@ -838,19 +854,48 @@
       </Method>
       <Method name="DestroyMoldAtIndex">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Format("C {0}", this.planetMoldStates[StartOfRound.Instance.currentLevelID] != null))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("D {0}", this.planetMoldStates[StartOfRound.Instance.currentLevelID].destroyedMold != null))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("E; null? {0}", this.generatedMold[index] == null))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("C {0}", this.planetMoldStates[StartOfRound.Instance.currentLevelID] != null))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("D {0}", this.planetMoldStates[StartOfRound.Instance.currentLevelID].destroyedMold != null))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("E; null? {0}", this.generatedMold[index] == null))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Destroying mold at index. Pos gotten from batches: {0} ; pos gotten from batchedPositions: {1}. (They should be equal)", var_0, this.grassInstancer.batchedPositions[positionIndex + batchNum * 1000]))</LogCall>
       </Method>
       <Method name="DestroyMoldAtPosition">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Suppressed">Debug.Log(String.Format("weeds found at pos {0}: {1}", pos, var_0))</LogCall>
-        <LogCall status="Suppressed">Debug.Log(String.Format("Index: {0}", var_2))</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log(String.Format("weeds found at pos {0}: {1}", pos, var_0))</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log(String.Format("Index: {0}", var_2))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("weeds found at pos {0}: {1}", pos, var_2))</LogCall>
       </Method>
-      <Method name="GenerateMold">
+      <Method obsolete="true" name="GenerateMold">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Suppressed">Debug.Log("No spores generated; setting iterations to 0")</LogCall>
-        <LogCall status="Suppressed">Debug.Log(String.Format("Growing back mold at index {0}", var_12[var_24].generationId))</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("No spores generated; setting iterations to 0")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log(String.Format("Growing back mold at index {0}", var_12[var_24].generationId))</LogCall>
+      </Method>
+      <Method name="AddToDestroyedMoldList">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("C {0}", this.planetMoldStates[StartOfRound.Instance.currentLevelID] != null))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("D {0}", this.planetMoldStates[StartOfRound.Instance.currentLevelID].destroyedMold != null))</LogCall>
+      </Method>
+      <Method name="ChooseMoldSpawnPosition">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Mold: Could not get nav mesh position within 12 meters of {0}", pos))</LogCall>
+      </Method>
+      <Method name="GetWeeds">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log("No game objects found with spore tag; cancelling")</LogCall>
+        <LogCall status="Default">Debug.Log("All spores found were lone spores; cancelling")</LogCall>
+      </Method>
+      <Method name="GetBiggestWeedPatch">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log("No game objects found with spore tag; cancelling")</LogCall>
+        <LogCall status="Default">Debug.Log("All spores found were lone spores; cancelling")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Number of weeds: {0}", var_3.Count))</LogCall>
+        <LogCall status="Default">Debug.Log("Found no aggressive position reason A")</LogCall>
+        <LogCall status="Default">Debug.Log("Found no aggressive position reason B")</LogCall>
+        <LogCall status="Default">Debug.Log("Found no aggressive position reason C")</LogCall>
+      </Method>
+      <Method name="GetClosestMoldPositionIndex">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Getting closest mold postiion to {0}", position))</LogCall>
       </Method>
     </Class>
     <Class name="NutcrackerEnemyAI">
@@ -922,17 +967,17 @@
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
     </Class>
-    <Class name="QuicksandTrigger">
-      <Method name="OnTriggerStay">
+    <Class obsolete="true" name="QuicksandTrigger">
+      <Method obsolete="true" name="OnTriggerStay">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Suppressed">Debug.Log("Set local player to sinking!")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Set local player to sinking!")</LogCall>
       </Method>
-      <Method name="OnExit">
+      <Method obsolete="true" name="OnExit">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Suppressed">Debug.Log("Quicksand is not sinking local player!")</LogCall>
-        <LogCall status="Suppressed">Debug.Log("Quicksand is sinking local player!")</LogCall>
-        <LogCall status="Suppressed">Debug.Log("Quicksand is sinking local player! B")</LogCall>
-        <LogCall status="Suppressed">Debug.Log("Quicksand is sinking local player! C")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Quicksand is not sinking local player!")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Quicksand is sinking local player!")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Quicksand is sinking local player! B")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Quicksand is sinking local player! C")</LogCall>
       </Method>
     </Class>
     <Class name="RadMechAI">
@@ -996,10 +1041,10 @@
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
     </Class>
-    <Class name="SandSpiderWebTrap">
-      <Method name="PlayerLeaveWeb">
+    <Class obsolete="true" name="SandSpiderWebTrap">
+      <Method obsolete="true" name="PlayerLeaveWeb">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Suppressed">Debug.Log("Player leave web called")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Player leave web called")</LogCall>
       </Method>
     </Class>
     <Class name="SandWormAI">
@@ -1038,29 +1083,32 @@
       </Method>
     </Class>
     <Class name="HUDManager">
-      <Method name="SetSavedValues">
+      <Method obsolete="true" name="SetSavedValues">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log("Has beta?: {hasBeta}")</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Has beta save data: {0}", ES3.Load("playedDuringBeta", "LCGeneralSaveData", 1)))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Has beta?: {hasBeta}")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Has beta save data: {0}", ES3.Load("playedDuringBeta", "LCGeneralSaveData", 1)))</LogCall>
       </Method>
-      <Method name="UpdateBoxesSpectateUI">
+      <Method obsolete="true" name="UpdateBoxesSpectateUI">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log("Removing player spectate box since they disconnected")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Removing player spectate box since they disconnected")</LogCall>
       </Method>
-      <Method name="GetTextureFromImage">
+      <Method obsolete="true" name="GetTextureFromImage">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log("Slot K")</LogCall>
-        <LogCall status="Default">Debug.Log("Slot L")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Slot K")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Slot L")</LogCall>
       </Method>
-      <Method name="Update">
+      <Method obsolete="true" name="Update">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log("Adding boxes")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Adding boxes")</LogCall>
       </Method>
       <Method name="UpdateScanNodes">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError(String.Format("Error in updatescanNodes A: {0}", var_4))</LogCall>
-        <LogCall status="Default">Debug.LogError(String.Format("Error in updatescannodes B: {0}", var_5))</LogCall>
-        <LogCall status="Default">Debug.LogError(String.Format("Error in updatescannodes C: {0}", var_6))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Format("Error in updatescanNodes A: {0}", var_4))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Format("Error in updatescannodes B: {0}", var_5))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Format("Error in updatescannodes C: {0}", var_6))</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Format("Error in updatescanNodes A: {0}", var_3))</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Format("Error in updatescannodes B: {0}", var_6))</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Format("Error in updatescannodes C: {0}", var_7))</LogCall>
       </Method>
       <Method name="DisplayCreditsEarning">
         <!--Edit 'status' to customize log behavior-->
@@ -1089,9 +1137,9 @@
         <LogCall status="Default">Debug.Log(RoundManager.Instance.scrapCollectedInLevel / RoundManager.Instance.totalScrapValueInLevel)</LogCall>
         <LogCall status="Default">Debug.Log("Gained no XP")</LogCall>
       </Method>
-      <Method name="ApplyPenalty">
+      <Method obsolete="true" name="ApplyPenalty">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Format("New group credits after penalty: {0}", var_1.groupCredits))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("New group credits after penalty: {0}", var_1.groupCredits))</LogCall>
       </Method>
       <Method name="AlarmHornServerRpc">
         <!--Edit 'status' to customize log behavior-->
@@ -1113,9 +1161,9 @@
         <LogCall status="Default">Debug.Log(String.Format("Randomly chose item index : {0} / {1}", var_12, var_11))</LogCall>
         <LogCall status="Default">Debug.Log("All furniture already purchased. Not displaying ad")</LogCall>
       </Method>
-      <Method name="CreateFurnitureAdModel">
+      <Method obsolete="true" name="CreateFurnitureAdModel">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Concat("Unlockable name: ", unlockable.unlockableName))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Concat("Unlockable name: ", unlockable.unlockableName))</LogCall>
       </Method>
     </Class>
     <Class name="SoundManager">
@@ -1138,6 +1186,12 @@
         <LogCall status="Default">Debug.Log(String.Format("Current ship ambience clips length: {0}", this.currentLevelAmbience.shipAmbience.Count()))</LogCall>
         <LogCall status="Default">Debug.Log(ex)</LogCall>
       </Method>
+      <Method name="SetPitchOffsets">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Concat("april 1 date: ", var_0.ToLongDateString()))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("DateTime.Today: ", System.DateTime.Today.ToLongDateString()))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Error in SoundManager A: {0}", var_6))</LogCall>
+      </Method>
     </Class>
     <Class name="TimeOfDay">
       <Method name="MoveTimeOfDay">
@@ -1155,9 +1209,10 @@
       </Method>
       <Method name="SetNewProfitQuota">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Format("Randomizer amount before: {0}", var_1))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Randomizer amount before: {0}", var_1))</LogCall>
         <LogCall status="Default">Debug.Log(String.Format("Randomizer amount after: {0}", var_1))</LogCall>
         <LogCall status="Default">Debug.Log(String.Format("Amount to increase quota:{0}", var_0))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Randomizer amount before: {0}; adding luck value which is {1}", var_1, Mathf.Clamp(this.luckValue * 2, 0, 1)))</LogCall>
       </Method>
       <Method name="Start">
         <!--Edit 'status' to customize log behavior-->
@@ -1194,7 +1249,8 @@
       </Method>
       <Method name="Start">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError(String.Format("Error when initializing enemy variables for {0} : {1}", this.gameObject.name, var_1))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Format("Error when initializing enemy variables for {0} : {1}", this.gameObject.name, var_1))</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Format("Error when initializing enemy variables for {0} : {1}", this.gameObject.name, var_2))</LogCall>
       </Method>
       <Method name="MeetsStandardPlayerCollisionConditions">
         <!--Edit 'status' to customize log behavior-->
@@ -1210,14 +1266,16 @@
       </Method>
       <Method name="CheckLineOfSightForClosestPlayer">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Format("{0} #{1}: LOS check for player #{2} hit an object: {3}, {4}, {5}; {6}", [this.enemyType.enemyName, this.thisEnemyIndex, var_4, this.raycastHit.point, this.raycastHit.collider.gameObject.name, this.raycastHit.collider.transform.gameObject.name, this.raycastHit.collider.name]), this.raycastHit.collider.gameObject)</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("{0} #{1}: LOS check for player #{2} hit an object: {3}, {4}, {5}; {6}", [this.enemyType.enemyName, this.thisEnemyIndex, var_4, this.raycastHit.point, this.raycastHit.collider.gameObject.name, this.raycastHit.collider.transform.gameObject.name, this.raycastHit.collider.name]), this.raycastHit.collider.gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("{0} #{1}: LOS angle not in range. LOS: {2} ; dist: {3}", [this.enemyType.enemyName, this.thisEnemyIndex, Vector3.Angle(this.eye.forward, var_6), var_1]))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("{0} #{1}: LOS check for player #{2} hit an object: {3}, {4}, {5}; {6}", [this.enemyType.enemyName, this.thisEnemyIndex, var_5, this.raycastHit.point, this.raycastHit.collider.gameObject.name, this.raycastHit.collider.transform.gameObject.name, this.raycastHit.collider.name]), this.raycastHit.collider.gameObject)</LogCall>
       </Method>
       <Method name="StartCalculatingNextTargetNode">
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.Log("Calculating next target node")</LogCall>
         <LogCall status="Default">Debug.Log(String.Format("Is calculate node coroutine null? : {0}; choseTargetNode: {1}", this.chooseTargetNodeCoroutine == null, this.currentSearch.choseTargetNode))</LogCall>
-        <LogCall status="Default">Debug.Log("NODE A")</LogCall>
-        <LogCall status="Default">Debug.Log("NODE B")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("NODE A")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("NODE B")</LogCall>
       </Method>
       <Method name="PlayerIsTargetable">
         <!--Edit 'status' to customize log behavior-->
@@ -1226,18 +1284,24 @@
       <Method name="PathIsIntersectedByLineOfSight">
         <!--Edit 'status' to customize log behavior-->
         <LogCall obsolete="true" status="Default">Debug.Log("Path could not be calculated")</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Path is not complete; final waypoint of path was too far from target position: {0}", targetPos))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Distance between corners {0} and {1} under 3 meters; skipping LOS check", var_2, var_2 - 1))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("{0}: The path is blocked by line of sight at corner {1}", this.enemyType.enemyName, var_2))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Distance between corners {0} and {1} under 3 meters; skipping LOS check", var_3, var_3 - 1))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("{0}: The path is blocked by line of sight at corner {1}", this.enemyType.enemyName, var_3))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Path is not complete; final waypoint of path was too far from target position: {0}", targetPos))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Distance between corners {0} and {1} under 3 meters; skipping LOS check", var_2, var_2 - 1))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("{0}: The path is blocked by line of sight at corner {1}", this.enemyType.enemyName, var_2))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Distance between corners {0} and {1} under 3 meters; skipping LOS check", var_3, var_3 - 1))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("{0}: The path is blocked by line of sight at corner {1}", this.enemyType.enemyName, var_3))</LogCall>
         <LogCall status="Default">Debug.Log(String.Concat(this.enemyType.enemyName, ": Reached corner 15, stopping checks now"))</LogCall>
         <LogCall status="Default">Debug.Log(String.Format("Path could not be calculated: {0}", targetPos))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Path is not complete; final waypoint of path was too far from target position: {0}; gotnavmeshpos: {1}; {2}", targetPos, RoundManager.Instance.GotNavMeshPositionResult, var_2))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Distance between corners {0} and {1} under 3 meters; skipping LOS check", var_6, var_6 - 1))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("{0}: The path is blocked by line of sight at corner {1}", this.enemyType.enemyName, var_6))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Distance between corners {0} and {1} under 3 meters; skipping LOS check", var_7, var_7 - 1))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("{0}: The path is blocked by line of sight at corner {1}", this.enemyType.enemyName, var_7))</LogCall>
       </Method>
       <Method name="GetPathDistance">
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.Log("GetPathDistance: Path could not be calculated")</LogCall>
         <LogCall status="Default">Debug.Log("GetPathDistance: Path is not complete; final waypoint of path was too far from target position")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("{0} ; {1}; dist: {2}", var_1[var_0 - 1], var_2, Vector3.Distance(var_1[var_0 - 1], var_2)))</LogCall>
       </Method>
       <Method name="KillEnemyOnOwnerClient">
         <!--Edit 'status' to customize log behavior-->
@@ -1255,26 +1319,28 @@
       <Method name="KillEnemy">
         <!--Edit 'status' to customize log behavior-->
         <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Kill enemy called; destroy: {0}", destroy))</LogCall>
-        <LogCall status="Default">Debug.Log("Despawn network object in kill enemy called!")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Despawn network object in kill enemy called!")</LogCall>
         <LogCall status="Default">Debug.LogError(String.Format("enemy did not have bool in animator in KillEnemy, error returned; {0}", var_1))</LogCall>
-        <LogCall status="Default">Debug.Log("Destroy enemy called")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Destroy enemy called")</LogCall>
         <LogCall status="Default">Debug.Log(String.Concat("Playing death sound for enemy: ", this.enemyType.enemyName))</LogCall>
       </Method>
-      <Method name="UpdateEnemyRotationServerRpc">
+      <Method obsolete="true" name="UpdateEnemyRotationServerRpc">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
-      <Method name="UpdateEnemyPositionServerRpc">
+      <Method obsolete="true" name="UpdateEnemyPositionServerRpc">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
       <Method name="ChangeOwnershipOfEnemy">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Format("Switching ownership of {0} #{1} to player #{2} ({3})", [this.enemyType.name, this.thisEnemyIndex, var_0, StartOfRound.Instance.allPlayerScripts[var_0].playerUsername]))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Switching ownership of {0} #{1} to player #{2} ({3})", [this.enemyType.name, this.thisEnemyIndex, var_0, StartOfRound.Instance.allPlayerScripts[var_0].playerUsername]))</LogCall>
         <LogCall status="Default">Debug.LogError(String.Format("Attempted to switch ownership of enemy {0} to a player which does not have a link between client id and player object. Attempted clientId: {1}", this.gameObject.name, newOwnerClientId))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("unable to set owner of {0} #{1} to player #{2}; reason B; {3}", [this.enemyType.name, this.thisEnemyIndex, var_0, this.NetworkObject.OwnerClientId]))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("unable to set owner of {0} #{1} to player #{2} with id {3}; current ownerclientId: {4}", [this.enemyType.name, this.thisEnemyIndex, var_0, newOwnerClientId, var_1]))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("{0}: setting ownership to {1} from currentownershiponclient {2}", this.enemyType.enemyName, var_0, this.currentOwnershipOnThisClient))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("unable to set owner of {0} #{1} to player #{2}; reason B; {3}", [this.enemyType.name, this.thisEnemyIndex, var_0, this.NetworkObject.OwnerClientId]))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("unable to set owner of {0} #{1} to player #{2} with id {3}; current ownerclientId: {4}", [this.enemyType.name, this.thisEnemyIndex, var_0, newOwnerClientId, var_1]))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("{0}: setting ownership to {1} from currentownershiponclient {2}", this.enemyType.enemyName, var_0, this.currentOwnershipOnThisClient))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("enemy {0} #{1}: unable to set owner of {2} #{3} to player #{4}; reason B; {5} Time of day: {6}", [this.enemyType.enemyName, this.thisEnemyIndex, this.enemyType.name, this.thisEnemyIndex, var_0, this.NetworkObject.OwnerClientId, TimeOfDay.Instance.normalizedTimeOfDay]))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("{0} #{1}: ChangeOwnership success. setting ownership to player #{2} from currentOwnershipOnThisClient {3}. Time of day: {4}", [this.enemyType.enemyName, this.thisEnemyIndex, var_0, this.currentOwnershipOnThisClient, TimeOfDay.Instance.normalizedTimeOfDay]))</LogCall>
       </Method>
       <Method name="HitFromExplosion">
         <!--Edit 'status' to customize log behavior-->
@@ -1297,13 +1363,45 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError(String.Format("{0} #{1}: {2}", this.enemyType.name, this.thisEnemyIndex, error))</LogCall>
       </Method>
-      <Method name="__rpc_handler_3079913705">
+      <Method obsolete="true" name="__rpc_handler_3079913705">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Suppressed">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
-      <Method name="__rpc_handler_255411420">
+      <Method obsolete="true" name="__rpc_handler_255411420">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Suppressed">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+      </Method>
+      <Method name="SetEnemyStunned">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log("Set enemy stunned called!")</LogCall>
+      </Method>
+      <Method name="DoAIInterval">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError(String.Format("Agent '{0}' #{1}: Agent not on nav mesh when trying to set destination", this.enemyType.enemyName, this.thisEnemyIndex), this.gameObject)</LogCall>
+      </Method>
+      <Method name="StartSearch">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("{0} #{1} Starting search", this.gameObject.name, this.thisEnemyIndex), this.gameObject)</LogCall>
+      </Method>
+      <Method name="StopSearch">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("{0} #{1} Stop search called; search == null: {2} ", this.gameObject.name, this.thisEnemyIndex, search == null), this.gameObject)</LogCall>
+      </Method>
+      <Method name="ChooseFarthestNodeFromPosition">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log("Set got farthest node async to false")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat(this.enemyType.enemyName, ": Set bookmark"))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat(this.enemyType.enemyName, " Set got farthest node"))</LogCall>
+      </Method>
+      <Method name="ChangeEnemyOwnerServerRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("ENEMYAI On Server: Set clientId to {0} from current owner clientId: {1} Time of day: {2}", clientId, this.gameObject.GetComponent().OwnerClientId, TimeOfDay.Instance.normalizedTimeOfDay))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("ENEMYAI On Server: Setting changeownership Time of day: {0}", TimeOfDay.Instance.normalizedTimeOfDay))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("ENEMYAI On Server: Found player with clientId #{0} in ClientPlayerList?: {1} Time of day: {2}", clientId, StartOfRound.Instance.ClientPlayerList.TryGetValue(clientId, var_1), TimeOfDay.Instance.normalizedTimeOfDay))</LogCall>
+      </Method>
+      <Method name="ChangeEnemyOwnerClientRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("ClientRPC Setting currentOwnershipOnThisClient from {0} to {1} ; Time of day: {2}", this.currentOwnershipOnThisClient, playerVal, TimeOfDay.Instance.normalizedTimeOfDay))</LogCall>
       </Method>
     </Class>
     <Class name="GrabbableObject">
@@ -1315,12 +1413,12 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError(String.Concat("LoadItemSaveData is being called on ", this.itemProperties.itemName, ", which does not have saveItemVariable set true."))</LogCall>
       </Method>
-      <Method name="FallToGround">
+      <Method obsolete="true" name="FallToGround">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Concat("dropping item did not get raycast : ", this.gameObject.name))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Start falling position: {0}", this.startFallingPosition))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("global startposition falltoground for object {0}: {1}", this.gameObject.name, var_0))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Concat(["Item ", this.itemProperties.itemName, " landed on : ", var_1.collider.name, " / ", var_1.transform.gameObject.name]))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Concat("dropping item did not get raycast : ", this.gameObject.name))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Start falling position: {0}", this.startFallingPosition))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("global startposition falltoground for object {0}: {1}", this.gameObject.name, var_0))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Concat(["Item ", this.itemProperties.itemName, " landed on : ", var_1.collider.name, " / ", var_1.transform.gameObject.name]))</LogCall>
       </Method>
       <Method name="GrabItemOnClient">
         <!--Edit 'status' to customize log behavior-->
@@ -1350,9 +1448,9 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Suppressed">Debug.LogError(String.Concat("Scan node is missing for item!: ", this.gameObject.name))</LogCall>
       </Method>
-      <Method name="ActivateItemClientRpc">
+      <Method obsolete="true" name="ActivateItemClientRpc">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Suppressed">Debug.Log(String.Format("Is being used set to {0} by RPC", onOff))</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log(String.Format("Is being used set to {0} by RPC", onOff))</LogCall>
       </Method>
       <Method name="ChangeOwnershipOfPropServerRpc">
         <!--Edit 'status' to customize log behavior-->
@@ -1370,22 +1468,30 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError(String.Concat("Error: physics region transform does not have network object?: ", var_1.gameObject.name))</LogCall>
       </Method>
-      <Method name="Start">
+      <Method obsolete="true" name="Start">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Format("Item spawning: {0} ; item parent : {1}", this.itemProperties.itemName, this.transform.parent))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Concat("Item spawning: ", this.itemProperties.itemName, " ; item parent : null "))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Item spawning: {0} ; item parent : {1}", this.itemProperties.itemName, this.transform.parent))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Concat("Item spawning: ", this.itemProperties.itemName, " ; item parent : null "))</LogCall>
+      </Method>
+      <Method name="ActivateItemRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Is being used set to {0} by RPC", onOff))</LogCall>
+      </Method>
+      <Method name="GetPhysicsRegionOfDroppedObjectSynced">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError(String.Concat("Error: physics region transform does not have network object?: ", var_1.gameObject.name))</LogCall>
       </Method>
     </Class>
     <Class name="InteractTrigger">
       <Method name="StopSpecialAnimation">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Format("Stop special animation on {0}, by {1}; {2}", this.gameObject.name, this.lockedPlayer, GameNetworkManager.Instance.localPlayerController))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Calling stop animation function StopUsing server rpc for player: {0}", GameNetworkManager.Instance.localPlayerController.playerClientId))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Stop special animation on {0}, by {1}; {2}", this.gameObject.name, this.lockedPlayer, GameNetworkManager.Instance.localPlayerController))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Calling stop animation function StopUsing server rpc for player: {0}", GameNetworkManager.Instance.localPlayerController.playerClientId))</LogCall>
         <LogCall status="Default">Debug.Log("Stop special animation F")</LogCall>
         <LogCall status="Default">Debug.Log("Stop special animation G")</LogCall>
-        <LogCall status="Suppressed">Debug.Log(String.Format("lockedPlayer null?: {0}", this.lockedPlayer == null))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("is lockedPlayer me? : {0}", this.lockedPlayer == GameNetworkManager.Instance.localPlayerController.transform))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Concat("lockedPlayer: ", this.lockedPlayer.gameObject.name))</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log(String.Format("lockedPlayer null?: {0}", this.lockedPlayer == null))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("is lockedPlayer me? : {0}", this.lockedPlayer == GameNetworkManager.Instance.localPlayerController.transform))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Concat("lockedPlayer: ", this.lockedPlayer.gameObject.name))</LogCall>
       </Method>
       <Method name="OnDestroy">
         <!--Edit 'status' to customize log behavior-->
@@ -1456,11 +1562,13 @@
       <Method name="SpawnSyncedProps">
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.Log(String.Format("Spawning synced props on server. Length: {0}", var_0.Count()))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Exception! Unable to sync spawned objects on host; {0}", var_3))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Exception! Unable to sync spawned objects on host; {0}", var_3))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Exception! Unable to sync spawned objects on host; {0}", var_4))</LogCall>
       </Method>
       <Method name="SpawnMapObjects">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Concat("NO SPAWNERS WERE COMPATIBLE WITH THE SPAWNABLE MAP OBJECT: '", this.currentLevel.spawnableMapObjects[var_6].prefabToSpawn.gameObject.name, "'"))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Concat("NO SPAWNERS WERE COMPATIBLE WITH THE SPAWNABLE MAP OBJECT: '", this.currentLevel.spawnableMapObjects[var_6].prefabToSpawn.gameObject.name, "'"))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("NO SPAWNERS WERE COMPATIBLE WITH THE SPAWNABLE MAP OBJECT: '", this.currentLevel.indoorMapHazards[var_7].hazardType.prefabToSpawn.gameObject.name, "'"))</LogCall>
       </Method>
       <Method name="YRotationThatFacesTheFarthestFromPosition">
         <!--Edit 'status' to customize log behavior-->
@@ -1479,6 +1587,10 @@
         <LogCall status="Default">Debug.Log("Dungeon finished generating in one frame.")</LogCall>
         <LogCall status="Default">Debug.Log("Now listening to dungeon generator status.")</LogCall>
         <LogCall status="Default">Debug.LogError(String.Format("This client could not find dungeon generator! scene count: {0}", UnityEngine.SceneManagement.SceneManager.sceneCount))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Weed ClientRPC; moldspreaditerations: {0}; position: {1}; syncdestroyedmold null?: {2}", moldIterations, moldStartPosition, syncDestroyedMold == null))</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Format("Mold error: Mold start position index {0} is greater than outsideAINodes count: {1}! Cannot sync mold", moldStartPosition, this.outsideAINodes.Count()))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Creating mold at position {0}: {1}", moldStartPosition, this.outsideAINodes[moldStartPosition].transform.position))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("RANDOM MAP SEED - {0}\nClient #{1}\nMoon: {2}", this.playersManager.randomMapSeed, GameNetworkManager.Instance.localPlayerController.playerClientId, this.currentLevel.PlanetName))</LogCall>
       </Method>
       <Method name="Generator_OnGenerationStatusChanged">
         <!--Edit 'status' to customize log behavior-->
@@ -1497,7 +1609,7 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.Log("Despawning props and enemies #3")</LogCall>
         <LogCall status="Default">Debug.Log(String.Format("Enemies on map: {0}", var_0.Count()))</LogCall>
-        <LogCall status="Default">Debug.Log("despawn enemies on map")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("despawn enemies on map")</LogCall>
         <LogCall status="Default">Debug.Log(String.Format("{0} was not spawned on network, so it could not be removed.", var_0[var_3].thisNetworkObject))</LogCall>
         <LogCall status="Default">Debug.Log("despawn nest spawn object")</LogCall>
       </Method>
@@ -1511,8 +1623,10 @@
       </Method>
       <Method name="SpawnNestObjectForOutsideEnemy">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError(String.Concat("Error: No NetworkObject found in enemy nest spawn prefab that was just spawned on the host: '", var_3.name, "'"))</LogCall>
-        <LogCall status="Default">Debug.LogError(String.Concat("Error: No EnemyAINestSpawnObject component in nest object prefab that was just spawned on the host: '", var_3.name, "'"))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Concat("Error: No NetworkObject found in enemy nest spawn prefab that was just spawned on the host: '", var_3.name, "'"))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Concat("Error: No EnemyAINestSpawnObject component in nest object prefab that was just spawned on the host: '", var_3.name, "'"))</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Concat("Error: No NetworkObject found in enemy nest spawn prefab that was just spawned on the host: '", var_4.name, "'"))</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Concat("Error: No EnemyAINestSpawnObject component in nest object prefab that was just spawned on the host: '", var_4.name, "'"))</LogCall>
       </Method>
       <Method name="SyncNestSpawnObjectsOrderServerRpc">
         <!--Edit 'status' to customize log behavior-->
@@ -1530,13 +1644,15 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.Log("Cannot spawn more outside enemies: max power count has been reached")</LogCall>
       </Method>
-      <Method obsolete="true" name="SpawnRandomWeedEnemy">
+      <Method name="SpawnRandomWeedEnemy">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall obsolete="true" status="Default">Debug.Log(String.Concat("Spawned weed enemy: ", var_4.enemyName))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Spawned weed enemy: ", var_4.enemyName))</LogCall>
       </Method>
       <Method name="SpawnRandomOutsideEnemy">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Concat("Spawned enemy: ", var_6.enemyName))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Concat("Spawned enemy: ", var_6.enemyName))</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Concat("Error! Enemy-to-spawn '", var_9.enemyName, "' prefab does not have the same enemyType set as enemy-to-spawn! Fix immediately"))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Spawned enemy: ", var_9.enemyName))</LogCall>
       </Method>
       <Method name="PositionWithDenialPointsChecked">
         <!--Edit 'status' to customize log behavior-->
@@ -1551,11 +1667,17 @@
       <Method name="AssignRandomEnemyToVent">
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.Log(String.Format("Round manager: No more spawnable enemies. Power count: {0} Max: {1}", this.currentLevel.maxEnemyPowerCount, this.currentLevel.maxEnemyPowerCount))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("ADDING ENEMY #{0}: {1}", var_2, this.currentLevel.Enemies[var_2].enemyType.enemyName))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Adding {0} to power level, enemy: {1}", this.currentLevel.Enemies[var_2].enemyType.PowerLevel, this.currentLevel.Enemies[var_2].enemyType.enemyName))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("ADDING ENEMY #{0}: {1}", var_2, this.currentLevel.Enemies[var_2].enemyType.enemyName))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Adding {0} to power level, enemy: {1}", this.currentLevel.Enemies[var_2].enemyType.PowerLevel, this.currentLevel.Enemies[var_2].enemyType.enemyName))</LogCall>
         <LogCall status="Default">Debug.Log("RoundManager is catching up to current time! Not syncing vent SFX with clients since enemy will spawn from vent almost immediately.")</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("enemy rush index is {0}; current index {1}", this.enemyRushIndex, var_3))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Probability: {0}; enemy type: {1}", var_4, var_1.enemyName))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("enemy rush index is {0}; current index {1}", this.enemyRushIndex, var_3))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Probability: {0}; enemy type: {1}", var_4, var_1.enemyName))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("enemy rush index is {0}; current index {1}", this.enemyRushIndex, var_8))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Hours: {0} ; Time: {1} | Enemy #{2} '{3}' : probability: {4}", [this.timeScript.lengthOfHours * this.currentHour, var_4, var_8, this.currentLevel.Enemies[var_8].enemyType.enemyName, var_9]))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Probability: {0}; enemy type: {1}", var_9, var_2.enemyName))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("ADDING ENEMY #{0}: {1}", var_5, this.currentLevel.Enemies[var_5].enemyType.enemyName))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Adding {0} to power level, enemy: {1}", this.currentLevel.Enemies[var_5].enemyType.PowerLevel, this.currentLevel.Enemies[var_5].enemyType.enemyName))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Adding {0} to diversity level for enemy '{1}'", this.currentLevel.Enemies[var_5].enemyType.DiversityPowerLevel, this.currentLevel.Enemies[var_5].enemyType.enemyName))</LogCall>
       </Method>
       <Method name="SpawnEnemyFromVent">
         <!--Edit 'status' to customize log behavior-->
@@ -1604,9 +1726,9 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
-      <Method name="GetRandomNavMeshPositionInRadius">
+      <Method obsolete="true" name="GetRandomNavMeshPositionInRadius">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Suppressed">Debug.Log("Unable to get random nav mesh position in radius! Returning old pos")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Unable to get random nav mesh position in radius! Returning old pos")</LogCall>
       </Method>
       <Method name="FindMainEntranceScript">
         <!--Edit 'status' to customize log behavior-->
@@ -1660,22 +1782,22 @@
       <Method name="PredictAllOutsideEnemies">
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.Log("D")</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("hour: {0}; timeUpToCurrentHour: {1}; baseChance: {2}, enemiesToSpawn: {3}", [var_0, var_3, var_4, var_6]))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("E{0}", var_12))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("F{0}", var_16))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("hour: {0}; timeUpToCurrentHour: {1}; baseChance: {2}, enemiesToSpawn: {3}", [var_0, var_3, var_4, var_6]))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("E{0}", var_12))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("F{0}", var_16))</LogCall>
         <LogCall status="Default">Debug.Log("G")</LogCall>
         <LogCall status="Default">Debug.Log("I")</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Setting prob to 0; {0} &gt; {1}; {2}", var_14.PowerLevel, this.currentMaxOutsidePower - var_1, var_14.numberSpawned))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Setting prob to 0; {0} &gt; {1}; {2}", var_14.PowerLevel, this.currentMaxOutsidePower - var_1, var_14.numberSpawned))</LogCall>
         <LogCall status="Default">Debug.Log("H")</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Enemy '{0}' rarity: {1}; time multiplier: {2}", this.currentLevel.OutsideEnemies[var_16].enemyType.enemyName, this.currentLevel.OutsideEnemies[var_16].rarity, var_14.probabilityCurve.Evaluate(var_3 / this.timeScript.totalTime)))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Enemy probability without number falloff: {0}", this.currentLevel.OutsideEnemies[var_16].rarity * var_14.probabilityCurve.Evaluate(var_3 / this.timeScript.totalTime)))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Enemy number falloff probability: {0}; number falloff multiplier y: {1}; x : {2}", var_17, var_14.numberSpawnedFalloff.Evaluate(var_14.numberSpawned / 10), var_14.numberSpawned / 10))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Enemy '{0}' rarity: {1}; time multiplier: {2}", this.currentLevel.OutsideEnemies[var_16].enemyType.enemyName, this.currentLevel.OutsideEnemies[var_16].rarity, var_14.probabilityCurve.Evaluate(var_3 / this.timeScript.totalTime)))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Enemy probability without number falloff: {0}", this.currentLevel.OutsideEnemies[var_16].rarity * var_14.probabilityCurve.Evaluate(var_3 / this.timeScript.totalTime)))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Enemy number falloff probability: {0}; number falloff multiplier y: {1}; x : {2}", var_17, var_14.numberSpawnedFalloff.Evaluate(var_14.numberSpawned / 10), var_14.numberSpawned / 10))</LogCall>
         <LogCall status="Default">Debug.Log("J")</LogCall>
         <LogCall status="Default">Debug.Log("K")</LogCall>
         <LogCall status="Default">Debug.Log(String.Format("Round manager: No more spawnable outside enemies. Power count: {0} ; max : {1}", this.currentOutsideEnemyPower, this.currentLevel.maxOutsideEnemyPowerCount))</LogCall>
         <LogCall status="Default">Debug.Log("L")</LogCall>
         <LogCall status="Default">Debug.Log("M")</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Got enemy that will spawn for hour #{0}: {1}", var_0, var_7.enemyName))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Got enemy that will spawn for hour #{0}: {1}", var_0, var_7.enemyName))</LogCall>
         <LogCall status="Default">Debug.Log("N")</LogCall>
         <LogCall status="Default">Debug.Log("O")</LogCall>
         <LogCall status="Default">Debug.Log("P")</LogCall>
@@ -1684,6 +1806,27 @@
         <LogCall status="Default">Debug.Log("R")</LogCall>
         <LogCall status="Default">Debug.Log("S")</LogCall>
         <LogCall status="Default">Debug.Log("T")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("hour: {0}; timeUpToCurrentHour: {1}; baseChance: {2}, enemiesToSpawn: {3}", [var_0, var_4, var_5, var_7]))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Setting prob to 0; {0} &gt; {1}; {2}", var_15.PowerLevel, this.currentMaxOutsidePower - var_1, var_15.numberSpawned))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Enemy '{0}' rarity: {1}; time multiplier: {2}", this.currentLevel.OutsideEnemies[var_18].enemyType.enemyName, this.currentLevel.OutsideEnemies[var_18].rarity, var_15.probabilityCurve.Evaluate(var_4 / this.timeScript.totalTime)))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Enemy probability without number falloff: {0}", this.currentLevel.OutsideEnemies[var_18].rarity * var_15.probabilityCurve.Evaluate(var_4 / this.timeScript.totalTime)))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Enemy number falloff probability: {0}; number falloff multiplier y: {1}; x : {2}", var_19, var_15.numberSpawnedFalloff.Evaluate(var_15.numberSpawned / 10), var_15.numberSpawned / 10))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Got enemy that will spawn for hour #{0}: {1}", var_0, var_8.enemyName))</LogCall>
+      </Method>
+      <Method name="GetOutsideAINodes">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Roundmanager: Refreshed OutsideAINodes list!: {0}", this.outsideAINodes.Count()))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Roundmanager: Refreshed OutsideAINodes list!: {0}", this.outsideAINodesUnordered.Count()))</LogCall>
+      </Method>
+      <Method name="FinishGeneratingLevel">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError("Error, could not find a Dungeon component!")</LogCall>
+      </Method>
+      <Method name="RefreshEnemiesList">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log("Invasion chance has been met!")</LogCall>
+        <LogCall status="Default">Debug.Log("Nutcracker invasion enabled")</LogCall>
+        <LogCall status="Default">Debug.Log("Hoarding bug invasion enabled")</LogCall>
       </Method>
     </Class>
     <Class name="ShipBuildModeManager">
@@ -1747,6 +1890,21 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.Log("Attempted to start the game while routing to a new planet")</LogCall>
         <LogCall status="Default">Debug.Log(String.Format("Number of loaded players: {0}", this.playersManager.fullyLoadedPlayers))</LogCall>
+        <LogCall status="Default">Debug.Log("Start game A")</LogCall>
+        <LogCall status="Default">Debug.Log("Start game B")</LogCall>
+        <LogCall status="Default">Debug.Log("Start game C")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Start game D; {0} ; {1}", UnityEngine.SceneManagement.SceneManager.sceneCount &gt; 0, RoundManager.Instance.dungeonIsGenerating))</LogCall>
+        <LogCall status="Default">Debug.Log("Start game E")</LogCall>
+        <LogCall status="Default">Debug.Log("Start game successful")</LogCall>
+      </Method>
+      <Method name="LeverAnimation">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log("Start lever animation A")</LogCall>
+        <LogCall status="Default">Debug.Log("Start lever animation B")</LogCall>
+        <LogCall status="Default">Debug.Log("Start lever animation C")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Start lever animation D; {0} ", this.playersManager.beganLoadingNewLevel))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Start lever animation E; {0} ; {1}", UnityEngine.SceneManagement.SceneManager.sceneCount &gt; 0, RoundManager.Instance.dungeonIsGenerating))</LogCall>
+        <LogCall status="Default">Debug.Log("Start lever animation F")</LogCall>
       </Method>
     </Class>
     <Class name="DiscordController">
@@ -1831,6 +1989,7 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError(String.Format("Lobby could not be created! {0}", result), this)</LogCall>
         <LogCall status="Default">Debug.Log("Lobby has been created")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Error when trying to get modded state: {0}", var_1))</LogCall>
       </Method>
       <Method name="LeaveLobbyAtGameStart">
         <!--Edit 'status' to customize log behavior-->
@@ -1864,8 +2023,11 @@
       <Method name="SaveGameValues">
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.Log(String.Format("Saved challenge score as {0}; total scrap in level: {1}", StartOfRound.Instance.scrapCollectedLastRound, RoundManager.Instance.totalScrapValueInLevel))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("saved vehicle: {0}", var_5))</LogCall>
-        <LogCall status="Default">Debug.LogError(String.Format("Error while trying to save game values when disconnecting as host: {0}", var_8))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("saved vehicle: {0}", var_5))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Format("Error while trying to save game values when disconnecting as host: {0}", var_8))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("saved vehicle: {0}", var_7))</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Format("Error while trying to save game values when disconnecting as host: {0}", var_10))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("SAVE ITEMS IN SHIP CALLED! inShipPhase: {0}", StartOfRound.Instance.inShipPhase))</LogCall>
       </Method>
       <Method name="SaveItemsInShip">
         <!--Edit 'status' to customize log behavior-->
@@ -2056,7 +2218,7 @@
       </Method>
       <Method name="OnPlayerDC">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log("Calling OnPlayerDC!")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Calling OnPlayerDC!")</LogCall>
         <LogCall status="Default">Debug.Log("disconnect: clientId key already removed!")</LogCall>
         <LogCall status="Default">Debug.Log("OnPlayerDC: Local client is disconnecting so return.")</LogCall>
         <LogCall status="Default">Debug.Log("Shutdown is in progress, returning")</LogCall>
@@ -2064,7 +2226,11 @@
         <LogCall status="Default">Debug.Log("Player DC'ing 3")</LogCall>
         <LogCall status="Default">Debug.Log("Teleporting disconnected player out")</LogCall>
         <LogCall status="Default">Debug.Log(String.Format("Current players after dc: {0}", this.connectedPlayersAmount))</LogCall>
-        <LogCall status="Default">Debug.LogError(String.Format("Error while handling player disconnect!: {0}", var_3))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Format("Error while handling player disconnect!: {0}", var_3))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Calling OnPlayerDC! playerObjectNumber: {0}; clientId: {1}", playerObjectNumber, clientId))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Is networkmanager in shutdown?: {0}", Unity.Netcode.NetworkManager.Singleton.ShutdownInProgress))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Format("Error while handling player disconnect!: {0}", var_4))</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Format("Error while handling player disconnect!: {0}", var_5))</LogCall>
       </Method>
       <Method name="OnClientConnect">
         <!--Edit 'status' to customize log behavior-->
@@ -2087,7 +2253,8 @@
         <LogCall status="Default">Debug.Log(String.Format("Connected players (joined clients) amount after connection: {0}", this.connectedPlayersAmount))</LogCall>
         <LogCall status="Default">Debug.Log(String.Format("Asking server to sync already-held objects. Our client id: {0}", Unity.Netcode.NetworkManager.Singleton.LocalClientId))</LogCall>
         <LogCall status="Default">Debug.Log(String.Format("This client is not the client who just joined. Our client id: {0}; joining client id: {1}", Unity.Netcode.NetworkManager.Singleton.LocalClientId, clientId))</LogCall>
-        <LogCall status="Default">Debug.LogError(String.Format("Failed to assign new player with client id #{0}: {1}", clientId, var_7))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Format("Failed to assign new player with client id #{0}: {1}", clientId, var_7))</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Format("Failed to assign new player with client id #{0}: {1}", clientId, var_9))</LogCall>
       </Method>
       <Method name="SyncAlreadyHeldObjectsServerRpc">
         <!--Edit 'status' to customize log behavior-->
@@ -2150,9 +2317,10 @@
       </Method>
       <Method name="StartGame">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Format("RANDOM MAP SEED: {0}", this.randomMapSeed))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("RANDOM MAP SEED: {0}", this.randomMapSeed))</LogCall>
         <LogCall status="Default">Debug.Log("LOADING GAME!!!!!")</LogCall>
         <LogCall status="Default">Debug.Log("Attempted to start game on server but we are not in ship phase")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("RANDOM MAP SEED Challenge Moon: {0}", this.randomMapSeed))</LogCall>
       </Method>
       <Method name="ManuallyEjectPlayersServerRpc">
         <!--Edit 'status' to customize log behavior-->
@@ -2170,9 +2338,12 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.Log(String.Format("Loading from data: for {0}: iterations at {1}, starting at node #{2}", this.levels[var_2].PlanetName, var_0, var_1))</LogCall>
       </Method>
-      <Method obsolete="true" name="SetPlanetsMold">
+      <Method name="SetPlanetsMold">
         <!--Edit 'status' to customize log behavior-->
         <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Increasing level #{0} {1} mold iterations by 1; risen to {2}", var_3, this.levels[var_3].PlanetName, this.levels[var_3].moldSpreadIterations))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Increasing level #{0} {1} mold iterations by 1; risen to {2}", var_2, this.levels[var_2].PlanetName, this.levels[var_2].moldSpreadIterations))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Adding mold iterations to planet: ", this.levels[var_2].PlanetName))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Planet {0} mold iterations: {1}", this.levels[var_2].PlanetName, this.levels[var_2].moldSpreadIterations))</LogCall>
       </Method>
       <Method name="SetPlanetsWeather">
         <!--Edit 'status' to customize log behavior-->
@@ -2270,6 +2441,22 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
+      <Method name="SwitchCamera">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Concat("Switch camera to '", newCamera.gameObject.name, "'"))</LogCall>
+      </Method>
+      <Method name="ChooseNewRandomMapSeed">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("RANDOM MAP SEED: {0}", this.randomMapSeed))</LogCall>
+      </Method>
+      <Method obsolete="true" name="DetectVoiceChatAmplitude">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("INVOKING {0}", this.LocalPlayerTalkEvent))</LogCall>
+      </Method>
+      <Method name="OnShipLandedMiscEvents">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError(String.Format("ERROR while saving amount of times landed on local client! : {0}", var_1))</LogCall>
+      </Method>
     </Class>
     <Class name="CentipedeAI">
       <Method name="RaycastToCeiling">
@@ -2284,6 +2471,10 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
+      <Method name="StopClingingToPlayer">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError(String.Format("Centipede attempted to stop clinging to a player but was not clinging to anyone. playerDead: {0}", playerDead))</LogCall>
+      </Method>
     </Class>
     <Class name="CrawlerAI">
       <Method name="DoAIInterval">
@@ -2294,7 +2485,7 @@
       </Method>
       <Method name="Update">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log("Begin chasing on local client")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Begin chasing on local client")</LogCall>
         <LogCall status="Default">Debug.Log("Crawler: Eat player body start")</LogCall>
       </Method>
     </Class>
@@ -2306,7 +2497,8 @@
       </Method>
       <Method name="DoAIInterval">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Concat("Bee10 switching owner to ", var_2.playerUsername))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Concat("Bee10 switching owner to ", var_2.playerUsername))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Bee10 switching owner to ", var_3.playerUsername))</LogCall>
       </Method>
       <Method name="BeesZapOnTimer">
         <!--Edit 'status' to customize log behavior-->
@@ -2318,9 +2510,9 @@
       </Method>
     </Class>
     <Class name="DressGirlAI">
-      <Method name="Start">
+      <Method obsolete="true" name="Start">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log("DISABLING ENEMY MESH!!!!!!!!!!!")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("DISABLING ENEMY MESH!!!!!!!!!!!")</LogCall>
       </Method>
       <Method name="ChoosePlayerToHaunt">
         <!--Edit 'status' to customize log behavior-->
@@ -2334,25 +2526,25 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
-      <Method name="FindPositionOutOfLOS">
+      <Method obsolete="true" name="FindPositionOutOfLOS">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log("Girl: Found hide position with raycast")</LogCall>
-        <LogCall status="Default">Debug.Log("Girl: Found hide position with AI nodes")</LogCall>
-        <LogCall status="Default">Debug.Log("Girl: Unable to find a location to hide away; vanishing instead")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Girl: Found hide position with raycast")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Girl: Found hide position with AI nodes")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Girl: Unable to find a location to hide away; vanishing instead")</LogCall>
       </Method>
       <Method name="TryFindingHauntPosition">
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.Log(String.Format("Player distance to haunt position: {0}", Vector3.Distance(this.hauntingPlayer.transform.position, this.allAINodes[var_0].transform.position)))</LogCall>
       </Method>
-      <Method name="SetHauntStarePosition">
+      <Method obsolete="true" name="SetHauntStarePosition">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log("Girl: STARTING HAUNT STARE")</LogCall>
-        <LogCall status="Default">Debug.Log("girL: Playing sound")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Girl: STARTING HAUNT STARE")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("girL: Playing sound")</LogCall>
       </Method>
-      <Method name="OnCollideWithPlayer">
+      <Method obsolete="true" name="OnCollideWithPlayer">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log("Girl: collided with player")</LogCall>
-        <LogCall status="Default">Debug.Log("Girl: collided with player who cannot see it")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Girl: collided with player")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Girl: collided with player who cannot see it")</LogCall>
       </Method>
       <Method name="__rpc_handler_1320241094">
         <!--Edit 'status' to customize log behavior-->
@@ -2371,6 +2563,8 @@
       <Method name="Update">
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.Log("Flowerman: Dropped player body")</LogCall>
+        <LogCall status="Default">Debug.Log("BRACKEN STUNNED!")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Increasing agent speed by {0}; AGENT SPEED: {1}", UnityEngine.Time.deltaTime * 1,2, this.agent.speed))</LogCall>
       </Method>
       <Method name="DropPlayerBodyServerRpc">
         <!--Edit 'status' to customize log behavior-->
@@ -2383,6 +2577,10 @@
       <Method name="__rpc_handler_2817453984">
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+      </Method>
+      <Method name="AddToAngerMeter">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Add to anger meter called! amount to add: {0}; Time of day: {1}", amountToAdd, TimeOfDay.Instance.normalizedTimeOfDay))</LogCall>
       </Method>
     </Class>
     <Class name="ForestGiantAI">
@@ -2418,9 +2616,9 @@
       </Method>
     </Class>
     <Class name="HoarderBugAI">
-      <Method name="RefreshGrabbableObjectsInMapList">
+      <Method obsolete="true" name="RefreshGrabbableObjectsInMapList">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Format("gobjectsin scnee!! : {0}", var_0.Count()))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("gobjectsin scnee!! : {0}", var_0.Count()))</LogCall>
       </Method>
       <Method name="SyncNestPositionServerRpc">
         <!--Edit 'status' to customize log behavior-->
@@ -2428,7 +2626,7 @@
       </Method>
       <Method name="DoAIInterval">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Concat(this.gameObject.name, ": Abandoned current search and returning to nest empty-handed"))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Concat(this.gameObject.name, ": Abandoned current search and returning to nest empty-handed"))</LogCall>
         <LogCall status="Default">Debug.Log(String.Concat(this.gameObject.name, ": Lost player in chase; beginning search where the player was last seen"))</LogCall>
         <LogCall status="Default">Debug.LogError("TargetPlayer is null even though bug is in chase; setting targetPlayer to watchingPlayer")</LogCall>
         <LogCall status="Default">Debug.Log(String.Concat(this.gameObject.name, ": Found player during chase; stopping search coroutine and moving after target player"))</LogCall>
@@ -2436,7 +2634,7 @@
       <Method name="SetGoTowardsTargetObject">
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Suppressed">Debug.Log(String.Concat(this.gameObject.name, ": Setting target object and going towards it."))</LogCall>
-        <LogCall status="Suppressed">Debug.Log(String.Concat(this.gameObject.name, ": i found an object but cannot reach it (or it has been taken by another bug): ", foundObject.name))</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log(String.Concat(this.gameObject.name, ": i found an object but cannot reach it (or it has been taken by another bug): ", foundObject.name))</LogCall>
       </Method>
       <Method name="ExitChaseMode">
         <!--Edit 'status' to customize log behavior-->
@@ -2508,9 +2706,9 @@
         <LogCall status="Suppressed">Debug.Log(String.Format("Mouth dog targetPos 2: {0}", targetPosition))</LogCall>
         <LogCall status="Suppressed">Debug.Log(String.Format("Dog lastheardnoisePosition: {0}", this.lastHeardNoisePosition))</LogCall>
       </Method>
-      <Method name="EndLungeClientRpc">
+      <Method obsolete="true" name="EndLungeClientRpc">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Suppressed">Debug.Log("Ending lunge")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Ending lunge")</LogCall>
       </Method>
       <Method name="KillPlayerClientRpc">
         <!--Edit 'status' to customize log behavior-->
@@ -2518,12 +2716,12 @@
       </Method>
     </Class>
     <Class name="SpringManAI">
-      <Method name="StopOffMeshLinkMovement">
+      <Method obsolete="true" name="StopOffMeshLinkMovement">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Format("Completed off mesh EARLY link due to an interruption; position: {0}", this.transform.position))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Warping agent to start position at {0}", var_0.startPos))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Warping agent to end position at {0}", var_0.endPos))</LogCall>
-        <LogCall status="Default">Debug.Log("Off mesh link data invalid; agent completing off mesh link anyway")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Completed off mesh EARLY link due to an interruption; position: {0}", this.transform.position))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Warping agent to start position at {0}", var_0.startPos))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Warping agent to end position at {0}", var_0.endPos))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Off mesh link data invalid; agent completing off mesh link anyway")</LogCall>
       </Method>
       <Method name="SetAnimationStopServerRpc">
         <!--Edit 'status' to customize log behavior-->
@@ -2545,7 +2743,8 @@
     <Class name="FlashlightItem">
       <Method name="PocketItem">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log("Could not find what player was holding this flashlight item")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Could not find what player was holding this flashlight item")</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Concat("Could not find what player was holding this flashlight item: '", this.gameObject.name, "'"), this.gameObject)</LogCall>
       </Method>
       <Method name="PocketFlashlightServerRpc">
         <!--Edit 'status' to customize log behavior-->
@@ -2673,9 +2872,9 @@
         <LogCall status="Suppressed">Debug.Log("False C")</LogCall>
         <LogCall status="Suppressed">Debug.Log(String.Format("{0}", walkieTalkie.isPocketed))</LogCall>
       </Method>
-      <Method name="PlayWallAudioServerRpc">
+      <Method obsolete="true" name="PlayWallAudioServerRpc">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
       <Method name="TimeAllAudioSources">
         <!--Edit 'status' to customize log behavior-->
@@ -2689,9 +2888,9 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
-      <Method name="__rpc_handler_2677586182">
+      <Method obsolete="true" name="__rpc_handler_2677586182">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
     </Class>
     <Class name="DeadBodyInfo">
@@ -2820,13 +3019,13 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.Log("Reseting keybind UI")</LogCall>
       </Method>
-      <Method name="SetOption">
+      <Method obsolete="true" name="SetOption">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Format("Set settings not applied!; {0}", optionType))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Set settings not applied!; {0}", optionType))</LogCall>
       </Method>
-      <Method name="ChangeLookSens">
+      <Method obsolete="true" name="ChangeLookSens">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Format("Set mouse sensitivity to new value: {0}", setTo))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Set mouse sensitivity to new value: {0}", setTo))</LogCall>
       </Method>
       <Method name="RefreshAndDisplayCurrentMicrophone">
         <!--Edit 'status' to customize log behavior-->
@@ -2960,10 +3159,10 @@
         <LogCall status="Default">Debug.Log("not reloading")</LogCall>
         <LogCall status="Default">Debug.Log("reloading!")</LogCall>
       </Method>
-      <Method name="FindAmmoInInventory">
+      <Method obsolete="true" name="FindAmmoInInventory">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Format("Ammo null in slot #{0}?: {1}", var_1, var_0 == null))</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Ammo in slot #{0} id: {1}", var_1, var_0.ammoType))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Ammo null in slot #{0}?: {1}", var_1, var_0 == null))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Ammo in slot #{0} id: {1}", var_1, var_0.ammoType))</LogCall>
       </Method>
       <Method name="__rpc_handler_3349119596">
         <!--Edit 'status' to customize log behavior-->
@@ -2975,10 +3174,10 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.Log(String.Format("Added player #{0} to shower", playerScript.playerClientId))</LogCall>
       </Method>
-      <Method name="Update">
+      <Method obsolete="true" name="Update">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Suppressed">Debug.Log("Shower is running with players inside!")</LogCall>
-        <LogCall status="Suppressed">Debug.Log(String.Format("spray decal #{0} found as child of {1}", this.cleanDecalIndex, this.playersInShower[var_1].transform))</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Shower is running with players inside!")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log(String.Format("spray decal #{0} found as child of {1}", this.cleanDecalIndex, this.playersInShower[var_1].transform))</LogCall>
       </Method>
     </Class>
     <Class name="SpikeRoofTrap">
@@ -3001,11 +3200,13 @@
       </Method>
       <Method name="LateUpdate">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Suppressed">Debug.Log("Spraying, depleting tank")</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log("Spraying, depleting tank")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("planttype:{0}, batchnum:{1}, index:{2}", this.killingCadaverPlant.Item3, this.killingCadaverPlant.Item1, this.killingCadaverPlant.Item2))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("DPosition: {0}", this.cadaverGrowthAI.plantBatchers[this.killingCadaverPlant.Item3].Batches[this.killingCadaverPlant.Item1][this.killingCadaverPlant.Item2].GetPosition()))</LogCall>
       </Method>
-      <Method name="TrySprayingWeedKillerBottle">
+      <Method obsolete="true" name="TrySprayingWeedKillerBottle">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log("Add turbo boost")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log("Add turbo boost")</LogCall>
       </Method>
       <Method name="SprayPaintServerRpc">
         <!--Edit 'status' to customize log behavior-->
@@ -3027,6 +3228,15 @@
       <Method name="__rpc_handler_629055349">
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+      </Method>
+      <Method name="CheckForCadaverPlantsInSprayPath">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError("Error when finding index of closest plant in batches: plant type/batch number not defined")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("KillingCadaverPlant returned: ({0}, {1}, {2})", this.killingCadaverPlant.Item1, this.killingCadaverPlant.Item2, this.killingCadaverPlant.Item3))</LogCall>
+      </Method>
+      <Method name="CheckForWeedsInSprayPath">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Killingweed returned: ({0}, {1})", this.killingWeed.Item1, this.killingWeed.Item2))</LogCall>
       </Method>
     </Class>
     <Class name="TerminalAccessibleObject">
@@ -3251,14 +3461,18 @@
         <LogCall status="Default">Debug.Log(String.Concat("Picked up scrap ", this.currentlyHeldObjectServer.itemProperties.itemName, " was not in the normal places; reparenting it now"))</LogCall>
         <LogCall status="Default">Debug.Log(String.Concat("Picked up scrap ", this.currentlyHeldObjectServer.itemProperties.itemName, " is in the elevator; parenting it to elevator"))</LogCall>
         <LogCall status="Default">Debug.Log(String.Concat("Picked up scrap ", this.currentlyHeldObjectServer.itemProperties.itemName, " is not in the elevator; parenting it to spawnedScrapContainer"))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Save hasgrabbed item: {0}", ES3.Load("grabbedItemBefore", "LCGeneralSaveData", 0)))</LogCall>
+        <LogCall status="Default">Debug.Log("Do display tip")</LogCall>
       </Method>
       <Method name="DespawnHeldObjectServerRpc">
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
-      <Method obsolete="true" name="DiscardHeldObject">
+      <Method name="DiscardHeldObject">
         <!--Edit 'status' to customize log behavior-->
         <LogCall obsolete="true" status="Default">Debug.LogError(String.Concat("Error: physics region transform does not have network object?: ", var_0.gameObject.name))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("player #{0} '{1}' called DiscardHeldObject while in grabbing animation! Queuing discard to force dropping of item", this.playerClientId, this.playerUsername))</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Format("Error! On player #{0} '{1}' : DiscardHeldObject was called while currentlyHeldObjectServer is null!", this.playerClientId, this.playerUsername))</LogCall>
       </Method>
       <Method name="ThrowObjectServerRpc">
         <!--Edit 'status' to customize log behavior-->
@@ -3273,14 +3487,19 @@
       <Method name="PlaceObjectServerRpc">
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
-        <LogCall status="Default">Debug.LogError(String.Format("Object placement not synced to clients, missing reference to a network object: placing object with id: {0}; player #{1}", grabbedObject.NetworkObjectId, this.playerClientId))</LogCall>
-        <LogCall status="Default">Debug.LogError(String.Format("Object placement not synced to clients, missing reference to a network object: parent object with id: {0}; player #{1}", grabbedObject.NetworkObjectId, this.playerClientId))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Format("Object placement not synced to clients, missing reference to a network object: placing object with id: {0}; player #{1}", grabbedObject.NetworkObjectId, this.playerClientId))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Format("Object placement not synced to clients, missing reference to a network object: parent object with id: {0}; player #{1}", grabbedObject.NetworkObjectId, this.playerClientId))</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Format("Exception: Object placement not synced to clients, missing reference to a network object: placing object with id: {0}; player #{1}", grabbedObject.NetworkObjectId, this.playerClientId))</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Format("Exception: Object placement not synced to clients, missing reference to parent's network object: parent object with id: {0}; player #{1}", grabbedObject.NetworkObjectId, this.playerClientId))</LogCall>
       </Method>
       <Method name="PlaceObjectClientRpc">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError(String.Format("Reference to parent object when placing was missing. object: {0} placed by {1}", var_1, this.gameObject.name))</LogCall>
-        <LogCall status="Default">Debug.LogError(String.Format("ThrowObjectClientRpc called for an object which is not the same as currentlyHeldObjectServer which is {0}, on player #{1}.", var_3, this.playerClientId))</LogCall>
-        <LogCall status="Default">Debug.LogError("The server did not have a reference to the held object (when attempting to PLACE object on client.)")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Format("Reference to parent object when placing was missing. object: {0} placed by {1}", var_1, this.gameObject.name))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Format("ThrowObjectClientRpc called for an object which is not the same as currentlyHeldObjectServer which is {0}, on player #{1}.", var_3, this.playerClientId))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError("The server did not have a reference to the held object (when attempting to PLACE object on client.)")</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Format("Exception: Reference to parent object when placing was missing. object: {0} placed by {1}", var_1, this.gameObject.name))</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Format("Exception: ThrowObjectClientRpc called for an object which is not the same as currentlyHeldObjectServer which is {0}, on player #{1}.", var_3, this.playerClientId))</LogCall>
+        <LogCall status="Default">Debug.LogError("Exception: The server did not have a reference to the held object (when attempting to PLACE object on client.)")</LogCall>
       </Method>
       <Method name="PlayerJumpedServerRpc">
         <!--Edit 'status' to customize log behavior-->
@@ -3310,10 +3529,10 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.Log("Setting animation on client")</LogCall>
       </Method>
-      <Method name="UpdatePlayerPositionServerRpc">
+      <Method obsolete="true" name="UpdatePlayerPositionServerRpc">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
-        <LogCall status="Default">Debug.Log(String.Format("Caught an error when sending player position RPC; likely a player disconnected to cause this. Error: {0}", var_0))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Caught an error when sending player position RPC; likely a player disconnected to cause this. Error: {0}", var_0))</LogCall>
       </Method>
       <Method name="RemovePlayerPhysicsParentServerRpc">
         <!--Edit 'status' to customize log behavior-->
@@ -3325,9 +3544,9 @@
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
         <LogCall status="Default">Debug.Log(String.Format("Caught an error when sending UpdatePhysicsParent RPC. Error: {0}", var_0))</LogCall>
       </Method>
-      <Method name="LandFromJumpServerRpc">
+      <Method obsolete="true" name="LandFromJumpServerRpc">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
       <Method name="DisableJetpackModeServerRpc">
         <!--Edit 'status' to customize log behavior-->
@@ -3338,12 +3557,14 @@
         <LogCall status="Default">Debug.Log(String.Concat("Taking control of player ", this.gameObject.name, " and enabling camera!"))</LogCall>
         <LogCall status="Default">Debug.Log(String.Concat("!!!! ENABLING CAMERA FOR PLAYER: ", this.gameObject.name))</LogCall>
         <LogCall status="Default">Debug.Log(String.Format("!!!! connectedPlayersAmount: {0}", this.playersManager.connectedPlayersAmount))</LogCall>
-        <LogCall status="Suppressed">Debug.Log(String.Format("Average velocity: {0}", this.averageVelocity))</LogCall>
+        <LogCall obsolete="true" status="Suppressed">Debug.Log(String.Format("Average velocity: {0}", this.averageVelocity))</LogCall>
         <LogCall status="Default">Debug.Log("Take damage a")</LogCall>
         <LogCall status="Default">Debug.Log("Take damage b")</LogCall>
         <LogCall status="Default">Debug.Log("Take damage c")</LogCall>
         <LogCall status="Default">Debug.LogWarning("!!! No cameras are enabled !!!")</LogCall>
         <LogCall status="Default">Debug.Log(String.Concat("!!!! DISABLING CAMERA FOR PLAYER: ", this.gameObject.name))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("slipperyFloor: {0}", this.slipperyFloor))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("push force magnitude: {0}", this.playerPushForce.magnitude))</LogCall>
       </Method>
       <Method name="SetFaceUnderwaterServerRpc">
         <!--Edit 'status' to customize log behavior-->
@@ -3355,12 +3576,14 @@
       </Method>
       <Method name="TeleportPlayer">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Concat("Called teleport function on ", this.gameObject.name))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Concat("Called teleport function on ", this.gameObject.name))</LogCall>
         <LogCall status="Default">Debug.Log("Player is sinking; disable all quicksand locally")</LogCall>
       </Method>
       <Method name="KillPlayer">
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.Log(String.Concat("Running kill player function for LOCAL client, player object: ", this.gameObject.name))</LogCall>
+        <LogCall status="Default">Debug.Log("KILL LOCAL PLAYER!")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Override drop items : {0}; overridedontspawnbody: {1}", this.overrideDropItems, this.overrideDontSpawnBody))</LogCall>
       </Method>
       <Method name="KillPlayerServerRpc">
         <!--Edit 'status' to customize log behavior-->
@@ -3388,6 +3611,10 @@
       <Method name="SetSpectatedPlayerEffects">
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError(String.Format("Error caught in SpectatedPlayerEffects: {0}", var_5))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("SET SPECTATED PLAYER EFFECTS; {0}", allPlayersDead))</LogCall>
+        <LogCall status="Default">Debug.Log("Enable sun direct light")</LogCall>
+        <LogCall status="Default">Debug.Log("All players dead; set reverb to preset #3")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Player effects null?: {0}", var_1 == null))</LogCall>
       </Method>
       <Method name="__rpc_handler_800455552">
         <!--Edit 'status' to customize log behavior-->
@@ -3461,9 +3688,9 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
-      <Method name="__rpc_handler_2013428264">
+      <Method obsolete="true" name="__rpc_handler_2013428264">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
       <Method name="__rpc_handler_3843228541">
         <!--Edit 'status' to customize log behavior-->
@@ -3473,9 +3700,9 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
-      <Method name="__rpc_handler_3332990272">
+      <Method obsolete="true" name="__rpc_handler_3332990272">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
       <Method name="__rpc_handler_3237016509">
         <!--Edit 'status' to customize log behavior-->
@@ -3489,9 +3716,9 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
-      <Method name="__rpc_handler_4121569671">
+      <Method obsolete="true" name="__rpc_handler_4121569671">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
       <Method name="__rpc_handler_1388366573">
         <!--Edit 'status' to customize log behavior-->
@@ -3507,7 +3734,64 @@
       </Method>
       <Method name="DropAllHeldItems">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.Log(String.Format("Drop all held items A {0}; item parent: {1}; {2}; {3}", [var_0.startFallingPosition, var_0.transform.parent, var_0.transform.parent.InverseTransformPoint(var_0.transform.position), var_0.transform.position]))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Drop all held items A {0}; item parent: {1}; {2}; {3}", [var_0.startFallingPosition, var_0.transform.parent, var_0.transform.parent.InverseTransformPoint(var_0.transform.position), var_0.transform.position]))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("DropAllHeldItems called on player '{0}'; itemsFall: {1}; disconnecting: {2}; ItemSlots length: {3}; isHoldingObject: {4}", [this.playerUsername, itemsFall, disconnecting, this.ItemSlots.Count(), this.isHoldingObject]))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("DropAllHeldItems; player pos: {0}", this.transform.position))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Item slot #{0} null?: {1}", var_1, var_0 == null))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Setting DropHeldItem on item #{0}: '{1}", var_1, var_0.gameObject.name))</LogCall>
+      </Method>
+      <Method name="SwitchToSlotServerRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+      </Method>
+      <Method name="SyncSlimeSlipAudioServerRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+      </Method>
+      <Method name="SetFaceOutOfWaterClientRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Concat("Set isUnderwater RPC to false for player '", this.gameObject.name, "'"))</LogCall>
+      </Method>
+      <Method name="DropHeldItem">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Drop item '{0}'; heldByPlayerOnServer: {1}; parentObject != null: {2}", dropItem.gameObject.name, dropItem.heldByPlayerOnServer, dropItem.parentObject != null))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("placeObject: {0}; parentObjectTo == null: {1}", var_2, var_3 == null))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Set dropItem parentObject to null {0}", Object.op_Implicit(dropItem.parentObject) == 0))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Set dropItem.heldByPlayerOnServer to false: {0}", dropItem.heldByPlayerOnServer == 0))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("DropHeldItem A; placeObject:{0} {1}; item parent: {2}; {3}; {4}", [var_2, dropItem.startFallingPosition, dropItem.transform.parent, dropItem.transform.parent.InverseTransformPoint(dropItem.transform.position), dropItem.transform.position]))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("DropHeldItem A; placeObject:{0} {1}; item parent: {2}; {3}; {4}", [var_2, dropItem.startFallingPosition, dropItem.transform.parent, dropItem.transform.parent.InverseTransformPoint(syncedHeldObjectPosition), syncedHeldObjectPosition]))</LogCall>
+      </Method>
+      <Method obsolete="true" name="LateUpdate">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Player is dead; deadbody!=null: {0} isInGameOverAnimation: {1}", this.deadBody != null, this.isInGameOverAnimation))</LogCall>
+      </Method>
+      <Method name="SpectateNextPlayer">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Spectate next player; Playerscripts length : {0}", StartOfRound.Instance.allPlayerScripts.Count()))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("closest player i: {0}", var_5))</LogCall>
+        <LogCall status="Default">Debug.Log("B!!")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("found player to switch to: player client id {0}", this.spectatedPlayerScript.playerClientId))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Spectate player at index {0}", var_0))</LogCall>
+      </Method>
+      <Method name="__rpc_handler_2789518113">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+      </Method>
+      <Method name="__rpc_handler_594357223">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+      </Method>
+      <Method name="__rpc_handler_1583426973">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
+      </Method>
+      <Method name="DropItemAheadOfPlayer">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log("DROP ITEM AHEAD")</LogCall>
+        <LogCall status="Default">Debug.Log("Got raycast hit")</LogCall>
+        <LogCall status="Default">Debug.Log("Got no raycast hit")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Startpos: {0}", var_0))</LogCall>
+        <LogCall status="Default">Debug.Log("GetItemFloorPosition returned nothing; trying B")</LogCall>
       </Method>
     </Class>
     <Class name="DigitalRuby.ThunderAndLightning.LightningBoltParameters">
@@ -3551,52 +3835,52 @@
         <LogCall status="Default">Debug.LogError(String.Concat("To create spline lightning, you need a lightning path with at least ", 4.ToString(), " points."))</LogCall>
       </Method>
     </Class>
-    <Class name="DunGen.DungeonGenerator">
-      <Method name="ProcessGlobalProps">
+    <Class obsolete="true" name="DunGen.DungeonGenerator">
+      <Method obsolete="true" name="ProcessGlobalProps">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogWarning(String.Concat("Dungeon Flow contains multiple entries for the global prop group ID: ", var_12.pair.Key.ToString(), ". Only the first entry will be used."))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogWarning(String.Concat("Dungeon Flow contains multiple entries for the global prop group ID: ", var_12.pair.Key.ToString(), ". Only the first entry will be used."))</LogCall>
       </Method>
     </Class>
-    <Class name="DunGen.TileProxy">
-      <Method name=".ctor">
+    <Class obsolete="true" name="DunGen.TileProxy">
+      <Method obsolete="true" name=".ctor">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError(String.Format("Tile prefab '{0}' has automatic bounds that are zero or negative in size. The bounding volume for this tile will need to be manually defined.", prefab), prefab)</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Format("Tile prefab '{0}' has automatic bounds that are zero or negative in size. The bounding volume for this tile will need to be manually defined.", prefab), prefab)</LogCall>
       </Method>
     </Class>
-    <Class name="DunGen.DungeonArchetypeValidator">
-      <Method name="LogError">
+    <Class obsolete="true" name="DunGen.DungeonArchetypeValidator">
+      <Method obsolete="true" name="LogError">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError(String.Format(String.Concat("[ArchetypeValidator] Error: ", format), args))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Format(String.Concat("[ArchetypeValidator] Error: ", format), args))</LogCall>
       </Method>
-      <Method name="LogWarning">
+      <Method obsolete="true" name="LogWarning">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogWarning(String.Format(String.Concat("[ArchetypeValidator] Warning: ", format), args))</LogCall>
-      </Method>
-    </Class>
-    <Class name="DunGen.Graph.DungeonFlow">
-      <Method name="GetLineAtDepth">
-        <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError(String.Concat("GetLineAtDepth was unable to find a line at depth ", normalizedDepth.ToString(), ". This shouldn't happen."))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogWarning(String.Format(String.Concat("[ArchetypeValidator] Warning: ", format), args))</LogCall>
       </Method>
     </Class>
-    <Class name="DunGen.Editor.RuntimeAnalyzer">
-      <Method name="Analyze">
+    <Class obsolete="true" name="DunGen.Graph.DungeonFlow">
+      <Method obsolete="true" name="GetLineAtDepth">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError("No DungeonFlow assigned to analyzer")</LogCall>
-        <LogCall status="Default">Debug.LogError("Iteration count must be greater than 0")</LogCall>
-        <LogCall status="Default">Debug.LogError("Max failed attempt count must be greater than 0")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Concat("GetLineAtDepth was unable to find a line at depth ", normalizedDepth.ToString(), ". This shouldn't happen."))</LogCall>
       </Method>
     </Class>
-    <Class name="DunGen.Adapters.BaseAdapter">
-      <Method name="OnEnable">
+    <Class obsolete="true" name="DunGen.Editor.RuntimeAnalyzer">
+      <Method obsolete="true" name="Analyze">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError(String.Concat("[DunGen Adapter] RuntimeDungeon component is missing on GameObject '", this.gameObject.name, "'. Adapters must be attached to the same GameObject as your RuntimeDungeon component"))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError("No DungeonFlow assigned to analyzer")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError("Iteration count must be greater than 0")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError("Max failed attempt count must be greater than 0")</LogCall>
       </Method>
     </Class>
-    <Class name="DunGen.Adapters.UnityNavMesh2DAdapter">
-      <Method name="GetBuildSettings">
+    <Class obsolete="true" name="DunGen.Adapters.BaseAdapter">
+      <Method obsolete="true" name="OnEnable">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogWarning(String.Concat("No build settings for agent type ID ", this.AgentTypeID.ToString()), this)</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Concat("[DunGen Adapter] RuntimeDungeon component is missing on GameObject '", this.gameObject.name, "'. Adapters must be attached to the same GameObject as your RuntimeDungeon component"))</LogCall>
+      </Method>
+    </Class>
+    <Class obsolete="true" name="DunGen.Adapters.UnityNavMesh2DAdapter">
+      <Method obsolete="true" name="GetBuildSettings">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall obsolete="true" status="Default">Debug.LogWarning(String.Concat("No build settings for agent type ID ", this.AgentTypeID.ToString()), this)</LogCall>
       </Method>
     </Class>
     <Class name="Dissonance.Integrations.Unity_NFGO.NfgoPlayer">
@@ -3710,9 +3994,9 @@
         <LogCall status="Default">Debug.LogError("Bird Error: DropItemAndSync called when baboon has no scrap!")</LogCall>
         <LogCall status="Default">Debug.LogError("Bird Error: Bird egg not spawned for clients")</LogCall>
       </Method>
-      <Method name="DropScrapClientRpc">
+      <Method obsolete="true" name="DropScrapClientRpc">
         <!--Edit 'status' to customize log behavior-->
-        <LogCall status="Default">Debug.LogError("Bird: Error, was not able to get network object from dropped item client rpc")</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError("Bird: Error, was not able to get network object from dropped item client rpc")</LogCall>
       </Method>
       <Method name="DropScrap">
         <!--Edit 'status' to customize log behavior-->
@@ -3822,6 +4106,10 @@
         <!--Edit 'status' to customize log behavior-->
         <LogCall status="Default">Debug.LogError("Only the owner can invoke a ServerRpc that requires ownership!")</LogCall>
       </Method>
+      <Method name="DropScrapRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError("Bird: Error, was not able to get network object from dropped item client rpc")</LogCall>
+      </Method>
     </Class>
     <Class name="KiwiBabyItem">
       <Method name="SetScreamingServerRpc">
@@ -3871,6 +4159,494 @@
         <LogCall status="Default">Debug.Log(String.Format("Truck collision: {0} || {1} || {2}", var_7 == null, var_7.mainScript == null, var_7.mainScript.isEnemyDead))</LogCall>
         <LogCall status="Default">Debug.Log(String.Format("Angle/vel check did not pass; {0}", Vector3.Angle(this.mainScript.averageVelocity, var_7.mainScript.transform.position - this.transform.position)))</LogCall>
         <LogCall status="Default">Debug.Log("Truck collision: Enemy colliding with truck is inside the back of the truck; return")</LogCall>
+      </Method>
+    </Class>
+    <Class name="AdjacentRoomCullingModified">
+      <Method name="SetToStartTile">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError("RoundManager dungeon generator is null! Cannot set StartTile as current tile!")</LogCall>
+        <LogCall status="Default">Debug.Log("Adjacent room culling: Got start tile!")</LogCall>
+      </Method>
+    </Class>
+    <Class name="BatchAllMeshChildren">
+      <Method name="GetWeedPositionInMatrixList">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Input: {0}", positionIndex))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Batches: {0}", this.Batches.Count))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Amount in batch #0: {0}", this.Batches[0].Count))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("GetWeedPositionInMatrixList Returning: ({0}, {1})", positionIndex / 1000, positionIndex % 1000))</LogCall>
+      </Method>
+      <Method name="GetWeedPositionInMatrixListForCadaverPlants">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Input: {0}", positionIndex))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Batches: {0}", this.Batches.Count))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Amount in batch #0: {0}", this.Batches[0].Count))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("GetWeedPositionInMatrixList Returning: ({0}, {1})", positionIndex / 1000, positionIndex % 1000))</LogCall>
+      </Method>
+      <Method name="DestroyWeedAtIndexInMatrixList">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Input: {0} -- {1}", positionIndex, this.batchedPositions[positionIndex]))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Batches: {0}", this.Batches.Count))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Amount in batch #0: {0}", this.Batches[0].Count))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("GetWeedPositionInMatrixList Returning: Batches[{0}][{1}]", positionIndex / 1000, positionIndex % 1000))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Destroying position: {0}", this.Batches[var_0][var_1].GetPosition()))</LogCall>
+      </Method>
+      <Method name="AddToBatchedChildren">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Concat("Plant C: ", var_0.gameObject.name))</LogCall>
+        <LogCall status="Default">Debug.Log("Plant Bfail")</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Concat("Attempted to add mesh to BatchAllMeshChildren in '", this.gameObject.name, "' which did not match the component's mesh"))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Concat("Plant D: '", var_0.gameObject.name, "' destroy"))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.Log(String.Format("Batches count: {0}", this.Batches.Count))</LogCall>
+      </Method>
+    </Class>
+    <Class name="CadaverBloomAI">
+      <Method name="Start">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Cadaver bloom enemy #{0} running Start()!", this.thisEnemyIndex))</LogCall>
+      </Method>
+      <Method name="BurstForth">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Setting bloom enemy to pos: {0}; is agent enabled?: {1}", player.transform.position, this.agent.enabled))</LogCall>
+      </Method>
+      <Method name="DoAIInterval">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log("Switch to state 1 a")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Cadaver bloom burst: Started new search; is searching?: {0}; transform position: {1}", this.searchForPlayers.inProgress, this.transform.position))</LogCall>
+        <LogCall status="Default">Debug.Log("Cadaver bloom burst: Lost player in chase; beginning search where the player was last seen")</LogCall>
+        <LogCall status="Default">Debug.Log("Cadaver bloom burst: Found player during chase; stopping search coroutine and moving after target player")</LogCall>
+      </Method>
+    </Class>
+    <Class name="CadaverGrowthAI">
+      <Method name="OnLocalPlayerDie">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Cadaver growth: Unable to burst from dying player '{0}'. Reason A (incompatible cause of death). Time:{1} ", player.playerUsername, TimeOfDay.Instance.normalizedTimeOfDay))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Cadaver growth: Unable to burst from dying player '{0}'. Reason B (eyeless dog). Time:{1} ", player.playerUsername, TimeOfDay.Instance.normalizedTimeOfDay))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Cadaver growth: Unable to burst from dying player '{0}'. Reason C (infection not progressed enough). Time:{1} ", player.playerUsername, TimeOfDay.Instance.normalizedTimeOfDay))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Cadaver growth: Burst on player death found raycast to ground. player position: {0}; rayhit position: {1}; Time:{2} ", player.transform.position, var_1.point, TimeOfDay.Instance.normalizedTimeOfDay))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Cadaver growth: Unable to burst from dying player '{0}' Reason D (no navmesh position result). player position: {1}; Time:{2} ", player.playerUsername, player.transform.position, TimeOfDay.Instance.normalizedTimeOfDay))</LogCall>
+      </Method>
+      <Method name="OnLocalPlayerTalk">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Face spore object position: {0}; {1}", GameNetworkManager.Instance.localPlayerController.gameplayCamera.transform.position, GameNetworkManager.Instance.localPlayerController.gameplayCamera.transform.position + GameNetworkManager.Instance.localPlayerController.gameplayCamera.transform.forward * 0,25))</LogCall>
+        <LogCall status="Default">Debug.Log("On local player talk!")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("On local player talk! B ; {0} ; {1}", var_0.infectionMeter, var_0.emittingSpores))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("On local player talk! C {0}; {1}", var_0.backFlowers == null, var_0.faceSpores == null))</LogCall>
+      </Method>
+      <Method name="GetAllPlantPositionsInRadius">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Checking nearby cadaver plant positions to position {0}", position))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Checking plant type {0}", var_4))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Got nearby cadaver plant at index {0}, position {1}; addToArrayIndex: {2}", var_5, var_2[var_5], var_1[var_4]))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("batcher #{0}; addToArrayIndex: {1}", var_7, var_1[var_7]))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("setting to -1: ({0}, {1})", var_8, var_7))</LogCall>
+      </Method>
+      <Method name="DestroyPlantAtPosition">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError(String.Format("Error: DestroyPlantAtPosition was called but could not find any plants at position: {0}", pos))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("cadaver plants found at pos {0}", pos))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Destroying: planttype:{0}, index:{1}", var_7, var_8))</LogCall>
+      </Method>
+      <Method name="Start">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Cadaver bloom growth ai spawning bloomEnemy array; Players length: {0}; {1}", StartOfRound.Instance.allPlayerScripts.Count(), this.bloomEnemies.Count()))</LogCall>
+      </Method>
+      <Method name="GetRandomTileToStart">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError("Cadaver plant growth AI: Error! Found no dungeon")</LogCall>
+        <LogCall status="Default">Debug.LogError("Cadaver plant growth AI: Could not find any tile in AllTiles list!")</LogCall>
+      </Method>
+      <Method name="SyncSpawnPlantRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError(String.Format("Error: Client does not have tile at index of {0}", tileIndex))</LogCall>
+      </Method>
+      <Method name="GrowInTiles">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError("Cadaver plant growth AI: Error! Found no dungeon when adding new tile")</LogCall>
+        <LogCall status="Default">Debug.LogError("Cadaver plant growth AI: Could not find adjacent tile in AllTiles list! Unable to sync to clients.")</LogCall>
+        <LogCall status="Default">Debug.LogError("Cadaver plant growth AI: Could not find growth tile in alltiles list! Unable to sync un-eradicated tile to clients")</LogCall>
+      </Method>
+      <Method name="SyncRemoveEradicationFromTileRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError(String.Format("Client sent tile index greater than GrowthTiles count! tile index: {0}", tileIndex))</LogCall>
+      </Method>
+      <Method name="SyncAddGrowthTileRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError("Cadaver plant growth AI: Error! Found no dungeon when syncing from host")</LogCall>
+      </Method>
+      <Method name="SyncAddInitialGrowthTileRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError("Cadaver growth AI: Error! Found no dungeon when syncing from host")</LogCall>
+        <LogCall status="Default">Debug.LogError("Cadaver growth AI: Client found no room tiles after removing last room tile! Unable to sync")</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Format("Cadaver growth AI: Tile index synced from host ({0}) is greater than the amount of rooms on the main path! {1} Cannot sync!", tileAtIndex, var_1.Count))</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Format("Cadaver growth AI: Non-room tile index synced from host ({0}) is greater than the amount of tiles on the main path! {1} Cannot sync!", tileAtIndex, var_1.Count))</LogCall>
+      </Method>
+      <Method name="IncreaseBackFlowers">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Increase back flowers called for player #{0}", playerId))</LogCall>
+      </Method>
+      <Method name="InfectPlayer">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Growth AI: Attempted to infect player #{0} but they are already infected", playerScript.playerClientId))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Growth AI: Attempted to infect player #{0} but they are dead", playerScript.playerClientId))</LogCall>
+      </Method>
+      <Method name="CreateBloomEnemyOnStandby">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError("Attempted to spawn standby Bloom enemy, but the array is full of standby enemies!")</LogCall>
+        <LogCall status="Default">Debug.Log("Player infected; spawning bloom enemy on standby")</LogCall>
+      </Method>
+      <Method name="BurstFromPlayer">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Burst out of player! #{0}", playerScript.playerClientId))</LogCall>
+        <LogCall obsolete="true" status="Default">Debug.LogError(String.Format("Cadaver growth AI: Tried to burst from player, but there are no bloom enemies on standby? index: {0}", var_2))</LogCall>
+        <LogCall status="Default">Debug.LogError("Cadaver growth AI: Tried to burst from player, but there are no bloom enemies on standby? B")</LogCall>
+      </Method>
+    </Class>
+    <Class name="EntranceTeleport">
+      <Method name="StartOpeningEntrance">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log("Id is not 0")</LogCall>
+      </Method>
+      <Method name="SyncStartOpeningDoorRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log("Id is not 0")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("'{0}' entrancePointAudio isPlaying: {1}", this.gameObject.name, this.entrancePointAudio.isPlaying))</LogCall>
+      </Method>
+      <Method name="FinishOpeningEntrance">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Called finishopeningentrance ({0})", playShutAudio))</LogCall>
+        <LogCall status="Default">Debug.Log("Id is not 0")</LogCall>
+        <LogCall status="Default">Debug.Log("finishopeningentrance animator null")</LogCall>
+        <LogCall status="Default">Debug.Log("Entrance teleport was not open; returning")</LogCall>
+        <LogCall status="Default">Debug.Log("Couldn't find exit script")</LogCall>
+        <LogCall status="Default">Debug.Log("End A")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("'", this.gameObject.name, "' STOPPING entrancePointAudio"))</LogCall>
+      </Method>
+      <Method name="TeleportPlayer">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError(String.Format("Error when checking PlayedDungeonEntrance with save data! : {0}", var_2))</LogCall>
+      </Method>
+    </Class>
+    <Class name="HighAndLowAltitudeAudio">
+      <Method name="OnEnable">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log("Subscribe to startedLandingShip")</LogCall>
+      </Method>
+      <Method name="StartAudios">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Start audios played from highandlowaudio; {0} ; {1}", this.HighAudio.isPlaying, this.LowAudio.isPlaying))</LogCall>
+      </Method>
+    </Class>
+    <Class name="PumaAI">
+      <Method name="RemoveTree">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Concat("Puma: Attempted to remove tree '", treeObject.name, "' but it was not in the list"), treeObject)</LogCall>
+      </Method>
+      <Method name="Start">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Tree #{0} '{1}' did not get raycast down", var_4, var_1[var_4].gameObject.name), var_1[var_4].gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Checking Tree #{0} '{1}' with bounds #{2}", var_4, var_1[var_4].gameObject.name, var_5), var_1[var_4].gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Tree #{0} '{1}' is in bounds #{2}", var_4, var_1[var_4].gameObject.name, var_5), var_1[var_4].gameObject)</LogCall>
+      </Method>
+      <Method name="GetTargetTree">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("GetTargetTree {0} no path found", var_4))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Set GetTargetTree: Got target tree?: {0}", this.TargetTree != null))</LogCall>
+      </Method>
+      <Method name="GetEndTargetTree">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Get end target tree : Player #{0} '{1}'", var_0.i, this.nearPlayers[var_0.i].gameObject.name))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("puma: Trees nearby player #{0}: {1}", var_0.i, var_1))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("puma: Trees nearby player #{0} After including only trees in AllTreeNodes: {1}", var_0.i, this.treeCollidersB.Count))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Puma F 1 '", this.treeCollidersB[var_4].gameObject.name, "'"), this.treeCollidersB[var_4].gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("tree #{0} distance: {1}", var_4, Vector3.Distance(this.nearPlayers[var_0.i].transform.position, this.treeCollidersB[var_4].transform.position)), this.treeCollidersB[var_4].gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Puma F 2 '", this.treeCollidersB[var_4].gameObject.name, "'"))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Puma F 3 '", this.treeCollidersB[var_4].gameObject.name, "'"), this.treeCollidersB[var_4].gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Puma F 3 (b) '", this.treeCollidersB[var_4].gameObject.name, "'"), this.treeCollidersB[var_4].gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Puma : Got EndTargetTree!!! at #{0}; offset: {1}", var_4, offset), this.EndTargetTree.gameObject)</LogCall>
+      </Method>
+      <Method name="ChooseTargetTree">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Concat("Got target tree: ", this.TargetTree.gameObject.name), this.TargetTree.gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Got nav pos: {0}", var_1))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Got dest {0}: {1}", var_1, this.destination))</LogCall>
+        <LogCall status="Default">Debug.Log("No target tree found!")</LogCall>
+      </Method>
+      <Method name="DoAIInterval">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Got target player?: {0}", var_0))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Tree state: {0}; {1}", this.treeState, this.clingingToTree))</LogCall>
+        <LogCall status="Default">Debug.Log("PUMA AI 5")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Getting end target tree; hiding meter : {0}", this.treeHidingTimer))</LogCall>
+      </Method>
+      <Method name="ChooseClosestNodeToPlayer">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Puma dist to closest player; {0} ; mostOptimalDistance: {1} ; zoningIn: {2} ; close enough to start zone in?: {3}", [var_2, this.mostOptimalDistance, var_0, var_2 - this.mostOptimalDistance &lt; 0,1]))</LogCall>
+      </Method>
+      <Method name="ChooseClosestNodeToPositionPuma">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Concat(["First node gotten: ", this.allAINodes[0].gameObject.name, "; second: ", this.allAINodes[1].gameObject.name, "; last: ", this.allAINodes[this.allAINodes.Count() - 1].gameObject.name]))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Checking node #{0} : {1}", var_2, this.allAINodes[var_2].gameObject.name), this.allAINodes[var_2].gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Stalking nodes in use contains node #{0}", var_2))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Path is intersected by line of sight (#{0})", var_2))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Position distance from {0} to {1} : {2}", var_0.pos, this.allAINodes[var_2].transform.position, Vector3.Distance(var_0.pos, this.allAINodes[var_2].transform.position)))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("mostOptimalDistance: {0}", this.mostOptimalDistance))</LogCall>
+      </Method>
+      <Method name="PathIsIntersectedByLineOfSightPuma">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Puma: Path could not be calculated: {0}", targetPos))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("A: Path is not complete; final waypoint of path was too far from target position: {0}; gotnavmeshpos: {1}; {2}", targetPos, RoundManager.Instance.GotNavMeshPositionResult, var_2))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Distance between corners {0} and {1} under 3 meters; skipping LOS check", var_7, var_7 - 1))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat(this.enemyType.enemyName, ": Reached corner 15, stopping checks now"))</LogCall>
+      </Method>
+      <Method name="StartLeapToTree">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Puma leaped; leap attempts: {0}; leap from position: {1}", this.leapAttempts, this.transform.position))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Puma leap; target tree: ", this.TargetTree.gameObject.name))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Num of trees in physics check with range {0}: {1}", 26 + this.leapAttempts, var_6))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Adding tree '", this.treeColliders[var_13].gameObject.name, "' to list treeCollidersB"))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("i:{0}; tree name: {1}", var_14, this.treeCollidersB[var_14].gameObject.name))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("i:{0}; Set closestTreeSeenByPlayer; p:{1}", var_14, var_16))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("i:{0}; Set closestTreeTooClose", var_14))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("i:{0}; Set closestTreeFartherAway", var_14))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("i:{0}; Set closestTree", var_14))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("TargetTree: ", this.TargetTree.gameObject.name, "; ", this.TargetTree.transform.gameObject.name), this.TargetTree.gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Got tree close: ", var_9.gameObject.name, "; ", var_9.transform.gameObject.name), var_9.gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Does {0} ('{1}') equal {2} ('{3}'): {4}", [var_9.gameObject, var_9.gameObject.name, this.TargetTree.gameObject, this.TargetTree.gameObject.name, this.treeCollidersB[var_3].gameObject == this.TargetTree]))</LogCall>
+        <LogCall status="Default">Debug.Log("Got tree farther away", var_9.gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log("Got tree seen by player", var_9.gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log("Found NO trees around the puma which were compatible")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Got tree: ", var_9.gameObject.name, "; ", var_9.transform.gameObject.name), var_9.gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Puma: Unable to leap to tree '", var_9.gameObject.name, "' because it was too short. (Click to see)"), var_9.gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Confirm leap to tree: ", var_9.gameObject.name), var_9.gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("(Old tree: ", var_10.gameObject.name), var_10.gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Set target tree to '", this.TargetTree.gameObject.name, "'"), this.TargetTree.gameObject)</LogCall>
+      </Method>
+      <Method name="StartTreeDropOnLocalClient">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log("Puma: Unable to relocate; Target Tree is inaccessible")</LogCall>
+        <LogCall status="Default">Debug.Log("Puma: Unable to relocate; No nav pos")</LogCall>
+        <LogCall status="Default">Debug.Log("Puma: Unable to relocate")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Puma Relocating! Set target tree to '", this.TargetTree.gameObject.name, "'"), this.TargetTree.gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Puma dropped from tree! Target tree: '", this.TargetTree.gameObject.name, "'"), this.TargetTree.gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log("Puma dropped from tree! Target tree null")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Attempted to drop but unable. Adding tree '", this.TargetTree.gameObject.name, "' to excluded trees"), this.TargetTree.gameObject)</LogCall>
+      </Method>
+      <Method name="StartTreeClimbRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Received tree climb RPC {0} ; {1} ; {2} ; {3}", [treeBottomPos, treeTopPos, clingRotation, this.wasRunningForTree]))</LogCall>
+      </Method>
+      <Method name="StartTreeClimbOnLocalClient">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Concat("Puma: Tree has no capsule collider. Adding tree '", this.TargetTree.gameObject.name, "' to excluded trees (Click to see)"), this.TargetTree.gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Tree width: {0}", var_1))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Dist: {0}", Vector3.Distance(this.treeBottomPosition, this.TargetTree.transform.position)))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("treeBottomPosition magnitude: {0} (-.35f : {1})", this.treeBottomPosition.magnitude, this.treeBottomPosition.magnitude - 0,35))</LogCall>
+        <LogCall status="Default">Debug.LogError("Puma error: destination is far away from target tree. This is not supposed to happen?")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Distance from startingPos to Target tree: {0}", var_3))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Puma: Tree is too short off the ground. Adding tree '", this.TargetTree.gameObject.name, "' to excluded trees (Click to see)"), this.TargetTree.gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Adding tree '", this.TargetTree.gameObject.name, "' to excluded trees (Click to see)"), this.TargetTree.gameObject)</LogCall>
+      </Method>
+      <Method name="DetectNoise">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Hearing noise from {0} with id {1} 2", noisePosition, noiseID))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Hearing noise from {0} with id {1} 3", noisePosition, noiseID))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Hearing noise from {0} with id {1} 4", noisePosition, noiseID))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Hearing noise from {0} with id {1} A", noisePosition, noiseID))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Hearing noise from {0} with id {1} B; angle: {2}; los: {3}", [noisePosition, noiseID, Vector3.Angle(noisePosition - this.eye.position, this.eye.forward), Physics.Linecast(this.eye.position, noisePosition + UnityEngine.Vector3.up * 0,7, StartOfRound.Instance.collidersAndRoomMaskAndDefault, 1) == 0]))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("player knowledge {0} '{1}' is seen by puma; {2}/ {3}", [var_5, this.playerKnowledge[var_5].playerScript.playerUsername, this.playerKnowledge[var_5].seenByPuma, this.playerKnowledge[var_5].seenByPumaThroughTrees]))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("dist to playerknowledge {0}: {1}", var_5, Vector3.Distance(this.playerKnowledge[var_5].playerScript.transform.position, noisePosition)))</LogCall>
+      </Method>
+      <Method name="PingAttention">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Puma: pinged attention to position; startledanim: {0}", startledAnim))</LogCall>
+      </Method>
+      <Method name="PingPumaAttentionRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Ping attention startle RPC; {0}", setStartled))</LogCall>
+      </Method>
+      <Method name="IsPlayerThreatening">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Puma: Assessing threat level of '{0}'. ThreatLevel: {1}", playerScript.playerUsername, var_2))</LogCall>
+      </Method>
+      <Method name="UpdatePlayerKnowledge">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Puma: became aware of threatening player. Startled already?: {0}", this.startled))</LogCall>
+      </Method>
+      <Method name="Update">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Is not host! Setting ownership to host.\nOur clientId:{0}.\nHost client id: {1}\ncurrentOwnershipOnThisClient: {2}", GameNetworkManager.Instance.localPlayerController.actualClientId, StartOfRound.Instance.allPlayerScripts[0].actualClientId, this.currentOwnershipOnThisClient))</LogCall>
+        <LogCall status="Default">Debug.Log("Puma: running anim set to true A")</LogCall>
+        <LogCall status="Default">Debug.Log("Puma: Target tree is null! Set to dropping down")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat("Puma: Dropping down; found Target Tree to relocate to: ", this.TargetTree.gameObject.name), this.TargetTree.gameObject)</LogCall>
+        <LogCall status="Default">Debug.Log("Puma: Target tree was destroyed while puma is climbing, but the puma could not drop down successfully!")</LogCall>
+        <LogCall status="Default">Debug.Log("Puma: running anim set to false B")</LogCall>
+        <LogCall status="Default">Debug.Log("Puma: running anim set to false C")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Stalking frozen. Client #{0} A; seenByPumaThroughTrees: {1}; hidingQuickly: {2}", var_9, this.playerKnowledge[var_9].seenByPumaThroughTrees, this.hidingQuickly))</LogCall>
+        <LogCall status="Default">Debug.Log("Player was within 3.5 meters and made eye contact. Attack!")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Send Stalking charge RPC #{0}", var_9))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Send Stalk frozen RPC on local client! #{0}", var_9))</LogCall>
+        <LogCall status="Default">Debug.Log("Puma: Set to hiding quickly")</LogCall>
+        <LogCall status="Default">Debug.Log("Puma: Was stalking frozen; setting agent velocity to zero")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Puma: Agent velocity: {0}", this.agent.velocity))</LogCall>
+        <LogCall status="Default">Debug.Log("Puma: Scared meter &gt; 1; Running away!")</LogCall>
+        <LogCall status="Default">Debug.Log("Puma: Set hiding quickly false A")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Puma: Stopped attacking. Reason: No targetable player; targetPlayer null:{0}", this.targetPlayer == null))</LogCall>
+        <LogCall status="Default">Debug.Log("Puma: Stopped attacking. Reason: no scratches in the last 2 seconds")</LogCall>
+        <LogCall status="Default">Debug.Log("Puma: Stopped attacking. Reason: target player is inside closed ship")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Puma: Stopped attacking. Reason: fearful; {0}", this.scaredMeter))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Puma: Stopped attacking. Reason: VERY fearful; {0}", this.scaredMeter))</LogCall>
+      </Method>
+      <Method name="AnimationEventA">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log("Puma: inSpecialAnimation set to True for stalk frozen.")</LogCall>
+      </Method>
+      <Method name="CalculateAnimationDirection">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Puma: Set animations. IsOwner:{0}; VelX/VelZ:{1}/{2}; animStalkSpeed:{3}", [this.IsOwner, this.velX, this.velZ, this.animStalkSpeed]))</LogCall>
+      </Method>
+      <Method name="SyncMovementVelocityRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Sync movement RPC; {0} {1} {2}", syncVelX, syncVelZ, animSpeed))</LogCall>
+      </Method>
+      <Method name="SyncStalkingFrozenRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log("Stalk frozen RPC received.")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Accepted Sync stalk frozen RPC. Frozen: {0}. State: {1}", frozen, this.currentBehaviourStateIndex))</LogCall>
+      </Method>
+      <Method name="SyncStalkingChargeRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Puma: Sync stalk charge RPC. State: {0}", this.currentBehaviourStateIndex))</LogCall>
+      </Method>
+      <Method name="SyncHidingQuicklyRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Puma: Sync Hiding Quickly RPC. Hiding: {0} State: {1}", hiding, this.currentBehaviourStateIndex))</LogCall>
+      </Method>
+      <Method name="RunTreeMode">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Starting puma climb {0} ; {1} ; {2}", this.startClimbingDelay, this.treeBottomPosition, this.inSpecialAnimation))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Set puma climbing up! from {0} to {1} ; {2}", this.treeBottomPosition, this.treeTopPosition, this.inSpecialAnimation))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Set puma tree mode to idle; {0}", this.clingIdlePosition))</LogCall>
+        <LogCall status="Default">Debug.Log("Puma No players targetable")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("The puma is on its target tree!\nOn end target tree: {0}\nDist: {1}", (this.EndTargetTree != null ? 0 : this.EndTargetTree == this.TargetTree), Vector3.Distance(this.TargetTree.transform.position, this.targetPlayer.transform.position)))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Attempt drop. Relocate. {0}", var_8))</LogCall>
+      </Method>
+      <Method name="EndDroppingDownAnimationOnLocalClient">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Puma: Landed on the ground! relocatingToNewTree:{0}", this.relocatingToNewTree))</LogCall>
+      </Method>
+    </Class>
+    <Class name="ModdedCheck">
+      <Method name="GetModdedState">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogException(ex)</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Unable to check if client is modded: {0}", var_13))</LogCall>
+      </Method>
+    </Class>
+    <Class name="SpawnGrassOnMesh">
+      <Method name="Start">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError("GrassSpawner requires a Mesh component")</LogCall>
+      </Method>
+      <Method name="SpawnGrass">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("bounds sizes {0}; {1} ; {2}", var_11.size.x, var_11.size.z, this.cellSize))</LogCall>
+      </Method>
+    </Class>
+    <Class name="StingrayAI">
+      <Method name="CreateSlime">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Adding slime decal at {0}", pos[var_0]))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Spraypaint B {0}; index: {1}", StartOfRound.Instance.slimeDecals.Count, this.slimeDecalsIndex))</LogCall>
+        <LogCall status="Default">Debug.LogError(String.Format("ERROR: spray paint at index {0} is null; creating new object in its place", this.slimeDecalsIndex))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Adding slime decal at {0}", pos))</LogCall>
+      </Method>
+      <Method name="Update">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log("Time since hitting &lt; 8!")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Whining audio playing?: {0}", this.whiningAudio.isPlaying))</LogCall>
+        <LogCall status="Default">Debug.Log("Start whining audio!")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Whining audio playing? B: {0}", this.whiningAudio.isPlaying))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("cloak speed lunge: {0}", this.exitCloakLunge))</LogCall>
+      </Method>
+      <Method name="ChooseClosestNodeToPositionStingray">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Stingray #{0} node chosen: {1}; offset {2}", this.stingrayNumber, var_2.gameObject.name, var_4), var_2.gameObject)</LogCall>
+      </Method>
+    </Class>
+    <Class name="CinespecManager">
+      <Method name="GetClientCalculatingCinespecRpc">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Cinespec: changed clientCalculating on host to {0}", this.clientCalculating))</LogCall>
+      </Method>
+      <Method name="Update">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError("Cinespec was enabled while local player is alive; this is not supposed to occur!")</LogCall>
+        <LogCall status="Default">Debug.LogError("Cinespec: No player spectated! Cannot change shots.")</LogCall>
+      </Method>
+      <Method name="LookForPlayersToSwitchTo">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError("Cinespec: Found no players with interest level above -1000!")</LogCall>
+      </Method>
+      <Method name="DecideWhenToChangeShots">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError("Cinespec error: Spectated player is null when attempting to change shots!")</LogCall>
+      </Method>
+      <Method name="OnShotChanged">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log("Cinespec: Changed shot")</LogCall>
+      </Method>
+      <Method name="ChangeShot">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log("CHECKING CURRENT SHOT! -----------")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Shot type #{0} '{1} potential: {2}", var_8, this.shotTypes[var_8].gameObject.name, var_2[var_8]))</LogCall>
+        <LogCall status="Default">Debug.LogError("Cinespec: Could not get a shot type! Returned -1")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Chose Angle A0; current quality: {0} ; new: {1}", var_0, var_6))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Chose Angle A 2; current quality: {0}; new: {1} pos: {2}", var_0, var_6, var_4.potentialShotPosition.Item1))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Got quality for shot type #{0} : {1} (i:{2})", var_12, var_6, var_12))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Chose Angle B; current quality: {0}; new: {1}", var_0, var_6))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Is quality ({0}) higher than highest quality ({1})? : {2}", var_6, var_9, var_6 &gt; var_9))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("highestQualityOfAllShotTypes now: {0} (i:{1})", var_9, var_12))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Finished testing all shots loop. highestQualityOfAllShotTypes: {0}", var_9))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Chose Angle C; current quality: {0} ; new: {1}", var_0, var_9))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Did not choose different angle; current quality: {0}; highest quality: {1}", var_0, var_9))</LogCall>
+      </Method>
+    </Class>
+    <Class name="Shot">
+      <Method name="TestShotsForHighestQuality">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log("Shot type '{gameObject.name}' is already the current shot and only has one iteration; returning quality based on current shot")</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Shot type '{0}' testing quality for all shots. Highest quality for this shot type so far: {1}", this.gameObject.name, var_0))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Shot type '{0}' Chose shot type #{1}! With quality {2}", this.gameObject.name, var_2, var_0))</LogCall>
+      </Method>
+      <Method name="Start">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.LogError("Cinematic spectate manager was not found!")</LogCall>
+      </Method>
+      <Method name="GetShotQuality">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Shot Type '{0}' Attempt #{1}: testing position: {2} euler: {3}  --------------- ", [this.gameObject.name, this.attemptNumber, camRot, camRot]))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Shot Type '{0}' --- Evaluation '{1}' result: {2} ; quality after: {3}", [this.gameObject.name, var_4.Method.Name, var_1, var_0]))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat(["Shot quality'", this.gameObject.name, "' FAILED on evaluation '", var_4.Method.Name, "'"]))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Cinespec: ERROR getting shot '{0}' quality! Errored at condition '{1}' : {2}", this.gameObject.name, this.ShotQualityEvaluations[var_2], var_6))</LogCall>
+      </Method>
+      <Method name="GetShotPotential">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Shot potential of '{0}' --- Condition '{1}' result: {2} ; potential after: {3}", [this.gameObject.name, var_3.Method.Name, var_0, this.shotPotential]))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Concat(["Shot potential '", this.gameObject.name, "' FAILED on condition '", var_3.Method.Name, "'"]))</LogCall>
+        <LogCall status="Default">Debug.Log(String.Format("Cinespec: ERROR getting shot '{0}' potential! Errored at condition '{1}' : {2}", this.gameObject.name, this.ShotConditions[var_1], var_5))</LogCall>
+      </Method>
+    </Class>
+    <Class name="FollowingShot">
+      <Method name="IsPlayerRunningOrInCaves">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("!!! FOLLOW CAM:   Is sprinting? : {0}", var_0 &gt; 0))</LogCall>
+      </Method>
+    </Class>
+    <Class name="ShotStaticOverhead">
+      <Method name="PlaceShot">
+        <!--Edit 'status' to customize log behavior-->
+        <LogCall status="Default">Debug.Log(String.Format("Moving right: {0} ; {1}", var_5 &gt; 0, var_5))</LogCall>
       </Method>
     </Class>
   </Assembly>

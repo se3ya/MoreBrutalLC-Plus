@@ -1,2 +1,8 @@
 - remove Sanguine?
 - replace QuotaOverhaul with CustomDeathPenalty and ChocoQuota? Much stable, same features instead of player count multiplier
+- Fix Blob spamming cobnsumption sound
+- Add more loading images to LoadingScreen
+- LLL Bundle loading blacklist
+- WeatherRegistry Bundle loading blacklist
+- test Change light fade distance in Sponge
+- Increase moon count

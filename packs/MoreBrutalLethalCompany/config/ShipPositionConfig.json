@@ -1,0 +1,771 @@
+{
+  "levelDatas": [
+    {
+      "levelName": "CompanyBuilding",
+      "landingPosition": {
+        "x": 5.448328,
+        "y": -0.8514222,
+        "z": -53.71918
+      },
+      "landingRotation": {
+        "x": -90.0,
+        "y": 0.0,
+        "z": -99.753
+      }
+    },
+    {
+      "levelName": "Level3Vow",
+      "landingPosition": {
+        "x": 24.41833,
+        "y": 6.418578,
+        "z": 21.28083
+      },
+      "landingRotation": {
+        "x": -90.0,
+        "y": 180.0,
+        "z": -100.805
+      }
+    },
+    {
+      "levelName": "Level4March",
+      "landingPosition": {
+        "x": 20.79833,
+        "y": 10.15858,
+        "z": -63.55917
+      },
+      "landingRotation": {
+        "x": -87.609,
+        "y": -35.707,
+        "z": -61.307
+      }
+    },
+    {
+      "levelName": "Level5Rend",
+      "landingPosition": {
+        "x": 58.01833,
+        "y": 3.348578,
+        "z": -57.88918
+      },
+      "landingRotation": {
+        "x": -90.0,
+        "y": 0.0,
+        "z": -183.716
+      }
+    },
+    {
+      "levelName": "Level6Dine",
+      "landingPosition": {
+        "x": -8.12,
+        "y": 0.6,
+        "z": 2.15
+      },
+      "landingRotation": {
+        "x": -90.0,
+        "y": 0.0,
+        "z": 34.999
+      }
+    },
+    {
+      "levelName": "Level7Offense",
+      "landingPosition": {
+        "x": 51.17833,
+        "y": -1.281422,
+        "z": -8.609177
+      },
+      "landingRotation": {
+        "x": -90.0,
+        "y": 0.0,
+        "z": 76.388
+      }
+    },
+    {
+      "levelName": "Level9Artifice",
+      "landingPosition": {
+        "x": -31.07167,
+        "y": -4.511422,
+        "z": -63.25918
+      },
+      "landingRotation": {
+        "x": -92.998,
+        "y": 53.196,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "Level11Embrion",
+      "landingPosition": {
+        "x": 26.75833,
+        "y": 0.4685777,
+        "z": 4.220825
+      },
+      "landingRotation": {
+        "x": -90.0,
+        "y": 0.0,
+        "z": 89.542
+      }
+    },
+    {
+      "levelName": "SanguineScene",
+      "landingPosition": {
+        "x": 35.33639,
+        "y": -1.26546586,
+        "z": -0.0119223222
+      },
+      "landingRotation": {
+        "x": 273.43866,
+        "y": 156.058853,
+        "z": 291.56546
+      }
+    },
+    {
+      "levelName": "AfflictionLevel",
+      "landingPosition": {
+        "x": -90.72134,
+        "y": -1.42641878,
+        "z": 27.48029
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 80.11162,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "Level2Assurance",
+      "landingPosition": {
+        "x": 52.20976,
+        "y": -1.25558579,
+        "z": -48.2316742
+      },
+      "landingRotation": {
+        "x": 270.908081,
+        "y": 7.9852767,
+        "z": 262.8746
+      }
+    },
+    {
+      "levelName": "Eve1Level",
+      "landingPosition": {
+        "x": -55.30124,
+        "y": -1.30571687,
+        "z": -24.10889
+      },
+      "landingRotation": {
+        "x": 274.7406,
+        "y": 57.31899,
+        "z": 210.9136
+      }
+    },
+    {
+      "levelName": "PortalMoonScene",
+      "landingPosition": {
+        "x": -8.887653,
+        "y": -0.8342867,
+        "z": 8.298048
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 117.999405,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "SnowMoonScene",
+      "landingPosition": {
+        "x": -15.26301,
+        "y": -5.73141861,
+        "z": 33.98682
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 106.210304,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "SierraScene",
+      "landingPosition": {
+        "x": -44.0524139,
+        "y": 3.06432867,
+        "z": -21.608511
+      },
+      "landingRotation": {
+        "x": 272.78894,
+        "y": 337.3484,
+        "z": 22.6375446
+      }
+    },
+    {
+      "levelName": "JunicScene",
+      "landingPosition": {
+        "x": -20.25371,
+        "y": -0.632433653,
+        "z": -21.23076
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "52-Desperation",
+      "landingPosition": {
+        "x": -14.7470245,
+        "y": -4.92427826,
+        "z": 11.3016758
+      },
+      "landingRotation": {
+        "x": 272.046021,
+        "y": 89.96868,
+        "z": 323.223541
+      }
+    },
+    {
+      "levelName": "Aethon",
+      "landingPosition": {
+        "x": 101.418777,
+        "y": -0.337401271,
+        "z": -21.6606
+      },
+      "landingRotation": {
+        "x": 274.292,
+        "y": 51.3494949,
+        "z": 126.921539
+      }
+    },
+    {
+      "levelName": "74-Veld",
+      "landingPosition": {
+        "x": 0.8787842,
+        "y": -8.240953,
+        "z": 109.6038
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 72.1769,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "85Reign",
+      "landingPosition": {
+        "x": -21.96454,
+        "y": -0.232247591,
+        "z": -13.27936
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "93-Thallasic",
+      "landingPosition": {
+        "x": 108.656982,
+        "y": -16.2896385,
+        "z": -28.24237
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 204.742,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "23-Symbiosis",
+      "landingPosition": {
+        "x": -144.26886,
+        "y": -0.419239044,
+        "z": -89.0737
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 295.28183,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "VolitionScene",
+      "landingPosition": {
+        "x": -2.29387975,
+        "y": 0.0350183249,
+        "z": -0.565079
+      },
+      "landingRotation": {
+        "x": 280.086731,
+        "y": 161.565155,
+        "z": 312.59375
+      }
+    },
+    {
+      "levelName": "Ferangdalion",
+      "landingPosition": {
+        "x": 9.287598,
+        "y": -0.03326416,
+        "z": -34.37671
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 193.095322,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "LevelSiabudabuExtendedCut",
+      "landingPosition": {
+        "x": 28.20929,
+        "y": -0.209284782,
+        "z": -17.2033386
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 189.128036,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "ReAdamanceScene",
+      "landingPosition": {
+        "x": -62.0731964,
+        "y": -17.4595623,
+        "z": 2.39692974
+      },
+      "landingRotation": {
+        "x": 271.352631,
+        "y": 291.8022,
+        "z": 68.19783
+      }
+    },
+    {
+      "levelName": "Level1Experimentation",
+      "landingPosition": {
+        "x": -50.2087975,
+        "y": -0.8273393,
+        "z": 18.468277
+      },
+      "landingRotation": {
+        "x": 270.418243,
+        "y": 87.18724,
+        "z": 331.838257
+      }
+    },
+    {
+      "levelName": "ReAssuranceScene",
+      "landingPosition": {
+        "x": 48.62673,
+        "y": -1.6180737,
+        "z": -48.0318756
+      },
+      "landingRotation": {
+        "x": 270.4159,
+        "y": 315.1959,
+        "z": 239.452133
+      }
+    },
+    {
+      "levelName": "ReVowScene",
+      "landingPosition": {
+        "x": 41.2708664,
+        "y": 1.23171115,
+        "z": -38.4934731
+      },
+      "landingRotation": {
+        "x": 278.396423,
+        "y": 305.681122,
+        "z": 244.299316
+      }
+    },
+    {
+      "levelName": "ReMarchScene",
+      "landingPosition": {
+        "x": 17.3463955,
+        "y": 9.526763,
+        "z": -62.6683
+      },
+      "landingRotation": {
+        "x": 275.9319,
+        "y": 319.8473,
+        "z": 288.42688
+      }
+    },
+    {
+      "levelName": "Level10Adamance",
+      "landingPosition": {
+        "x": -22.11794,
+        "y": 6.674161,
+        "z": -60.0857124
+      },
+      "landingRotation": {
+        "x": 277.598,
+        "y": 43.6674423,
+        "z": 322.1732
+      }
+    },
+    {
+      "levelName": "ReRendScene",
+      "landingPosition": {
+        "x": -52.8700829,
+        "y": -1.06458986,
+        "z": -8.85938
+      },
+      "landingRotation": {
+        "x": 272.6115,
+        "y": 199.63443,
+        "z": 160.36554
+      }
+    },
+    {
+      "levelName": "ReDineScene",
+      "landingPosition": {
+        "x": 15.5035925,
+        "y": -0.192136526,
+        "z": -27.4457359
+      },
+      "landingRotation": {
+        "x": 276.298035,
+        "y": 132.003769,
+        "z": 128.265518
+      }
+    },
+    {
+      "levelName": "ReOffenseScene",
+      "landingPosition": {
+        "x": 53.39563,
+        "y": -1.73963261,
+        "z": -6.100037
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 154.9246,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "Level8Titan",
+      "landingPosition": {
+        "x": 0.8845825,
+        "y": 0.460458279,
+        "z": -32.69965
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 241.701782,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "ReArtificeScene",
+      "landingPosition": {
+        "x": 29.5356789,
+        "y": -13.6723633,
+        "z": -4.990787
+      },
+      "landingRotation": {
+        "x": 278.431854,
+        "y": 41.03153,
+        "z": 58.63128
+      }
+    },
+    {
+      "levelName": "ReEmbrionScene",
+      "landingPosition": {
+        "x": 2.679199,
+        "y": -0.0445016623,
+        "z": -31.75259
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 209.0984,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "Egypt",
+      "landingPosition": {
+        "x": 0.3366623,
+        "y": -0.632163763,
+        "z": -30.93022
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 203.1737,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "47Chronos",
+      "landingPosition": {
+        "x": -39.84332,
+        "y": -5.743334,
+        "z": -24.7583
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "AquarScene",
+      "landingPosition": {
+        "x": -12.24048,
+        "y": -5.54768562,
+        "z": 30.33179
+      },
+      "landingRotation": {
+        "x": 270.019775,
+        "y": 81.198,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "Atlas Abyss",
+      "landingPosition": {
+        "x": -89.85672,
+        "y": 2.90033627,
+        "z": 13.52731
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "AttenuationScene",
+      "landingPosition": {
+        "x": -0.8676758,
+        "y": -0.771710634,
+        "z": 54.8811
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 88.63675,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "DetritusScene",
+      "landingPosition": {
+        "x": 16.1849613,
+        "y": -2.30318356,
+        "z": -34.8768578
+      },
+      "landingRotation": {
+        "x": 271.471527,
+        "y": 93.62194,
+        "z": 133.630859
+      }
+    },
+    {
+      "levelName": "RetinueScene",
+      "landingPosition": {
+        "x": -11.2627325,
+        "y": -1.11220777,
+        "z": -32.34097
+      },
+      "landingRotation": {
+        "x": 271.07373,
+        "y": 90.00164,
+        "z": 204.39856
+      }
+    },
+    {
+      "levelName": "LevelFremist",
+      "landingPosition": {
+        "x": 37.7419434,
+        "y": -0.196182728,
+        "z": -24.4848385
+      },
+      "landingRotation": {
+        "x": 272.10022,
+        "y": 196.965637,
+        "z": 42.8441925
+      }
+    },
+    {
+      "levelName": "LevelSiabudabu",
+      "landingPosition": {
+        "x": 35.31129,
+        "y": 0.04862809,
+        "z": -13.8633413
+      },
+      "landingRotation": {
+        "x": 279.8703,
+        "y": 339.756653,
+        "z": 202.773987
+      }
+    },
+    {
+      "levelName": "FrostfallScene",
+      "landingPosition": {
+        "x": -13.7238617,
+        "y": 6.078357,
+        "z": 19.6417027
+      },
+      "landingRotation": {
+        "x": 272.6838,
+        "y": 233.130554,
+        "z": 284.1364
+      }
+    },
+    {
+      "levelName": "CollateralScene",
+      "landingPosition": {
+        "x": 2.496187,
+        "y": -0.7223737,
+        "z": -26.87749
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 246.3676,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "CragzoneScene",
+      "landingPosition": {
+        "x": 28.81197,
+        "y": -0.465313673,
+        "z": -14.5958
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 147.8637,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "EarthboundScene",
+      "landingPosition": {
+        "x": -57.8258438,
+        "y": -1.641446,
+        "z": -8.506138
+      },
+      "landingRotation": {
+        "x": 283.181946,
+        "y": 163.214386,
+        "z": 102.9092
+      }
+    },
+    {
+      "levelName": "FrozenLakeScene",
+      "landingPosition": {
+        "x": -2.600964,
+        "y": -0.2796626,
+        "z": -31.61608
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 226.7411,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "GrayrockScene",
+      "landingPosition": {
+        "x": -36.1514244,
+        "y": 0.292056084,
+        "z": -13.85386
+      },
+      "landingRotation": {
+        "x": 276.528656,
+        "y": 55.0078163,
+        "z": 304.992218
+      }
+    },
+    {
+      "levelName": "WhiterockScene",
+      "landingPosition": {
+        "x": -31.7503529,
+        "y": 0.309246778,
+        "z": -15.3444529
+      },
+      "landingRotation": {
+        "x": 272.8903,
+        "y": 21.8005943,
+        "z": 338.199463
+      }
+    },
+    {
+      "levelName": "HydroScene",
+      "landingPosition": {
+        "x": 55.97153,
+        "y": -3.7206316,
+        "z": -40.52081
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 221.868,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "RedrockScene",
+      "landingPosition": {
+        "x": -54.4607353,
+        "y": -6.76582956,
+        "z": 1.00160575
+      },
+      "landingRotation": {
+        "x": 271.9359,
+        "y": 123.690086,
+        "z": 279.181366
+      }
+    },
+    {
+      "levelName": "RidgeScene",
+      "landingPosition": {
+        "x": -61.28201,
+        "y": -25.1182137,
+        "z": 67.12155
+      },
+      "landingRotation": {
+        "x": 271.4783,
+        "y": 5.658013,
+        "z": 58.11726
+      }
+    },
+    {
+      "levelName": "SubmersionScene",
+      "landingPosition": {
+        "x": -36.69575,
+        "y": -0.4710648,
+        "z": 18.00011
+      },
+      "landingRotation": {
+        "x": 270.019775,
+        "y": 57.8034668,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "VaporizationScene",
+      "landingPosition": {
+        "x": -28.67633,
+        "y": -1.05334067,
+        "z": -15.51147
+      },
+      "landingRotation": {
+        "x": 270.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "levelName": "rockScene",
+      "landingPosition": {
+        "x": 27.96988,
+        "y": 0.4118873,
+        "z": -20.8235779
+      },
+      "landingRotation": {
+        "x": 271.0741,
+        "y": 179.999954,
+        "z": 11.4962721
+      }
+    }
+  ]
+}

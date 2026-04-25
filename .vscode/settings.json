@@ -3,5 +3,6 @@
     "minimap.background": "#00000000",
     "scrollbar.shadow": "#00000000"
   },
-  "markdown.validate.enabled": false
+  "markdown.validate.enabled": false,
+  "editor.wordBasedSuggestions": "allDocuments"
 }

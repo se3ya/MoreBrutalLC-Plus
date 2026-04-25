@@ -1,7 +1,7 @@
 {
   "reservedSlotName": "battery",
   "slotPriority": -50,
-  "purchasePrice": 120,
+  "purchasePrice": 250,
   "requiredMods": [
     "eXish.Batteries"
   ],
