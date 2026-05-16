@@ -1,8 +1,12 @@
-- remove Sanguine?
-- replace QuotaOverhaul with CustomDeathPenalty and ChocoQuota? Much stable, same features instead of player count multiplier
-- Fix Blob spamming cobnsumption sound
 - Add more loading images to LoadingScreen
-- LLL Bundle loading blacklist
-- WeatherRegistry Bundle loading blacklist
-- test Change light fade distance in Sponge
-- Increase moon count
+- LGU Balance
+- Orange basic scan
+- Enemy text scan color
+- Inlcude in IVHelmet LCZoom fix
+- Balance puma
+
+- Burrow
+- Corrosion
+- Devastation
+- Landslide
+- Vaporization

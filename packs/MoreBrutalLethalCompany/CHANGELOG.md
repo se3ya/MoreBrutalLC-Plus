@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.imgur.com/VLxzRMi.png">
+  <img src="https://i.imgur.com/rXtSw36.png">
 </p>
 
 <p align="center">
@@ -10,23 +10,103 @@
   The format is based on <a href="https://keepachangelog.com/en/1.1.0/">Keep a Changelog</a>.
 </p>
 
-## Versioning
-
 > - **GAME** version is the base Lethal Company game version
 > - **MAJOR** version is a significant modpack change *[ new mods, new features, breaking changes ]*
 > - **MINOR** version is a small modpack change *[ hotfixes, patches, config tweaks ]*
 
-# [v81.0.0] - 2026-??-??
+# [v81.0.1] - 2026-05-11
 
-## 📋 KNOWN ISSUES
+<p align="left">
+  <img src="https://i.imgur.com/HAmib68.png" width="500">
+</p>
 
-Issues that are getting tracked for the next update
+---
 
-- [ ~ ] Some scrap may not de-spawn from moon when all crew dies
+<p align="center">
+  <i>Issues that are getting tracked for the next update.</i>
+</p>
 
-> Report bugs on [GitHub](https://github.com/se3ya/MoreBrutalLC-Plus/issues) or [Discord](https://discord.gg/Z9rUwTtUpx)
+<blockquote align="center">
+  <code>[ x ]</code> Fixed · <code>[ ~ ]</code> Maybe fixed · <code>[  ]</code> Not fixed
+</blockquote>
 
-## 🐞 FIXED
+- `[ X ]` Error on item drop
+- `[ X ]` Price of the apparatus is visible
+- `[ X ]` Emotes and suit racks are scrolling by two at a time
+- `[  ]` Refund option in store adds up every new lobby
+- `[ X ]` Constellations mixing together
+- `[ ~ ]` MissileTurrets tries to shoot through walls
+- `[  ]` Host sees Apparatus value, client doesn't
+- `[ X ]` When crouching player stands up instantly
+- `[ X ]` Some scrap may not de-spawn from moon when all crew dies
+
+> Report bugs on [Discord](https://discord.gg/Z9rUwTtUpx)
+
+<p align="left">
+  <img src="https://i.imgur.com/bi9BrgZ.png" width="400">
+</p>
+
+---
+
+- `view map` command not working
+
+
+<p align="left">
+  <img src="https://i.imgur.com/TDAcWaX.png" width="400">
+</p>
+
+---
+
+### `[ INTERIORS ]`
+
+- Castle *[ NEW ]*
+
+### `[ MODS ]`
+
+- Scoopy Castle
+
+<p align="left">
+  <img src="https://i.imgur.com/Biy3epr.png" width="500">
+</p>
+
+---
+
+- LethalCompany InputUtils: 0.4.0 → 0.7.13
+
+
+# [v81.0.0] - 2026-05-11
+
+<p align="left">
+  <img src="https://i.imgur.com/HAmib68.png" width="500">
+</p>
+
+---
+
+<p align="center">
+  <i>Issues that are getting tracked for the next update.</i>
+</p>
+
+<blockquote align="center">
+  <code>[ x ]</code> Fixed · <code>[ ~ ]</code> Maybe fixed · <code>[  ]</code> Not fixed
+</blockquote>
+
+- `[ X ]` Error on item drop
+- `[ X ]` Price of the apparatus is visible
+- `[ X ]` Emotes and suit racks are scrolling by two at a time
+- `[  ]` Refund option in store adds up every new lobby
+- `[ X ]` Constellations mixing together
+- `[ ~ ]` MissileTurrets tries to shoot through walls
+- `[  ]` Host sees Apparatus value, client doesn't
+- `[ X ]` When crouching player stands up instantly
+- `[ X ]` Some scrap may not de-spawn from moon when all crew dies
+
+> Report bugs on [Discord](https://discord.gg/Z9rUwTtUpx)
+
+<p align="left">
+  <img src="https://i.imgur.com/bi9BrgZ.png" width="400">
+</p>
+
+---
 
 - Shutter switch interact icon being blank
 - Monsters going through the ship
@@ -42,34 +122,96 @@ Issues that are getting tracked for the next update
 - Lockpicker playing drop sound when mounted to a door
 - Landmines missing their far-away explosion SFX
 - Missing quotes in *"Found journal entry:"* notification for the server host
-- Enemies clipping through ships doors?
+- Enemies clipping through ships doors
+- Presents only giving binoculars
+- Crouching instantly makes player stand up
+- Quota going up too much
+- Emotes and suit racks scrolling by two at a time
+- Several store items being 0 credits after lobby re-join
+- Keys counting as scrap and spawning in large amounts
+- Systems being duplicated on lobby re-join
+- Entrances not showing _[Near activity detected!]_ when enemies are behind doors ///
+- Stingers being unable to play
+- Speaker audio desyncing between clients at _Gordion_
+- Lights for several tiles disable if breaker is disabled
+- Commands `extend deadline`, `scrap insurance` and `contracts` not working
 - Maneater showing collider mesh when dropping them
 - Static electricity particle on stormy weather rendering incorrectly from specific camera angles
 - Shy Guy minor fixes
 
-## 🔧 CHANGED
+<p align="left">
+  <img src="https://i.imgur.com/8ysUA07.png" width="500">
+</p>
 
-### ⚙️ TECHNICAL
+---
+
+### `[ TECHNICAL ]`
 
 - Updated _CustomLogoForMBLCP_ and _MoreBrutalLCPosters_ logo
+- Updated _README_
+- Added to _README_ customization, known issues and license sections
 
-### ✨ GAMEPLAY & MECHANICS
+### `[ GAMEPLAY & MECHANICS ]`
 
-- Ship doors closes after lever is pulled
-- Ship windows shutters close when the ship doors close on departure
-- Replaced vanilla player cams on radar with body cam ***
+- Ship doors close after the lever is pulled
+- Ship window shutters close when the ship doors close on departure
 - Terminal command 'simulate' provides currently routed moon information if no level is provided
-- After several days navigation malfunction may happen
-- Vanilla utility slot was disabled
+- Navigation malfunction can randomly occur after several days
+- Vanilla utility slot has been disabled
+- Furniture rotation mode uses hold left click + mouse movement instead of *[ Q/E ]* keys
+- Placing furniture happens with left click instead of *[ B ]* key
+- Furniture snapping can be increased or decreased with *[ Q/E ]* keys
+- Spike trap alert sound is now muted when the trap is disabled
+- Leaving the moon early requires 60% of players to vote
+- Balanced some vanilla scrap values and weights
+- Jetpack _warms up_ to full speed after first taking off
+- Jetpack has variable speed/handling based on weight
+  - Heavy weights significantly drop speed, but make it easier to control directional movement
+- Re-balanced tiers
+- Replaced _always_ keep teleport player held item with an upgrade - __Secure Carry__
+  - Level 1 - Lets you keep basic stuff, _Keys, Walkie-talkies, Spray paint, TZP-inhalant, Weed killer and Flashlights_
+  - Level 2 - Lets you keep weapons, _Shovels, Stun grenade and Zap gun_
+  - Level 3 - Lets you keep expensive gear, _Belt bag, Radar-booster, Lockpicker, Extension ladder and Jetpack_
 
-### 📊 QUOTA
+### `[ QUOTA ]`
 
--
+- Scrap no longer disappears from the ship on crew wipe
+- Starting quota increased to _475_ credits
+- Quota base increase set to _165_
+- Curve sharpness set to _8.2_ _[ growth is smoother and less spikey ]_
+- Quota randomness variance reduced to _0.4_ _[ more consistent difficulty ]_
+- Quota increases by _8%_ for each dead player
+- Credits get reduced by _15%_ for each dead player
+- Recovering body forgives _65%_ of credit penalty and _80%_ of quota penalty
+- Max credit penalty on crew wipe increased from _20%_ to _35%_
+- Max quota penalty on crew wipe reduced from _40%_ to _35%_
+- Additional scrap value above quota partially carries over to the next quota _(25%)_
+- Added lategame quota control - _Final level 9500_, _Final increase 2100_ and _Quota cap 18000_
+- Scrap loss on crew wipe increased _(35% safe chance, 30% lose chance, up to 10 items)_
+- Equipment loss on crew wipe increased _(35% chance, up to 2 items)_
+- Added per-constellation deadline settings
+- Late systems now have tighter deadlines
 
-### 📈 MOONS & SYSTEMS
+### `[ BUY RATE ]`
+
+- Re-balanced Company buy rates
+- Daily buy rate now rolls between _40%_ and _85%_ 
+- Last day pays between _90%_ and _105%_
+- Jackpot chance bumped to _3%_ on the last day, paying _130%_ to _160%_
+
+### `[ OXYGEN ]`
+
+- Re-balanced oxygen
+- Increased oxygen drain outside and inside the facility
+- Running now drains oxygen faster
+- Increased fear and underwater oxygen drain
+- OxyBoost was buffed and made more worth buying
+- Ship auto-fill now only works when ship doors are closed and refills slower
+
+### `[ MOONS & SYSTEMS ]`
 
 - Moons rotation is shuffled daily
-  - Each system has its default moon + 2 random free moons + 2 random paid moons every new day
+  - Each system has its default moon + 2 random free moons + 1 random paid moons every new day
   - Land on a free moon twice and its permanently discovered and won't be re-shuffled
   - Land on a paid moon once and its permanently discovered
 - Discovering systems
@@ -81,50 +223,132 @@ Issues that are getting tracked for the next update
   - _Travel Discoveries_ - _50%_ chance when routing to a paid moon to discover a new moon in the same system
   - _Quota Discoveries_ - meeting quota can reveal new moons or entire systems permanently
 - Moon prices re-balanced across all systems to work with the new rotation
+- Moons have been re-assigned to their systems
 - Paid moons have a chance to go on sale after each quota
 - Embrion and Artifice are story-locked
+- The Company lightning is darker
+- Re-named ZYN-81 to ZYN-300
 
-### 🌙 MOONS
+### `[ VISUAL & AUDIO ]`
 
--
+- Improved scanner smoothness and performance
 
-### 🌨️ WEATHER
+### `[ CRUISER ]`
 
--
+- Costs $300 credits
+- Reduced HP regeneration to make _Weed killers_ more necessary
+- Increased damage from collisions with enemies and walls
+- Takes damage from crashing into trees
+- Items on top of the _Cruiser_ or in the back with the door open are lost when entering orbit
 
-### 👾 ENEMIES
+### `[ ENEMIES ]`
 
-- Reduced chance of second Hygrodeer spawning after first spawned
+- Reduced chance of second Hygrodeer spawning after first spawn
 - The Cabinet
   - Is stunnable
   - Is immune to damage when hidden
 
-### 🎨 VISUAL & AUDIO
+### `[ WEATHER ]`
 
-- Improved scanner smoothness and performance
+- _Black fog, Darkness_ and _Blackout_ - increased spawn chance for _Shy guy, Locker, Barber, Coil-head_ and _Bracken_ enemies
+- _Cloudy_ - decreased spawn chance for _Circuit Bees_ and _Giant kiwi_ enemies
+- _Earthquakes_ - increased spawn chance for _Earth leviathans_ enemy
+- _Eclipsed_ - increased spawn chance for _Stop sign, Yield sign_ and _Homemade flashbang_ scrap
+- _Flooded_ - removed _Circuit Bees_ and _Baboon Hawk_ enemies
+- _Hurricane_ - removed _Circuit Bees, Manticoil, Roaming Locust_ and _Baboon Hawk_ enemies
+- _Foggy_ - increased spawn chance for _Girl, Cabinet, Butler, Barber, Shy guy_ and _Locker_ enemies
 
-### 🏠 INTERIORS
+### `[ INTERIORS ]`
 
--
+- Re-balanced interior assignments and occurring weights for all moons
+- Balanced all interior sizes
+- _Deepmines_ and _Mineshaft_ have an increased spawn chance for _Maneater_
+- _Mansion_ and _Raven_ have an increased spawn chance for _Girl, Cabinet, Butler, Barber, Nutcracker_ and _Jester_
+- Several interiors have an increased spawn chance for their unique scrap
 
-## 🌟 ADDED
+<p align="left">
+  <img src="https://i.imgur.com/TDAcWaX.png" width="400">
+</p>
 
-### ✨ GAMEPLAY & MECHANICS
+---
+
+### `[ GAMEPLAY & MECHANICS ]`
 
 - Clock to death screen
+- Replaced vanilla player cams with BodyCam
+- Toggleable first person view when spectating - *[ P ]*
+- Third person camera zooming using scroll wheel when spectating
+- 1% chance of being blown up when using annoying scrap [ clown horn, hairdryer, remote, ... ]
+- Dead body spawns next to the store scrap
+- Some enemies can trigger landmines, be targeted by turrets and sink into quicksand
+- Players are able to pick up any items before round start
+- Hallucinations inside the facility, as insanity grows, players start hearing things that aren't there
 
-### 🎨 VISUAL & AUDIO
+### `[ VISUAL & AUDIO ]`
 
 - Rain drops on visor during the hurricane weather
 - Unique Rubber Duck, Cookie mold pan and Perfume bottle grab and drop sound
 - Body *jitters* when players are killed by a lightning strike due to the electric current
+- Ability to scan players
+- Ability to scan dropships
+- More cosmetics
+- New menu sounds
+- 14 new menu music themes
+- New landmine sounds
+- New _Old Bird_ sounds
+- Jester theme music
+- New All players dead sound
+- New footstep sounds
+- New ship sounds
+  - Ambient
+  - Quota
+  - Suit changing
+  - Scrap collecting
+- New weather sounds
+  - Thunder
+  - Rain
+  - Lightning strike
 
-### 🌙 MOONS
+### `[ WEATHERS ]`
 
--
+- Gusty
 
-### 🏠 INTERIORS
+### `[ MOONS ]`
 
+- Incalescence
+- Boreal
+- Precipice
+- Calamitous
+- Verdance
+- Rampart
+- Taldor
+- Ascension
+- Dejection
+- Row
+- Kiln
+- Hollowed
+- Allure
+- Thrive
+- Kanie
+- Bilge
+- Phobos / Deimos
+- Fracture
+- Symbiosis
+- Tauralis
+- Sludgeld
+- Valunarion
+- Deluge
+- Harvest
+- Incineration
+- Ignition
+- ???
+- ???
+
+### `[ INTERIORS ]`
+
+- Castle *[ NEW ]*
+- Abandoned Factory *[ NEW ]*
+- Drains *[ NEW ]*
 - Liminal House
   - New tile
   - New variations of some tiles
@@ -137,14 +361,37 @@ Issues that are getting tracked for the next update
   - New props
   - New tile
 
-### 🗑️ SCRAP
+### `[ STORE ]`
+
+- Emergency Flare
+- Pile of Glowsticks
+- Scanvan
+
+### `[ SCRAP ]`
 
 - Coffee pot
 - Diamond
 - Frying pan
 - Pizza box
+- Industrial Flashlight
+- Abandoned Flashlight
+- Abandoned Walkie-talkie
+- Flip Lighter
+- Cat
+- Body pillow
+- Bonsai tree
+- Coffee creamer
+- Egg timer
+- Fire extinguisher
+- Fire truck
+- Fuzzy dice
+- Lava lamp
+- Light bulb
+- Power drill
+- Rocking horse
+- Watering can
 
-### 🪑 FURNITURE
+### `[ FURNITURE ]`
 
 - Blue carpet
 - Red carpet
@@ -153,49 +400,115 @@ Issues that are getting tracked for the next update
 - Cabinet
 - Freezer
 - Drink freezer
+- Hookah
 
-### 🛠️ MODS
+### `[ MODS ]`
 
-- OpenBodyCams
+- ScannableLuck
 - Generic Interiors
   - Generic Doorscript
-- ScannableLuck
+- OpenBodyCams
 - MonkeyInjectionLibrary
-- LethalMoonUnlocks
-- BepInEx MonoMod Debug Patcher *[ temporaririly ]*
-- BetterSprayPaintForkColors
-- DunGenReferenceFixer
-- ReservedCustomPosition
-- SpawnCycleFixes
-- WeatherInjector
-- Shisha
 - LethalPresents *[ by SoftDiamond ]*
+- SpawnCycleFixes
+- ReservedCustomPosition
+- DunGenReferenceFixer
+- LethalMoonUnlocks
+- BarberMaterialTweaks
+- AlwaysPickup
+- Mirage v81
+- Vandal Electronics Scanvan
+  - Scandals Tweaks
+- FairAI
+- WaterGunLib
+- NeedyCats
+- Remnants
+- abandonedcompanyassetsfork
+- KarmaForBeingAnnoying
+- HookahPlace
+- BasedDecorPlacement
+- BetterSpectate
+- DestroyItemInSlotFix
 - MissileTurretsFork *[ by Nikki ]*
+- TerminalConflictFix
+- Valunarion
+- Sludgeld
+- Tauralis
+- Observer
+- BetterSprayPaint v80Fix
+- 23 Symbiosis
+- 412Fracture
+- 3Bilge
+- 69 Kanie
+- Kenjis Moons
+- Rampart
+- Verdance
+- Calamitous
+- Precipice
+- Boreal
+- Incalescence
+- Matty Fixes Experimental
+- NightVisionConfig
+- MajorityVote
+- V70PoweredLights Fix
+- InteriorFogConfig
+- MineshaftRescaler
+- CompanyMoonConfig
+- LethalCompletionist
+- Abandoned Factory
+- PowerSounds
+- SchizophreniaMod
+- Scoopy Castle
+  - DungeonGenerationPlus
+- Kenjis Weathers
+- Configurable Quota
+- Moon Scrap Limits Patch
+- LoadingInfo
+- FontUpdate
 
-## 🗑️ REMOVED
+<p align="left">
+  <img src="https://i.imgur.com/8C50egz.png" width="500">
+</p>
 
-### 🪑 FURNITURE
+---
+
+### `[ FURNITURE ]`
 
 - Bed
 
-### 🌘 MOONS
+### `[ MOONS ]`
 
 - Release
 - Extort
+- Gratar
+- Repress
+- Calist
+- Alcatras
+- Asteroid-13
+- Hyx
+- Motra
+- Polarus
+- Aquatis
+- Celest
+- Vacuity
+- Forsaken
+- Sanguine
+- Tunere
+- Ichor
+- Olympus
+- Atlas Abyss
 
-### 🚫 MODS
+### `[ MODS ]`
 
 - CodeRebirthLib
 - AntiFurnitureLuck
 - Release
 - Extort
-- WesleysInteriors
 - LethalPresents *[ by Azim ]*
 - Dusted
 - EnhancedLockpicker
-- EnhancedRadarBooster ***
+- EnhancedRadarBooster
 - LLLHotreloadPatch
-- RebalancedMoonsBeta
 - Loadstone
 - SnowyWeeds
 - YesFox
@@ -206,43 +519,69 @@ Issues that are getting tracked for the next update
 - V73dcfix
 - VentSpawnFix
 - RebalancedMoonsBeta
-- DungeonGenerationPlus
 - WesleysInteriors
 - LethalElementsTheta
-- BetterSprayPaint ***
-- RadioFurnitureFixed ***
-- Biodiversity ***
+- RadioFurnitureFixed
+- Biodiversity
 - Mirage
-- LoadingTips ***
-- ClaySurgeonOverhaul ***
+- SnatchinBracken
+- Scary Coil Head
 - CompanyWeathers
 - ScannableTools
 - LethalLevelLoaderUpdated
+- CoronerMimicsFixEnUS
+- Matty Fixes
+- True Darkness client
+- Custom Host Voting Power
+- CustomStoryLogs
+- Whiteboard
+- Menu Music Control
+- QuotaOverhaul
+- CustomDeathPenalty
+- ClassicSuitRestoration
+- WaterAssetRestorer
+- LCLocalFixes
+- DissonanceVoiceSettings
+- BuyRateSettings
+- BagConfig
+- EnemySkinRegistry
+- EnemySkinKit
+- Wesleys Skins
+- MoonEnemyVariety
+- ColorfulEnemyVariety
+- LCCutscene
+- SoftMaskKiller
 - MissileTurretsFork *[ by HQ_Team ]*
 
-## 📦 MOD UPDATES
+<p align="left">
+  <img src="https://i.imgur.com/Biy3epr.png" width="500">
+</p>
+
+---
 
 - BepInEx: 5.4.2100 → 5.4.2305
 - MonoDetour BepInEx 5: 0.7.7 → 0.7.13
 - MonoDetour: 0.7.7 → 0.7.13
+- DetourContext Dispose Fix: 1.0.7 → 1.0.9
+- AutoHookGenPatcher: 1.0.9 → 1.1.1
 - LCUltrawide Community: 1.2.2 → 1.3.1
-- LunarConfig: 0.1.13 → 0.3.13
+- LunarConfig: 0.1.13 → 0.3.14
 - MoreCompany: 1.12.0 → 1.14.0
 - LethalLevelLoader: 1.4.11 → 1.6.9
 - LethalConstellations: 0.3.2 → 0.3.3
-- DawnLib: 0.5.8 → 0.9.10
+- DawnLib: 0.5.8 → 0.9.19
 - LethalLib: 1.1.1 → 1.2.0
-- loaforcsSoundAPI: 2.0.8 → 2.0.10
+- loaforcsSoundAPI: 2.0.8 → 2.0.11
 - MrovLib: 0.3.7 → 0.4.3
-- JLL: 1.9.9 → 1.10.0
+- JLL: 1.9.9 → 1.10.1
 - LethalCompany InputUtils: 0.7.12 → 0.7.13
-- CustomStoryLogs: 1.5.3 → 1.6.0
+- CustomStoryLogs: 1.5.3 → 1.6.0 ///
 - StaticNetcodeLib: 1.1.1 → 1.2.0
 - LethalNetworkAPI: 3.3.2 → 3.3.3
 - itolib: 0.6.1 → 0.9.3
 - Beanie Lib: 1.0.2 → 1.0.8
-- LegaFusionCore: 1.0.3 → 1.0.9
-- CullFactory: 2.0.3 → 2.0.7
+- LegaFusionCore: 1.0.3 → 1.1.1
+- CullFactory: 2.0.3 → 2.0.8
 - WeatherRegistry: 0.7.5 → 0.8.8
 - WeatherTweaks: 1.1.7 → 1.1.10
 - Oxygen: 1.6.5 → 1.6.7
@@ -253,59 +592,60 @@ Issues that are getting tracked for the next update
 - Interactive Terminal API: 1.2.0 → 1.3.3
 - AdditionalNetworking: 2.3.1 → 2.4.1
 - EntranceTeleportOptimizations: 2.3.1 → 2.3.6
-- LethalPerformance: 1.2.1 → 1.2.4
+- LethalPerformance: 1.2.1 → 1.2.5
 - LobbyImprovements: 1.1.2 → 1.1.3
+- SimpleCompany: 1.0.0 → 2.0.4
 - TooManySuits: 2.0.2 → 2.0.3
 - ReservedItemSlotCore: 2.0.53 → 2.0.55
 - Combined Weather Toolkit: 1.0.2 → 1.1.2
 - Universal Radar: 1.2.3 → 1.2.4
-- ScienceBird Tweaks: 4.5.0 → 4.7.1
+- ScienceBird Tweaks: 4.5.0 → 4.7.3
 - Lategame Upgrades: 3.12.9 → 3.13.1
 - NicheTweaks: 0.2.3 → 0.4.1
-- V73dcfix: 1.0.5 → 1.0.6
-- StarlancerAIFix: 3.11.1 → 3.13.0
-- EnemySoundFixes: 1.8.5 → 1.9.5
-- ReverbTriggerFix: 0.3.0 → 0.3.1
+- StarlancerAIFix: 3.11.1 → 3.13.1
+- EnemySoundFixes: 1.8.5 → 1.9.9
 - MaskedInvisFix: 0.0.2 → 0.0.3
 - LethalError: 1.0.3 → 1.0.4
-- PathfindingLagFix: 2.2.5 → 2.3.0
+- PathfindingLagFix: 2.2.5 → 2.4.0
 - LethalFixes: 1.2.8 → 1.3.3
 - Matty Fixes: 1.1.35 → 1.1.40
-- ButteryFixes: 1.15.6 → 1.17.4
-- ButteRyBalance: 0.3.2 → 0.4.1
+- ButteryFixes: 1.15.6 → 1.17.8
+- ButteRyBalance: 0.3.1 → 0.5.0
 - BarberFixes: 1.3.0 → 1.3.1
 - WeedKillerFixes: 1.1.2 → 1.2.0
-- SpiderPositionFix: 1.5.3 → 1.6.2
+- SpiderPositionFix: 1.5.3 → 1.6.3
 - JetpackFixes: 1.5.4 → 1.6.1
-- MaskFixes: 1.5.2 → 1.6.0
+- MaskFixes: 1.5.2 → 1.6.2
 - MeleeFixes: 1.4.1 → 1.5.0
 - ChuxiaFixes: 1.0.3 → 1.0.6
 - SmartEnemyPathfinding: 0.0.3 → 0.0.4
-- ReverbTriggerFix: 0.3.1 → 0.4.0
+- RevisitStingers: 1.3.0 → 1.3.1
+- ReverbTriggerFix: 0.3.0 → 0.4.0
 - LCLocalFixes: 0.0.2 → 0.0.5
 - FinallyCorrectKeys: 1.6.0 → 1.6.1
 - CruiserImproved: 1.5.2 → 1.5.4
 - Cruiser Additions: 1.4.9 → 1.4.10
-- GoodItemScan: 1.14.0 → 2.0.3
+- GoodItemScan: 1.14.0 → 2.1.0
 - TwoRadarMaps: 1.6.4 → 1.6.5
+- JetpackWarning: 2.2.0 → 2.3.0
 - BetterPaycheck: 0.9.0 → 0.9.1
 - BetterEXP: 2.6.2 → 3.0.1
-- Chameleon: 2.2.1 → 2.3.3
-- ButteRyBalance: 0.3.1 → 0.3.2
+- Chameleon: 2.2.1 → 2.3.4
 - Advance Features: 1.1.0 → 1.2.0
 - BetterLaddersFixed: 2.1.0 → 2.2.0
 - ColorfulEnemyVariety: 2.3.2 → 2.4.1
-- CoronerIntegrations: 0.3.1 → 0.5.1
+- CoronerIntegrations: 0.3.1 → 0.6.0
+- CoronerMimics: 1.0.1 → 1.0.2
+- Coroner: 2.3.0 → 2.4.1
 - Beanies Furniture: 1.0.0 → 1.0.4
-- TerrasScrap: 1.0.2 → 81.1.1
-- SnatchinBracken: 1.5.2 → 1.5.3
+- TerrasScrap: 1.0.2 → 81.2.2
 - Mimics: 2.7.2 → 2.7.4
 - Locker: 1.6.2 → 1.6.3
 - Peepers: 1.0.4 → 1.0.5
-- TheDoctor: 1.0.4 → 1.0.5
+- TheDoctor: 1.0.4 → 1.0.6
 - Scopophobia: 1.3.1 → 1.3.4
 - ToilHead: 1.8.0 → 1.9.1
-- TheCabinet: 1.9.2 → 1.12.0
+- TheCabinet: 1.9.2 → 1.12.1
 - LethalAnomalies: 0.3.0 → 0.3.1
 - QuotaOverhaul: 1.4.5 → 2.0.2
 - TooManyEmotes: 1.3.13 → 1.3.15
@@ -314,15 +654,16 @@ Issues that are getting tracked for the next update
 - LethalHUD: 1.3.9 → 1.5.2
 - Lethal Nuke: 1.0.3 → 1.1.4
 - Lethal Doors Fixed: 1.2.0 → 1.2.1
-- CustomPosters: 4.0.2 → 4.0.3
+- CustomPosters: 4.0.2 → 4.0.4
 - Mirage: 1.28.0 → 1.29.0
 - NaturalHealthRegen: 0.1.2 → 1.0.1
 - Malfunctions: 0.10.2 → 1.10.3
 - Ardies Ambient Music: 4.1.2 → 5.0.2
+- LoadingTips: 1.1.7 → 1.2.0
 - GamblingMachineAtTheCompanyFork: 1.2.0 → 1.3.0
 - SelfSortingStorage: 1.4.5 → 1.5.1
 - DimmingFlashlights: 0.0.3 → 0.0.6
-- UniqueItemSounds: 0.1.4 → 0.1.8
+- UniqueItemSounds: 0.1.4 → 0.1.9
 - Natural selection: 0.4.14 → 0.4.19
 - UpturnedVariety: 2.1.0 → 2.3.0
 - ShipWindows: 2.6.0 → 2.9.0
@@ -330,7 +671,7 @@ Issues that are getting tracked for the next update
 - Company Globes: 1.0.4 → 1.1.1
 - LethalPhones: 1.3.19 → 1.3.23
 - GeneralImprovements: 1.4.15 → 1.5.5
-- Fairer Fire Exits: 1.2.1 → 1.3.0
+- Fairer Fire Exits: 1.2.1 → 2.0.0
 - Advance Features: 1.2.0 → 1.3.0
 - LoadingScreen: 1.1.2 → 1.1.4
 - ReservedSlotPositionsForInventory: 1.0.1 → 1.0.6
@@ -338,7 +679,6 @@ Issues that are getting tracked for the next update
 - WiseWeapons: 1.3.6 → 2.1.0
 - CruiserImproved: 1.5.4 → 1.5.5
 - AmbientPackMusicFork: 1.0.1 → 1.1.0
-- LethalElementsTheta: 1.3.2 → 1.3.5
 - MrovWeathers: 0.0.6 → 0.0.7
 - Wesleys Weathers: 1.2.8 → 1.2.11
 - Wesleys Ememy Variants: 1.2.1 → 1.2.3
@@ -348,14 +688,14 @@ Issues that are getting tracked for the next update
 - Liminal House: 1.1.3 → 1.1.4
 - RuntimeIcons BetterRotations: 1.1.9 → 1.2.1
 - Generic Scraps: 1.0.1 → 1.0.2
-- Generic Moons: 8.0.1 → 9.1.1
+- Generic Moons: 8.0.1 → 9.2.2
 - Wither: 2.0.2 → 2.0.3
-- 28Terra: 1.0.3 → 1.3.0
+- 28Terra: 1.0.3 → 1.3.1
 - 01 Lua: 1.1.1 → 1.2.4
 - 42 Kiri: 1.1.8 → 1.2.4
 - Mazon moon: 2.4.0 → 2.5.1
-- 615Noctis: 0.2.3 → 1.0.5
-- 47Chronos: 2.0.2 → 2.3.4
+- 615Noctis: 0.2.3 → 1.0.6
+- 47Chronos: 2.0.2 → 2.3.5
 - Aquatis: 2.2.7 → 2.2.8
 - Sanguine: 1.0.3 → 1.0.4
 
@@ -2642,562 +2982,3 @@ _(Old version → New version)_
 - StarlancerAIFix: 3.8.4 → 3.9.0
 - MrovLib: 0.2.23 → 0.2.24
 - Mirage: 1.19.0 → 1.19.1
-
-# MoreBrutalLethalCompanyPlus *v6.0.0*, *"OVERHAUL, IMPROVEMENTS, FIXES"*
-
-## 🔧 FIXES
-
-- Fixed an issue with *WeatherRegistry* incorrectly restoring weathers after a lobby reload.
-- Fixed the bug with *Forest Keepers* instantly chasing players.
-- Fixed items growing when dropped in the Cruiser and shrinking when dropped in the elevator.
-- Fixed red foliage turning green.
-- Fixed apparatus.
-- Fixed a potential issue with placing items on shelves in multiplayer.
-- Fixed a vanilla bug that allows you to pick up items immediately after placing an item into a container.
-- Fixed ships door window not closing when landing.
-- Fixed player dying when entering *Storage Complex* fire exits.
-- Fixed items from new buyable cupboards jittering on landing by adding some patches to keep the cupboard parented to the ship.
-- Fixed an unintended side effect where players being converted to masked would drop their items.
-- Fixed lights on some moons disappearing based on camera angle after items have been rendered.
-- Fixed maneaters not crying when they spawn outside on modded moons.
-- Fixed reverb triggers to cover the ship entirely consistently across all vanilla moons.
-- Fixed up reverb and optimized triggers/ambience on various moons.
-- Fixed incorrect terrain collision on Offense.
-- Fixed Walker doors causing soft locks under different circumstances.
-- *And more.*
-
-## ✨ NOTABLE CHANGES
-
-- Significantly increasing performance.
-  - Complete re-write of Lethal Company's main outline/posterization shader.
-  - Reworked how Lethal Company hooks into Unity's Input System that fixes various input lag issues, including one where input lag would increase every time you loaded/started a game.
-  - Some memory leak fixes.
-  - Limited cosmetics that can player equip to 15.
-- Added caching of AudioListener, DepositItemsDesk, BeltBagInventoryUI, VehicleController, PlayerVoiceIngameSettings objects and ES3 files.
-- Loading screen will show up after launching the modpack.
-- Improved connection to the lobby.
-- Masked enemies can't no more come back alive multiple times.
-- Improved Spider movement.
-- Balanced Kidnapper Fox.
-- Added more emotes.
-- Infestations no longer override a moon's power level, and enemy spawn chances are no longer equalized.
-- Disabled Butler infestations.
-- Reduced Zap Gun's battery back to 22 seconds.
-- Balanced *Toil-Head, Toil-Masked, Toil-Slayer, Manti-Slayer, Manti-Toil* and *Slayer-Masked* spawn chances.
-  - Increased the duration of the turret being disabled from the terminal from 7 > 10 seconds.
-- Reduced blood scale/pools.
-- *Mimics* are now harder to spot.
-- Ghost Girl no more isolates player.
-- Bracken will insta-kill player if they are alone.
-- Player now can push each other.
-- Players will get 20 credits when everybody will be alive after surviving the round.
-- Increased StarShip delivery sound effects volume to 150%.
-- Yippee is no more making any other strange voices, other than *yippeeeeeeeee*.
-- Significantly reduced entrance control system chance to activate on given day from 15% to 2%.
-  - Blacklisted moons: *Wither, Vow, Experimentation, Adamance, Integrity, Brutality*.
-- Bracken will not be angered if apparatus will be taken.
-- Puffers will be less aggressive and territorial.
-- Doors will be destroyed when breaking them with the shovel or other instead of just opening.
-- Increased additional cupboard price from 100 to 180 credits.
-- Adjusted darkness and scan visibility slightly.
-- Added a throwable Frisbee scrap.
-- Changed main menu music to my custom.
-- Added a setting in main menu which allows to change main menu music *[ space ]* sound volume.
-- Added LethalPhones back.
-  - Personal Phone charms and skins can be also changed in main menu.
-- After each round player will see his stats which can be seen in [Splitstats](https://splitstats.io/).
-- Improved shotgun sound.
-- Added possibility of weathers being on The Company moon.
-  - Dust Clouds, Rainy, Foggy, Blackout.
-- Health will regenerate slightly slower outside and inside the ship.
-  - Increased regeneration limit.
-- Charger:
-  - Chance of explosion was increased from 50% > 60%.
-  - Range of explosion was increased from 4 to 5 meters.
-  - Damage from explosion was increased from 20 > 60.
-  - Enemy damage from explosion was increased from 2 > 3.
-  - Reduced the chance of supercharge from 25% > 20%.
-- Adjusted combined weather scrap amount multiplier.
-- Replaced the Criss Cross emote with Rat Dance, and added the rat dance music.
-- Added a kill bind, *[ Backspace ]*.
-  - Helpful if the player is stuck somewhere.
-- Added a new ship upgrade, *Smart Cupboard*, can be bought in the store for 300 credits.
-  - On the side of the *Smart Cupboard* can be found a storage box where players can store their tools and even scrap items.
-  - The storage will sort these tools and put them on display in specific sections.
-  - If player stores multiples copies of the same item, the storage will have them all 'visually' stacked on top of each other.
-  - If player stores a big item in the storage box, it will be rescaled to fit nicely in the cupboard.
-- Added a Text-To-Speech feature.
-  - Players now can talk through Text-To-Speech *[ TTS ]* by using the in-game chat.
-- Clock scrap will show the actual in-game day time.
-  - Will show real life time when in orbit or The Company.
-- Slightly increased the rollover.
-
-### ⚖️ MODPACK BALANCE OVERHAUL
-
-- Fixed scrap value multipliers.
-- Balanced the minimum and maximum amount for turrets, mines and traps.
-- Added 12 custom moons to the systems.
-- Slightly increased chance for Battery to spawn.
-- Balanced player count scaling.
-- Assigned/increased some scrap items to the interiors they match their theme:
-  - Haunted Mansion:
-    - Antique Furniture.
-  - Mineshaft:
-    - Mining tools.
-	- Explosives.
-	- Rocks.
-  - Toy Store:
-    - Toys.
-  - Storehouse:
-    - Crates.
-	- Damaged Shipping Containers.
-  - Sector Beta:
-    - Advanced Tech Debris.
-	- Experimental Components.
-	- Documents.
-  - Castellum Carnis:
-    - Bone Fragments.
-	- Ritual Objects.
-	- Bloody Tools.
-  - Backrooms:
-    - Posters.
-  - Art Gallery:
-    - Shattered Sculptures.
-	- Paintings.
-  - SubSystems:
-    - Oil.
-	- Conduit Pieces.
-  - Storage Complex:
-    - Metal Scrap.
-	- Crates.
-- Edited all moons description:
-  - Fixed some grammar issues and added additional information.
-- Increased the scrap list than can spawn on moons.
-  - Possible issue fix where 4 or more same scrap spawn.
-- Balanced interior chances on moons.
-  - *Haunted Mansion* is mostly on snowy moons.
-  - *Toy Store* is on more moons but with less chance.
-  - *SectorBeta* is on much more interiors than just only 1 moon.
-  - *Castellum Carnis* is on slightly less moons but has the increased chance.
-  - *Art Gallery* has smaller occurring chance.
-  - *Atlantean Citadel Aquatic* is on more moons and slightly increased chance.
-  - *Rubber Room* is on slightly less moons but has the increased chance.
-  - *SubSystems* and *Storage Complex* were removed from starting moons as they are too big for the starting moons and overrall have slightly reduced chance.
-
-### 🏆 TIERS
-
-- The higher the Tier, the more amount of enemies, scrap amount and hazards amount.
-- Starting moons have higher scrap value multiplier to compensate the small scrap amount.
-  - Scrap value multiplier will slowly decrease in higher Tiers because of the significantly increased scrap amount.
-- Moons with Tier B**+** and above will have a price because of the increased scrap multiplier and scrap amount on **+** tiers.
-- **S** and next Tiers will have spawn speed slightly decreased.
-- **S** and next Tiers will have combined weathers.  *[ i hope ]*
-- Starting Tiers will have less dangerous weathers.
-- **F**:
-  - Loot - Minimal.
-  - Threats - Minimal.
-- **D**:
-  - Loot - Low.
-  - Threats - Minimal.
-- **D+**:
-  - Loot - Low+.
-  - Threats - Low.
-- **C**:
-  - Loot - Moderate.
-  - Threats - Moderate.
-- **C+**:
-  - Loot - Moderate+.
-  - Threats - Moderate+.
-- **C++**:
-  - Loot - Moderate++.
-  - Threats - Moderate++.
-- **B**:
-  - Loot - Good.
-  - Threats - Noticable.
-- **B+**:
-  - Loot - Good+.
-  - Threats - Noticable+.
-- **B++**:
-  - Loot - Good++.
-  - Threats - Noticable++.
-- **A**:
-  - Loot - High.
-  - Threats - High.
-- **A+**:
-  - Loot - High+.
-  - Threats - High+.
-- **A++**:
-  - Loot - High++.
-  - Threats - High++.
-- **S**:
-  - Loot - Excellent.
-  - Threats - Extreme.
-- **S+**:
-  - Loot - Excellent+.
-  - Threats - Extreme+.
-- **S++**:
-  - Loot - Excellent++.
-  - Threats - Extreme++.
-- **SS**:
-  - Loot - Superior.
-  - Threats - Brutal.
-- **SS+**:
-  - Loot - Superior+.
-  - Threats - Brutal+.
-- **SS++**:
-  - Loot - Superior++.
-  - Threats - Brutal++.
-- **SSS**:
-  - Loot - Ultimate.
-  - Threats - Hellish.
-- **???**:
-  - Loot - Unpredictable.
-  - Threats - Unknown.
-
-### 🚀 UPGRADES
-
-- Increased the chance of upgrades going on sale.
-- Upgrades will be randomized per quota:
-  - 8 upgrades will always appear in the store.
-  - Purchased upgrades will be always shown.
-- Changed some upgrades names to be more understandable.
-- Removed **Efficient Engines** upgrade as the prices for the moons are not too big.
-- Removed **Locksmith** upgrade.
-- Added **Trap Disabler** upgrade.
-  - Will explode the traps.
-- Slightly increased the **Beekeeper** upgrade price.
-- Slightly increased the **Barber Glasses** upgrade price.
-- Increased the **Firepower** upgrade price.
-- Increased the **Life Insurance** upgrade price.
-- Reduced the **Drop Pod Thursters** upgrade price.
-- Reduced the **Quick Transmitter** upgrade price.
-- Reduced the **Scrap Value Boost** upgrade price.
-
-### 👾 ENHANCED ENEMIES
-
-- All enemies will display a rank based on their dangerousness when player scans them.
-- Some enemies can be picked up and sold:
-  - Tulip snake, Hoarding bug, Centipede, Peeper.
-
-### 📞 PHONES CHANGES
-
-- Added phone upgrade back.
-- Increased Phones price from 200 > 340 credits.
-- Increased Phonebook price from 10 > 15 credits.
-- Increased Swichboard price from 450 > 700 credits.
-
-### 🚙 CRUISER CHANGES
-
-- Added light and light switch in the cruiser storage area.
-- Cruiser scan node is no more visible through walls.
-
-### 🌕 MOON IMPROVEMENTS
-
-- Assurance main entrance pipe parkour to fire exit can now show up randomly.
-- Blocked Vain Shrouds near the ship on all vanilla moons.
-- Fixed cliff stretching on vanilla moons.
-- Vanilla moons have had their lighting touched up and most lights on the outside are now connected to the buildings main power.
-- Vow now has a rope ladder on the dam that must be released from the top to become accessible for the rest of the round.
-- Artifice and Embrion both have new unique main buildings.
-- Increased volumetric fog distance for better visuals.
-
-### 🩸 CASTELLUM CARNIS INTERIOR CHANGES
-
-- Added two new flesh loot rooms.
-  - Reduced the interior's max size due to the scale and chance of these rooms (15:18 → 13:16).
-- Added a new flesh labyrinth room to guarantee at least two fire exit spawns.
-- Added 6 extra scrap spawns similar to the Mineshaft.
-- Fixed "Landmines" (not "LandMines") not spawning in the interior.
-- Improved the smoothing on the spawner mouths to [slightly] blend in better with the walls.
-- Fixed the 'grass' of the "eye" room covering scrap icons.
-
-### 🍂 WITHER MOON CHANGES
-
-- Removed the "night vision" lighting from certain parts of the map, clearing up an irritating glow.
-- Fixed a longstanding issue where players would incorrectly be transitioned to the interior while outside (which caused the sky to suddenly go dark).
-- Fixed some very minor incorrect footstep sounds.
-- Fixed some light flickering at the small forest enclosure.
-- Hopefully fixed apparatus rotation issues.
-- Fixed an occasional (but seemingly harmless) network error on save load, replacing it with a warning log.
-- Adjusted some baked lighting and mesh seams on the main structure.
-- Withered phone sound effect audio is slightly quieter.
-- Item RNG functions should now be initialized correctly, preventing an issue where picking them up would break your inventory permanently.
-- Items can no longer be picked up until they've all finished falling.
-- Items will no longer continue rotating even after hitting the ground.
-- Apparatus insertion now animates (relatively) smoothly.
-- After inserted, the apparatus now reflects the visual appearance of the apparatus used.
-- Added a subtle ongoing sound effect after it's inserted.
-
-### 🌌 DISTINCT MOONS VARIETY CHANGES
-
-- Attenuation; Volition; Detritus; Retinue:
-  - Optimization.
-- Attenuation:
-  - Moon Redesign:
-    - Opened up map playable space.
-    - Added new intertwining routes.
-    - Extended the tight crevice section.
-    - Fence to Main is now destructable via Cruiser.
-    - Added more general structures, rocks, and debris.
-  - Fixed Main Entrance being partially submerged into the ground.
-  - Removed unused Mesh Terrains.
-- Volition:
-  - Turned the radio boombox into it's own item, the Radiobox.
-    - It has worse audio range and lower volume than the normal boombox.
-  - Added the dangerous bridge in the pit between Main and Fire Exit.
-  - Redesigned Main & Side buildings.
-  - Replaced most of the mushrooms in the ditch with different foiliage.
-  - Adjusted Fog & Volume for Stormy & Eclipsed Weather.
-  - Added new exclusive Insanity sounds.
-  - Exterior lights are now tied to the Breaker Box.
-- Detritus:
-  - Recolored the Crane.
-  - Trimmed the Crane's ladder (no longer climbable).
-  - Sunken Old Bird at the Main Entrance now only has a very low chance of being activated upon landing.
-  - Reduced the value of the Mech Apparatus.
-  - Added more LOD to objects around the map for performance.
-  - Moved & Rewritten the Log.
-- Retinue:
-  - Touched up on all the shipping crates, moved them around, and overall decreased how many there are.
-  - Added LOD to a lot more objects in a effort to improve performance.
-  - Fixed broken lighting during Eclipsed & Stormy.
-
-### 🔧 SUB SYSTEM INTERIOR CHANGES
-
-- Fixed a few holes in the level geometry.
-- Increased the distance the Pipe pile in the entry room change.
-- Flooded weather floods the death pits with water.
-
-## 🌌 ADDITIONS
-
-### 👾 Added Enemies:
-
-- LightEater
-  - Encountering: SS tier moons and above, lurking in the shadows of the dungeon.
-  - Dangerousness: High.
-  - *Gradually plunges the environment into darkness.*
-
-### 🏠 New Interiors:
-
-- SectorBeta Interior
-
-### 🌙 Added Moons:
-
-- Added new moon: Calist.
-  - Which system: Scorpius.
-  - Risk Level: S.
-
-- Added new moon: Gloom.
-  - Which system: Taurus.
-  - Risk Level: A++.
-
-- Added new moon: Gratar.
-  - Which system: Harmonia.
-  - Risk Level: B+.
-
-- Added new moon: Infernis.
-  - Which system: ???.
-  - Risk Level: S++.
-
-- Added new moon: Hyx.
-  - Which system: ???.
-  - Risk Level: ???.
-
-- Added new moon: Oldred.
-  - Which system: Gemini.
-  - Risk Level: S+.
-
-- Added new moon: Motra.
-  - Which system: Cygnus.
-  - Risk Level: SS.
-
-- Added new moon: Alcatras.
-  - Which system: Pegasus.
-  - Risk Level: A++.
-
-- Added new moon: Demetrica.
-  - Which system: Scorpius.
-  - Risk Level: A++.
-
-- Added new moon: Polarus.
-  - Which system: Gemini.
-  - Risk Level: A+.
-
-- Added new moon: Asteroid-13.
-  - Which system: Andromeda.
-  - Risk Level: B.
-
-- Added new moon: Nephrite.
-  - Which system: Scorpius.
-  - Risk Level: S.
-
-### 🛠️ Overall Added Mods:
-
-- DistinctEnemyVariety
-- ShipWindows
-- AdditionalNetworking
-- Loadstone
-- LethalPhones
-- Frisbee
-- Menu Music Control
-- SectorBeta Interior
-- PathfindingLagFix Beta
-- Enhanced Monsters
-- LethalStats
-- LethalSponge
-- DeadlyShotgun
-- CompanyWeathers
-- Calist
-- Gloom
-- Gratar
-- Infernis
-- Hyx
-- Oldred
-- Motra
-- Alcatras
-- Demetrica
-- Polarus
-- Asteroid-13
-- BepInEx SplashScreen
-- KillBind
-- LightEater
-- SelfSortingStorage
-- MelaniesVoice
-- DiffoZTweaks
-- AccurateClockItem
-- AntiFurnitureLuck
-
-## 🗑️ REMOVALS
-
-### 🚪 Removed Interiors:
-
-- Sector0 Interior
-- CozyOffice
-- Slaughterhouse
-
-### 🌑 Removed Moons:
-
-- Auralis
-- Triskelion
-- StarlancerZero
-- 127 Eden
-- Seichi
-- Aquatis
-- Gordion Sect0
-- Spectralis
-
-### 🚫 Overall Removed Mods:
-
-- Radiation Leak
-- ShipWindowsBeta
-- AdditionalNetworking Experimental
-- ViewExtension
-- StarlancerMoons
-- 127 Eden
-- Seichi
-- ChocoQuota
-- ImmovablePlayers
-- Nyx
-- ReservedUtilitySlot
-- Bracken Jammer
-- ReservedSprayPaintSlot
-- Aquatis
-- DimmingFlashlights
-- ReservedWalkieSlot
-- ReservedItemSlotCore
-- MoreCupboards
-- NoGrabDelay
-- Gordion Sect0
-- Sector0 Interior
-- Slaughterhouse
-- CozyOffice
-- XuMiscTools
-  - No more needed.
-- LethalToolbox
-  - No more needed.
-- FashionableCompany
-- Fashion Company
-- High Quota Fixes
-  - Badly optimized.
-- FairAI
-  - Badly optimized.
-- ZortMenuTheme
-- LoadstoneUnstableBeta
-- PathfindingLagFix
-- HornMoan
-- MolesterLootBug Fork
-- ShyGuySettings
-- RebalancedMineshaft
-- Orbits
-- SpookyCompany
-- Spectralis
-- JesterTimeout
-
-## 📦 MOD UPDATES
-*(Old version → New version)*
-
-- MoreSuits: 1.3.1 → 1.5.2
-- WiseWeapons: 1.3.2 → 1.3.3
-- UpturnedVariety: 1.3.2 → 1.3.3
-- *Stinky* Beanies Moons: 1.0.8 → 1.1.3
-- Castellum Carnis: 1.0.5 → 1.1.0
-- AutoHookGenPatcher: 1.0.4 → 1.0.6
-- DetourContext Dispose Fix: 1.0.3 → 1.0.4
-- VentSpawnFix: 1.2.2 → 1.2.3
-- SpiderPositionFix: 1.2.1 → 1.4.0
-- GeneralImprovements: 1.4.8 → 1.4.11
-- CruiserImproved: 1.4.1 → 1.5.0
-- FinallyCorrectKeys: 1.5.0 → 1.6.0
-- EnemySoundFixes: 1.6.5 → 1.6.6
-- Sanguine: 1.0.0 → 1.0.2
-- DiversityNoFloppy: 1.0.2 → 1.0.3
-- BagConfig: 0.0.5 → 1.0.0
-- NoJumpDelay: 1.0.0 → 1.1.1
-- ArtificeBlizzard: 1.1.0 → 1.2.0
-- Atlas: 1.0.6 → 1.0.7
-- JLL: 1.9.1 → 1.9.3
-- ScienceBird Tweaks: 1.0.1 → 3.1.4
-- MrovWeathers: 0.0.5 → 0.0.6
-- MapImprovements: 0.9.5 → 0.9.6
-- PjonkGoose: 1.5.0 → 2.0.0
-- Moved Magnet Switch: 1.4.0 → 1.5.0
-- FunnySuit: 0.5.1 → 0.6.1
-- MaskFixes: 1.2.1 → 1.3.1
-- TerraMesh: 1.1.6 → 1.2.0
-- FurnitureLock: 1.3.9 → 1.4.1
-- SnowyWeeds: 1.4.0 → 1.4.1
-- MoreCupboards: 1.3.1 → 1.3.2
-- ClaySurgeonOverhaul: 1.3.5 → 1.3.9
-- Generic Interiors: 1.6.3 → 1.6.4
-- SubSystems Interior: 1.1.2 → 1.2.2
-- PremiumScraps: 2.3.1 → 2.3.5
-- AsyncLoggers: 2.1.3 → 2.1.4
-- loaforcsSoundAPI: 2.0.4 → 2.0.5
-- OpenBodyCams: 3.0.3 → 3.0.5
-- WesleyInteriors: 2.0.11 → 2.1.0
-- WeatherTweaks: 1.1.0 → 1.1.2
-- Storage Complex: 1.0.8 → 1.1.2
-- Beanies Moons: 1.0.7 → 1.0.8
-- WiseWeapons: 1.4.5 → 1.5.1
-- DistinctMoonVariety: 1.6.1 → 2.0.3
-- HotbarPlus: 1.8.3 → 1.8.5
-- WeatherRegistry: 0.4.3 → 0.5.4
-- Wither: 1.2.5 → 1.4.2
-- ButteRyBalance: 0.2.0 → 0.2.2
-- RuntimeIcons: 0.3.1 → 0.3.2
-- LethalPerformance: 0.5.1 → 1.0.1
-- ReservedItemSlotCore: 2.0.43 → 2.0.44
-- EGypt Moon: 2.0.22 → 2.0.23
-- LethalElementsBeta: 1.2.80 → 1.2.81
-- NightOfTheLivingMimic: 1.1.12 → 1.1.18
-- LethalLib: 0.16.2 → 0.16.4
-- TooManyEmotes: 2.2.14 → 2.3.2
-- ExtraEnemyVariety: 1.10.0 → 1.10.1
-- RebalancedMoonsBeta: 1.6.10 → 1.8.5
-- ButterFixes: 1.12.2 → 1.13.1
-- Mirage: 1.18.2 → 1.19.0
-- ButteryFixes: 1.12.1 → 1.12.2
-- MrovLib: 0.2.21 → 0.2.23
-- TestAccountVariety: 1.39.0 → 1.40.1
-- Lategame Upgrades: 3.12.1 → 3.12.2
-- Cruiser Additions: 1.4.5 → 1.4.6

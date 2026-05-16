@@ -1,9 +1,37 @@
 {
   "reservedSlotName": "utility",
   "slotPriority": 300,
-  "purchasePrice": 900,
+  "purchasePrice": 500,
   "itemsForSlot": [
-	{
+    {
+      "itemName": "Stun grenade",
+      "bone": 1,
+      "position": {
+        "x": -0.33,
+        "y": -0.2,
+        "z": 0.1
+      },
+      "rotation": {
+        "x": -110.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "itemName": "Homemade flashbang",
+      "bone": 3,
+      "position": {
+        "x": -0.31,
+        "y": -0.5,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 270,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
       "itemName": "Lockpicker",
       "bone": 3,
       "position": {
@@ -74,6 +102,20 @@
       }
     },
 	{
+      "itemName": "Radar-booster",
+      "bone": 3,
+      "position": {
+        "x": 0,
+        "y": 0.2,
+        "z": -0.4
+      },
+      "rotation": {
+        "x": 270,
+        "y": 0,
+        "z": 0
+      }
+    },
+	{
       "itemName": "Boombox",
       "bone": 3,
       "position": {
@@ -91,6 +133,20 @@
       "itemName": "Jetpack"
     },
 	{
+      "itemName": "Improvised Timebomb",
+      "bone": 3,
+      "position": {
+        "x": -0.3,
+        "y": -0.5,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": -90,
+        "y": 0,
+        "z": -90
+      }
+    },
+	{
       "itemName": "Dynamite",
       "bone": 3,
       "position": {
@@ -101,6 +157,34 @@
       "rotation": {
         "x": 0,
         "y": 0,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "Silent dynamite",
+      "bone": 3,
+      "position": {
+        "x": -0.3,
+        "y": -0.5,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "Gunpowder barrel",
+      "bone": 3,
+      "position": {
+        "x": 0,
+        "y": -0.4,
+        "z": -0.3
+      },
+      "rotation": {
+        "x": 0,
+        "y": 90,
         "z": 0
       }
     },
@@ -131,10 +215,364 @@
         "y": 0,
         "z": 0
       }
-    }
+    },
+	{
+      "itemName": "Mapper",
+      "bone": 3,
+      "position": {
+        "x": -0.4,
+        "y": -0.5,
+        "z": -0.15
+      },
+      "rotation": {
+        "x": -5,
+        "y": 160,
+        "z": 90
+      }
+    },
+	{
+      "itemName": "Padlock",
+      "bone": 3,
+      "position": {
+        "x": -0.35,
+        "y": -0.3,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": -90
+      }
+    },
+	{
+      "itemName": "Bandages",
+      "bone": 3,
+      "position": {
+        "x": -0.3,
+        "y": -0.3,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 90,
+        "y": 0,
+        "z": 90
+      }
+    },
+	{
+      "itemName": "Medical Kit",
+      "bone": 3,
+      "position": {
+        "x": 0,
+        "y": -0.5,
+        "z": -0.3
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "Shift Controller",
+      "bone": 3,
+      "position": {
+        "x": -0.25,
+        "y": -0.3,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": -90
+      }
+    },
+	{
+      "itemName": "Emergency Injector",
+      "bone": 3,
+      "position": {
+        "x": -0.3,
+        "y": -0.3,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": -90,
+        "y": 0,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "Defibrillator",
+      "bone": 3,
+      "position": {
+        "x": -0.3,
+        "y": -0.3,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 90,
+        "y": 0,
+        "z": 90
+      }
+    },
+	{
+      "itemName": "Toolbox",
+      "bone": 3,
+      "position": {
+        "x": 0,
+        "y": -0.4,
+        "z": -0.3
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "Wayfarer's Wallet",
+      "bone": 3,
+      "position": {
+        "x": -0.27,
+        "y": -0.3,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 90,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "Remote Detonator",
+      "bone": 3,
+      "position": {
+        "x": 0,
+        "y": -0.7,
+        "z": -0.38
+      },
+      "rotation": {
+        "x": -90,
+        "y": 0,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "FogHorn",
+      "bone": 3,
+      "position": {
+        "x": 0,
+        "y": -0.4,
+        "z": -0.55
+      },
+      "rotation": {
+        "x": -90,
+        "y": 0,
+        "z": 180
+      }
+    },
+	{
+      "itemName": "Guardsman Phone",
+      "bone": 3,
+      "position": {
+        "x": -0.4,
+        "y": -0.9,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": -90,
+        "y": -90,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "InfiniKey",
+      "bone": 3,
+      "position": {
+        "x": -0.3,
+        "y": -0.7,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": -90,
+        "y": -90,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "Lifeform Analyser",
+      "bone": 3,
+      "position": {
+        "x": 0,
+        "y": 0.3,
+        "z": -0.35
+      },
+      "rotation": {
+        "x": -90,
+        "y": 0,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "Stoptime Watch",
+      "bone": 3,
+      "position": {
+        "x": -0.27,
+        "y": -0.6,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0,
+        "y": -90,
+        "z": 0
+      }
+    },	
+	{
+      "itemName": "Flaregun",
+      "bone": 3,
+      "position": {
+        "x": -0.27,
+        "y": -0.3,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0,
+        "y": -90,
+        "z": 90
+      }
+    },
+	{
+      "itemName": "Pinger",
+      "bone": 3,
+      "position": {
+        "x": -0.27,
+        "y": -0.3,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0,
+        "y": -90,
+        "z": 90
+      }
+    },
+	{
+      "itemName": "Hacking Tool",
+      "bone": 3,
+      "position": {
+        "x": -0.2,
+        "y": -0.4,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      }
+    },
+	{
+      "itemName": "Remote Radar",
+      "bone": 3,
+      "position": {
+        "x": -0.2,
+        "y": -0.4,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      }
+    },
+	{
+      "itemName": "Utility Belt"
+    },
+	{
+      "itemName": "Oxy-Canister",
+      "bone": 3,
+      "position": {
+        "x": -0.37,
+        "y": -0.4,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 90,
+        "y": 90,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "Abandoned TZP-Inhalant",
+      "bone": 3,
+      "position": {
+        "x": -0.37,
+        "y": -0.4,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 90,
+        "y": 90,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "Bullet Lighter",
+      "bone": 3,
+      "position": {
+        "x": -0.3,
+        "y": -0.4,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+	{
+      "itemName": "Flip Lighter",
+      "bone": 3,
+      "position": {
+        "x": -0.3,
+        "y": -0.4,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "itemName": "Pile of Glowsticks",
+      "bone": 3,
+      "position": {
+        "x": -0.25,
+        "y": -0.4,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 180,
+        "z": -90
+      }
+    },
+    {
+      "itemName": "Emergency Flare",
+      "bone": 3,
+      "position": {
+        "x": -0.3,
+        "y": -0.7,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 90,
+        "z": 0
+      }
+    },
+
   ],
   "equipKeybind": {
-	"defaultBind": "n",
+	"defaultBind": "b",
     "toggle": true
   }
 }

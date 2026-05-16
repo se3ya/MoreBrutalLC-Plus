@@ -1,7 +1,7 @@
 {
   "reservedSlotName": "ammo",
   "slotPriority": -40,
-  "purchasePrice": 180,
+  "purchasePrice": 500,
   "itemsForSlot": [
     {
       "itemName": "Ammo",
@@ -46,6 +46,20 @@
       }
     },
 	{
+      "itemName": "Ammo Tin",
+      "bone": 1,
+      "position": {
+        "x": -0.28,
+        "y": 0.0,
+        "z": 0.25
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": -35.0,
+        "z": 10.0
+      }
+    },
+	{
       "itemName": "Shell",
       "bone": 1,
       "position": {
@@ -58,7 +72,50 @@
         "y": 0.0,
         "z": 0.0
       }
-    }
+    },
+	{
+      "itemName": "Shells",
+      "bone": 1,
+      "position": {
+        "x": -0.25,
+        "y": 0.05,
+        "z": 0.15
+      },
+      "rotation": {
+        "x": -110.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+	{
+      "itemName": "Emergency Flare (ammo)",
+      "bone": 1,
+      "position": {
+        "x": -0.25,
+        "y": 0.05,
+        "z": 0.15
+      },
+      "rotation": {
+        "x": -20.0,
+        "y": 0.0,
+        "z": 90.0
+      }
+    },
+    {
+      "itemName": "Missile",
+      "bone": 1,
+      "position": {
+        "x": -0.25,
+        "y": -0.05,
+        "z": 0.15
+      },
+      "rotation": {
+        "x": -20.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+
   ],
   "equipKeybind": {
 	"defaultBind": "u",

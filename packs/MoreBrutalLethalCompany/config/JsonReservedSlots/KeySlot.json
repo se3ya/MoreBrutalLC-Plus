@@ -1,7 +1,7 @@
 {
   "reservedSlotName": "key",
   "slotPriority": -20,
-  "purchasePrice": 150,
+  "purchasePrice": 250,
   "itemsForSlot": [
     {
       "itemName": "Key",
@@ -16,6 +16,49 @@
         "y": 0,
         "z": 80
       }
-    }
+    },
+    {
+      "itemName": "Greenhouse Key",
+      "bone": 1,
+      "position": {
+        "x": -0.15,
+        "y": 0.05,
+        "z": 0.21
+      },
+      "rotation": {
+        "x": -110,
+        "y": 0,
+        "z": 80
+      }
+    },
+    {
+      "itemName": "Elevator key",
+      "bone": 1,
+      "position": {
+        "x": -0.15,
+        "y": 0.05,
+        "z": 0.21
+      },
+      "rotation": {
+        "x": -110,
+        "y": 0,
+        "z": 80
+      }
+    },
+    {
+      "itemName": "Blue key",
+      "bone": 1,
+      "position": {
+        "x": -0.15,
+        "y": 0.05,
+        "z": 0.21
+      },
+      "rotation": {
+        "x": -110,
+        "y": 0,
+        "z": 80
+      }
+    },
+
   ]
 }

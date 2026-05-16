@@ -1,38 +1,73 @@
 ﻿## MODPACK
-Type 'discord' in the terminal to suggest something for the modpack.
-Found a bug? Type 'discord' in the terminal to report it in discord server.
-Enjoying the modpack? Type 'modpack' in the terminal and smash that like button!
-Having a soft-lock? Press CTRL+ALT+SHIFT+Q to return to the main menu.
+Type 'discord' in terminal to suggest modpack changes.
+Found a bug? Type 'discord' in terminal to report it.
+Enjoying it? Type 'modpack' and hit that like button!
+Soft-lock? Press CTRL+ALT+SHIFT+Q to return to main menu.
+## TERMINAL
+The terminal home page lists all available commands.
+Use arrow keys to switch between player cameras in terminal.
+Type 'bestiary' to read about enemies and their behavior.
+Type 'refund' to cancel a dropship order before it lands.
 ## GAMEPLAY
-Approaching large water areas could be very dangerous.
-Fire exit may be blocked by planks, preventing entry or exit. They can be broken with any weapon, such as a shovel.
-Found a bug? Then kill it with the shovel.
-Use the arrow keys to switch between player cameras in the terminal.
-Enabled boombox makes Hygroderes move faster and not dealing damage.
-Stand on railings to avoid Hygroderes.
-Players can sprint jump over a Hygrodere if there is enough space.
-Hygroderes can be killed with Zap-gun.
-Damaging a Hygrodere will slightly increase its speed for a short time.
-Terminal home page contains a lot of useful commands.
-After killing a Masked enemy, you can grab the mask off the dead body and sell it.
-Pulling out the apparatus will turn off all lights inside and outside.
-Once the apparatus is pulled out, all players in the facility will start to take damage every hour.
-Locked doors can be destroyed using shotgun, any melee weapon, turret fire, or landmines.
-Security doors can be opened using terminal, Zap-gun, or during a power outage.
+Large bodies of water can be fatal.
+Fire exits blocked by planks can be broken with any weapon.
+Crouching reduces the noise you make while moving.
+Dropping heavy items makes a loud noise that can attract enemies.
+Lobby re-opens automatically when returning to orbit.
+Flashlights flicker and dim below 30% battery.
+Gifts can sometimes be lethal.
+Level 2 visor crack increases oxygen consumption.
+## Dig through snow on snowy moons to clear paths.
+On Flooded weather, water slowly rises inside the facility.
+Leaving the moon early requires 60% of players to vote.
+Use spray paint to mark paths inside large facilities.
 Press [ M ] to mute yourself.
-Use Zap-gun to temporarily disable landmines.
-Type 'refund' in the terminal to cancel a dropship order and receive your money back before it lands.
-Circuit bees will attack some enemies that gets too close to them.
-Circuit bees have a chance to set Forest Keepers on fire.
-Earth Leviathans hunt nearby enemies, but they ignore smaller prey.
-Lobby automatically re-opens when going back to orbit.
-Flashlights dims and flickers when reaching 30% battery
-Gifts sometimes can be lethal
-Bracken drags grabbed players doing gradual damage toward a favorite spot
-Having an level 2 visor crack increases oxygen consumption
-Dig a snow on snowy weather to clear paths
-During Flooded and rarely Stormy and Rainy weather water appears indoors and level increases slowly
+Press [ P ] while spectating to toggle first person view.
+Scroll wheel zooms the third person camera while spectating.
+The company buying rate is highest on the last day of a quota.
+Items left on the moon are permanently lost when you leave orbit.
+## ENEMIES
+Isolated players are much easier targets for most enemies.
+Staring too long at Bracken makes him angry.
+## Bracken drags grabbed players toward its favorite spot.
+Eyeless dogs are completely blind, don't make any noise close to them.
+Thumper can be outrun by sprinting and cutting around corners.
+Forest Giant can be distracted by a playing boombox.
+Snare Flea on your head can only be knocked off by a crewmate.
+Shoot Nutcrackers eye when it opens to deal damage.
+Jester can't be stopped once it pops, leave the facility immediately.
+Coil-Head stops moving when looked at directly.
+Playing boombox speeds up Hygroderes but stops their damage.
+Stand on railings to stay safe from Hygroderes.
+Zap-gun can kill Hygroderes.
+Damaging a Hygrodere slightly increases its speed.
+Sprint jumping over a Hygrodere is possible with enough space.
+Circuit bees attack enemies that get too close to the hive.
+Circuit bees can set Forest Keepers on fire.
+Earth Leviathans hunt large enemies but ignore smaller prey.
+Masked enemy mask can be picked up and sold after killing them.
+Some enemies can trigger landmines and be targeted by turrets.
+Barber attacks in rhythm.
+## ITEMS
+Shovel, stop sign and yield sign all deal the same melee damage.
+Stun grenade temporarily stuns most enemies.
+Zap-gun requires two people: one to aim and one to hold the enemy still.
+Jetpack speed and handling drop significantly under heavy weight.
+Radar booster can be pinged from the terminal to locate it.
+Zap-gun temporarily disables landmines.
+Apparatus removal cuts all power and radiation damages all crew over time.
+Locked doors break with melee weapons, shotguns or landmines.
+Security doors open via terminal, Zap-gun,or during a power outage.
+## CRUISER
+Items on top of the Cruiser or in the open trunk are lost when entering orbit.
+The Cruiser takes damage from hitting trees and walls.
+## MOONS
+Landing on a free moon twice permanently discovers it.
+Landing on a paid moon once permanently discovers it.
+Paid moons have a chance to go on sale after each quota.
+Embrion and Artifice must be story-unlocked before routing to them.
+Systems unlock through moon landings, quota survival or specific moon visits
 ## QUOTA
-Credits will be reduced by 5% for each dead player without recovering their body
-Quota will be increased by 3% for 2+ dead player without recovering their body
-Quota multiplies for each new player in the lobby if there are more than 2
+Each unrecovered dead player reduces credits by 5%.
+2 or more unrecovered deaths increase next quota by 3%.
+Quota scales up for each additional player beyond 2.

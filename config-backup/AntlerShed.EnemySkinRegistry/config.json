@@ -155,6 +155,7 @@
     "Hawk.Green",
     "Hawk.Brown",
     "Nutcracker.Pink",
+    "Dog.BlackAlt",
     "Barber.Empra",
     "Bracken.Cosmos",
     "Bracken.Lecaro",
@@ -194,17 +195,18 @@
     "20 Adamance",
     "68 Artifice",
     "5 Embrion",
-    "615 Noctis",
+    "57 Harbringer",
     "Atlas Abyss",
-    "475 Extort",
     "177 Burrow",
-    "72 Collateral",
+    "696 Collateral",
     "49 Devastation",
+    "287 Deluge",
     "82 Landslide",
     "81 Icebound",
     "90 Brutality",
     "97 Humidity",
     "19 Hydro",
+    "91 Incineration",
     "43 Integrity",
     "862 Divide",
     "89 Submersion",
@@ -220,7 +222,6 @@
     "-42 Hyx",
     "234 Motra",
     "94 Polarus",
-    "214 Release",
     "648 Repress",
     "6 Mazon",
     "74 Olympus",
@@ -230,6 +231,7 @@
     "112 Aquatis",
     "28 Celest",
     "47 Chronos",
+    "615 Noctis",
     "28 Terra",
     "35 Vacuity",
     "115 Wither"
@@ -668,7 +670,8 @@
           "Dog.Yellow",
           "Dog.Black",
           "Dog.Brown",
-          "Dog.Desolation"
+          "Dog.Desolation",
+          "Dog.BlackAlt"
         ],
         "defaultConfiguration": {
           "mapId": "",
@@ -677,6 +680,11 @@
           "skinDistribution": [
             {
               "skinId": "Dog.Black",
+              "indoorFrequency": 0.5,
+              "outdoorFrequency": 0.5
+            },
+            {
+              "skinId": "Dog.BlackAlt",
               "indoorFrequency": 0.5,
               "outdoorFrequency": 0.5
             },
@@ -943,20 +951,7 @@
             }
           ]
         },
-        "mapConfigurations": [
-          {
-            "mapId": "72 Collateral",
-            "outdoorVanillaFrequency": 0.0,
-            "indoorVanillaFrequency": 0.0,
-            "skinDistribution": [
-              {
-                "skinId": "Bug.Jeremy",
-                "indoorFrequency": 1.0,
-                "outdoorFrequency": 1.0
-              }
-            ]
-          }
-        ]
+        "mapConfigurations": []
       },
       {
         "enemyId": "LethalCompany.Hygrodere",

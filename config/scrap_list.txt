@@ -1,0 +1,180 @@
+[Vanilla Scraps]
+Brush
+Perfume bottle
+Gift
+Teeth
+Toy robot
+Whoopie cushion
+Toothpaste
+Rubber Ducky
+Golden cup
+Easter egg
+Old phone
+Large axle
+Homemade flashbang
+Magic 7 ball
+Airhorn
+Bell
+Big bolt
+Bottles
+Candy
+Cash register
+Chemical jug
+Clock
+Clown horn
+Comedy
+Control pad
+Dust pan
+Egg beater
+V-type engine
+Fancy lamp
+Painting
+Plastic fish
+Laser pointer
+Flask
+Garbage lid
+Gold bar
+Hairdryer
+Kitchen knife
+Magnifying glass
+Metal sheet
+Mug
+Jar of pickles
+Pill bottle
+Plastic cup
+Hive
+Remote
+Ring
+Soccer ball
+Red soda
+Steering wheel
+Stop sign
+Tea kettle
+Toilet paper
+Toy cube
+Toy train
+Tragedy
+Yield sign
+Zed Dog
+
+[Modded Scraps]
+
+Crowbar [weapon]
+Metal Pipe [weapon]
+Wooden Axe [weapon]
+Flip Lighter [like a flashlight with a battery which can end]
+Abandoned Flashlight [ spawns next to the dead body, should be rare ]
+Industrial Flashlight [ spawns next to the dead body, should be more rarer ]
+Abandoned Walkie-talkie [ spawns next to the dead body, should be rare ]
+Coffee pot
+Light bulb
+Diamond
+Boot
+Lava lamp
+Rocking horse
+Body pillow
+Power drill
+Fire extinguisher
+Wallet
+Toaster
+Bucket
+Bonsai tree
+Stapler
+Watering can
+Traffic cone
+Tuba
+Wine bottle
+Anvil
+Fuzzy dice
+Briefcase
+Pizza box
+Fire truck
+Fan
+Spatula
+Egg timer
+Top hat
+Coffee creamer
+Frying pan
+Eyeless Dog Plushie [the idea for it to be rare]
+Jester Plushie [the idea for it to be rare]
+Bracken Plushie [the idea for it to be rare]
+Hoarding Bug Plushie [the idea for it to be rare]
+Coil head Plushie [the idea for it to be rare]
+Forest Keeper Plushie [the idea for it to be rare]
+Tragedy mask Plushie [the idea for it to be rare]
+Comedy mask Plushie [the idea for it to be rare]
+Bunker Spider Plushie [the idea for it to be rare]
+Thumper Plushie [the idea for it to be rare]
+Nutcracker Plushie [the idea for it to be rare]
+Toil head Plushie [the idea for it to be rare]
+Toil slayer Plushie [the idea for it to be rare]
+Globe
+Cat
+Nuclear Bomb [has a chance to explode when dropped]
+Scavenger Plushie
+ShyGuyPainting [if player takes the painting, Shy guy spawns and after a time kills player]
+Frisbee [can be tossed]
+Friscoin [can be tossed]
+Broom [weapon]
+Dweller Head
+Bloody Coil
+Headlight
+Wooden Shako
+Magnet
+Book
+Car Tire
+Desk Lamp
+Keyboard
+Pillow
+Bottle
+Cartridge
+Potted Plant
+Monitor
+Cardboard Box
+Vent Cover
+Candle
+Box of parts
+Shotgun case
+Sidearm case
+Zapper
+Metal duct
+Cog
+Limit sign
+Silver bar
+Copper bar
+Big battery
+Cleaner bottle
+Bronze bar
+Big nut
+Rubber tire
+Screwdriver
+Hand file
+Post
+Improvised Timebomb
+Trophy
+Small battery
+Toolbox
+Copper plate
+Sledgehammer [weapon]
+Scale
+Flamingo floatie
+Pig painting
+Makeshift lamp
+Barbed wire
+Axe
+Poop bucket
+Gas tank
+Butcher knife
+Manul poster
+Tennis racket
+Cannabis plant
+Egg
+Golden goblet
+Cookie pan
+Ribcage
+Ear
+Foot
+Hand
+Heart
+Knee
+Tongue

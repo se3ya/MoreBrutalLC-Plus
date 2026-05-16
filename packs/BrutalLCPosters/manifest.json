@@ -1,11 +1,11 @@
 {
     "name": "MoreBrutalLCPosters",
-    "version_number": "3.0.1",
+    "version_number": "3.0.2",
     "website_url": "https://discord.gg/4DhJQcheAfGKp",
     "description": "Contains all customized posters for MoreBrutalLethalCompanyPlus! MoreBrutalLethalCompanyPlus is required!",
     "dependencies": [
         "BepInEx-BepInExPack-5.4.2305",
         "Evaisa-LethalLib-1.2.0",
-        "seechela-CustomPosters-4.0.3"
+        "seechela-CustomPosters-4.0.4"
     ]
 }

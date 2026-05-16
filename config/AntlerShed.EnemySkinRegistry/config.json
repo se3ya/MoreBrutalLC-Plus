@@ -195,8 +195,8 @@
     "20 Adamance",
     "68 Artifice",
     "5 Embrion",
-    "57 Harbringer",
-    "Atlas Abyss",
+    "412 Fracture",
+    "23 Symbiosis",
     "177 Burrow",
     "696 Collateral",
     "49 Devastation",
@@ -204,8 +204,10 @@
     "82 Landslide",
     "81 Icebound",
     "90 Brutality",
+    "657 Harvest",
     "97 Humidity",
     "19 Hydro",
+    "893 Ignition",
     "91 Incineration",
     "43 Integrity",
     "862 Divide",
@@ -213,27 +215,31 @@
     "122 Vaporization",
     "602 Vertigo",
     "120 Corrosion",
+    "74 Allure",
+    "84 Ascension",
+    "13 Dejection",
+    "164 Hollowed",
+    "113 Kiln",
     "42 Kiri",
     "01 Lua",
-    "240 Alcatras",
-    "57 Asteroid-13",
-    "235 Calist",
-    "147 Gratar",
-    "-42 Hyx",
-    "234 Motra",
-    "94 Polarus",
-    "648 Repress",
+    "25 Manuland",
+    "65 Nostalgia",
+    "30 Row",
+    "476 Taldor",
+    "154 Thrive",
+    "12 Boreal",
+    "27 Calamitous",
+    "17 Incalescence",
+    "103 Precipice",
+    "32 Rampart",
+    "51 Verdance",
     "6 Mazon",
-    "74 Olympus",
-    "93 Ichor",
-    "607 Tunere",
-    "Sanguine",
-    "112 Aquatis",
-    "28 Celest",
+    "3 Bilge",
     "47 Chronos",
+    "02 Phobos / Deimos",
+    "69 Kanie",
     "615 Noctis",
     "28 Terra",
-    "35 Vacuity",
     "115 Wither"
   ],
   "version": "1.4.1",
@@ -648,20 +654,7 @@
             }
           ]
         },
-        "mapConfigurations": [
-          {
-            "mapId": "94 Polarus",
-            "outdoorVanillaFrequency": 0.0,
-            "indoorVanillaFrequency": 0.0,
-            "skinDistribution": [
-              {
-                "skinId": "Worm.Polarus",
-                "indoorFrequency": 1.0,
-                "outdoorFrequency": 1.0
-              }
-            ]
-          }
-        ]
+        "mapConfigurations": []
       },
       {
         "enemyId": "LethalCompany.EyelessDog",
@@ -1361,20 +1354,7 @@
             }
           ]
         },
-        "mapConfigurations": [
-          {
-            "mapId": "235 Calist",
-            "outdoorVanillaFrequency": 0.0,
-            "indoorVanillaFrequency": 0.0,
-            "skinDistribution": [
-              {
-                "skinId": "Bird.Calist",
-                "indoorFrequency": 1.0,
-                "outdoorFrequency": 1.0
-              }
-            ]
-          }
-        ]
+        "mapConfigurations": []
       },
       {
         "enemyId": "LethalCompany.RoamingLocust",

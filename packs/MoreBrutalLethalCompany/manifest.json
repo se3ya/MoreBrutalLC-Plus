@@ -1,13 +1,13 @@
 {
     "name": "MoreBrutalLethalCompanyPlus",
-    "version_number": "81.0.0",
+    "version_number": "81.0.1",
     "website_url": "https://discord.gg/4DhJQcheAf",
     "description": "[V81] Balanced modpack that makes game slightly harder and still enjoyable and still keeping it in vanilla style!",
     "dependencies": [
-        "seechela-MoreBrutalLethalCompanyMain-3.0.2",
-        "seechela-MoreBrutalLCMoons-3.0.2",
-        "seechela-MoreBrutalLCCosmetics-3.0.1",
-        "seechela-MoreBrutalLCPosters-3.0.1",
-        "seechela-CustomLogoForMBLCP-3.0.1"
+        "seechela-MoreBrutalLethalCompanyMain-3.0.4",
+        "seechela-MoreBrutalLCMoons-3.0.4",
+        "seechela-MoreBrutalLCCosmetics-3.0.2",
+        "seechela-MoreBrutalLCPosters-3.0.2",
+        "seechela-CustomLogoForMBLCP-3.0.2"
     ]
 }

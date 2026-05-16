@@ -1,7 +1,7 @@
 {
   "reservedSlotName": "spray_paint",
   "slotPriority": 250,
-  "purchasePrice": 350,
+  "purchasePrice": 500,
   "itemsForSlot": [
     {
       "itemName": "Spray paint",
@@ -19,7 +19,7 @@
     }
   ],
   "equipKeybind": {
-	"defaultBind": "h",
+	"defaultBind": "n",
     "toggle": true
   }
 }

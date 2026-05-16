@@ -1,7 +1,7 @@
 {
   "reservedSlotName": "flashlight",
   "slotPriority": 500,
-  "purchasePrice": 420,
+  "purchasePrice": 500,
   "itemsForSlot": [
     {
       "itemName": "Flashlight",
@@ -59,6 +59,161 @@
         "z": 0.0
       }
     },
+	{
+      "itemName": "Gummy flashlight",
+      "bone": 4,
+      "position": {
+        "x": 0.2,
+        "y": 0.25,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 90.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+	{
+      "itemName": "Heavy Flashlight",
+      "bone": 4,
+      "position": {
+        "x": 0.2,
+        "y": 0.25,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 90.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+	{
+      "itemName": "Jacobs Ladder",
+      "bone": 4,
+      "position": {
+        "x": 0.2,
+        "y": 0.25,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+	{
+      "itemName": "ProMaxFlashlig",
+      "bone": 4,
+      "position": {
+        "x": 0.2,
+        "y": 0.25,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 90.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+	{
+      "itemName": "ProMaxPlusFlashlig",
+      "bone": 4,
+      "position": {
+        "x": 0.22,
+        "y": 0.27,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 90.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+	{
+      "itemName": "ProMaxPlusUltraFlashlig",
+      "bone": 4,
+      "position": {
+        "x": 0.65,
+        "y": 0.4,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 90.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "itemName": "Spotlight",
+      "bone": 4,
+      "position": {
+        "x": 0.35,
+        "y": 0.40,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "itemName": "Abandoned Flashlight",
+      "bone": 4,
+      "position": {
+        "x": 0.2,
+        "y": 0.25,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 90.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "itemName": "Abandoned Pro-Flashlight",
+      "bone": 4,
+      "position": {
+        "x": 0.1,
+        "y": 0.25,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 90.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "itemName": "Golden Flashlight",
+      "bone": 4,
+      "position": {
+        "x": 0.2,
+        "y": 0.25,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 90.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "itemName": "Industrial Flashlight",
+      "bone": 4,
+      "position": {
+        "x": 0.4,
+        "y": 0.18,
+        "z": 0.0
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 90.0,
+        "z": 0.0
+      }
+    },
+
   ],
   "useKeybind": {
     "defaultBind": "f",
