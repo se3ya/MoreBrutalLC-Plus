@@ -14,6 +14,154 @@
 > - **MAJOR** version is a significant modpack change *[ new mods, new features, breaking changes ]*
 > - **MINOR** version is a small modpack change *[ hotfixes, patches, config tweaks ]*
 
+# [v81.0.2] - 2026-05-20
+
+<p align="left">
+  <img src="https://i.imgur.com/HAmib68.png" width="500">
+</p>
+
+---
+
+<p align="center">
+  <i>Issues that are getting tracked for the next update.</i>
+</p>
+
+<blockquote align="center">
+  <code>[ x ]</code> Fixed · <code>[ ~ ]</code> Maybe fixed · <code>[  ]</code> Not fixed
+</blockquote>
+
+- `[  ]` Refund option in store adds up every new lobby
+- `[  ]` Host sees Apparatus value, client doesn't
+
+> Report bugs on [Discord](https://discord.gg/Z9rUwTtUpx)
+
+<p align="left">
+  <img src="https://i.imgur.com/bi9BrgZ.png" width="400">
+</p>
+
+---
+
+- Systems showing only 1 moon
+
+<p align="left">
+  <img src="https://i.imgur.com/8ysUA07.png" width="500">
+</p>
+
+---
+
+### `[ GAMEPLAY & MECHANICS ]`
+
+- Bracken can blow up on landmines
+- Feiopar is rarer
+- Bracken has a bigger chance to spawn on Abandoned Factory 
+
+### `[ QUOTA ]`
+
+- Starting system _AST-17_ has a random deadline between _3_ to _5_ days
+- Starting credits increased from _70_ to _80_ credits
+- Starting quota reduced from _475_ to _400_ credits
+- Quota base reduced from _165_ to _155_
+- Curve sharpness increased from _8.2_ to _9_
+- Quota player scaling threshold increased from _2_ to _3_, scaling starts at 4 players
+- Quota player scaling multiplier per player reduced from _18%_ to _12%_
+- Death penalties only trigger when half or more of the crew dies
+- Credit loss cap on full wipe reduced from _35%_ to _20%_
+- Quota increase cap on full wipe reduced from _20%_ to _10%_
+- Body recovery softens penalties instead of cancelling them
+- Credit body recovery bonus reduced from _65%_ to _30%_
+- Quota body recovery bonus reduced from _80%_ to _30%_
+- Solo player gets _+10%_ scrap value
+
+### `[ OXYGEN ]`
+
+- Oxygen doesn't consume on The Company
+
+### `[ MOONS & SYSTEMS ]`
+
+- Brutality costs _$50_ credits to route
+- Unlocked moons expire after _2_ routes and revert to paid
+- `[PINNED]` tag shows in terminal for permanently discovered moons
+- Meeting quota has _50%_ chance to grant a free unlock on a random paid moon with price ≤ _$100_
+- Moon sale chance increased from _15%_ to _25%_ per shuffle
+- Maximum moon sale discount increased from _20%_ to _30%_
+- Quota discoveries now prioritize the cheapest undiscovered constellation for moon reveals
+
+<p align="left">
+  <img src="https://i.imgur.com/TDAcWaX.png" width="400">
+</p>
+
+---
+
+### `[ GAMEPLAY & MECHANICS ]`
+
+- Counterplays
+  - Jester
+    - items can be placed on top of it to delay/prevent popping
+  - Coilhead
+    - can be damaged and killed, with optional volatile explosion behavior
+  - Feiopar
+    - can be distracted by laser pointer and redirected more reliably
+  - Turret
+    - can be disabled by cutting their wires with a knife
+- Some small sized enemies can be sold
+
+### `[ FACILITY MELTDOWN ]`
+
+- Pulling apparatus has a chance to trigger a facility meltdown
+- Meltdown chance scales by moon tier, _10%_ on F tier up to _90%_ on S++ tier
+- Apparatus value scales the same way, worth more on harder moons
+- _2_ monsters spawn during meltdown
+- Tweaked radiation damage
+
+### `[ VISUAL & AUDIO ]`
+
+- Some unique scrap grab and drop sounds
+- Scanned item holographic highlights
+
+### `[ ENEMIES ]`
+
+- Ogopogo
+- Aloe
+
+### `[ MODS ]`
+
+- MoreCounterplay
+- Biodiversity
+- FacilityMeltdown
+- PizzaProbabilityUpdated
+- Enhanced Monsters
+
+<p align="left">
+  <img src="https://i.imgur.com/Biy3epr.png" width="500">
+</p>
+
+---
+
+- 69 Kanie: 3.2.8 → 3.2.9
+- 3Bilge: 2.4.1 → 2.4.2
+- 615Noctis: 1.0.6 → 1.0.7
+- 312Fracture: 1.0.2 → 1.0.3
+- DungeonGenerationPlus: 1.5.0 → 1.5.1
+- DawnLib: 0.9.20 → 0.9.21
+- MajorityVote: 1.1.2 → 1.1.3
+- ScienceBird Tweaks: 4.7.3 → 4.7.4
+- Chameleon: 2.3.4 → 2.4.2
+- EnemySoundFixes: 1.9.9 → 1.9.10
+- TooManyEmotes: 2.3.15 → 2.3.16
+- UniqueItemSounds: 0.2.0 → 0.2.1
+- SpawnCycleFixes: 1.2.0 → 1.2.2
+- PathfindingLagFix: 2.4.1 → 2.4.2
+- MeleeFixes: 1.5.0 → 1.5.1
+- JetpackFixes: 1.6.1 → 1.6.2
+- ButteryFixes: 1.17.8 → 1.17.10
+- ButteRyBalance: 0.5.0 → 0.6.1
+- Configurable Quota: 1.2.0 → 1.3.1
+- Scandals Tweaks: 1.1.7 → 1.1.8
+- Vandal Electronics Scanvan 1.4.9 → 1.5.2
+- CullFactory 2.0.8 → 2.0.9
+- Raven Manor Interior 1.3.0 → 1.3.1
+- 412Fracture 1.0.3 → 1.0.4
+
 # [v81.0.1] - 2026-05-11
 
 <p align="left">
@@ -2899,86 +3047,3 @@ _(Old version → New version)_
 - ButteryFixes: 1.13.1 → 1.13.2
 - Mirage: 1.19.1 → 1.21.0
 - MapImprovements: 0.9.6 → 0.9.7
-
-# MoreBrutalLethalCompanyPlus *v6.0.1*, *"IMPROVEMENTS, FIXES"*
-
-## 🔧 FIXES
-
-- Fixed Spike Trap null audio clip.
-- Fixed NRE when loading a save with Switchboard active.
-- Fixed having no windows and custom posters on starting a lobby second time. *[ 18 ]*
-- Hopefully fixed a bug that was causing to only record voices for hosts.
-- Fixed an issue with combined weathers resolving partial weathers incorrectly.
-- Fixed starting moons having Sub System interior *[ Starting systems should not have this interior because it is large and the amount of scrap on the starting moons is low. ]*
-
-## ✨ NOTABLE CHANGES
-
-- Adjusted the scrap price and dungeon size scaling to ensure the minimum values at 1 player and maximum values at 8+ players, resulting in a smoother progression.
-  - Scrap value changes:
-    - 1 Player: +30% *[ no change ]*
-    - 2 Player: from +30% → +10%
-    - 3 Player: from +15% → default
-    - 4 Player: from default → -10%
-    - 5 Player: from -15% → -20%
-    - 6 Player: -30%
-    - 7 Player: from -50% → -40%
-    - 8+ Player: -50%
-- Slightly increased the game loading speed.
-- No more bonuses will be given when surviving as that mod was causing an issue. *[ 18 ]*
-- Updated the list of forest moons that Siren Head can spawn on.
-- Updated the list of green moons that don't consume oxygen.
-- Added back Elite Flashlight item to the store.
-  - The Elite Flashlight has been edited to be more differentiated than the Pro Flashlight.
-  - The Elite Flashlight costs 65 credits
-
-## ✨ VANILLA MOONS CHANGES
-
-- Adjusted Artifice visuals and navmesh a tiny bit.
-- Finalized Embrion heat distortion effect.
-- Fixed Embrion nodes being visible.
-- Fixed one light on offense always being powered.
-- Fixed roof collision on Vow.
-- Fixed Embrion fog volume cutting off at low points.
-- Fixed ambience not playing on Embrion.
-- Added AI nodes all over the left side of Embrion.
-
-## ✨ PINNACLE MOON CHANGES
-
-- Fixed a floating rock.
-- Some minor adjustments to terrain around rocks throughout the map.
-- Added offmesh link on the rock by the ship that leads you to where the item ship lands that way jumping off that ledge while being chased by an enemy is now more dangerous. They can now follow you.
-- Added two off mesh links at the bottom of the mountain to the top to fix an issue with Baboon hawks being stupid and walking into a wall endlessly.
-- Added / Changed several other off mesh links to hopefully make some pathfinding easier.
-- Fixed scaling on the train carts around the map.
-
-## 🌌 ADDITIONS
-
-### 🛠️ Overall Added Mods:
-
-- EliteFlashlight
-
-## 🗑️ REMOVALS
-
-### 🚫 Overall Removed Mods:
-
-- SurvivalBonus
-- FunnySuit
-
-## 📦 MOD UPDATES
-*(Old version → New version)*
-
-- RebalancedMoonsBeta: 1.8.5 → 1.8.10
-- Pinnacle: 1.4.1 → 1.5.0
-- LethalSponge: 1.1.8 → 1.1.8
-- WeatherTweaks: 1.1.2 → 1.1.3
-- BFLAP: 0.6.5 → 1.0.0
-- NaturalSelectionLib: 0.6.5 → 0.6.6
-- WeatherRegistry: 0.5.4 → 0.5.5
-- LethalPhones: 1.3.13 → 1.3.14
-- ScienceBird Tweaks: 3.1.4 → 3.1.7
-- Better Shotgun Tooltip: 1.5.2 → 1.6.0
-- ExtraEnemyVariety: 1.10.1 → 1.11.0
-- SpikeTrapFixes: 1.1.2 → 1.2.0
-- StarlancerAIFix: 3.8.4 → 3.9.0
-- MrovLib: 0.2.23 → 0.2.24
-- Mirage: 1.19.0 → 1.19.1

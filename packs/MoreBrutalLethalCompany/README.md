@@ -288,7 +288,7 @@
 - **Developer** - <img src="https://github.com/se3ya.png" width="15"> [seeya](https://github.com/se3ya)
 - **Modpack Helper** - <img src="https://cdn.discordapp.com/guilds/860502414201454653/users/200676584397471765/avatars/2fc7a67507d7e475da5b0f678c36d33d.webp?size=80" width="15"> [Gus](https://github.com/baldugus)
 - **Mod Creators** - <img src="https://cdn.discordapp.com/avatars/216002021881413632/89b24790447526ee0922cc8d91f876a5.webp?size=80" width="15"> [Moroxide](https://thunderstore.io/c/lethal-company/p/Megalophobia/MEGALOPHOBIA/), <img src="https://github.com/darmuh.png" width="15"> [darmuh](https://thunderstore.io/c/lethal-company/p/darmuh/) and other mod authors for their awesome mods
-- **Early Testers** - Strv-103, Mahoraga, Yuri, Goose
+- **Early Testers** - Strv-103, Mahoraga, Yuri, Goose, NeBuling
 - **Inspiration** - <img src="https://github.com/shaydelity.png" width="15"> [Shaydelity](https://github.com/Team-Rebirth/Lethal-Rebirth) - github page inspiration, <img src="https://cdn.discordapp.com/avatars/216002021881413632/89b24790447526ee0922cc8d91f876a5.webp?size=80" width="15"> [Moroxide](https://thunderstore.io/c/lethal-company/p/Megalophobia/MEGALOPHOBIA/) - terminal customization
 - **Coffee Supporters**: - <img src="https://cdn.discordapp.com/guilds/860502414201454653/users/200676584397471765/avatars/2fc7a67507d7e475da5b0f678c36d33d.webp?size=80" width="15"> [Gus](https://github.com/baldugus) and st.coiled
 - **Community** - Thanks to everyone who plays the modpack, suggests features, reports bugs and is active on our [Discord server](https://discord.gg/Z9rUwTtUpx)
